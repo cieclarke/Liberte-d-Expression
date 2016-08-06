@@ -22,11 +22,10 @@ AppAsset::register($this);
     <?php $this->head() ?>
 </head>
 <body>
-<?php $this->beginBody() ?>
+
 <h1>home</h1>
 <?= $content ?>
 
-<?php $this->endBody() ?>
 </body>
 </html>
 <?php $this->endPage() ?>
