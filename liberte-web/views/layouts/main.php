@@ -23,7 +23,20 @@ AppAsset::register($this);
 </head>
 <body>
 
-<h1>home</h1>
+<nav>
+    <ul>
+        <li>
+            Menu One
+        </li>
+        <li>
+            Menu Two
+        </li>
+        <li>
+            Menu Three
+        </li>
+    </ul>
+</nav>
+
 <?= $content ?>
 
 </body>

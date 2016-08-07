@@ -17,8 +17,4 @@ class GalleryViewModel extends Model
         $this->Gallery = $repo->Gallery;
     }
 
-    
-    
-   
-
 }

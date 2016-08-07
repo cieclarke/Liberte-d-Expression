@@ -1,15 +1,15 @@
 <?php
 
-namespace app\assest\models;
+namespace app\assets\models;
 
 
 class Image
 {
-    function Gallery($title, $desription, $paths)
+    function __construct($title, $description, $paths)
     {
-        $this->$title = $title;
-        $this->$desription = $description;
-        $this->$path = $path;
+        $this->title = $title;
+        $this->description = $description;
+        $this->paths = $paths;
     }
     
     public $title;

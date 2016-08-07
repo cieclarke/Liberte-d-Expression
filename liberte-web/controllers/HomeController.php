@@ -13,12 +13,7 @@ class HomeController extends Controller
 {
 
     public $defaultAction = 'index';
-    
-    /**
-     * Displays homepage.
-     *
-     * @return string
-     */
+
     public function actionIndex()
     {
         

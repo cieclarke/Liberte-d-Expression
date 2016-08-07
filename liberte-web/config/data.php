@@ -12,12 +12,17 @@ $imageSet2 = [
 
 return [
     'title' => 'gallery title',
-    'albums' => [ 
-        'title' => 'liberte', 
-        'description' => '',
-        'galleries' => [
-            ['title' => 'gallery one', 'description' => '', 'images' => $imageSet1],
-            ['title' => 'gallery two', 'description' => '', 'images' => $imageSet2]
-        ] /*galleries*/
-    ] /*albums*/
+    'albums' => 
+    [
+        [ 
+            'title' => 'liberte-one', 
+            'description' => 'a',
+            'images' => $imageSet1
+        ],
+        [ 
+            'title' => 'liberte-next', 
+            'description' => 'b',
+            'images' => $imageSet2
+        ]
+    ]
 ];
