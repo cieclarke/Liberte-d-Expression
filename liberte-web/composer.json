@@ -26,7 +26,9 @@
         "yiisoft/yii2-faker": "*"
     },
     "config": {
-        "process-timeout": 1800
+        "process-timeout": 1800,
+        "disable-tls": true,
+        "secure-http": false
     },
     "scripts": {
         "post-create-project-cmd": [
