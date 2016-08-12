@@ -39,6 +39,8 @@ $config = [
         ],
         'db' => require(__DIR__ . '/db.php'),
         'urlManager' => [
+            //'urlFormat' => 'path',
+            //'caseSensitive' => false,
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
