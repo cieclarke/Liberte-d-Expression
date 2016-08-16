@@ -7,7 +7,7 @@ class GalleryRepo
     function __construct()
     {
         $params = \Yii::$app->params;
-        $data = $params['data'];
+        $data = $params['data']['Gallery'];
         $galleryTitle = $data['title'];
 
         $albums = [];

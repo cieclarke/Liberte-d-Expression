@@ -24,5 +24,13 @@ class HomeController extends Controller
         ]);
     }
 
-    
+    public function actionMedia()
+    {
+        
+        $vm = new \app\models\AudioViewModel();
+        
+        return $this->render('media', [
+            'model' => $vm,
+        ]);
+    }
 }
