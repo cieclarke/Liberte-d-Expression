@@ -9,19 +9,20 @@ use yii\filters\VerbFilter;
 use app\models;
 
 
-class HomeController extends Controller
+class InteriorDesignController extends Controller
 {
 
     public $defaultAction = 'index';
 
     public function actionIndex()
     {
-        $this->view->params['class'] = 'home';
+        $this->view->params['class'] = 'interior-design';
         $vm = new \app\models\GalleryViewModel();
-        
+
         return $this->render('index', [
             'model' => $vm,
         ]);
     }
+
 
 }

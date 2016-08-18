@@ -15,24 +15,32 @@ AppAsset::register($this);
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
+    <title><?= Html::encode($this->title) ?></title>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+
+
 </head>
-<body>
+<body class="<?= $this->params['class'] ?>">
 
 <nav>
     <ul>
         <li>
-            Menu One
+            <a href="/">Home</a>
         </li>
         <li>
-            Menu Two
+            <a href="/paintings/">Paintings</a>
         </li>
         <li>
-            Menu Three
+            <a href="/interior-design/">Interior Design</a>
+        </li>
+        <li>
+            <a href="/Music/">Music</a>
+        </li>
+        <li>
+            <a href="/Books/">Books</a>
         </li>
     </ul>
 </nav>

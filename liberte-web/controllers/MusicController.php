@@ -9,16 +9,16 @@ use yii\filters\VerbFilter;
 use app\models;
 
 
-class HomeController extends Controller
+class MusicController extends Controller
 {
 
     public $defaultAction = 'index';
 
     public function actionIndex()
     {
-        $this->view->params['class'] = 'home';
-        $vm = new \app\models\GalleryViewModel();
-        
+        $this->view->params['class'] = 'music';
+        $vm = new \app\models\AudioViewModel();
+
         return $this->render('index', [
             'model' => $vm,
         ]);

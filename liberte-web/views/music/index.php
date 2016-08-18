@@ -1,9 +1,7 @@
 <?php
-
-
-
 $this->title = 'Liberte';
 ?>
+
 <h2>Media</h2>
 
 <h3>Audio</h3>
