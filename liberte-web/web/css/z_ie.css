@@ -1,0 +1,161 @@
+/*
+////////////////////////////////////////////////////////////////////////
+///   KC : IE7/IE8 - load via IE conditional comments only           ///
+///                                                                  ///
+///   Contains two regions:                                          ///
+///         (i) Selectors replicated from the standard stylesheets   ///
+///             but removed from within media queries not            ///
+///             understood by IE7/IE8.                               ///
+///         (ii) Selectors specific to these old IE browsers.        ///
+///                                                                  ///
+///   Note: Any selectors not understood by IE7/IE8 can be           ///
+///         handled using jQuery in the IE7/IE8 script file.         ///
+///         Avoid burdening the HTML with attributes for old         ///
+///         versions of IE.                                          ///
+///         Dispose of this file once IE7/8 support ends!            ///
+///                                                                  ///
+///   Queries: nicholas.bergquist@informa.com                        ///
+////////////////////////////////////////////////////////////////////////
+*/
+
+/*
+BEGIN (i) Replicated selectors
+
+In this region below: all selectors copied from within media query blocks in b_layout.css, c_colour.css
+and d_typography without the media queries blocks. This is specifically for IE7 and IE8 which don't
+natively support media queries.
+
+Keep the copied selectors in the same consecutive order as found in the media queries. The CSS cascade
+will produce the static full-size desktop display.
+
+Any subsequent udpates: repeat the process detailed above.
+*/
+	/*************************/
+	/*  from b_layout.css..  */
+	/*************************/
+
+	/*   Media between 480 and 767  */
+
+
+	/* class elements: =. */
+
+
+
+
+
+
+	/*   Media between 768 and 899  */
+
+
+	/* class elements: =. */
+
+
+
+
+
+
+	/*   Media between 900 and 1023  */
+
+
+	/* class elements: =. */
+
+
+
+
+
+	/*   Media between 1024 and 1279  */
+
+
+	/* class elements: =. */
+
+
+
+
+	/*   Media between 1200 and above  */
+
+
+	/* class elements: =. */
+
+
+
+
+
+	/***************************/
+	/*   From c_colour.css..   */
+	/***************************/
+
+	/*   Media between 480 and 767    */
+
+
+	/* class elements: =. */
+
+
+
+
+	/*   Media between 900 and 1023   */
+
+
+	/* class elements: =. */
+
+
+
+
+
+	/******************************/
+	/*  From d_typography.css..   */
+	/******************************/
+
+	/*   Media between 480 and 767    */
+
+
+	/* class elements: =. */
+
+
+
+
+	/*   Media between 768 and 899    */
+
+
+	/* class elements: =. */
+
+
+
+
+
+	/*   Media between 900 and 1023  */
+
+
+	/* class elements: =. */
+
+
+
+
+
+/*
+END (i) Replicated selectors
+*/
+
+
+
+/*
+BEGIN: (ii) Specific IE selectors
+
+In this region below: add any further IE-specific CSS.
+
+Hack Key:
+--------
+   color: #f00     All targeted IE; this is an IE-specific stylesheet
+   color: #f00\9;  IE 8 and below
+   *color: #f00;   IE 7 and below
+   _color: #f00;   IE 6 and below
+   _col\or: #f00;  IE 6 only
+*/
+
+input[type=submit] {
+	*text-transform: capitalize; /* hack to shift input text off-screen in IE7 */
+}
+
+
+/*
+END: (ii) Specific IE selectors
+*/

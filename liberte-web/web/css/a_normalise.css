@@ -1,0 +1,35 @@
+/* Reset
+/**************************************************************/
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, legend, input, textarea, p, blockquote, th, td, figure {
+	margin: 0;
+	padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block; /* correct block display not defined in IE6/7/8/9 & FF3 */
+}
+audio, canvas, video {
+    display: inline-block; /* correct inline-block display not defined in IE6/7/8/9 & FF3 */
+}
+audio:not([controls]) {
+    display: none; /* prevent modern browsers from displaying 'audio' without controls */
+}
+fieldset, img, table {
+	border-style: none;
+	border-color: inherit;
+	border-width: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+textarea {
+    vertical-align: top;
+}
+ul {
+	list-style: none;
+}
+ol {
+    list-style-position: inside;
+}

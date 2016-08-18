@@ -1,10 +1,8 @@
 <?php
-$this->title = 'Liberte';
+    $this->title = 'Music';
 ?>
 
-<h2>Media</h2>
-
-<h3>Audio</h3>
+<h1>Music</h1>
 
 <dl>
 <?php foreach($model->Songs as $key=>$value): ?>

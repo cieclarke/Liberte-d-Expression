@@ -1,0 +1,49 @@
+/*
+////////////////////////////////////////////////////////////////////////////////
+///   Colours and file resources (reskins) - def. viewport 320px wide        ///
+///                                                                          ///
+///   Queries - nicholas.bergquist@informa.com                               ///
+////////////////////////////////////////////////////////////////////////////////
+*/
+
+/*  Default 320px media width
+/*******************************************************************/
+
+/* Generic DOM elements */
+
+
+/* pseudo-classes */
+:link, :visited {
+
+}
+:link:hover, :visited:hover {
+
+}
+
+
+/* class elements: =. */
+
+
+/*   Media between 480 and 767
+/*******************************************************************/
+@media only screen and (min-width: 480px) {
+
+}
+
+/*   Media between 900 and 1023
+/*******************************************************************/
+@media only screen and (min-width: 900px) {
+
+
+	/* class elements: =. */
+
+}
+
+/*   Media 1280 and above
+/*******************************************************************/
+@media only screen and (min-width: 1280px) {
+
+
+	/* class elements: =. */
+
+}

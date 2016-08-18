@@ -1,10 +1,9 @@
 <?php
-
-$this->title = 'Liberte';
-
+    $this->title = 'Paintings';
 ?>
 
-<p>Paintings page default</p>
+<h1>Paintings</h1>
+
 <p>
 <?= $model->Gallery->albums[0]->title ?>
 </p>

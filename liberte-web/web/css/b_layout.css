@@ -1,0 +1,141 @@
+/*
+/////////////////////////////////////////////////////////////////////
+///   Page layout - default is for viewport 320px wide            ///
+///                                                               ///
+///   Queries - nick_bergquist@yahoo.co.uk                        ///
+/////////////////////////////////////////////////////////////////////
+*/
+
+/*  Default 320px media width
+/*******************************************************************/
+/*body:before { content: "Media between 320 and 479"; }*/
+
+/* Generic DOM elements */
+html {
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box /* not inherited by default */
+}
+*, *:before, *:after {
+	-webkit-box-sizing: inherit; -moz-box-sizing: inherit; box-sizing: inherit /* apply desired box model to all but allowing local change */
+}
+body {
+    min-width: 320px /* fix the minimum width */
+}
+button, input[type=submit] {
+    border: 2px solid;
+	padding: 2px 5px
+}
+dd {
+	float: right;
+	width: auto
+}
+dl {
+	margin-bottom: 0.75em;
+    overflow: hidden;
+}
+dt {
+	clear: left;
+	float: left;
+	width: auto
+}
+dt:after {
+	content: ":"
+}
+footer {
+    border-top: 1px solid
+}
+header {
+	border-bottom: 5px solid;
+	overflow: hidden;
+	position: relative
+}
+footer, main {
+    overflow: hidden;
+    padding: 1.25em 1.67% 1.25em /* 10px either side at full width: 20/1200 x 100 = 1.67 */
+}
+header nav {
+    padding: 1.25em 1.67% 0 1.25em
+}
+p, li, article, figcaption {
+	margin-bottom: 0.75em /* 1.5 x 0.5 = 0.75, where 1.5 = def. body line-height & 0.5 = proportion allocated for bottom margins */
+}
+main {
+	margin-bottom: 1.5em
+}
+
+/* class elements: =. */
+.anchor-image {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    text-indent: -999em
+}
+.hide {  /* invisible & inaudible */
+    display: none;
+    visibility: hidden
+}
+.list-standard li {
+    list-style: inside none circle;
+    padding-left: 1.67%;
+}
+.menu-general a {
+    display: block;
+    height: 100%
+}
+.menu-general li {
+    width: auto
+}
+.menu-horiz li {
+	float: left
+}
+.off-screen {  /* invisible only */
+    height: 1px;
+    left: -999em;
+    overflow: hidden;
+    position: absolute;
+    width: 1px
+}
+.skip:active, .skip:focus {
+	position: static
+}
+
+/*   Media between 480 and 767
+/*******************************************************************/
+@media only screen and (min-width: 480px) {
+	/*body:before { content: "Media between 480 and 767"; }*/
+
+
+	/* class elements: =. */
+
+}
+
+/*   Media between 900 and 1023
+/*******************************************************************/
+@media only screen and (min-width: 900px) {
+	/*body:before { content: "Media between 900 and 1023"; }*/
+
+
+	/* class elements: =. */
+
+    .menu-site > li {
+        float: left;
+    }
+
+}
+
+/*   Media 1280 and above
+/*******************************************************************/
+@media only screen and (min-width: 1280px) {
+	/*body:before { content: "Media 1280 and above"; }*/
+    /* no need to specify % widths in this range as it's fixed-width desktop size viewport */
+
+    header nav, main, .logo-site, footer * {
+		margin-left: auto;
+        margin-right: auto;
+        width: 1200px
+	}
+
+
+	/* class elements: =. */
+
+
+}
