@@ -37,10 +37,10 @@ AppAsset::register($this);
             <a href="/interior-design/">Interior Design</a>
         </li>
         <li>
-            <a href="/Music/">Music</a>
+            <a href="/music/">Music</a>
         </li>
         <li>
-            <a href="/Books/">Books</a>
+            <a href="/books/">Books</a>
         </li>
     </ul>
 </nav>
