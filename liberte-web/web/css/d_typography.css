@@ -9,22 +9,12 @@
 
 /* Fonts */
 @font-face {
-    font-family: 'folksregular';
-    src: url('../type/Folks-Normal-webfont.eot');
-    src: url('../type/Folks-Normal-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/Folks-Normal-webfont.woff') format('woff'),
-         url('../type/Folks-Normal-webfont.ttf') format('truetype'),
-         url('../type/Folks-Normal-webfont.svg#folksregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'folksbold';
-    src: url('../type/Folks-Bold-webfont.eot');
-    src: url('../type/Folks-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/Folks-Bold-webfont.woff') format('woff'),
-         url('../type/Folks-Bold-webfont.ttf') format('truetype'),
-         url('../type/Folks-Bold-webfont.svg#folksbold') format('svg');
+    font-family: 'ParisJeTAime';
+    src: url('../type/ParisJeTAime.eot');
+    src: url('../type/ParisJeTAime.eot?#iefix') format('embedded-opentype'),
+         url('../type/ParisJeTAime.woff') format('woff'),
+         url('../type/ParisJeTAime.ttf') format('truetype'),
+         url('../type/ParisJeTAime.svg#folksbold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -43,7 +33,8 @@ footer[role='contentinfo'] p {
 	font-size: 0.833em /* 10px required so 10 / 12 = 0.833 */
 }
 h1, h2, h3, h4, h5, h6, caption, legend {
-	font-family: folksregular;
+	font-family: ParisJeTAime;
+    letter-spacing: 0.02em;
 }
 h1 {
 	font-size: 2.33em; /* 28px required so, 28 / 12 = 2.33 */

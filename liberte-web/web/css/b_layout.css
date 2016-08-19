@@ -115,7 +115,9 @@ main {
 
 
 	/* class elements: =. */
-
+    .menu-site a {
+        padding: 0.25em 10%;
+    }
     .menu-site > li {
         float: left;
     }
@@ -128,7 +130,7 @@ main {
 	/*body:before { content: "Media 1280 and above"; }*/
     /* no need to specify % widths in this range as it's fixed-width desktop size viewport */
 
-    header nav, main, .logo-site, footer * {
+    header nav, header p, main, footer * {
 		margin-left: auto;
         margin-right: auto;
         width: 1200px
