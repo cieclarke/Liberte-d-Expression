@@ -3,7 +3,7 @@
  * Application configuration shared by all test types
  */
 return [
-    'language' => 'en-US',
+    'language' => 'en',
     'controllerMap' => [
         'fixture' => [
             'class' => 'yii\faker\FixtureController',
