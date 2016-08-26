@@ -48,12 +48,9 @@ header {
 	overflow: hidden;
 	position: relative
 }
-footer, main {
+footer, header, main {
     overflow: hidden;
     padding: 1.25em 1.67% 1.25em /* 10px either side at full width: 20/1200 x 100 = 1.67 */
-}
-header nav {
-    padding: 1.25em 1.67% 0 1.25em
 }
 p, li, article, figcaption {
 	margin-bottom: 0.75em /* 1.5 x 0.5 = 0.75, where 1.5 = def. body line-height & 0.5 = proportion allocated for bottom margins */
@@ -130,11 +127,17 @@ main {
 	/*body:before { content: "Media 1280 and above"; }*/
     /* no need to specify % widths in this range as it's fixed-width desktop size viewport */
 
-    header nav, header p, main, footer * {
+    header > *, main, footer > * {
 		margin-left: auto;
         margin-right: auto;
         width: 1200px
+	}    
+    header > *, footer > * {
+		padding-left: 1.67%;
+        padding-right: 1.67%
 	}
+    
+    
 
 
 	/* class elements: =. */
