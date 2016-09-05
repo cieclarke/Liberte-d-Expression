@@ -11,6 +11,9 @@
 /*body:before { content: "Media between 320 and 479"; }*/
 
 /* Generic DOM elements */
+html, body {
+    height: 100%
+}
 html {
 	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box /* not inherited by default */
 }
@@ -44,19 +47,42 @@ footer {
     border-top: 1px solid
 }
 header {
-	border-bottom: 5px solid;
-	overflow: hidden;
-	position: relative
-}
-footer, header, main {
+    min-height: 100%;
     overflow: hidden;
-    padding: 1.25em 1.67% 1.25em /* 10px either side at full width: 20/1200 x 100 = 1.67 */
+	padding: 0 1.67%; /* 10px either side at full width: 20/1200 x 100 = 1.67 */
+    position: relative
+}
+header::after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+footer, main {
+    overflow: hidden;
+    padding: 2.5rem 1.25em 1.67% 
 }
 p, li, article, figcaption {
-	margin-bottom: 0.75em /* 1.5 x 0.5 = 0.75, where 1.5 = def. body line-height & 0.5 = proportion allocated for bottom margins */
+	margin-bottom: 0.75rem; /* 1.5 x 0.5 = 0.75, where 1.5 = def. body line-height & 0.5 = proportion allocated for bottom margins */
 }
 main {
-	margin-bottom: 1.5em
+	margin-bottom: 1.5rem
+}
+nav ul {
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+    width: 100%;
+}
+nav li {
+    display: table-cell;
+    vertical-align: middle;
+}
+nav a {
+    display: block;
+    padding: 12px;
 }
 
 /* class elements: =. */
@@ -70,9 +96,27 @@ main {
     display: none;
     visibility: hidden
 }
+.home nav {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
 .list-standard li {
     list-style: inside none circle;
     padding-left: 1.67%;
+}
+.logo-site {
+    left: 50%;
+    margin-left: -160px;
+    margin-bottom: 0;
+    padding: 25px;
+    position: absolute;
+    top: 40%;
+    width: 320px;
+    z-index: 1;
 }
 .menu-general a {
     display: block;
@@ -112,12 +156,7 @@ main {
 
 
 	/* class elements: =. */
-    .menu-site a {
-        padding: 0.25em 10%;
-    }
-    .menu-site > li {
-        float: left;
-    }
+    
 
 }
 
@@ -132,11 +171,10 @@ main {
         margin-right: auto;
         width: 1200px
 	}    
-    header > *, footer > * {
+    footer > * {
 		padding-left: 1.67%;
         padding-right: 1.67%
 	}
-    
     
 
 

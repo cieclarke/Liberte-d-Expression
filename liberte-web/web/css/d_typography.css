@@ -18,76 +18,104 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../type/OpenSans.woff') format('woff'),
+       url('../type/OpenSans.svg#OpenSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../type/OpenSans-Regular.eot');
+    src: url('../type/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../type/OpenSans-Regular.woff2') format('woff2'),
+         url('../type/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../type/OpenSans-Bold.eot');
+  src: url('../type/OpenSans-Bold.eot?#iefix') format('embedded-opentype'), 
+       url('../type/OpenSans-Bold.woff') format('woff'),
+       url('../type/OpenSans-Bold.svg#OpenSans-Bold') format('svg'),
+	   url('../type/OpenSans-Bold.ttf') format('truetype');       
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 /* Generic DOM elements */
+html {
+	font-size: 62.5%; /* 62.5% of 16px = 10px */
+}
 body {
-	/* set base font size in % so that in IE the 'View > Text size' menu (useable with 'em' units) does not have
-       large incremental step changes with 'em' units alone.
-
-       12px (desired base font size). 18px (1.5 x base font size) is desired base line-height.
-       (12px (desired base size) / 16px (def. browser size)) x 100 = 75%  */
-    font: 75%/1.5 Arial, Helvetica, sans-serif
+	/*  14px (desired base font size). 21px (1.5 x base font size) desired base line-height. */
+    font: 1.4rem/1.5 OpenSans-Regular, Arial, Helvetica, sans-serif
 }
 
 footer[role='contentinfo'] p {
-	font-size: 0.833em /* 10px required so 10 / 12 = 0.833 */
+	font-size: 1.2rem; /* 12px */
 }
 h1, h2, h3, h4, h5, h6, caption, legend {
 	font-family: ParisJeTAime;
     letter-spacing: 0.02em;
 }
 h1 {
-	font-size: 2.33em; /* 28px required so, 28 / 12 = 2.33 */
-    line-height: 1.2em; /* non-standard line height */
-    margin-bottom: 0.6em; /* 1.2 x 0.5 = 0.6 */
+	font-size: 2.8rem; /* 28px */
+    line-height: 1.2; /* non-standard line height */
+    margin-bottom: 0.6rem; /* 1.2 x 0.5 = 0.6 */
 }
 h2 {
-	font-size: 1.5em; /* 18px required so 18 / 12 = 1.5 */
-    line-height: 1.2em; /* non-standard line height */
-    margin-bottom: 0.6em; /* 1.2 x 0.5 = 0.6 */
-    margin-top: 1.8em /* 1.2 x 1.5 = 1.8 */
+	font-size: 2.1rem; /* 21px */
+    line-height: 1; /* standardised leading, 21 / 21 = 1 */
+    margin-bottom: 0.5rem; /* 1 x 0.5 = 0.5 */
+    margin-top: 1.5rem; /* 1 x 1.5 = 1.5 */
 }
 h3 {
-	font-size: 1.167em; /* 14px required so, 14 / 12 = 1.167 */
-	line-height: 1.286em; /* standardised leading, 18 / 14 = 1.286 */
-	margin-bottom: 0.643em; /* 1.286 x 0.5 = 0.643 */
-    margin-top: 1.929em /* 1.286 x 1.5 = 1.929 */
+	font-size: 1.8rem; /* 18px */
+    line-height: 1.5; /* standardised leading, 21 / 18 = 1.5 */
+    margin-bottom: 0.25rem; /* 1.5 x 0.5 = 0.25 */
+    margin-top: 2.25rem; /* 1.5 x 1.5 = 2.25 */
 }
 h4 {
-	font-size: 1em; /* 12px required so, 12 / 12 = 1 */
-	line-height: 1.5em; /* standardised leading, 18 / 12 = 1.5 */
-	margin-bottom: 0.75em; /* 1.5 x 0.5 = 0.75 */
-	margin-top: 2.25em /* 1.5 x 1.5 = 2.25 */
+	font-size: 1em; /* 10px */
+
 }
 h5 {
-	font-size: 1em; /* 12px required so, 12 / 12 = 1 */
-	line-height: 1.5em; /* standardised leading, 18 / 12 = 1.5 */
-	margin-bottom: 0.75em; /* 1.5 x 0.5 = 0.75 */
-	margin-top: 2.25em /* 1.5 x 1.5 = 2.25 */
+	font-size: 1em; /* 10px */
+
 }
 h6 {
-	font: 1em helvetica, arial, sans-serif; /* 12px required so, 12 / 12 = 1 */
-	line-height: 1.5em; /* standardised leading, 18 / 12 = 1.5 */
-	margin-bottom: 0.75em; /* 1.5 x 0.5 = 0.75 */
-	margin-top: 2.25em /* 1.5 x 1.5 = 2.25 */
+	font-size: 1em; /* 10px */
+
 }
 h2:first-child, h3:first-child {
 	margin-top: 0;
 }
+nav a {
+	font-family: OpenSans-Bold;
+	font-size: 1rem;
+}
 textarea {
     font-family: arial;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 /* pseudo-classes */
 :link, :visited {
-	text-decoration: underline
+	text-decoration: none
 }
 :link:hover, :visited:hover {
 	text-decoration: underline
 }
 
 /* class elements: =. */
+.logo-site a {
+	font-family: ParisJeTAime;
+	font-size: 2.8rem; /* 28px */
+}
 .menu-horiz li {
     white-space: nowrap
 }
@@ -107,6 +135,9 @@ textarea {
 /*******************************************************************/
 @media only screen and (min-width: 768px) {
 
+	nav a {
+		font-size: 1.4rem;
+	}
 
 	/* class elements: =. */
 

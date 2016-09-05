@@ -26,7 +26,7 @@ AppAsset::register($this);
     <link rel="stylesheet" href="/css/b_layout.css">
     <link rel="stylesheet" href="/css/c_theme.css">
     <link rel="stylesheet" href="/css/d_typography.css">
-    <link rel="stylesheet" href="/css/e_special.css">
+    <link rel="stylesheet" href="/css/e_vendor.css">
 
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
 
@@ -47,10 +47,13 @@ AppAsset::register($this);
     <a class="skip off-screen" href="#main">Skip to content</a>
 
     <header role="banner">
-        <p class="logo-site"><a href="/" class="anchor-image_">Liberté d'Expression</a></p>
-        <p>The underground world of art and design</p>
+        <p class="logo-site anchor-image_">
+            <a href="/">Liberté d'Expression</a><br />
+            The underground world of art and design
+        </p>
+        
         <nav role="navigation">
-            <ul class="menu-general menu-site">
+            <ul class="menu-site">
                 <li>
                     <a href="/">Home</a>
                 </li>

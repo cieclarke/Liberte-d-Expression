@@ -10,7 +10,32 @@
 /*******************************************************************/
 
 /* Generic DOM elements */
-
+footer {
+	background-color: #333;
+	color: #fff;
+}
+header {
+    background: url(../images/20.jpg) no-repeat fixed center center / cover;
+	transition: background 1s linear;
+}
+header::after {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+nav li:first-child {
+	background: #bccf02
+}
+nav li:nth-child(2) {
+	background: #5bb12f
+}
+nav li:nth-child(3) {
+	background: #73c5e1
+}
+nav li:nth-child(4) {
+	background: #eb65a0
+}
+nav li:last-child {
+	background: #9b539c
+}
 
 /* pseudo-classes */
 :link, :visited {
@@ -19,10 +44,18 @@
 :link:hover, :visited:hover {
 
 }
-
+nav :link, nav :visited {
+	color: #fff;
+}
 
 /* class elements: =. */
-
+.logo-site {
+    background: rgba(0, 0, 0, 0.4);
+	color: #fff;
+}
+.logo-site :link, .logo-site :visited, .logo-site :link:hover, .logo-site :visited:hover {
+	color: #fff
+}
 
 /*   Media between 480 and 767
 /*******************************************************************/
