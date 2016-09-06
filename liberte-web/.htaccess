@@ -1,0 +1,10 @@
+#Allow from all
+#Options -MultiViews
+#AuthType None
+# Uncomment this if you're on Apache >= 2.4:
+#Require all granted
+RewriteEngine On
+RedirectMatch 403 /\..*$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php 
