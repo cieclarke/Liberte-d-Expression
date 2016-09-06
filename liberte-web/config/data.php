@@ -31,13 +31,19 @@ return
     
     'Audio' => [
             ['title' => 'Attracion', 'description' => 'Attracion', 'urls' => [
-                'mp3' => '01 Atraccion Master 04_10_2005_converted.mp3', 
-                'ogg' => '01 Atraccion Master 04_10_2005_converted.ogg' 
+                'mp3' => 'Atraccion.mp3', 
+                'ogg' => 'Atraccion.ogg' 
                 ] 
             ],
             ['title' => 'Close To You', 'description' => 'Close To You', 'urls' => [
-                'mp3' => '01 Close to You_Master July 2005_converted.mp3', 
-                'ogg' => '01 Close to You_Master July 2005_converted.ogg' 
+                'mp3' => 'Close to You.mp3', 
+                'ogg' => 'Close to You.ogg' 
+                ] 
+            ]
+        ],
+    'Books' => [
+            ['title' => 'MrTandtheJMan', 'description' => 'MrTandtheJMan', 'urls' => [
+                'pdf' => 'MrTandtheJMan.pdf'
                 ] 
             ]
         ]

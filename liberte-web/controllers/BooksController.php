@@ -17,12 +17,22 @@ class BooksController extends Controller
     public function actionIndex()
     {
         $this->view->params['class'] = 'books';
-        $vm = new \app\models\GalleryViewModel();
+        $vm = new \app\models\BookViewModel();
 
         return $this->render('index', [
             'model' => $vm,
         ]);
     }
 
+    public function actionBook()
+    {
+        $this->view->params['class'] = 'books';
+        $vm = new \app\models\BookViewModel();
 
+        return $this->render('book', [
+            'model' => $vm,
+        ]);
+
+
+    }
 }

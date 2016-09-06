@@ -4,6 +4,13 @@
 
 <h1>Books</h1>
 
-<p>
-<?= $model->Gallery->albums[0]->title ?>
-</p>
+<dl>
+<?php foreach($model->Books as $key=>$value): ?>
+<dt>
+<?php echo $model->Books[$key]->title; ?>
+</dt>
+<dd>
+<?php echo $model->Books[$key]->description; ?>
+</dd>
+<?php endforeach; ?>
+</dl>

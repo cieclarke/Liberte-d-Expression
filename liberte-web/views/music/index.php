@@ -11,8 +11,8 @@
 </dt>
 <dd>
 <audio controls="controls">
-   <source src="http://libertedexpression.co.uk/songs/<?php echo $model->Songs[$key]->types['mp3']; ?>" type='audio/mpeg; codecs="mp3"'>
-   <source src="http://libertedexpression.co.uk/songs/<?php echo $model->Songs[$key]->types['ogg']; ?>" type='audio/ogg; codecs="vorbis"'>
+   <source src="http://libertedexpression.co.uk/art/audio/<?php echo $model->Songs[$key]->types['mp3']; ?>" type='audio/mpeg; codecs="mp3"'>
+   <source src="http://libertedexpression.co.uk/art/audio/<?php echo $model->Songs[$key]->types['ogg']; ?>" type='audio/ogg; codecs="vorbis"'>
    <p>Unsupported media</p>
 </audio>
 </dd>
