@@ -77,6 +77,14 @@ AppAsset::register($this);
     </main>
     <footer role="contentinfo">
         <p>&copy; 2016 Liberté d'Expression Ltd., All rights reserved.</p>
+        <ul>
+            <li>
+                <a href="/about/">About Liberté d'Expression</a>
+            </li>
+            <li>
+                <a href="/contact/">Get in touch</a>
+            </li>
+        </ul>
     </footer>
 </body>
 </html>

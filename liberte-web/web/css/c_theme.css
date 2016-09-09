@@ -15,7 +15,7 @@ footer {
 	color: #fff;
 }
 header {
-    background: url(../images/2_0.jpg) no-repeat fixed center center / cover;
+    background: url(../images/20.jpg) no-repeat fixed center center / cover;
 	transition: background 1s linear;
 }
 header::after {
