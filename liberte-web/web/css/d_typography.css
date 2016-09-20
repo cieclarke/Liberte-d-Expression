@@ -14,7 +14,7 @@
     src: url('../type/ParisJeTAime.eot?#iefix') format('embedded-opentype'),
          url('../type/ParisJeTAime.woff') format('woff'),
          url('../type/ParisJeTAime.ttf') format('truetype'),
-         url('../type/ParisJeTAime.svg#folksbold') format('svg');
+         url('../type/ParisJeTAime.svg#ParisJeTAime') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -112,10 +112,6 @@ textarea {
 }
 
 /* class elements: =. */
-.logo-site a {
-	font-family: ParisJeTAime;
-	font-size: 2.8rem; /* 28px */
-}
 .menu-horiz li {
     white-space: nowrap
 }

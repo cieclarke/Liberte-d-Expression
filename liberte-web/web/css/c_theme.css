@@ -15,26 +15,40 @@ footer {
 	color: #fff;
 }
 header {
-    background: url(../images/20.jpg) no-repeat fixed center center / cover;
-	transition: background 1s linear;
-}
-header::after {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-image:  url(../images/tranquility.png); 
+	background-size: cover;
+	
+	/*transition: background 1s linear;*/
 }
 nav li:first-child {
-	background: #bccf02
+	background: #bccf02;
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(228,236,154,0) 40%, rgba(188,207,2,1) 100%);
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(228,236,154,0) 40%,rgba(188,207,2,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(228,236,154,0) 40%,rgba(188,207,2,1) 100%);
 }
 nav li:nth-child(2) {
-	background: #5bb12f
+	background: #5bb12f;
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(189,224,172,0) 40%, rgba(91,177,47,1) 100%);
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(189,224,172,0) 40%,rgba(91,177,47,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(189,224,172,0) 40%,rgba(91,177,47,1) 100%);
 }
 nav li:nth-child(3) {
-	background: #73c5e1
+	background: #73c5e1;
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(199,232,243,0) 40%, rgba(115,197,225,1) 100%);
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(199,232,243,0) 40%,rgba(115,197,225,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(199,232,243,0) 40%,rgba(115,197,225,1) 100%);
 }
 nav li:nth-child(4) {
-	background: #eb65a0
+	background: #eb65a0;
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(247,193,217,0) 40%, rgba(235,101,160,1) 100%);
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(247,193,217,0) 40%,rgba(235,101,160,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(247,193,217,0) 40%,rgba(235,101,160,1) 100%);
 }
 nav li:last-child {
-	background: #9b539c
+	background: #9b539c;
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(215,186,215,0) 40%, rgba(155,83,156,1) 100%);
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(215,186,215,0) 40%,rgba(155,83,156,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(215,186,215,0) 40%,rgba(155,83,156,1) 100%);
 }
 
 /* pseudo-classes */
@@ -44,18 +58,22 @@ nav li:last-child {
 :link:hover, :visited:hover {
 
 }
+footer :link, footer :visited, footer :link:hover, footer :visited:hover {
+	color: #73c5e1
+}
 nav :link, nav :visited {
 	color: #fff;
 }
 
 /* class elements: =. */
-.logo-site {
-    background: rgba(0, 0, 0, 0.4);
-	color: #fff;
+.home main {
+	background: url(../images/the_light.png) center center / cover;
+	border-top-color: #bccf02;
 }
-.logo-site :link, .logo-site :visited, .logo-site :link:hover, .logo-site :visited:hover {
-	color: #fff
+.site-home {
+    background: url(../images/LiberteTestLogo1_280x165.png) no-repeat center center;
 }
+
 
 /*   Media between 480 and 767
 /*******************************************************************/

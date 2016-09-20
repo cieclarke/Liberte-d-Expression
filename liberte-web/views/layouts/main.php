@@ -30,6 +30,16 @@ AppAsset::register($this);
 
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
 
+	<!-- required by IE9 and some other user agents in order to process javascript-based media queries..
+		 applies patch if window.matchMedia() is unsupported -->
+	<script src="/scripts/matchMedia.js"></script>
+
+	<!-- library required to process javascript-based media queries.. requires window.matchMedia() support -->
+	<script src="/scripts/enquire.min.js"></script>
+	
+	<!-- main script -->
+	<script src="/scripts/main.js"></script>
+
     <!-- older IE support - remove this and associated files when IE8 support is dropped -->
     <!--[if lt IE 9]>
         <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -47,9 +57,8 @@ AppAsset::register($this);
     <a class="skip off-screen" href="#main">Skip to content</a>
 
     <header role="banner">
-        <p class="logo-site anchor-image_">
-            <a href="/">Liberté d'Expression</a><br />
-            The underground world of art and design
+        <p class="site-home">
+            <a href="/" class="anchor-image" title="Home">Liberté d'Expression, The underground world of art and design</a>
         </p>
         
         <nav role="navigation">
@@ -67,7 +76,7 @@ AppAsset::register($this);
                     <a href="/music/">Music</a>
                 </li>
                 <li>
-                    <a href="/books/">Books</a>
+                    <a href="/books/">Childrens' Books</a>
                 </li>
             </ul>
         </nav>
