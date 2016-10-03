@@ -22,7 +22,20 @@ $(function () {
 		}
 	}).register('screen and (min-width: 900px)', {
 		match : function() {
-			
+			$(".home main").bgswitcher({
+				images: ["../images/background_books_01.jpg",
+				"../images/background_books_02.jpg",
+				"../images/background_books_03.jpg", 
+				"../images/background_interior-design_01.jpg",
+				"../images/background_interior-design_02.jpg",
+				"../images/background_interior-design_03.jpg",
+				"../images/background_paintings_01.jpg",
+				"../images/background_paintings_02.jpg",
+				"../images/background_paintings_03.jpg",
+				"../images/background_music_01.jpg",
+				"../images/background_music_02.jpg",
+				"../images/background_music_03.jpg"]
+			});
 		}
 	}).register('screen and (min-width: 1024px)', {
 		match : function() {

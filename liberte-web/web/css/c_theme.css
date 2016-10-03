@@ -15,10 +15,13 @@ footer {
 	color: #fff;
 }
 header {
-    background-image:  url(../images/tranquility.png); 
+    background-image:  url(../images/tranquility.jpg); 
 	background-size: cover;
 	
 	/*transition: background 1s linear;*/
+}
+html {
+	background-color: #333;
 }
 nav li:first-child {
 	background: #bccf02;
@@ -67,8 +70,14 @@ nav :link, nav :visited {
 
 /* class elements: =. */
 .home main {
-	background: url(../images/the_light.png) center center / cover;
-	border-top-color: #bccf02;
+	background: #bccf02;
+	border-top-color: transparent;
+}
+.home .introduction {
+	box-shadow: 30px 30px 30px 0 rgba(0, 0, 0, 0.25);
+}    
+.paintings main {
+	border-top-color: #5bb12f;
 }
 .site-home {
     background: url(../images/LiberteTestLogo1_280x165.png) no-repeat center center;

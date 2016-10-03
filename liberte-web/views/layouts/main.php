@@ -40,6 +40,8 @@ AppAsset::register($this);
 	<!-- main script -->
 	<script src="/scripts/main.js"></script>
 
+    <script src="/scripts/jquery.bgswitcher.js"></script>
+
     <!-- older IE support - remove this and associated files when IE8 support is dropped -->
     <!--[if lt IE 9]>
         <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -85,7 +87,6 @@ AppAsset::register($this);
         <?= $content ?>
     </main>
     <footer role="contentinfo">
-        <p>&copy; 2016 Liberté d'Expression Ltd., All rights reserved.</p>
         <ul>
             <li>
                 <a href="/about/">About Liberté d'Expression</a>
@@ -94,6 +95,8 @@ AppAsset::register($this);
                 <a href="/contact/">Get in touch</a>
             </li>
         </ul>
+        <p>Liberte d’Expression Ltd Registered in England &amp; Wales as a company number 5850952. Registered office: Lupins Business Centre 1-3 Greenhill, Weymouth, Dorset DT4 7SP.</p>
+        <p>&copy; 2016 Liberté d'Expression Ltd., All rights reserved.</p>
     </footer>
 </body>
 </html>
