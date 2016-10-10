@@ -37,8 +37,8 @@ return
                 ] 
             ],
             ['id' => 'Attracion',  'title' => 'Attracion', 'description' => 'Attracion', 'urls' => [
-                'mp3' => 'Attraccion.mp3', 
-                'ogg' => 'Attraccion.ogg',
+                'mp3' => 'Attracion.mp3', 
+                'ogg' => 'Attracion.ogg',
                 'png' => 'Attracion.png'
                 ] 
             ]
