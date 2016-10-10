@@ -44,7 +44,8 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                '' => '/home/index'
+                '' => '/home/index',
+                'music/<songId>' => 'music'
             ],
         ],    
     ],

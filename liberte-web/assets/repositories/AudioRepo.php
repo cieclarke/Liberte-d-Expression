@@ -14,7 +14,7 @@ class AudioRepo
         foreach($data as $a)
         {
             
-           $audio  = new \app\assets\models\Audio($a['title'], $a['description'], $a['urls']);
+           $audio  = new \app\assets\models\Audio($a['id'], $a['title'], $a['description'], $a['urls']);
             
            
             array_push($songs, $audio);

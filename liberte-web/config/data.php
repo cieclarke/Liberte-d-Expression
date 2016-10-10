@@ -30,14 +30,16 @@ return
         ],
     
     'Audio' => [
-            ['title' => 'Attracion', 'description' => 'Attracion', 'urls' => [
-                'mp3' => 'Atraccion.mp3', 
-                'ogg' => 'Atraccion.ogg' 
+            ['id' => 'CloseToYou', 'title' => 'Close To You', 'description' => 'Close To You', 'urls' => [
+                'mp3' => 'Close to You.mp3', 
+                'ogg' => 'Close to You.ogg',
+                'png' => 'Close to You.png'  
                 ] 
             ],
-            ['title' => 'Close To You', 'description' => 'Close To You', 'urls' => [
-                'mp3' => 'Close to You.mp3', 
-                'ogg' => 'Close to You.ogg' 
+            ['id' => 'Attracion',  'title' => 'Attracion', 'description' => 'Attracion', 'urls' => [
+                'mp3' => 'Attraccion.mp3', 
+                'ogg' => 'Attraccion.ogg',
+                'png' => 'Attracion.png'
                 ] 
             ]
         ],
