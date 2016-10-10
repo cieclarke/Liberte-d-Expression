@@ -44,9 +44,6 @@ header {
     position: relative;
 }
 header::before {
-    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(50,50,50,0) 98%, rgba(51,51,51,1) 100%);
-background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(50,50,50,0) 98%,rgba(51,51,51,1) 100%);
-background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(50,50,50,0) 98%,rgba(51,51,51,1) 100%);
     content: '';
     height: 100%;
     position: absolute;
@@ -58,6 +55,9 @@ footer, main, section {
 }
 p, li, article, figcaption {
 	margin-bottom: 0.75rem; /* 1.5 x 0.5 = 0.75, where 1.5 = def. body line-height & 0.5 = proportion allocated for bottom margins */
+}
+main {
+    min-height: 25em;
 }
 nav ul {
     display: table;
@@ -95,14 +95,11 @@ nav a {
 }
 .home main {
     border-top: 0;
-    min-height: 625px;
+    min-height: 600px;
 }
 .list-standard li {
     list-style: inside none circle;
     padding-left: 1.67%;
-}
-main {
-    border-top: 10px solid;
 }
 .menu-general a {
     display: block;
@@ -121,9 +118,16 @@ main {
     position: absolute;
     width: 1px
 }
+.paintings main li {
+    border: 5px solid #fafafa;
+    border-radius: 50px 0; 
+    margin-bottom: 1.75em;
+    min-height: 15em;
+}
 .site-home {
     height: 165px;
     margin-bottom: 0;
+    position: relative;
     width: 280px;
 }
 .skip:active, .skip:focus {
@@ -137,7 +141,14 @@ main {
 
 
 	/* class elements: =. */
-
+    .paintings main li {
+        float: left;
+        margin-right: 2%;
+        width: 49%;
+    }
+    .paintings main li:nth-child(2n-2) {
+        margin-right: 0;
+    }
 }
 
 /*   Media between 900 and 1023
@@ -149,9 +160,18 @@ main {
 	/* class elements: =. */
     .home .introduction {
         border-radius: 12em 0;
-        margin: 7.5rem auto;
+        margin: 5.25rem auto;
         width: 60%
-    }    
+    }  
+    .paintings main li {
+        width: 32%;
+    }
+    .paintings main li:nth-child(2n-2) {
+        margin-right: 2%;
+    }
+    .paintings main li:nth-child(3n-3) {
+		margin-right: 0;
+	}
 
 }
 
@@ -164,11 +184,16 @@ main {
     footer {
         padding: 2.5rem 0; 
     }
-    header > *, main, footer > * {
-		margin-left: auto;
+    header {
+        border-radius: 40px 40px 0 0;
+        margin-top: 1.75em;
+    }
+    body {
+        margin-left: auto;
         margin-right: auto;
-        width: 1200px
-	}    
+        padding-left: 30px;
+        width: 1200px;
+    }
     footer > * {
 		padding-left: 20px;
         padding-right: 20px;
@@ -176,8 +201,8 @@ main {
     
 	/* class elements: =. */
     .site-home {
-        position: relative;
-        right: 460px; /* (1200 - 280) / 2 */
+        left: -30px;
+        top: -1.5em;
     }
 
 }

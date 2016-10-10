@@ -94,13 +94,9 @@ h6 {
 h2:first-child, h3:first-child {
 	margin-top: 0;
 }
-nav a {
-	font-family: OpenSans-Bold;
-	font-size: 1rem;
-}
 textarea {
     font-family: arial;
-    font-size: 1rem;
+    font-size: 1.0rem;
 }
 
 /* pseudo-classes */
@@ -115,7 +111,11 @@ textarea {
 .menu-horiz li {
     white-space: nowrap
 }
-
+.menu-site a {
+	font-family: ParisJeTAime;
+	font-size: 1.1rem;
+    letter-spacing: 0.02em;
+}
 
 /*   Media between 480 and 767
 /*******************************************************************/
@@ -131,12 +131,12 @@ textarea {
 /*******************************************************************/
 @media only screen and (min-width: 768px) {
 
-	nav a {
-		font-size: 1.4rem;
-	}
+	
 
 	/* class elements: =. */
-
+    .menu-site a {
+		font-size: 1.6rem;
+	}
 
 
 

@@ -65,19 +65,19 @@ AppAsset::register($this);
         
         <nav role="navigation">
             <ul class="menu-site">
-                <li>
+                <li class="home">
                     <a href="/">Home</a>
                 </li>
-                <li>
+                <li class="paintings">
                     <a href="/paintings/">Paintings</a>
                 </li>
-                <li>
+                <li class="interior-design">
                     <a href="/interior-design/">Interior Design</a>
                 </li>
-                <li>
+                <li class="music">
                     <a href="/music/">Music</a>
                 </li>
-                <li>
+                <li class="books">
                     <a href="/books/">Childrens' Books</a>
                 </li>
             </ul>
