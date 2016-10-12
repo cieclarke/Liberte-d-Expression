@@ -41,6 +41,7 @@ dt:after {
 	content: ":"
 }
 header {
+    height: 12em;
     position: relative;
 }
 header::before {
@@ -58,6 +59,10 @@ p, li, article, figcaption {
 }
 main {
     min-height: 25em;
+}
+nav {
+    bottom: 0;
+    position: absolute;
 }
 nav ul {
     display: table;
@@ -127,7 +132,7 @@ nav a {
 .site-home {
     height: 165px;
     margin-bottom: 0;
-    position: relative;
+    position: absolute;
     width: 280px;
 }
 .skip:active, .skip:focus {
