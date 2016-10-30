@@ -16,7 +16,7 @@ class HomeController extends Controller
 
     public function actionIndex()
     {
-        $this->view->params['class'] = 'home';
+        $this->view->params['class'] = 'page-home';
         $vm = new \app\models\GalleryViewModel();
         
         return $this->render('index', [

@@ -16,7 +16,7 @@ class AboutController extends Controller
 
     public function actionIndex()
     {
-        $this->view->params['class'] = 'about';
+        $this->view->params['class'] = 'page-about';
         $vm = new \app\models\GalleryViewModel();
 
         return $this->render('index', [

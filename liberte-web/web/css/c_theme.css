@@ -27,6 +27,12 @@ header::before {
 html {
 	background-color: #333;
 }
+section h3 {
+	text-shadow: 1px 1px 1px #000;
+}
+section li a {
+	color: #fff;
+}
 
 /* pseudo-classes */
 :link, :visited {
@@ -43,53 +49,6 @@ nav :link, nav :visited {
 }
 
 /* class elements: =. */
-.books h1 {
-	color: #eb65a0;
-} 
-.books main {
-	background: #5bb12f;
-	background: -moz-linear-gradient(top, rgba(155,83,156,1) 0%, rgba(51,51,51,0) 100%);
-	background: -webkit-linear-gradient(top, rgba(155,83,156,1) 0%,rgba(51,51,51,0) 100%);
-	background: linear-gradient(to bottom, rgba(155,83,156,1) 0%,rgba(51,51,51,0) 100%);
-}
-.books .menu-site .books {
-	background: #9b539c;
-	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(155,83,156,1) 100%);
-	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(155,83,156,1) 100%);
-	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(155,83,156,1) 100%);
-	border-radius: 25px 0 0 0;
-} 
-.home main {
-	background: #bccf02;
-	background: -moz-linear-gradient(top, rgba(188,207,2,1) 0%, rgba(51,51,51,0) 40%) !important;
-	background: -webkit-linear-gradient(top, rgba(188,207,2,1) 0%,rgba(51,51,51,0) 40%) !important;
-	background: linear-gradient(to bottom, rgba(188,207,2,1) 0%,rgba(51,51,51,0) 40%) !important;
-}
-.home .introduction {
-	box-shadow: 30px 30px 30px 0 rgba(0, 0, 0, 0.25);
-} 
-.home .menu-site .home {
-	background: #bccf02;
-	background: -webkit-linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 100%);
-	background: -o-linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 100%);
-	background: linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 100%);
-	border-radius: 0 25px 0 0;
-}
-.interior-design h1 {
-	color: #267dbd;
-}
-.interior-design main {
-	background: #73c5e1;
-	background: -moz-linear-gradient(top, rgba(115,197,225,1) 0%, rgba(51,51,51,0) 100%);
-	background: -webkit-linear-gradient(top, rgba(115,197,225,1) 0%,rgba(51,51,51,0) 100%);
-	background: linear-gradient(to bottom, rgba(115,197,225,1) 0%,rgba(51,51,51,0) 100%);
-}
-.interior-design .menu-site .interior-design {
-	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(115,197,225,1) 100%);
-	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(115,197,225,1) 100%);
-	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(115,197,225,1) 100%);
-	border-radius: 25px 25px 0 0;
-}
 .menu-site a {
 	text-shadow: 1px 1px 10px #333;
 }
@@ -123,36 +82,92 @@ nav :link, nav :visited {
 	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(215,186,215,0) 40%,rgba(155,83,156,1) 100%);
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(215,186,215,0) 40%,rgba(155,83,156,1) 100%);
 } 
-.music h1 {
+.page-books h1 {
+	color: #eb65a0;
+} 
+.page-books main {
+	background: #9b539c;
+	background: -moz-linear-gradient(top, rgba(155,83,156,1) 0%, rgba(84,44,80,0.85) 1.75em, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(top, rgba(155,83,156,1) 0%,rgba(84,44,80,0.85) 1.75em,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to bottom, rgba(155,83,156,1) 0%,rgba(84,44,80,0.85) 1.75em,rgba(255,255,255,0) 100%);
+}
+.page-books .menu-site .books {
+	background: #9b539c;
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(155,83,156,1) 75%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(155,83,156,1) 75%);
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(155,83,156,1) 75%);
+	border-radius: 25px 0 0 0;
+} 
+.page-home main {
+	background: #bccf02;
+	background: -moz-linear-gradient(top, rgba(188,207,2,1) 0%, rgba(86,95,9,0.85) 1.75em, rgba(255,255,255,0) 50%) !important;
+	background: -webkit-linear-gradient(top, rgba(188,207,2,1) 0%,rgba(86,95,9,0.85) 1.75em,rgba(255,255,255,0) 50%) !important;
+	background: linear-gradient(to bottom, rgba(188,207,2,1) 0%,rgba(86,95,9,0.85) 1.75em,rgba(255,255,255,0) 50%) !important;
+}
+.page-home .introduction {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 6em 0;
+	box-shadow: 30px 30px 30px 0 rgba(0, 0, 0, 0.25);
+}
+.page-home .menu-site .home {
+	background: #bccf02;
+	background: -webkit-linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 75%);
+	background: -o-linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 75%);
+	background: linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 75%);
+	border-radius: 0 25px 0 0;
+}
+.page-interior-design h1 {
+	color: #267dbd;
+}
+.page-interior-design main {
+	background: #73c5e1;
+	background: -moz-linear-gradient(top, rgba(115,197,225,1) 0%, rgba(60,92,108,0.85) 1.75em, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(top, rgba(115,197,225,1) 0%,rgba(60,92,108,0.85) 1.75em,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to bottom, rgba(115,197,225,1) 0%,rgba(60,92,108,0.85) 1.75em,rgba(255,255,255,0) 100%);
+}
+.page-interior-design .menu-site .interior-design {
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(115,197,225,1) 75%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(115,197,225,1) 75%);
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(115,197,225,1) 75%);
+	border-radius: 25px 25px 0 0;
+}
+.page-music h1 {
 	color: #9b539c;
 }
-.music main {
-	background: #eb65a0;
-	background: -moz-linear-gradient(top, rgba(235,101,160,1) 0%, rgba(51,51,51,0) 100%);
-	background: -webkit-linear-gradient(top, rgba(235,101,160,1) 0%,rgba(51,51,51,0) 100%);
-	background: linear-gradient(to bottom, rgba(235,101,160,1) 0%,rgba(51,51,51,0) 100%);
+.page-music h2 {
+	color: #9b539c;
 }
-.music .menu-site .music {
-	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(235,101,160,1) 100%);
-	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(235,101,160,1) 100%);
-	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(235,101,160,1) 100%);
+.page-music h3 {
+	color: #999;
+}
+.page-music main {
+	background: #eb65a0;
+	background: -moz-linear-gradient(top, rgba(235,101,160,1) 0%, rgba(107,56,73,0.85) 1.75em, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(top, rgba(235,101,160,1) 0%,rgba(107,56,73,0.85) 1.75em,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to bottom, rgba(235,101,160,1) 0%,rgba(107,56,73,0.85) 1.75em,rgba(255,255,255,0) 100%);
+}
+.page-music .menu-site .music {
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(235,101,160,1) 75%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(235,101,160,1) 75%);
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(235,101,160,1) 75%);
 	border-radius: 25px 25px 0 0;
 }
-.paintings h1 {
+.page-paintings h1 {
 	color: #bccf02;
 } 
-.paintings main {
+.page-paintings main {
 	background: #5bb12f;
-	background: -moz-linear-gradient(top, rgba(91,177,47,1) 0%, rgba(51,51,51,0) 100%);
-	background: -webkit-linear-gradient(top, rgba(91,177,47,1) 0%,rgba(51,51,51,0) 100%);
-	background: linear-gradient(to bottom, rgba(91,177,47,1) 0%,rgba(51,51,51,0) 100%);
+	background: -moz-linear-gradient(top, rgba(91,177,47,1) 0%, rgba(47,89,24,0.85) 1.75em, rgba(51,51,51,0) 100%);
+	background: -webkit-linear-gradient(top, rgba(91,177,47,1) 0%,rgba(47,89,24,0.85) 1.75em,rgba(51,51,51,0) 100%);
+	background: linear-gradient(to bottom, rgba(91,177,47,1) 0%,rgba(47,89,24,0.85) 1.75em,rgba(51,51,51,0) 100%);	
 }
-.paintings .menu-site .paintings {
-	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%,  rgba(91,177,47,1) 100%);
-	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(91,177,47,1) 100%);
-	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(91,177,47,1) 100%);
+.page-paintings .menu-site .paintings {
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%,  rgba(91,177,47,1) 75%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(91,177,47,1) 75%);
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(91,177,47,1) 75%);
 	border-radius: 25px 25px 0 0;
 }
+
 
 .site-home {
     background: url(../images/LiberteLogoSept2016White_280x165b.png) no-repeat center center;

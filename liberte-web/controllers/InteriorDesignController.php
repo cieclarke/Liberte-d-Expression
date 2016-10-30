@@ -16,7 +16,7 @@ class InteriorDesignController extends Controller
 
     public function actionIndex()
     {
-        $this->view->params['class'] = 'interior-design';
+        $this->view->params['class'] = 'page-interior-design';
         $vm = new \app\models\GalleryViewModel();
 
         return $this->render('index', [

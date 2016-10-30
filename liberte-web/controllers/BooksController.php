@@ -16,7 +16,7 @@ class BooksController extends Controller
 
     public function actionIndex()
     {
-        $this->view->params['class'] = 'books';
+        $this->view->params['class'] = 'page-books';
         $vm = new \app\models\BookViewModel();
 
         return $this->render('index', [

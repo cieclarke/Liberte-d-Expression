@@ -17,6 +17,9 @@ html {
 *, *:before, *:after {
 	-webkit-box-sizing: inherit; -moz-box-sizing: inherit; box-sizing: inherit /* apply desired box model to all but allowing local change */
 }
+audio {
+    width: 100%;
+}
 body {
     min-width: 320px; /* fix the minimum width */
 }
@@ -40,8 +43,23 @@ dt {
 dt:after {
 	content: ":"
 }
+footer, main, section {
+    overflow: hidden;
+    padding: 0 1.67% 3.25rem; /* 10px either side at full width: 20/1200 x 100 = 1.67 */
+}
+footer ul {
+    display: table;
+    margin-bottom: 1.75em;
+    table-layout: fixed;
+    text-align: center;
+    width: 100%;
+}
+footer li a {
+    display: block;
+    padding: 12px;
+}
 header {
-    height: 12em;
+    height: 14em;
     position: relative;
 }
 header::before {
@@ -50,7 +68,7 @@ header::before {
     position: absolute;
     width: 100%;
 }
-footer, main, section {
+main, section {
     overflow: hidden;
     padding: 2.5rem 1.67% 3.25rem; /* 10px either side at full width: 20/1200 x 100 = 1.67 */
 }
@@ -79,6 +97,9 @@ nav a {
     display: block;
     padding: 12px;
 }
+section {
+    margin-bottom: 1.75em;
+}
 
 /* class elements: =. */
 .anchor-image {
@@ -90,17 +111,6 @@ nav a {
 .hide {  /* invisible & inaudible */
     display: none;
     visibility: hidden
-}
-.home .introduction {
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 6em 0;
-    margin: 3.5rem auto;
-    padding: 7.5rem 10% 6.5rem;
-    width: 90%
-}
-.home main {
-    border-top: 0;
-    min-height: 600px;
 }
 .list-standard li {
     list-style: inside none circle;
@@ -123,12 +133,50 @@ nav a {
     position: absolute;
     width: 1px
 }
-.paintings main li {
+.page-home .introduction {
+    margin: 3.5rem auto;
+    padding: 7.5rem 10% 6.5rem;
+    width: 90%
+}
+.page-home main {
+    border-top: 0;
+    min-height: 600px;
+}
+.page-music h2 {
+    
+}
+.page-music section {
+    background: rgba(235, 196, 168, 0.25);
+    border-radius: 6em 0;
+    box-shadow: 30px 30px 30px 0 rgba(0, 0, 0, 0.25);
+    margin: 0 5% 1.75em 5%;
+    padding: 7.5rem 10% 6.5rem;
+    position: relative;
+}
+.page-music .music-play img {
+    margin-bottom: 1.75em;
+    width: 100%;
+}
+.page-paintings main img {
+	bottom: -50%;
+    margin: auto;
+    position: absolute;
+    top: -50%;
+    width: 100%;
+}
+.page-paintings main li {
     border: 5px solid #fafafa;
     border-radius: 50px 0; 
+    box-shadow: 2px 2px 5px #000 inset, 30px 30px 30px 0 rgba(0, 0, 0, 0.25);
     margin-bottom: 1.75em;
-    min-height: 15em;
+    height: 15em;
+    overflow: hidden;
+    position: relative;
 }
+.page-paintings .paintings-gallery {
+
+}
+
 .site-home {
     height: 165px;
     margin-bottom: 0;
@@ -143,15 +191,23 @@ nav a {
 /*******************************************************************/
 @media only screen and (min-width: 480px) {
 	/*body:before { content: "Media between 480 and 767"; }*/
-
+    footer li {
+        display: inline-block;
+    }
+    footer li a {
+        border-right: 1px solid #fff;
+    }
+    footer li:last-child a {
+        border-right: 0;
+    }
 
 	/* class elements: =. */
-    .paintings main li {
+    .page-paintings main li {
         float: left;
         margin-right: 2%;
         width: 49%;
     }
-    .paintings main li:nth-child(2n-2) {
+    .page-paintings main li:nth-child(2n-2) {
         margin-right: 0;
     }
 }
@@ -163,18 +219,32 @@ nav a {
 
 
 	/* class elements: =. */
-    .home .introduction {
+    .page-home .introduction {
         border-radius: 12em 0;
         margin: 5.25rem auto;
         width: 60%
     }  
-    .paintings main li {
+    .page-music section {
+        float: left;
+        padding: 3em 5% 4em;
+    }
+    .page-music .music-list {
+        margin-left: 0;
+        margin-right: 3%;
+        width: 55%;
+    }
+    .page-music .music-play {
+        margin-left: 0;
+        margin-right: 0;
+        width: 42%;
+    }
+    .page-paintings main li {
         width: 32%;
     }
-    .paintings main li:nth-child(2n-2) {
+    .page-paintings main li:nth-child(2n-2) {
         margin-right: 2%;
     }
-    .paintings main li:nth-child(3n-3) {
+    .page-paintings main li:nth-child(3n-3) {
 		margin-right: 0;
 	}
 
@@ -191,6 +261,7 @@ nav a {
     }
     header {
         border-radius: 40px 40px 0 0;
+        height: 12em;
         margin-top: 1.75em;
     }
     body {

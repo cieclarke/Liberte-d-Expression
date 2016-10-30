@@ -22,7 +22,7 @@ $(function () {
 		}
 	}).register('screen and (min-width: 900px)', {
 		match : function() {
-			$(".home main").bgswitcher({
+			$(".page-home main").bgswitcher({
 				images: ["../images/background_books_01.jpg",
 				"../images/background_books_02.jpg",
 				"../images/background_books_03.jpg", 

@@ -16,7 +16,7 @@ class MusicController extends Controller
 
     public function actionIndex($songId = '')
     {
-        $this->view->params['class'] = 'music';
+        $this->view->params['class'] = 'page-music';
         $vm = new \app\models\AudioViewModel();
         $songForView = $vm['Songs'][0];
 

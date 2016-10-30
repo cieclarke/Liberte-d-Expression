@@ -16,7 +16,7 @@ class PaintingsController extends Controller
 
     public function actionIndex()
     {
-        $this->view->params['class'] = 'paintings';
+        $this->view->params['class'] = 'page-paintings';
         $vm = new \app\models\GalleryViewModel();
 
         return $this->render('index', [
