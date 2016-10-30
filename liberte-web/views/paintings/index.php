@@ -12,10 +12,10 @@
         <img src="/images/paintings_in-situ_winter-mist.jpg" alt="Winter Mist" />
     </li>
     <li class="in-situ-03">
-    
+        <img src="/images/paintings_in-situ_seizing-opportunities.jpg" alt="Seizing opportunities" />
     </li>
     <li class="in-situ-04">
-    
+        <img src="/images/paintings_in-situ_eden.jpg" alt="Eden" />
     </li>
     <li class="in-situ-05">
     
