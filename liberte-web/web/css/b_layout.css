@@ -59,18 +59,12 @@ footer li a {
     padding: 12px;
 }
 header {
-    height: 14em;
+    height: 9.5em;
     position: relative;
-}
-header::before {
-    content: '';
-    height: 100%;
-    position: absolute;
-    width: 100%;
 }
 main, section {
     overflow: hidden;
-    padding: 2.5rem 1.67% 3.25rem; /* 10px either side at full width: 20/1200 x 100 = 1.67 */
+    padding: 3.5rem 1.67% 3.25rem; /* 10px either side at full width: 20/1200 x 100 = 1.67 */
 }
 p, li, article, figcaption {
 	margin-bottom: 0.75rem; /* 1.5 x 0.5 = 0.75, where 1.5 = def. body line-height & 0.5 = proportion allocated for bottom margins */
@@ -146,12 +140,7 @@ section {
     
 }
 .page-music section {
-    background: rgba(235, 196, 168, 0.25);
-    border-radius: 6em 0;
-    box-shadow: 30px 30px 30px 0 rgba(0, 0, 0, 0.25);
     margin: 0 5% 1.75em 5%;
-    padding: 7.5rem 10% 6.5rem;
-    position: relative;
 }
 .page-music .music-play img {
     margin-bottom: 1.75em;
@@ -165,20 +154,37 @@ section {
     width: 100%;
 }
 .page-paintings main li {
-    border: 5px solid #fafafa;
-    border-radius: 50px 0; 
-    box-shadow: 2px 2px 5px #000 inset, 30px 30px 30px 0 rgba(0, 0, 0, 0.25);
     margin-bottom: 1.75em;
     height: 15em;
     overflow: hidden;
     position: relative;
 }
+
+
+
+
+.container-lozenge {
+    border: 5px solid;
+    padding: 0;
+    position: relative;
+}
+.container-lozenge::after {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+
 .page-paintings .paintings-gallery {
 
 }
 
 .site-home {
-    height: 165px;
+    height: 90px;
     margin-bottom: 0;
     position: absolute;
     width: 280px;
@@ -200,6 +206,9 @@ section {
     footer li:last-child a {
         border-right: 0;
     }
+    header {
+        height: 12.75em;
+    }
 
 	/* class elements: =. */
     .page-paintings main li {
@@ -209,6 +218,10 @@ section {
     }
     .page-paintings main li:nth-child(2n-2) {
         margin-right: 0;
+    }
+    .site-home {
+        height: 144px;
+        width: 450px;
     }
 }
 
@@ -226,7 +239,6 @@ section {
     }  
     .page-music section {
         float: left;
-        padding: 3em 5% 4em;
     }
     .page-music .music-list {
         margin-left: 0;
@@ -261,8 +273,8 @@ section {
     }
     header {
         border-radius: 40px 40px 0 0;
-        height: 12em;
-        margin-top: 1.75em;
+        height: 10em;
+        margin-top: 2.5em;
     }
     body {
         margin-left: auto;
@@ -278,7 +290,7 @@ section {
 	/* class elements: =. */
     .site-home {
         left: -30px;
-        top: -1.5em;
+        top: -2.0em;
     }
 
 }

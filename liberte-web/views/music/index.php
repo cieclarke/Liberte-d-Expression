@@ -4,10 +4,10 @@
 
 <h1 class="off-screen">Music</h1>
 
-<section class="music-list">
-    <h2>Music</h2>
+<section class="music-list container-lozenge">
+    <h2 class="off-screen">Music</h2>
     
-    <h3>Songs in English</h3>
+    <h3>In English</h3>
     <ul>
         <li <?php echo strtolower($model->id) == 'closetoyou' ? 'class=\'selected\'' : ''; ?>><a href='/music/CloseToYou'>Close to You</a></li>
         <li <?php echo strtolower($model->id) == 'aboutagirl' ? 'class=\'selected\'' : ''; ?>><a href='/music/AboutAGirl'>About a Girl</a></li>
@@ -17,13 +17,13 @@
         <li <?php echo strtolower($model->id) == 'youare' ? 'class=\'selected\'' : ''; ?>><a href='/music/YouAre'>You Are</a></li>
     </ul>
 
-    <h3>Songs in French</h3>
+    <h3>In French</h3>
     <ul>
         <li <?php echo strtolower($model->id) == 'jaivoulufuir' ? 'class=\'selected\'' : ''; ?>><a href='/music/JaiVouluFuir'>Jai voulu fuir</a></li>
         <li <?php echo strtolower($model->id) == 'caroline' ? 'class=\'selected\'' : ''; ?>><a href='/music/Caroline'>Caroline</a></li>
     </ul>
 
-    <h3>Songs in Spanish</h3>
+    <h3>In Spanish</h3>
     <ul>
         <li <?php echo strtolower($model->id) == 'cercadeti' ? 'class=\'selected\'' : ''; ?>><a href='/music/CercaDeTi'>Cerca de ti</a></li>
         <li <?php echo strtolower($model->id) == 'attracion' ? 'class=\'selected\'' : ''; ?>><a href='/music/Attracion'>Attracion</a></li>
@@ -31,8 +31,8 @@
     </ul>
 </section>
 
-<section class="music-play">
-    <h2>Song</h2>
+<section class="music-play container-lozenge">
+    <h2 class="off-screen">Song</h2>
     
     <img alt="Music score for <?php echo $model->title; ?>" src="http://libertedexpression.co.uk/art/audio/<?php echo $model->types['png']; ?>" />
     <!-- HTML5 default player -->
