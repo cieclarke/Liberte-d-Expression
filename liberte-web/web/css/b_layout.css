@@ -70,7 +70,7 @@ p, li, article, figcaption {
 	margin-bottom: 0.75rem; /* 1.5 x 0.5 = 0.75, where 1.5 = def. body line-height & 0.5 = proportion allocated for bottom margins */
 }
 main {
-    min-height: 25em;
+    /*min-height: 25em;*/
 }
 nav {
     bottom: 0;
@@ -102,13 +102,25 @@ section {
     overflow: hidden;
     text-indent: -999em
 }
+.container-lozenge {
+    border: 5px solid;
+    padding: 0;
+    position: relative;
+}
+.container-lozenge::after {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 .hide {  /* invisible & inaudible */
     display: none;
     visibility: hidden
 }
 .list-standard li {
-    list-style: inside none circle;
-    padding-left: 1.67%;
+    padding-left: 25px;
 }
 .menu-general a {
     display: block;
@@ -153,34 +165,29 @@ section {
     top: -50%;
     width: 100%;
 }
-.page-paintings main li {
-    margin-bottom: 1.75em;
-    height: 15em;
-    overflow: hidden;
-    position: relative;
+.page-paintings .container-lozenge {
+    border: none;
 }
 
-
-
-
-.container-lozenge {
-    border: 5px solid;
-    padding: 0;
-    position: relative;
+.page-paintings .container-lozenge.in-situ-07 {
+    background: url(../images/paintings_in-situ_downlights_00.jpg) no-repeat center top;
+    box-shadow: 2px 15px 25px #191919 inset;
+    height: 29em;
+    padding: 1.5em;
 }
-.container-lozenge::after {
-    content: '';
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+.page-paintings .container-lozenge.in-situ-07::after {
+    content: none;
 }
-
-
-
 .page-paintings .paintings-gallery {
-
+    clear: both;
+    -webkit-columns: 3 211px; -moz-columns: 3 211px; columns: 3 211px;
+    -webkit-column-gap: 0; -moz-column-gap: 0; column-gap: 0;
+}
+.page-paintings .paintings-gallery > li {
+    -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid;
+    margin: 0 15px 3.0em;
+    height: 12em;
+    overflow: hidden;
 }
 
 .site-home {
@@ -211,6 +218,7 @@ section {
     }
 
 	/* class elements: =. */
+    /*
     .page-paintings main li {
         float: left;
         margin-right: 2%;
@@ -218,6 +226,10 @@ section {
     }
     .page-paintings main li:nth-child(2n-2) {
         margin-right: 0;
+    }
+    */
+    .page-paintings .paintings-gallery > li {
+        height: 13em;
     }
     .site-home {
         height: 144px;
@@ -250,6 +262,13 @@ section {
         margin-right: 0;
         width: 42%;
     }
+    .page-paintings .container-lozenge.in-situ-04 {
+        height: 17.0em;
+    }
+    .page-paintings .container-lozenge.in-situ-06 {
+        height: 9.0em;
+    }
+    /*
     .page-paintings main li {
         width: 32%;
     }
@@ -259,7 +278,7 @@ section {
     .page-paintings main li:nth-child(3n-3) {
 		margin-right: 0;
 	}
-
+    */
 }
 
 /*   Media 1280 and above
@@ -288,6 +307,18 @@ section {
 	}
     
 	/* class elements: =. */
+    .page-paintings .paintings-gallery > li {
+        height: 15em;
+    }
+    .page-paintings .container-lozenge.in-situ-04 {
+        height: 19.0em;
+    }
+    .page-paintings .container-lozenge.in-situ-06 {
+        height: 11.0em;
+    }
+    .page-paintings .container-lozenge.in-situ-08 {
+        height: 19.0em;
+    }
     .site-home {
         left: -30px;
         top: -2.0em;
