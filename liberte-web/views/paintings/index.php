@@ -30,12 +30,8 @@
 
 
 <section class="detail container-lozenge">
-    <header>
-        <h2 class="off-screen">Exhibition details</h2>
 
-        <h3 id="barclays">Barclays Bank and Candid Arts Trust</h3>
-    </header>
-
+    <h2 id="barclays">Barclays Bank and Candid Arts Trust</h2>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis vitae nisi eget eleifend. Phasellus tristique ut augue a consequat. Sed at dignissim augue, et tempor enim. Nunc viverra magna ut ex pretium, ac tincidunt ante tempus. Vestibulum non purus id augue fringilla varius vitae eu dolor. 
     </p>
@@ -43,8 +39,7 @@
         Proin lectus metus, facilisis nec mollis non, egestas convallis ante. Vestibulum nec nisi malesuada, sodales massa nec, dictum nisi. Sed id magna suscipit, vestibulum magna id, ultricies nisi. Etiam eu aliquet purus. Nullam eget augue interdum tortor semper finibus eget a urna. Suspendisse pretium justo non erat semper, nec vulputate velit egestas. Nam vitae sollicitudin tortor, id porta justo. Duis sagittis purus nec consectetur euismod.
     </p>
 
-    <h3 id="light">Light Gallery</h3>
-
+    <h2 id="light">Light Gallery</h2>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis vitae nisi eget eleifend. Phasellus tristique ut augue a consequat. Sed at dignissim augue, et tempor enim. Nunc viverra magna ut ex pretium, ac tincidunt ante tempus. Vestibulum non purus id augue fringilla varius vitae eu dolor. 
     </p>
@@ -52,8 +47,7 @@
         Proin lectus metus, facilisis nec mollis non, egestas convallis ante. Vestibulum nec nisi malesuada, sodales massa nec, dictum nisi. Sed id magna suscipit, vestibulum magna id, ultricies nisi. Etiam eu aliquet purus. Nullam eget augue interdum tortor semper finibus eget a urna. Suspendisse pretium justo non erat semper, nec vulputate velit egestas. Nam vitae sollicitudin tortor, id porta justo. Duis sagittis purus nec consectetur euismod.
     </p>
 
-    <h3 id="torbay">Torbay Hospital</h3>
-
+    <h2 id="torbay">Torbay Hospital</h2>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis vitae nisi eget eleifend. Phasellus tristique ut augue a consequat. Sed at dignissim augue, et tempor enim. Nunc viverra magna ut ex pretium, ac tincidunt ante tempus. Vestibulum non purus id augue fringilla varius vitae eu dolor. 
     </p>

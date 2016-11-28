@@ -2,7 +2,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 ///   Colours and file resources (reskins) - def. viewport 320px wide        ///
 ///                                                                          ///
-///   Queries - nicholas.bergquist@informa.com                               ///
+///   Queries - nick_bergquist@yahoo.co.uk                                   ///
 ////////////////////////////////////////////////////////////////////////////////
 */
 
@@ -26,10 +26,6 @@ main {
 	background: url(../images/old509.jpg) no-repeat fixed center center / cover; 
 	box-shadow: 0 0 10px 15px #fff inset;
 	color: #fff;
-}
-section header {
-    background: url(../images/toplights_00.jpg) repeat-x 0 0;
-	border-radius: 0;
 }
 section li a {
 	color: #fff;
@@ -59,10 +55,10 @@ nav :link, nav :visited {
     box-shadow: 10px 10px 50px #999 inset; 
 }
 .detail {
-	background: #fafafa;
+	background: #fff url(../images/toplights_00.jpg) repeat-x 0 0;
 	color: #000;
 }
-.detail h3 {
+.detail h2 {
     border-bottom-color: #5bb12f;
 }
 .list-standard li {
