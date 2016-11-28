@@ -22,8 +22,14 @@ header {
 html {
 	background-color: #333;
 }
-section h3 {
-	text-shadow: 1px 1px 1px #000;
+main {
+	background: url(../images/old509.jpg) no-repeat fixed center center / cover; 
+	box-shadow: 0 0 10px 15px #fff inset;
+	color: #fff;
+}
+section header {
+    background: url(../images/toplights_00.jpg) repeat-x 0 0;
+	border-radius: 0;
 }
 section li a {
 	color: #fff;
@@ -47,16 +53,23 @@ nav :link, nav :visited {
 .container-lozenge {
     border-color: #fafafa;
     border-radius: 50px 0; 
-    box-shadow: 5px 15px 15px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 15px 15px 0 rgba(0, 0, 0, 0.25); 
 }
 .container-lozenge::after {
-    box-shadow: 2px 15px 25px #191919 inset;
+    box-shadow: 10px 10px 50px #999 inset; 
+}
+.detail {
+	background: #fafafa;
+	color: #000;
+}
+.detail h3 {
+    border-bottom-color: #5bb12f;
 }
 .list-standard li {
 	background: url(../images/liberte_list_20x20_01.png) no-repeat left top;
 }
 .menu-site a {
-	text-shadow: 1px 1px 10px #333;
+	text-shadow: 1px 1px 10px #000;
 }
 .menu-site .home {
 	background: #bccf02;
@@ -88,17 +101,11 @@ nav :link, nav :visited {
 	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(215,186,215,0) 40%,rgba(155,83,156,1) 100%);
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(215,186,215,0) 40%,rgba(155,83,156,1) 100%);
 } 
-.page-books h1 {
-	color: #eb65a0;
-} 
 .page-books main {
 	background: #9b539c;
 	background: -moz-linear-gradient(top, rgba(155,83,156,1) 0%, rgba(84,44,80,0.85) 5.75em, rgba(255,255,255,0) 100%);
 	background: -webkit-linear-gradient(top, rgba(155,83,156,1) 0%,rgba(84,44,80,0.85) 5.75em,rgba(255,255,255,0) 100%);
 	background: linear-gradient(to bottom, rgba(155,83,156,1) 0%,rgba(84,44,80,0.85) 5.75em,rgba(255,255,255,0) 100%);
-}
-.page-books .container-lozenge {
-    border-color: #4d294e;
 }
 .page-books .menu-site .books {
 	background: #9b539c;
@@ -125,26 +132,17 @@ nav :link, nav :visited {
 	background: linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 75%);
 	border-radius: 0 25px 0 0;
 }
-.page-interior-design h1 {
-	color: #267dbd;
-}
 .page-interior-design main {
 	background: #73c5e1;
 	background: -moz-linear-gradient(top, rgba(115,197,225,1) 0%, rgba(60,92,108,0.85) 5.75em, rgba(255,255,255,0) 100%);
 	background: -webkit-linear-gradient(top, rgba(115,197,225,1) 0%,rgba(60,92,108,0.85) 5.75em,rgba(255,255,255,0) 100%);
 	background: linear-gradient(to bottom, rgba(115,197,225,1) 0%,rgba(60,92,108,0.85) 5.75em,rgba(255,255,255,0) 100%);
 }
-.page-interior-design .container-lozenge {
-    border-color: #396270;
-}
 .page-interior-design .menu-site .interior-design {
 	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(115,197,225,1) 75%);
 	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(115,197,225,1) 75%);
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(115,197,225,1) 75%);
 	border-radius: 25px 25px 0 0;
-}
-.page-music h1 {
-	color: #9b539c;
 }
 .page-music h2 {
 	color: #9b539c;
@@ -159,7 +157,6 @@ nav :link, nav :visited {
 	background: linear-gradient(to bottom, rgba(235,101,160,1) 0%,rgba(107,56,73,0.85) 5.75em,rgba(255,255,255,0) 100%);
 }
 .page-music .container-lozenge {
-    border-color: #753250;
 	border-radius: 6em 0;
 }
 .page-music .menu-site .music {
@@ -168,20 +165,21 @@ nav :link, nav :visited {
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(235,101,160,1) 75%);
 	border-radius: 25px 25px 0 0;
 }
-.page-paintings h1 {
-	color: #bccf02;
-}
 .page-paintings h2 {
-    border-bottom-color: #2d5817;
+    border-bottom-color: #5bb12f;
 }
 .page-paintings main {
+	
+	
+	/*
 	background: #5bb12f;
 	background: -moz-linear-gradient(top, rgba(91,177,47,1) 0%, rgba(47,89,24,0.85) 5.75em, rgba(51,51,51,0) 100%);
 	background: -webkit-linear-gradient(top, rgba(91,177,47,1) 0%,rgba(47,89,24,0.85) 5.75em,rgba(51,51,51,0) 100%);
-	background: linear-gradient(to bottom, rgba(91,177,47,1) 0%,rgba(47,89,24,0.85) 5.75em,rgba(51,51,51,0) 100%);	
+	background: linear-gradient(to bottom, rgba(91,177,47,1) 0%,rgba(47,89,24,0.85) 5.75em,rgba(51,51,51,0) 100%);
+	*/	
 }
-.page-paintings .container-lozenge {
-    border-color: #2d5817;
+.page-paintings nav {
+	border-bottom-color:#5bb12f;
 }
 .page-paintings .container-lozenge.in-situ-07 {
     background: url(../images/paintings_in-situ_downlights_00.jpg) no-repeat center top;
@@ -219,7 +217,9 @@ nav :link, nav :visited {
 
 
 	/* class elements: =. */
-
+	.detail {
+		border-radius: 100px 0; 
+	}
 }
 
 /*   Media 1280 and above
