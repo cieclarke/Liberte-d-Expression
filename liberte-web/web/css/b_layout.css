@@ -122,20 +122,20 @@ section {
     margin-right: 15px;
     overflow: hidden;
 }
-.detail h2 {
+.detail h3 {
     border-bottom: 3px solid;
-    margin: 0 2.5% 0.75em;
+    margin-bottom: 0.75em;
     padding-bottom: 0.4em;
     padding-top: 1em;
     position: relative;
     z-index: 1;
 }
-.detail h2:first-child {
+.detail li:first-child h3 {
+    margin-bottom: 1.75em;
     padding-top: 5em;
 }
-.detail > p {
-    padding-left: 2.5%;  /* 15px either side at full width: 30/1200 x 100 = 2.5 */
-    padding-right: 2.5%;
+.detail > ul {
+    padding: 0 2.5%;
     position: relative;
     z-index: 1;
 }
