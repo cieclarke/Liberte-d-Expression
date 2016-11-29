@@ -23,7 +23,7 @@ html {
 	background-color: #333;
 }
 main {
-	background: url(../images/old509.jpg) no-repeat fixed center center / cover; 
+	background: url(../images/background_paintings_00.jpg) no-repeat fixed center center / cover; 
 	box-shadow: 0 0 10px 15px #fff inset;
 	color: #fff;
 }
@@ -52,7 +52,7 @@ nav :link, nav :visited {
     box-shadow: 5px 15px 15px 0 rgba(0, 0, 0, 0.25); 
 }
 .container-lozenge::after {
-    box-shadow: 10px 10px 50px #999 inset; 
+    box-shadow: 0 0 4px #999 inset;
 }
 .detail {
 	background: #fff url(../images/toplights_00.jpg) repeat-x 0 0;
@@ -177,10 +177,6 @@ nav :link, nav :visited {
 .page-paintings nav {
 	border-bottom-color:#5bb12f;
 }
-.page-paintings .container-lozenge.in-situ-07 {
-    background: url(../images/paintings_in-situ_downlights_00.jpg) no-repeat center top;
-    box-shadow: 2px 15px 25px #191919 inset;
-}
 .page-paintings .list-standard :link, .page-paintings .list-standard :visited, 
 .page-paintings .list-standard :link:hover, .page-paintings .list-standard :visited:hover {
 	color: #5bb12f;
@@ -215,6 +211,9 @@ nav :link, nav :visited {
 	/* class elements: =. */
 	.detail {
 		border-radius: 100px 0; 
+	}
+	.detail.container-lozenge::after {
+		border-radius: 88px 0;
 	}
 }
 
