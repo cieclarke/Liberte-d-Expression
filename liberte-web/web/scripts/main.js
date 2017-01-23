@@ -6,7 +6,6 @@ $('html').addClass('js');
 // main control block, on DOM-ready..
 $(function () {
 	
-	
 	// viewport size dependent function calls: ranges should match those in the CSS media queries..
 	enquire.register('screen and (max-width: 767px)', {
 		match : function() {
@@ -39,7 +38,10 @@ $(function () {
 		}
 	}).register('screen and (min-width: 1024px)', {
 		match : function() {
-			
+			if ($('.page-paintings .main').length) {
+		        // restructure standard exhibitions HTML to a menu and revealed/hidden exhibition information
+		        exhibitionsRender.compress();
+	        } 
 		},
 		unmatch : function() {
 			
@@ -53,7 +55,41 @@ $(function () {
 
 });
 
-
 // METHODS
 
+var exhibitionsRender = {
+	compress : function() {
+		var $content = $('.page-paintings .main');
+		var $pageTitle = $('.page-paintings .main h1');
+		var $preamble = $pageTitle.nextUntil('section');
+		var $choice = $('<div class="choice">');
+		var $detail = $('<div class="detail container-lozenge">');
+		
+		$pageTitle.appendTo($choice);
+		$preamble.appendTo($choice);
 
+		$content.find('section').each(function() {
+			var $section = $(this).attr('class');
+			var $sectionHeading = $(this).find('h2');
+			var $information = $(this).find('.container-lozenge.image').nextAll();
+			var $infoContainer = $('<div>').attr('id', $section);
+			
+			$sectionHeading.clone().appendTo($infoContainer);
+
+			$(this).find('span').replaceWith(function(){
+				return $('<a class="container-lozenge image" />').attr('href', '#' + $section).append($(this).contents());
+			});
+
+			$information.appendTo($infoContainer);
+
+			$(this).appendTo($choice);
+			$infoContainer.appendTo($detail);
+		});
+
+		$choice.appendTo($content);
+		$detail.appendTo($content);
+	},
+	uncompress : function() {
+
+	}
+};

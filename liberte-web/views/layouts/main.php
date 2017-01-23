@@ -96,7 +96,7 @@ AppAsset::register($this);
             </li>
         </ul>
         <p>Liberte d’Expression Ltd Registered in England &amp; Wales as a company number 5850952. Registered office: Lupins Business Centre 1-3 Greenhill, Weymouth, Dorset DT4 7SP.</p>
-        <p>&copy; 2016 Liberté d'Expression Ltd., All rights reserved.</p>
+        <p>&copy; 2017 Liberté d'Expression Ltd., All rights reserved.</p>
     </footer>
 </body>
 </html>
