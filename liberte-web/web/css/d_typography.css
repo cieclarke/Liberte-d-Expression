@@ -2,8 +2,8 @@
 ////////////////////////////////////////////////////////////////////////
 ///   Page typography - default is for viewport 320px wide           ///
 ///                                                                  ///
-///   Note: Contains layout properties where these are               ///
-///   calculated from font properties.                               ///
+///   nick_bergquist@yahoo.co.uk                                     ///
+///                                                                  ///
 ////////////////////////////////////////////////////////////////////////
 */
 
@@ -45,7 +45,6 @@
   font-style: normal;
 }
 
-
 /* Generic DOM elements */
 html {
 	font-size: 62.5%; /* 62.5% of 16px = 10px */
@@ -62,38 +61,25 @@ footer[role='contentinfo'] p {
 h1, h2, h3, h4, h5, h6, caption, legend {
 	font-family: ParisJeTAime;
     letter-spacing: 0.02em;
+    line-height: 1.1
 }
 h1 {
 	font-size: 2.8rem; /* 28px */
-    line-height: 1.2; /* non-standard line height */
-    margin-bottom: 1.5rem;
 }
 h2 {
-	font-size: 2.1rem; /* 21px */
-    line-height: 1; /* standardised leading, 21 / 21 = 1 */
-    margin-bottom: 0.5rem; /* 1 x 0.5 = 0.5 */
-    margin-top: 1.5rem; /* 1 x 1.5 = 1.5 */
+	font-size: 2rem;
 }
 h3 {
-	font-size: 1.8rem; /* 18px */
-    line-height: 1.5; /* standardised leading, 21 / 18 = 1.5 */
-    margin-bottom: 0.25rem; /* 1.5 x 0.5 = 0.25 */
-    margin-top: 2.25rem; /* 1.5 x 1.5 = 2.25 */
+	font-size: 1.8rem;
 }
 h4 {
-	font-size: 1em; /* 10px */
-
+	font-size: 1.6rem;
 }
 h5 {
-	font-size: 1em; /* 10px */
-
+	font-size: 1.6rem;
 }
 h6 {
-	font-size: 1em; /* 10px */
-
-}
-h2:first-child, h3:first-child {
-	margin-top: 0;
+	font-size: 1.6rem;
 }
 textarea {
     font-family: arial;

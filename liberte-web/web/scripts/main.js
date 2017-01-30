@@ -36,7 +36,7 @@ $(function () {
 				"../images/background_music_03.jpg"]
 			});
 		}
-	}).register('screen and (min-width: 1024px)', {
+	}).register('screen and (min-width: 1280px)', {
 		match : function() {
 			if ($('.page-paintings .main').length) {
 		        // restructure standard exhibitions HTML to a menu and revealed/hidden exhibition information
@@ -63,10 +63,12 @@ var exhibitionsRender = {
 		var $pageTitle = $('.page-paintings .main h1');
 		var $preamble = $pageTitle.nextUntil('section');
 		var $choice = $('<div class="choice">');
+		var $choiceHead = $('<div class="header-sub">');
 		var $detail = $('<div class="detail container-lozenge">');
 		
 		$pageTitle.appendTo($choice);
 		$preamble.appendTo($choice);
+		$choiceHead.appendTo($choice);
 
 		$content.find('section').each(function() {
 			var $section = $(this).attr('class');
@@ -82,7 +84,7 @@ var exhibitionsRender = {
 
 			$information.appendTo($infoContainer);
 
-			$(this).appendTo($choice);
+			$(this).appendTo($choiceHead);
 			$infoContainer.appendTo($detail);
 		});
 
