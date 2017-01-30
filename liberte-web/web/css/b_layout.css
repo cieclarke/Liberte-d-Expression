@@ -1,6 +1,6 @@
 /*
 /////////////////////////////////////////////////////////////////////
-///   Page layout - default is for viewport 320px wide            ///
+///   Page layout - mobile first                                  ///
 ///                                                               ///
 ///   Queries - nick_bergquist@yahoo.co.uk                        ///
 /////////////////////////////////////////////////////////////////////
@@ -8,8 +8,6 @@
 
 /*  Default 320px media width
 /*******************************************************************/
-/*body:before { content: "Media between 320 and 479"; }*/
-
 /* Generic DOM elements */
 html {
 	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box /* not inherited by default */
@@ -106,7 +104,6 @@ nav a {
 }
 section {
     margin: 2rem 0 0rem;
-    overflow: hidden;
     padding-bottom: 2.75rem;
 }
 
@@ -144,19 +141,6 @@ section {
     top: 0;
     width: 100%;
 }
-/*
-.menu-gallery {
-    clear: both;
-    -webkit-columns: 3 280px; -moz-columns: 3 280px; columns: 3 280px;
-    -webkit-column-gap: 0; -moz-column-gap: 0; column-gap: 0;
-    margin-top: 2rem;
-}
-.menu-gallery > li {
-    -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid;
-    margin: 0 15px 2.0em;
-}
-*/
-
 .hide {  /* invisible & inaudible */
     display: none;
     visibility: hidden
@@ -210,7 +194,6 @@ section {
 /*   Media between 480 and 767
 /*******************************************************************/
 @media only screen and (min-width: 480px) {
-	/*body:before { content: "Media between 480 and 767"; }*/
     footer li {
         display: inline-block;
     }
@@ -273,7 +256,6 @@ section {
 /*   Media 1280 and above
 /*******************************************************************/
 @media only screen and (min-width: 1280px) {
-	/*body:before { content: "Media 1280 and above";  color: #fff}*/
     /* no need to specify % widths in this range as it's fixed-width desktop size viewport */
     header {
         border-radius: 40px 40px 0 0;
