@@ -104,7 +104,8 @@ nav a {
 }
 section {
     margin: 2rem 0 0rem;
-    padding-bottom: 2.75rem;
+    overflow: hidden;
+    padding-bottom: 1.75rem;
 }
 
 /* class elements: =. */
@@ -133,13 +134,28 @@ section {
     top: -50%;
     width: 100%;
 }
-.container-lozenge::after {
+.container-lozenge::before {
     content: '';
     height: 100%;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1em auto;
+    width: 90%;
+}
+.gallery img {
+    display: block;
+    width: 100%
+}
+.gallery li {
+    flex: 0 0 7.2em;
+    margin: 1em
 }
 .hide {  /* invisible & inaudible */
     display: none;
@@ -211,9 +227,12 @@ section {
     .container-lozenge.image.image-embed {
         float: left;
         height: auto;
-        margin: 0 1.5rem 0.5rem 0;
+        margin: 0 2.5rem 0.5rem 0;
         padding-bottom: 20%;
         width: 25%;
+    }
+    .gallery {
+        width: auto
     }
     .site-home {
         height: 144px;
@@ -274,6 +293,10 @@ section {
 	}
     
 	/* class elements: =. */
+    .gallery li {
+        flex: 2 0 6.6em;
+        margin: 0.25em;
+    }
     .js .choice {
         float: left;
         width: 680px
@@ -293,8 +316,16 @@ section {
         height: 51rem;
         margin-left: 15px;
         overflow: hidden;
-        padding: 6rem 12px 0;
+        padding: 5.25rem 12px 0;
         width: 415px
+    }
+    .js .detail > div {
+        overflow-y: scroll;
+        position: relative;
+        z-index: 1
+    }
+    .js .detail > div:not(.off-screen) {
+        height: 92%;
     }
     .js .page-paintings .header-sub {
         -webkit-columns: 4 127px; -moz-columns: 4 127px; columns: 4 127px;

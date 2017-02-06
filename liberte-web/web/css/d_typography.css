@@ -16,14 +16,14 @@
          url('../type/ParisJeTAime.ttf') format('truetype'),
          url('../type/ParisJeTAime.svg#ParisJeTAime') format('svg');
     font-weight: normal;
-    font-style: normal;
+    font-style: normal
 }
 @font-face {
   font-family: 'OpenSans';
   src: url('../type/OpenSans.woff') format('woff'),
        url('../type/OpenSans.svg#OpenSans') format('svg');
   font-weight: normal;
-  font-style: normal;
+  font-style: normal
 }
 @font-face {
     font-family: 'OpenSans-Regular';
@@ -32,7 +32,7 @@
          url('../type/OpenSans-Regular.woff2') format('woff2'),
          url('../type/OpenSans-Regular.ttf') format('truetype');
     font-weight: normal;
-    font-style: normal;
+    font-style: normal
 }
 @font-face {
   font-family: 'OpenSans-Bold';
@@ -42,7 +42,7 @@
        url('../type/OpenSans-Bold.svg#OpenSans-Bold') format('svg'),
 	   url('../type/OpenSans-Bold.ttf') format('truetype');       
   font-weight: normal;
-  font-style: normal;
+  font-style: normal
 }
 
 /* Generic DOM elements */
@@ -56,7 +56,7 @@ body {
 
 footer[role='contentinfo'] p {
 	font-size: 1.2rem; /* 12px */
-    text-align: center;
+    text-align: center
 }
 h1, h2, h3, h4, h5, h6, caption, legend {
 	font-family: ParisJeTAime;

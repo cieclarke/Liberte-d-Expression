@@ -53,14 +53,16 @@ nav :link, nav :visited {
     border-color: #fafafa;
     border-radius: 50px 0; 
     box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.25);
-	/*box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.25)*/
 }
-.container-lozenge::after {
+.container-lozenge::before {
     box-shadow: 0 0 4px #999 inset;
 }
 .detail {
 	background: #fff url(../images/toplights_00.jpg) repeat-x 0 0;
 	color: #000;
+}
+.gallery {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .list-standard li {
 	background: url(../images/liberte_list_20x20_01.png) no-repeat left top;
@@ -168,13 +170,7 @@ nav :link, nav :visited {
 .page-paintings .detail h3 {
     border-bottom-color: #5bb12f;
 }
-.page-paintings a.container-lozenge:hover {
-	border-color: #5bb12f;
-	transition : border 175ms linear;
-}
-.page-paintings main {
-	
-	
+.page-paintings main {	
 	/*
 	background: #5bb12f;
 	background: -moz-linear-gradient(top, rgba(91,177,47,1) 0%, rgba(47,89,24,0.85) 5.75em, rgba(51,51,51,0) 100%);
@@ -214,28 +210,25 @@ nav :link, nav :visited {
 
 }
 
-/*   Media between 900 and 1023
-/*******************************************************************/
-@media only screen and (min-width: 900px) {
-
-
-	/* class elements: =. */
-	
-}
-
 /*   Media 1280 and above
 /*******************************************************************/
 @media only screen and (min-width: 1280px) {
 
-
 	/* class elements: =. */
 	.detail {
-		border-radius: 100px 0; 
+		border-radius: 65px 0; 
 	}
-	.detail.container-lozenge::after {
-		border-radius: 88px 0;
+	.detail.container-lozenge::before {
+		border-radius: 56px 0;
+	}
+	.gallery {
+		background-color: transparent
 	}
 	.js .detail h2 {
         background-color: transparent
     }
+	.page-paintings .container-lozenge.image:hover {
+		border-color: #5bb12f;
+		transition : border 175ms linear;
+	}
 }
