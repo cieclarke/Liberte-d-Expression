@@ -67,19 +67,19 @@ h1 {
 	font-size: 2.8rem; /* 28px */
 }
 h2 {
-	font-size: 2rem;
+	font-size: 1.6rem;
 }
 h3 {
-	font-size: 1.8rem;
+	font-size: 1.2rem;
 }
 h4 {
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 }
 h5 {
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 }
 h6 {
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 }
 textarea {
     font-family: arial;
@@ -164,7 +164,9 @@ textarea {
 
 	/* class elements: =. */
 
-
+    .js .info-section {
+        font-size: 1.2rem;
+    }
 
 
 }

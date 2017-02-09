@@ -23,7 +23,7 @@ html {
 	background-color: #333;
 }
 h2 {
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.25);
 }
 main {
 	background: url(../images/background_paintings_00.jpg) no-repeat fixed center center / cover; 
@@ -52,7 +52,7 @@ nav :link, nav :visited {
 .container-lozenge {
     border-color: #fafafa;
     border-radius: 50px 0; 
-    box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.85);
 }
 .container-lozenge::before {
     box-shadow: 0 0 4px #999 inset;
@@ -193,7 +193,7 @@ nav :link, nav :visited {
 	border-radius: 25px 25px 0 0
 }
 .site-home {
-    background: url(../images/LiberteLogo_White_280x90.png) no-repeat center center
+    background: url(../images/LiberteLogo_white_280x90.png) no-repeat center center
 }
 
 /*   Media between 480 and 767
@@ -227,7 +227,10 @@ nav :link, nav :visited {
 	.js .detail h2 {
         background-color: transparent
     }
-	.page-paintings .container-lozenge.image:hover {
+	.js .info-section {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+	.page-paintings .container-lozenge.image:hover, .page-paintings .container-lozenge.focus-lozenge {
 		border-color: #5bb12f;
 		transition : border 175ms linear;
 	}

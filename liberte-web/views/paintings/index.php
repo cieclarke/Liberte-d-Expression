@@ -143,6 +143,6 @@
         <img src="/images/paintings_in-situ_winter-mist.jpg" alt="Exhibition example: Winter Mist" />
     </figure>
     <p>
-        FOUR Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis vitae nisi eget eleifend. Phasellus tristique ut augue a consequat. Sed at dignissim augue, et tempor enim. Nunc viverra magna ut ex pretium, ac tincidunt ante tempus. Vestibulum non purus id augue fringilla varius vitae eu dolor. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis vitae nisi eget eleifend. Phasellus tristique ut augue a consequat. Sed at dignissim augue, et tempor enim. Nunc viverra magna ut ex pretium, ac tincidunt ante tempus. Vestibulum non purus id augue fringilla varius vitae eu dolor. 
     </p>
 </section>
