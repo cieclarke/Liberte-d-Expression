@@ -11,7 +11,7 @@
     <ul>
         <li <?php echo strtolower($model->id) == 'closetoyou' ? 'class=\'selected\'' : ''; ?>><a href='/music/CloseToYou'>Close to You</a></li>
         <li <?php echo strtolower($model->id) == 'aboutagirl' ? 'class=\'selected\'' : ''; ?>><a href='/music/AboutAGirl'>About a Girl</a></li>
-        <li <?php echo strtolower($model->id) == 'frienship' ? 'class=\'selected\'' : ''; ?>><a href='/music/Frienship'>Frienship</a></li>
+        <li <?php echo strtolower($model->id) == 'friendship' ? 'class=\'selected\'' : ''; ?>><a href='/music/Friendship'>Frienship</a></li>
         <li <?php echo strtolower($model->id) == 'meandshe' ? 'class=\'selected\'' : ''; ?>><a href='/music/MeAndShe'>He and She</a></li>
         <li <?php echo strtolower($model->id) == 'ourworldtoday' ? 'class=\'selected\'' : ''; ?>><a href='/music/OurWorldToday'>Our World Today</a></li>
         <li <?php echo strtolower($model->id) == 'youare' ? 'class=\'selected\'' : ''; ?>><a href='/music/YouAre'>You Are</a></li>
@@ -26,13 +26,13 @@
     <h3>In Spanish</h3>
     <ul>
         <li <?php echo strtolower($model->id) == 'cercadeti' ? 'class=\'selected\'' : ''; ?>><a href='/music/CercaDeTi'>Cerca de ti</a></li>
-        <li <?php echo strtolower($model->id) == 'attracion' ? 'class=\'selected\'' : ''; ?>><a href='/music/Attracion'>Attracion</a></li>
+        <li <?php echo strtolower($model->id) == 'atraccion' ? 'class=\'selected\'' : ''; ?>><a href='/music/Atraccion'>Atraccion</a></li>
         <li <?php echo strtolower($model->id) == 'mibilateral' ? 'class=\'selected\'' : ''; ?>><a href='/music/MiBilateral'>Mi Bilateral</a></li>
     </ul>
 </section>
 
 <section class="music-play container-lozenge">
-    <h2 class="off-screen">Song</h2>
+    <h2><?php echo $model->title; ?></h2>
     
     <img alt="Music score for <?php echo $model->title; ?>" src="http://libertedexpression.co.uk/art/audio/<?php echo $model->types['png']; ?>" />
     <!-- HTML5 default player -->
