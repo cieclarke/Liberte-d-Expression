@@ -52,6 +52,30 @@ return
             ['id' => 'CheekyMonkey', 'title' => 'Cheeky Monkey', 'description' => 'Cheeky Monkey', 'types' => [
                 'pdf' => 'CheekyMonkey.pdf'
                 ] 
+            ],
+            ['id' => 'HappyLane1', 'title' => 'Happy Lane 1', 'description' => 'Happy Lane 1', 'types' => [
+                'pdf' => 'HappyLane1.pdf'
+                ] 
+            ],
+            ['id' => 'HappyLane2', 'title' => 'Happy Lane 2', 'description' => 'Happy Lane 2', 'types' => [
+                'pdf' => 'HappyLane2.pdf'
+                ] 
+            ],
+            ['id' => 'HappyLane3', 'title' => 'Happy Lane 3', 'description' => 'Happy Lane 3', 'types' => [
+                'pdf' => 'HappyLane3.pdf'
+                ] 
+            ],
+            ['id' => 'HappyLane4', 'title' => 'Happy Lane 4', 'description' => 'Happy Lane 4', 'types' => [
+                'pdf' => 'HappyLane4.pdf'
+                ] 
+            ],
+            ['id' => 'HappyLane5', 'title' => 'Happy Lane 5', 'description' => 'Happy Lane 5', 'types' => [
+                'pdf' => 'HappyLane5.pdf'
+                ] 
+            ],
+            ['id' => 'HappyLane6', 'title' => 'Happy Lane 6', 'description' => 'Happy Lane 6', 'types' => [
+                'pdf' => 'HappyLane6.pdf'
+                ] 
             ]            
         ]
 
