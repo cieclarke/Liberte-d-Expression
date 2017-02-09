@@ -45,10 +45,14 @@ return
             ['id' => 'YouAre',  'title' => 'You Are', 'description' => 'You Are', 'urls' => ['mp3' => 'YouAre.mp3', 'ogg' => 'YouAre.ogg', 'png' => 'YouAre.png']]
         ],
     'Books' => [
-            ['title' => 'MrTandtheJMan', 'description' => 'MrTandtheJMan', 'urls' => [
+            ['id' => 'MrTandtheJMan', 'title' => 'Mr T and the J Man', 'description' => 'Mr T and the J Man', 'types' => [
                 'pdf' => 'MrTandtheJMan.pdf'
                 ] 
-            ]
+            ],
+            ['id' => 'CheekyMonkey', 'title' => 'Cheeky Monkey', 'description' => 'Cheeky Monkey', 'types' => [
+                'pdf' => 'CheekyMonkey.pdf'
+                ] 
+            ]            
         ]
 
     ];

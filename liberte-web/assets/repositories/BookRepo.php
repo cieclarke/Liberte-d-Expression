@@ -14,7 +14,7 @@ class BookRepo
         foreach($data as $b)
         {
             
-           $book  = new \app\assets\models\Book($b['title'], $b['description'], $b['urls']);
+           $book  = new \app\assets\models\Book($b['id'], $b['title'], $b['description'], $b['types']);
             
            
             array_push($books, $book);

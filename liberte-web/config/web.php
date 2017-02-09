@@ -45,7 +45,8 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 '' => '/home/index',
-                'music/<songId>' => 'music'
+                'music/<songId>' => 'music',
+                'books/book/<id>' => 'books/book'
             ],
         ],    
     ],

@@ -24,15 +24,23 @@ class BooksController extends Controller
         ]);
     }
 
-    public function actionBook()
+    public function actionBook($id = '')
     {
         $this->view->params['class'] = 'books';
         $vm = new \app\models\BookViewModel();
+        $bookForView = $vm['Books'][0];
+
+        foreach($vm['Books'] as $book)
+        {
+            if(strtolower($id) == strtolower($book->id))
+            {
+                $bookForView = $book;
+            }
+        }
 
         return $this->render('book', [
-            'model' => $vm,
+            'model' => $bookForView,
         ]);
-
 
     }
 }
