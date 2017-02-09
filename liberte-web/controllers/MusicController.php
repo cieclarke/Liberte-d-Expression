@@ -33,10 +33,4 @@ class MusicController extends Controller
         ]);
     }
 
-    private function getSong($songItem)
-    {
-
-
-    }
-
 }
