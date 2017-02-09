@@ -36,22 +36,21 @@ $(function () {
 				"../images/background_music_03.jpg"]
 			});
 		}
-	}).register('screen and (min-width: 1024px)', {
+	}).register('screen and (min-width: 1280px)', {
 		match : function() {
 			if ($('.page-paintings .main').length) {
-		        // restructure standard exhibitions HTML to a menu and revealed/hidden exhibition information
 		        exhibitionsRender.compress();
 	        } 
 		},
 		unmatch : function() {
-			
+			if ($('.page-paintings .main').length) {
+		        exhibitionsRender.uncompress();
+	        } 
 		}
 	}).listen(50); // milliseconds
 
-
 	// non viewport size dependent function calls..
 
-	
 
 });
 
@@ -63,26 +62,48 @@ var exhibitionsRender = {
 		var $pageTitle = $('.page-paintings .main h1');
 		var $preamble = $pageTitle.nextUntil('section');
 		var $choice = $('<div class="choice">');
+		var $choiceHead = $('<div class="header-sub">');
 		var $detail = $('<div class="detail container-lozenge">');
 		
+		if ($('.detail').length) {
+			return;
+		}
+
 		$pageTitle.appendTo($choice);
 		$preamble.appendTo($choice);
+		$choiceHead.appendTo($choice);
 
-		$content.find('section').each(function() {
+		$content.find('section').each(function(i) {
 			var $section = $(this).attr('class');
 			var $sectionHeading = $(this).find('h2');
-			var $information = $(this).find('.container-lozenge.image').nextAll();
+			var $sectionFig = $(this).find('figure');
+			var $imageAnchor = $('<a title="Further information..." />').attr('href', '#' + $section);
+			var $information = $sectionFig.nextAll();
 			var $infoContainer = $('<div>').attr('id', $section);
 			
+			if (i > 0) {
+				$infoContainer.addClass('off-screen');
+			}
+
 			$sectionHeading.clone().appendTo($infoContainer);
 
-			$(this).find('span').replaceWith(function(){
-				return $('<a class="container-lozenge image" />').attr('href', '#' + $section).append($(this).contents());
+			$sectionFig.replaceWith(function() {
+				return $(this).append($imageAnchor.append($(this).contents()));
 			});
-
+			
+			$imageAnchor.click(function() {
+				$('.detail > div').each(function() {
+					if ($(this).attr('id') == $section) {
+						$(this).removeClass('off-screen');
+					} else {
+						$(this).addClass('off-screen');
+					}
+				});
+				return false;
+			});
+			
 			$information.appendTo($infoContainer);
-
-			$(this).appendTo($choice);
+			$(this).appendTo($choiceHead);
 			$infoContainer.appendTo($detail);
 		});
 
@@ -90,6 +111,41 @@ var exhibitionsRender = {
 		$detail.appendTo($content);
 	},
 	uncompress : function() {
+		var $content = $('.page-paintings .main');
+		var $choice = $('.choice');
+		var $choiceHead = $('.header-sub');
+		var $detail = $('.detail');
+		var arrExhibContent = [];
 
+		$content.find('.detail > div').each(function() {
+			var $div = $(this).attr('id');
+			var $divContent = $(this).find('h2').nextAll();
+
+			arrExhibContent.push({'id': $div, 'content': $divContent});
+		});
+
+		$content.find('.header-sub > section').each(function() {
+			var $section = $(this).attr('class');
+			var $sectionFig = $(this).find('figure');
+			var $sectionFigImg = $sectionFig.find('img');
+
+			for (var i = 0; i < arrExhibContent.length; i++) {
+				var obj = arrExhibContent[i];
+				
+				if ($section == obj.id) {
+					$(obj.content).insertAfter($sectionFig);
+				}
+			}
+
+			$sectionFigImg.unwrap();
+		});
+
+		$choiceHead.unwrap();
+
+		$choiceHead.replaceWith(function() {
+			return $('section', this);
+		});
+		
+		$detail.remove();
 	}
 };
