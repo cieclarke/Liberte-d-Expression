@@ -12,7 +12,7 @@
     <dd>
         <?php echo $model->Books[$key]->description; ?>
         <p><a href="http://libertedexpression.co.uk/art/literature/<?php echo $model->Books[$key]->types['pdf']; ?>">PDF</a></p>
-        <p><a href="/Books/Book/<?php echo $model->Books[$key]->id; ?>">Read Inline</a></p>
+        <p><a href="/books/book/<?php echo $model->Books[$key]->id; ?>">Read Inline</a></p>
     </dd>
     <?php endforeach; ?>
 </dl>
