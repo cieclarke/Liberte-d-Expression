@@ -59,9 +59,15 @@ AppAsset::register($this);
     <a class="skip off-screen" href="#main">Skip to content</a>
 
     <header role="banner">
+        <a href="/" title="Liberté d'Expression, The underground world of art and design">
+            <img class="site-home" src="../images/LiberteLogo_white_280x90.png" alt="Home" />
+        </a>
+        
+        <!--
         <p class="site-home">
             <a href="/" class="anchor-image" title="Home">Liberté d'Expression, The underground world of art and design</a>
         </p>
+        -->
         
         <nav role="navigation">
             <ul class="menu-site">

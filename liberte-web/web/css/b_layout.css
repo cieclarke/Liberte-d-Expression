@@ -364,5 +364,11 @@ section {
         left: -30px;
         top: -2.0em;
     }
+    a .site-home {
+        transition: all 0.2s ease 0s;
+    }
+    a:hover .site-home {
+        transform: scale(1.03);
+    }
 
 }

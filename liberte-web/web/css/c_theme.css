@@ -58,7 +58,11 @@ nav :link, nav :visited {
     box-shadow: 0 0 4px #999 inset;
 }
 .detail {
-	background: #fff url(../images/toplights_00.jpg) repeat-x 0 0;
+	/*background: #fff url(../images/toplights_00.jpg) repeat-x 0 0;*/
+	background-color: #fff;
+	background-image: url(../images/toplights_00.jpg), url(../images/logo_swirl_background_00.png);
+	background-repeat: no-repeat, no-repeat;
+	background-position: top center, right bottom;
 	color: #000;
 }
 .gallery {
@@ -192,9 +196,11 @@ nav :link, nav :visited {
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(91,177,47,1) 75%);
 	border-radius: 25px 25px 0 0
 }
+/*
 .site-home {
     background: url(../images/LiberteLogo_white_280x90.png) no-repeat center center
 }
+*/
 
 /*   Media between 480 and 767
 /*******************************************************************/
@@ -204,9 +210,11 @@ nav :link, nav :visited {
     }
 
 	/* class elements: =. */
+	/*
 	.site-home {
 		background: url(../images/LiberteLogo_White_450x144.png) no-repeat center center;
 	}
+	*/
 
 }
 

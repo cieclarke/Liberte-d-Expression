@@ -13,7 +13,7 @@ $(function () {
 		}
 	}).register('screen and (min-width: 768px)', {
 		match : function() {
-			
+			$('.site-home').attr('src', '../images/LiberteLogo_White_450x144.png')
 		}
 	}).register('screen and (min-width: 899px)', {
 		match : function() {
@@ -116,7 +116,7 @@ var exhibitionsRender = {
 			$imageAnchor.focus(function() {
 				$(this).parent().addClass('focus-lozenge');
 			});
-			
+
 			$imageAnchor.blur(function() {
 				$(this).parent().removeClass('focus-lozenge');
 			});
