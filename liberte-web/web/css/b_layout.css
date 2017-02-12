@@ -334,6 +334,11 @@ section {
         padding: 0.5rem 1rem 0.75rem;
         width: 680px;
     }
+    .js .info-section.visible {
+        height: auto;
+        left: 0;
+        position: absolute
+    }
     .js .page-paintings .header-sub {
         -webkit-columns: 4 127px; -moz-columns: 4 127px; columns: 4 127px;
         -webkit-column-gap: 0; -moz-column-gap: 0; column-gap: 0;

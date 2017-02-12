@@ -68,6 +68,14 @@ nav :link, nav :visited {
 .gallery {
     background-color: rgba(0, 0, 0, 0.3);
 }
+.gallery a img {
+	border: 4px solid;
+	border-color: transparent
+}
+.page-paintings .gallery a:hover img, .page-paintings .gallery a:focus img {
+	border-color: #5bb12f;
+	transition : border 175ms linear;
+}
 .list-standard li {
 	background: url(../images/liberte_list_20x20_01.png) no-repeat left top;
 }
@@ -224,10 +232,10 @@ nav :link, nav :visited {
 
 	/* class elements: =. */
 	.detail {
-		border-radius: 65px 0; 
+		border-radius: 65px 0
 	}
 	.detail.container-lozenge::before {
-		border-radius: 56px 0;
+		border-radius: 56px 0
 	}
 	.gallery {
 		background-color: transparent
@@ -236,10 +244,14 @@ nav :link, nav :visited {
         background-color: transparent
     }
 	.js .info-section {
-        background-color: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.5)
     }
 	.page-paintings .container-lozenge.image:hover, .page-paintings .container-lozenge.focus-lozenge {
 		border-color: #5bb12f;
-		transition : border 175ms linear;
+		transition : border 175ms linear
+	}
+	section.selected {
+		background: rgba(0, 0, 0, 0.3);
+		border-radius: 0 0 50px
 	}
 }
