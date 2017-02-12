@@ -26,7 +26,7 @@ h2 {
     background-color: rgba(0, 0, 0, 0.25);
 }
 main {
-	background: url(../images/background_paintings_00.jpg) no-repeat fixed center center / cover; 
+	background: url(../images/background_paintings_00.jpg) no-repeat fixed 145px bottom / cover; 
 	box-shadow: 0 0 10px 15px #fff inset;
 	color: #fff;
 }
@@ -34,13 +34,15 @@ section li a {
 	color: #fff;
 }
 
+/* animation */
+@keyframes border-blink { 
+	5% {border-color: rgba(128, 128, 128, 0.5);}
+}
+.blink { 
+	animation: border-blink 1.0s ease-in-out; 
+}
+
 /* pseudo-classes */
-:link, :visited {
-
-}
-:link:hover, :visited:hover {
-
-}
 footer :link, footer :visited, footer :link:hover, footer :visited:hover {
 	color: #73c5e1
 }
@@ -251,7 +253,11 @@ nav :link, nav :visited {
 		transition : border 175ms linear
 	}
 	section.selected {
-		background: rgba(0, 0, 0, 0.3);
-		border-radius: 0 0 50px
+		background: rgba(0, 0, 0, 0.25);
+		border-radius: 0 0 50px;
+		box-shadow: 0 2px 2px #333;
+	}
+	section.selected .container-lozenge {
+		box-shadow: none
 	}
 }

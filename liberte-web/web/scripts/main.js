@@ -78,7 +78,7 @@ var exhibitionsRender = {
 			var $sectionClass = $(this).attr('class');
 			var $sectionHeading = $(this).find('h2');
 			var $sectionFig = $(this).find('figure');
-			var $imageAnchor = $('<a title="Further information..." />').attr('href', '#' + $section);
+			var $imageAnchor = $('<a title="View exhibition..." />').attr('href', '#' + $sectionClass);
 			var $gallery = $(this).find('.gallery');
 			var $information = $('<div class="info-section off-screen">').html($sectionFig.nextUntil($gallery));
 			//var $information = $('<div class="info-section visible">').html($sectionFig.nextUntil($gallery));
@@ -119,9 +119,11 @@ var exhibitionsRender = {
 					if ($(this).attr('id') == $sectionClass) {
 						$(this).removeClass('off-screen');
 					} else {
-						$(this).addClass('off-screen');
+						$(this).addClass('off-screen'); // need tabindex setting on invisible links
 					}
 				});
+
+				$('.detail.container-lozenge').addClass('blink');
 
 				$content.find('section').each(function() {
 					$(this).removeClass('selected');

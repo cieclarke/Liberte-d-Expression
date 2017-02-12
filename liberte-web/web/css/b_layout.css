@@ -296,8 +296,8 @@ section {
     
 	/* class elements: =. */
     .gallery li {
-        flex: 0 0 7.5em;
-        margin: 0.25em;
+        flex: 0 0 7.7em;
+        margin: 0.15em;
     }
     .js .choice {
         float: left;
@@ -361,9 +361,6 @@ section {
         -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid;
         margin: 0 10px 0 0;
         min-height: 40rem;
-    }
-    .js .header-sub section:last-child {
-        margin-right: 0
     }
     .site-home {
         left: -30px;
