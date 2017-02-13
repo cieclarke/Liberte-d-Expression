@@ -190,6 +190,9 @@ section {
     border-top: 0;
     min-height: 600px;
 }
+.page-music .container-lozenge * {
+    position: relative
+}
 .page-music section {
     margin: 0 5% 1.75rem 5%;
 }
@@ -324,15 +327,14 @@ section {
     }
     .js .detail > div {
         overflow-y: auto;
-        position: relative;
-        z-index: 1
+        position: relative
     }
     .js .detail > div:not(.off-screen) {
         height: 92%;
     }
     .js .info-section {
         padding: 0.5rem 1rem 0.75rem;
-        width: 680px;
+        width: 670px;
     }
     .js .info-section.visible {
         height: auto;
@@ -346,11 +348,11 @@ section {
         position: relative
     }
     .js .page-paintings .choice .heading-tall {
-        min-height: 6rem
+        min-height: 6.75rem
     }
     .js .page-paintings .header-sub h2:hover, 
     .js .page-paintings .header-sub h2:focus {
-        min-height: 6rem
+        min-height: 6.75rem
     }
     .js .header-sub h2:hover + .info-section, .js .header-sub h2:focus + .info-section,
     .js .header-sub h2 + .info-section:hover {

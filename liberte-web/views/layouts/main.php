@@ -60,7 +60,7 @@ AppAsset::register($this);
 
     <header role="banner">
         <a href="/" title="Liberté d'Expression, The underground world of art and design">
-            <img class="site-home" src="../images/LiberteLogo_white_280x90.png" alt="Home" />
+            <img class="site-home" src="../images/LiberteLogo_white_450x144.png" alt="Home" />
         </a>
         
         <!--

@@ -13,7 +13,7 @@ $(function () {
 		}
 	}).register('screen and (min-width: 768px)', {
 		match : function() {
-			$('.site-home').attr('src', '../images/LiberteLogo_White_450x144.png')
+			
 		}
 	}).register('screen and (min-width: 899px)', {
 		match : function() {
@@ -123,7 +123,7 @@ var exhibitionsRender = {
 					}
 				});
 
-				$('.detail.container-lozenge').addClass('blink');
+				$('.detail.container-lozenge').addClass('blink'); // add once, never remove so single animation per page load
 
 				$content.find('section').each(function() {
 					$(this).removeClass('selected');

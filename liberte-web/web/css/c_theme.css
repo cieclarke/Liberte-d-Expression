@@ -26,7 +26,7 @@ h2 {
     background-color: rgba(0, 0, 0, 0.25);
 }
 main {
-	background: url(../images/background_paintings_00.jpg) no-repeat fixed 145px bottom / cover; 
+	background: url(../images/background_paintings_00.jpg) no-repeat fixed left bottom / cover; 
 	box-shadow: 0 0 10px 15px #fff inset;
 	color: #fff;
 }
@@ -255,7 +255,6 @@ nav :link, nav :visited {
 	section.selected {
 		background: rgba(0, 0, 0, 0.25);
 		border-radius: 0 0 50px;
-		box-shadow: 0 2px 2px #333;
 	}
 	section.selected .container-lozenge {
 		box-shadow: none
