@@ -80,7 +80,6 @@ var exhibitionsRender = {
 			var $sectionFig = $section.find('figure');
 			var $imageAnchor = $('<a title="View exhibition..." />').attr('href', '#' + $sectionClass);
 			var $gallery = $section.find('.gallery');
-			//var $information = $('<div class="info-section off-screen">').html($sectionFig.nextUntil($gallery));
 			var $information = $('<div class="info-section">').html($sectionFig.nextUntil($gallery));
 			var $infoContainer = $('<div>').attr('id', $sectionClass);
 
@@ -96,16 +95,7 @@ var exhibitionsRender = {
 			}
 
 			$($sectionFig).before($information);
-
-			//$information.hover(function() {
-			//		$(this).prev().addClass('heading-tall');
-			//	}, function() {
-			//		$(this).prev().removeClass('heading-tall');
-			//	}
-			//);
-
 			$sectionHeading.clone().appendTo($infoContainer);
-			//$sectionHeading.attr('tabindex', '0');
 
 			$sectionFig.replaceWith(function() {
 				if (i == 0) {
@@ -181,9 +171,10 @@ var exhibitionsRender = {
 		});
 
 		$content.find('.header-sub > section').each(function() {
-			var $section = $(this).attr('class');
+			var $section = $(this).attr('class').split(' ')[0];
 			var $sectionFig = $(this).find('figure');
-			var $sectionFigImg = $sectionFig.find('img');
+			var $sectionFigImg = $sectionFig.find('img').unwrap();
+			var $sectionInfo = $(this).find('.info-section > *');
 
 			for (var i = 0; i < arrExhibContent.length; i++) {
 				var obj = arrExhibContent[i];
@@ -193,7 +184,7 @@ var exhibitionsRender = {
 				}
 			}
 
-			$sectionFigImg.unwrap();
+			$sectionInfo.unwrap().insertAfter($sectionFig);
 		});
 
 		$choiceHead.unwrap();

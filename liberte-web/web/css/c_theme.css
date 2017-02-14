@@ -244,7 +244,8 @@ nav :link, nav :visited {
         background-color: transparent
     }
 	.js .info-section {
-        background: rgba(0, 0, 0, 0.5)
+        background: rgba(0, 0, 0, 0.5);
+		box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.5);
     }
 	.page-paintings .container-lozenge.image:hover, .page-paintings .container-lozenge.focus-lozenge {
 		border-color: #5bb12f;
@@ -253,6 +254,7 @@ nav :link, nav :visited {
 	.header-sub .selected {
 		background: rgba(0, 0, 0, 0.25);
 		border-radius: 0 0 50px;
+		box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.85)
 	}
 	.header-sub .selected .container-lozenge {
 		box-shadow: none
