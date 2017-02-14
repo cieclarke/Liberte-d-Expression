@@ -75,36 +75,37 @@ var exhibitionsRender = {
 
 		$content.find('section').each(function(i) {
 			var $section = $(this);
-			var $sectionClass = $(this).attr('class');
-			var $sectionHeading = $(this).find('h2');
-			var $sectionFig = $(this).find('figure');
+			var $sectionClass = $section.attr('class');
+			var $sectionHeading = $section.find('h2');
+			var $sectionFig = $section.find('figure');
 			var $imageAnchor = $('<a title="View exhibition..." />').attr('href', '#' + $sectionClass);
-			var $gallery = $(this).find('.gallery');
-			var $information = $('<div class="info-section off-screen">').html($sectionFig.nextUntil($gallery));
-			//var $information = $('<div class="info-section visible">').html($sectionFig.nextUntil($gallery));
+			var $gallery = $section.find('.gallery');
+			//var $information = $('<div class="info-section off-screen">').html($sectionFig.nextUntil($gallery));
+			var $information = $('<div class="info-section">').html($sectionFig.nextUntil($gallery));
 			var $infoContainer = $('<div>').attr('id', $sectionClass);
 
 			if (i == 0) {
-				$(this).addClass('selected');
+				$section.addClass('selected');
+				$information.addClass('visible');
 			}
 
 			if (i > 0) {
-				//$information.addClass('off-screen');
-				//$information.removeClass('visible');
+				$information.addClass('off-screen');
 				$infoContainer.addClass('off-screen');
+				$section.find('a').attr('tabindex', -1);
 			}
 
 			$($sectionFig).before($information);
 
-			$information.hover(function() {
-					$(this).prev().addClass('heading-tall');
-				}, function() {
-					$(this).prev().removeClass('heading-tall');
-				}
-			);
+			//$information.hover(function() {
+			//		$(this).prev().addClass('heading-tall');
+			//	}, function() {
+			//		$(this).prev().removeClass('heading-tall');
+			//	}
+			//);
 
 			$sectionHeading.clone().appendTo($infoContainer);
-			$sectionHeading.attr('tabindex', '0');
+			//$sectionHeading.attr('tabindex', '0');
 
 			$sectionFig.replaceWith(function() {
 				if (i == 0) {
@@ -113,23 +114,33 @@ var exhibitionsRender = {
 
 				return $(this).append($imageAnchor.append($(this).contents()));
 			});
-			
+
 			$imageAnchor.click(function() {
+				var $anchor = $(this);
+				
+				$('.detail.container-lozenge').addClass('blink'); // add once, never remove so single animation per page load
+				
 				$('.detail > div').each(function() {
 					if ($(this).attr('id') == $sectionClass) {
 						$(this).removeClass('off-screen');
+						$(this).find('a').attr('tabindex', 0);
+						//$(this).attr('tabindex', 0).focus();
 					} else {
-						$(this).addClass('off-screen'); // need tabindex setting on invisible links
+						$(this).addClass('off-screen'); 
+						$(this).find('a').attr('tabindex', -1);
 					}
 				});
 
-				$('.detail.container-lozenge').addClass('blink'); // add once, never remove so single animation per page load
-
 				$content.find('section').each(function() {
-					$(this).removeClass('selected');
+					var $section = $(this);
+					var $info = $(this).find('.info-section');
+
+					$section.removeClass('selected');
+					$info.removeClass('visible').addClass('off-screen');
 				});
 
 				$section.addClass('selected');
+				$information.addClass('visible');
 
 				$($content.find('figure').removeClass('focus-lozenge'));
 				$(this).parent().addClass('focus-lozenge');
@@ -142,11 +153,13 @@ var exhibitionsRender = {
 			});
 
 			$imageAnchor.blur(function() {
-				$(this).parent().removeClass('focus-lozenge');
+				if (!$section.hasClass('selected')) {
+					$(this).parent().removeClass('focus-lozenge');
+				}
 			});
 
 			$gallery.appendTo($infoContainer);
-			$(this).appendTo($choiceHead);
+			$section.appendTo($choiceHead);
 			$infoContainer.appendTo($detail);
 		});
 

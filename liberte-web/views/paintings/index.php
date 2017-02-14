@@ -74,7 +74,7 @@
         <img src="/images/exhibitions-paintings/exhibition_light-gallery_00.jpg" alt="Exhibition scene - Light Gallery" />
     </figure>
     <p>
-        A total of 25 artists were showcased; abstract, still life, figurative or landscape, there was something for all tastes. 
+        A total of twenty-five artists were showcased; in abstract, still life, figurative or landscape subjects, there was something for all tastes. 
     </p>
     <ul class="gallery">
         <li>

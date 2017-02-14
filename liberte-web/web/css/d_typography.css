@@ -1,11 +1,9 @@
-/*
-////////////////////////////////////////////////////////////////////////
-///   Page typography - default is for viewport 320px wide           ///
-///                                                                  ///
-///   nick_bergquist@yahoo.co.uk                                     ///
-///                                                                  ///
-////////////////////////////////////////////////////////////////////////
-*/
+/*///////////////////////////////////////////////////////////////////////
+///   Page typography - default is for viewport 320px wide            ///
+///                                                                   ///
+///   nick_bergquist@yahoo.co.uk                                      ///
+///                                                                   ///
+///////////////////////////////////////////////////////////////////////*/
 
 /* Fonts */
 @font-face {
@@ -113,7 +111,6 @@ textarea {
 
 }
 
-
 /*   Media between 768 and 899
 /*******************************************************************/
 @media only screen and (min-width: 768px) {
@@ -129,7 +126,6 @@ textarea {
 
 }
 
-
 /*   Media between 900 and 1023
 /*******************************************************************/
 @media only screen and (min-width: 900px) {
@@ -140,7 +136,6 @@ textarea {
 
 
 }
-
 
 /*   Media between 1024 and 1279
 /*******************************************************************/
@@ -155,18 +150,16 @@ textarea {
 
 }
 
-
 /*   Media between 1280 and above
 /*******************************************************************/
 @media only screen and (min-width: 1280px) {
 
 
-
 	/* class elements: =. */
-
-    .js .info-section {
-        font-size: 1.2rem;
+    .js .detail h2 {
+        text-align: center
     }
-
-
+    .js .info-section {
+        font-size: 1.2rem
+    }
 }

@@ -1,10 +1,8 @@
-/*
-////////////////////////////////////////////////////////////////////////////////
+/*///////////////////////////////////////////////////////////////////////////////
 ///   Colours and file resources (reskins) - def. viewport 320px wide        ///
 ///                                                                          ///
 ///   Queries - nick_bergquist@yahoo.co.uk                                   ///
-////////////////////////////////////////////////////////////////////////////////
-*/
+///////////////////////////////////////////////////////////////////////////////*/
 
 /*  Default 320px media width
 /*******************************************************************/
@@ -252,11 +250,11 @@ nav :link, nav :visited {
 		border-color: #5bb12f;
 		transition : border 175ms linear
 	}
-	section.selected {
+	.header-sub .selected {
 		background: rgba(0, 0, 0, 0.25);
 		border-radius: 0 0 50px;
 	}
-	section.selected .container-lozenge {
+	.header-sub .selected .container-lozenge {
 		box-shadow: none
 	}
 }
