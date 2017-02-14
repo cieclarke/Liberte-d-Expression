@@ -120,17 +120,17 @@
             </a>
         </li>
         <li>
-            <a href="/images/exhibitions-paintings/torbay/P2290702.jpg">
+            <a class="fancybox" rel="group" href="/images/exhibitions-paintings/torbay/P2290702.jpg">
                 <img src="/images/exhibitions-paintings/torbay/P2290702_thumb.jpg" alt="A Torbay exhibition scene" />
             </a>
         </li>
         <li>
-            <a href="/images/exhibitions-paintings/torbay/P2290706.jpg">
+            <a class="fancybox" rel="group" href="/images/exhibitions-paintings/torbay/P2290706.jpg">
                 <img src="/images/exhibitions-paintings/torbay/P2290706_thumb.jpg" alt="A Torbay exhibition scene" />
             </a>
         </li>
         <li>
-            <a href="/images/exhibitions-paintings/torbay/P2290707.jpg">
+            <a class="fancybox" rel="group" href="/images/exhibitions-paintings/torbay/P2290707.jpg">
                 <img src="/images/exhibitions-paintings/torbay/P2290707_thumb.jpg" alt="A Torbay exhibition scene" />
             </a>
         </li>

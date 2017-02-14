@@ -27,6 +27,7 @@ AppAsset::register($this);
     <link rel="stylesheet" href="/css/c_theme.css">
     <link rel="stylesheet" href="/css/d_typography.css">
     <link rel="stylesheet" href="/css/e_vendor.css">
+    <link rel="stylesheet" href="/scripts/fancybox/source/jquery.fancybox.css?v=2.1.6" type="text/css" media="screen" />
 
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
 
@@ -37,6 +38,8 @@ AppAsset::register($this);
 	<!-- library required to process javascript-based media queries.. requires window.matchMedia() support -->
 	<script src="/scripts/enquire.min.js"></script>
 	
+    <script src="/scripts/fancybox/source/jquery.fancybox.pack.js?v=2.1.6"></script>
+
 	<!-- main script -->
 	<script src="/scripts/main.js"></script>
 

@@ -50,8 +50,13 @@ $(function () {
 	}).listen(50); // milliseconds
 
 	// non viewport size dependent function calls..
+	$(".fancybox").fancybox();
 
-
+	$('.page-paintings .detail a'). addClass('fancybox');
+	$('.page-paintings #barclays a').attr('rel', 'barclays');
+	$('.page-paintings #light a').attr('rel', 'light');
+	$('.page-paintings #torbay a').attr('rel', 'torbay');
+	$('.page-paintings #sharmina a').attr('rel', 'sharmina');
 });
 
 // METHODS
