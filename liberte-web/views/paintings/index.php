@@ -140,9 +140,96 @@
 <section class="sharmina">
     <h2>Sharmina Karim</h2>
     <figure class="container-lozenge image image-embed">
-        <img src="/images/paintings_in-situ_winter-mist.jpg" alt="Exhibition example: Winter Mist" />
+        <img src="/images/exhibitions-paintings/exhibition_sharmina_00.jpg" alt="Exhibition scene - Sharmina" />
     </figure>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis vitae nisi eget eleifend. Phasellus tristique ut augue a consequat. Sed at dignissim augue, et tempor enim. Nunc viverra magna ut ex pretium, ac tincidunt ante tempus. Vestibulum non purus id augue fringilla varius vitae eu dolor. 
     </p>
+    <ul class="gallery">
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/2776449.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/2776449_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/5.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/5_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/2977096.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/2977096_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/4.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/4_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/6.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/6_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/2.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/2_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/9.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/9_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/3.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/3_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/21.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/21_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/7.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/7_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/1.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/1_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/8.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/8_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/10.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/10_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/11.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/11_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/12.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/12_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/13.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/13_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/14.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/14_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+    </ul>
 </section>

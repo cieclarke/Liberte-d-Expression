@@ -62,13 +62,6 @@ AppAsset::register($this);
         <a href="/" title="Liberté d'Expression, The underground world of art and design">
             <img class="site-home" src="../images/LiberteLogo_white_450x144.png" alt="Home" />
         </a>
-        
-        <!--
-        <p class="site-home">
-            <a href="/" class="anchor-image" title="Home">Liberté d'Expression, The underground world of art and design</a>
-        </p>
-        -->
-        
         <nav role="navigation">
             <ul class="menu-site">
                 <li class="home">
