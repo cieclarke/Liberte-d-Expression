@@ -115,39 +115,10 @@ textarea {
 /*******************************************************************/
 @media only screen and (min-width: 768px) {
 
-	
-
 	/* class elements: =. */
     .menu-site a {
 		font-size: 1.6rem;
 	}
-
-
-
-}
-
-/*   Media between 900 and 1023
-/*******************************************************************/
-@media only screen and (min-width: 900px) {
-
-	/* class elements: =. */
-
-
-
-
-}
-
-/*   Media between 1024 and 1279
-/*******************************************************************/
-@media only screen and (min-width: 1024px) {
-
-
-
-	/* class elements: =. */
-
-
-
-
 }
 
 /*   Media between 1280 and above
