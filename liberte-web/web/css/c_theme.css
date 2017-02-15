@@ -230,6 +230,9 @@ nav :link, nav :visited {
 /*   Media 1280 and above
 /*******************************************************************/
 @media only screen and (min-width: 1280px) {
+	main {
+		background-attachment: scroll 
+	}
 
 	/* class elements: =. */
 	.detail {

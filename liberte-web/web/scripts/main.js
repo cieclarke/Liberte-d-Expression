@@ -1,6 +1,5 @@
 // script loaded in all pages
 
-// enable CSS selectors dependent on scripting
 $('html').addClass('js');
 
 // main control block, on DOM-ready..
@@ -50,14 +49,54 @@ $(function () {
 	}).listen(50); // milliseconds
 
 	// non viewport size dependent function calls..
-	$(".fancybox").fancybox();
+	$(".fancybox").fancybox({
+        nextMethod : 'resizeIn',
+        nextSpeed  : 15,
+        prevMethod : false,
+        helpers : {
+            title : {
+                type : 'outside'
+            }
+        }
+    });
 
-	$('.page-paintings .detail a'). addClass('fancybox');
-	$('.page-paintings #barclays a').attr('rel', 'barclays');
-	$('.page-paintings #light a').attr('rel', 'light');
-	$('.page-paintings #torbay a').attr('rel', 'torbay');
-	$('.page-paintings #sharmina a').attr('rel', 'sharmina');
+	$('.gallery a'). addClass('fancybox');
+	$('.page-paintings .barclays .gallery a').attr('rel', 'barclays');
+	$('.page-paintings .light .gallery a').attr('rel', 'light');
+	$('.page-paintings .torbay .gallery a').attr('rel', 'torbay');
+	$('.page-paintings .sharmina .gallery a').attr('rel', 'sharmina');
 });
+
+// fancybox transition
+(function ($, F) {
+    F.transitions.resizeIn = function() {
+        var previous = F.previous,
+            current  = F.current,
+            startPos = previous.wrap.stop(true).position(),
+            endPos   = $.extend({opacity : 1}, current.pos);
+
+        startPos.width  = previous.wrap.width();
+        startPos.height = previous.wrap.height();
+
+        previous.wrap.stop(true).trigger('onReset').remove();
+
+        delete endPos.position;
+
+        current.inner.hide();
+
+        current.wrap.css(startPos).animate(endPos, {
+            duration : current.nextSpeed,
+            easing   : current.nextEasing,
+            step     : F.transitions.step,
+            complete : function() {
+                F._afterZoomIn();
+
+                current.inner.fadeIn("slow");
+            }
+        });
+    };
+}(jQuery, jQuery.fancybox));
+
 
 // METHODS
 
