@@ -221,7 +221,7 @@ var exhibitionsRender = {
 		});
 
 		$content.find('.header-sub > section').each(function() {
-			var $section = $(this).attr('class').split(' ')[0];
+			var $section = $(this).removeClass('selected').attr('class');
 			var $sectionFig = $(this).find('figure');
 			var $sectionFigImg = $sectionFig.find('img').unwrap();
 			var $sectionInfo = $(this).find('.info-section > *');
