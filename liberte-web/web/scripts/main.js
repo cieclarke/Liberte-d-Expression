@@ -39,6 +39,11 @@ $(function () {
 		match : function() {
 			if ($('.page-paintings .main').length) {
 		        exhibitionsRender.compress();
+
+				$('.page-paintings #barclays .gallery a').attr('rel', 'barclays');
+				$('.page-paintings #light .gallery a').attr('rel', 'light');
+				$('.page-paintings #torbay .gallery a').attr('rel', 'torbay');
+				$('.page-paintings #sharmina .gallery a').attr('rel', 'sharmina');
 	        } 
 		},
 		unmatch : function() {
@@ -61,6 +66,7 @@ $(function () {
     });
 
 	$('.gallery a'). addClass('fancybox');
+
 	$('.page-paintings .barclays .gallery a').attr('rel', 'barclays');
 	$('.page-paintings .light .gallery a').attr('rel', 'light');
 	$('.page-paintings .torbay .gallery a').attr('rel', 'torbay');
