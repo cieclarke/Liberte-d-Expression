@@ -2,10 +2,10 @@
     $this->title = 'Music';
 ?>
 
-<h1 class="off-screen">Music</h1>
+<h1>Music</h1>
 
 <section class="music-list container-lozenge">
-    <h2 class="off-screen">Music</h2>
+    <h2>Music</h2>
     
     <h3>In English</h3>
     <ul>

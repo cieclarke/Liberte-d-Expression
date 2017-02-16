@@ -188,7 +188,7 @@ section {
 }
 .page-home main {
     border-top: 0;
-    min-height: 600px;
+    min-height: 56rem;
 }
 .page-music .container-lozenge * {
     position: relative

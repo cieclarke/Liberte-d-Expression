@@ -6,7 +6,6 @@
 
 /*  Default 320px media width
 /*******************************************************************/
-
 /* Generic DOM elements */
 footer {
 	background-color: #333;
@@ -107,12 +106,17 @@ nav :link, nav :visited {
 	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(215,186,215,0) 40%, rgba(155,83,156,1) 100%);
 	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(215,186,215,0) 40%,rgba(155,83,156,1) 100%);
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(215,186,215,0) 40%,rgba(155,83,156,1) 100%);
-} 
+}
+
+.page-books h2, .page-books .detail h3, .page-books nav {
+    border-bottom-color: #9b539c;
+}
 .page-books main {
-	background: #9b539c;
+	background: url(../images/background_books_bw_01.jpg) no-repeat fixed left top / cover;
+	/*background: #9b539c;
 	background: -moz-linear-gradient(top, rgba(155,83,156,1) 0%, rgba(84,44,80,0.85) 5.75em, rgba(255,255,255,0) 100%);
 	background: -webkit-linear-gradient(top, rgba(155,83,156,1) 0%,rgba(84,44,80,0.85) 5.75em,rgba(255,255,255,0) 100%);
-	background: linear-gradient(to bottom, rgba(155,83,156,1) 0%,rgba(84,44,80,0.85) 5.75em,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to bottom, rgba(155,83,156,1) 0%,rgba(84,44,80,0.85) 5.75em,rgba(255,255,255,0) 100%);*/
 }
 .page-books .menu-site .books {
 	background: #9b539c;
@@ -120,17 +124,23 @@ nav :link, nav :visited {
 	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(155,83,156,1) 75%);
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(155,83,156,1) 75%);
 	border-radius: 25px 0 0 0;
+}
+
+.page-home h2, .page-home .detail h3, .page-home nav {
+    border-bottom-color: #bccf02;
 } 
 .page-home main {
 	background: #bccf02;
-	background: -moz-linear-gradient(top, rgba(188,207,2,1) 1%, rgba(86,95,9,0.85) 0, rgba(255,255,255,0) 20%) !important;
-	background: -webkit-linear-gradient(top, rgba(188,207,2,1) 1%,rgba(86,95,9,0.85) 0,rgba(255,255,255,0) 20%) !important;
-	background: linear-gradient(to bottom, rgba(188,207,2,1) 1%,rgba(86,95,9,0.85) 0,rgba(255,255,255,0) 20%) !important;
+	background: -moz-linear-gradient(top, rgba(188,207,2,1) 0%, rgba(86,95,9,0.85) 0, rgba(255,255,255,0) 20%) !important;
+	background: -webkit-linear-gradient(top, rgba(188,207,2,1) 0%,rgba(86,95,9,0.85) 0,rgba(255,255,255,0) 20%) !important;
+	background: linear-gradient(to bottom, rgba(188,207,2,1) 0%,rgba(86,95,9,0.85) 0,rgba(255,255,255,0) 20%) !important;
+	box-shadow: none;
 }
 .page-home .introduction {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.4);
     border-radius: 6em 0;
-	box-shadow: 30px 30px 30px 0 rgba(0, 0, 0, 0.25);
+	box-shadow: 30px 30px 30px 0 rgba(0, 0, 0, 0.35);
+	color: #333
 }
 .page-home .menu-site .home {
 	background: #bccf02;
@@ -139,11 +149,16 @@ nav :link, nav :visited {
 	background: linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 75%);
 	border-radius: 0 25px 0 0;
 }
+
+.page-interior-design h2, .page-interior-design .detail h3, .page-interior-design nav {
+    border-bottom-color: #73c5e1;
+}
 .page-interior-design main {
-	background: #73c5e1;
+	background: url(../images/background_interior-design_bw_01.jpg) no-repeat fixed left top / cover;
+	/*background: #73c5e1;
 	background: -moz-linear-gradient(top, rgba(115,197,225,1) 0%, rgba(60,92,108,0.85) 5.75em, rgba(255,255,255,0) 100%);
 	background: -webkit-linear-gradient(top, rgba(115,197,225,1) 0%,rgba(60,92,108,0.85) 5.75em,rgba(255,255,255,0) 100%);
-	background: linear-gradient(to bottom, rgba(115,197,225,1) 0%,rgba(60,92,108,0.85) 5.75em,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to bottom, rgba(115,197,225,1) 0%,rgba(60,92,108,0.85) 5.75em,rgba(255,255,255,0) 100%);*/
 }
 .page-interior-design .menu-site .interior-design {
 	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(115,197,225,1) 75%);
@@ -153,13 +168,14 @@ nav :link, nav :visited {
 }
 
 .page-music h2, .page-music .detail h3, .page-music nav {
-    border-bottom-color: #9b539c;
+    border-bottom-color: #eb65a0;
 }
 .page-music main {
-	background: #eb65a0;
+	background: url(../images/background_music_bw_01.jpg) no-repeat fixed left top / cover;
+	/*background: #eb65a0;
 	background: -moz-linear-gradient(top, rgba(235,101,160,1) 0%, rgba(107,56,73,0.85) 5.75em, rgba(255,255,255,0) 100%);
 	background: -webkit-linear-gradient(top, rgba(235,101,160,1) 0%,rgba(107,56,73,0.85) 5.75em,rgba(255,255,255,0) 100%);
-	background: linear-gradient(to bottom, rgba(235,101,160,1) 0%,rgba(107,56,73,0.85) 5.75em,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to bottom, rgba(235,101,160,1) 0%,rgba(107,56,73,0.85) 5.75em,rgba(255,255,255,0) 100%); */
 }
 .page-music .menu-site .music {
 	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(235,101,160,1) 75%);
@@ -232,7 +248,7 @@ nav :link, nav :visited {
 	.js .header-sub .selected .container-lozenge {
 		box-shadow: none
 	}
-	.page-paintings main {
+	.page-paintings main, .page-music main {
 		background-attachment: scroll 
 	}
 }
