@@ -248,7 +248,7 @@ nav :link, nav :visited {
 	.js .header-sub .selected .container-lozenge {
 		box-shadow: none
 	}
-	.page-paintings main, .page-music main {
+	.page-paintings main, .page-music main, .page-interior-design main, .page-books main {
 		background-attachment: scroll 
 	}
 }
