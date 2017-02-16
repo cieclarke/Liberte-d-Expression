@@ -20,22 +20,7 @@ $(function () {
 		}
 	}).register('screen and (min-width: 900px)', {
 		match : function() {
-			$(".page-home main").bgswitcher({
-				images: [
-					"../images/backgrounds-home/background_books_bw_01.jpg",
-					"../images/backgrounds-home/background_books_bw_02.jpg",
-					"../images/backgrounds-home/background_books_bw_03.jpg", 
-					"../images/backgrounds-home/background_interior-design_bw_01.jpg",
-					"../images/backgrounds-home/background_interior-design_bw_02.jpg",
-					"../images/backgrounds-home/background_interior-design_bw_03.jpg",
-					"../images/backgrounds-home/background_paintings_bw_01.jpg",
-					"../images/backgrounds-home/background_paintings_bw_02.jpg",
-					"../images/backgrounds-home/background_paintings_bw_03.jpg",
-					"../images/backgrounds-home/background_music_bw_01.jpg",
-					"../images/backgrounds-home/background_music_bw_02.jpg",
-					"../images/backgrounds-home/background_music_bw_03.jpg"
-				]
-			});
+
 		}
 	}).register('screen and (min-width: 1280px)', {
 		match : function() {
@@ -67,12 +52,29 @@ $(function () {
         }
     });
 
-	$('.gallery a'). addClass('fancybox');
+	$('.gallery a').addClass('fancybox');
 
 	$('.page-paintings .barclays .gallery a').attr('rel', 'barclays');
 	$('.page-paintings .light .gallery a').attr('rel', 'light');
 	$('.page-paintings .torbay .gallery a').attr('rel', 'torbay');
 	$('.page-paintings .sharmina .gallery a').attr('rel', 'sharmina');
+
+	$(".page-home main").bgswitcher({
+		images: [
+			"../images/backgrounds-home/background_books_bw_01.jpg",
+			"../images/backgrounds-home/background_books_bw_02.jpg",
+			"../images/backgrounds-home/background_books_bw_03.jpg", 
+			"../images/backgrounds-home/background_interior-design_bw_01.jpg",
+			"../images/backgrounds-home/background_interior-design_bw_02.jpg",
+			"../images/backgrounds-home/background_interior-design_bw_03.jpg",
+			"../images/backgrounds-home/background_paintings_bw_01.jpg",
+			"../images/backgrounds-home/background_paintings_bw_02.jpg",
+			"../images/backgrounds-home/background_paintings_bw_03.jpg",
+			"../images/backgrounds-home/background_music_bw_01.jpg",
+			"../images/backgrounds-home/background_music_bw_02.jpg",
+			"../images/backgrounds-home/background_music_bw_03.jpg"
+		]
+	});
 });
 
 // fancybox transition
