@@ -35,10 +35,9 @@ $(function () {
 			if ($('.page-interior-design').length) {
 		        sectionsRender.compress($('.page-interior-design'));
 
-				//$('.page-paintings #barclays .gallery a').attr('rel', 'barclays');
-				//$('.page-paintings #light .gallery a').attr('rel', 'light');
-				//$('.page-paintings #torbay .gallery a').attr('rel', 'torbay');
-				//$('.page-paintings #sharmina .gallery a').attr('rel', 'sharmina');
+				$('.page-interior-design #residential .gallery a').attr('rel', 'residential');
+				$('.page-interior-design #commercial .gallery a').attr('rel', 'commercial');
+				$('.page-interior-design #product .gallery a').attr('rel', 'product');
 	        }
 		},
 		unmatch : function() {
