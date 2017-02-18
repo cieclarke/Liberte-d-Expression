@@ -3,11 +3,10 @@
 ?>
 
 <h1>Music</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis vitae nisi eget eleifend. Phasellus tristique ut augue a consequat. Sed at dignissim augue, et tempor enim.</p>
 
-<section class="music-list container-lozenge">
-    <h2>Music</h2>
-    
-    <h3>In English</h3>
+<section class="music-list">
+    <h2>In English</h2>
     <ul>
         <li <?php echo strtolower($model->id) == 'closetoyou' ? 'class=\'selected\'' : ''; ?>><a href='/music/CloseToYou'>Close to You</a></li>
         <li <?php echo strtolower($model->id) == 'aboutagirl' ? 'class=\'selected\'' : ''; ?>><a href='/music/AboutAGirl'>About a Girl</a></li>
@@ -17,13 +16,13 @@
         <li <?php echo strtolower($model->id) == 'youare' ? 'class=\'selected\'' : ''; ?>><a href='/music/YouAre'>You Are</a></li>
     </ul>
 
-    <h3>In French</h3>
+    <h2>In French</h2>
     <ul>
         <li <?php echo strtolower($model->id) == 'jaivoulufuir' ? 'class=\'selected\'' : ''; ?>><a href='/music/JaiVouluFuir'>Jai voulu fuir</a></li>
         <li <?php echo strtolower($model->id) == 'caroline' ? 'class=\'selected\'' : ''; ?>><a href='/music/Caroline'>Caroline</a></li>
     </ul>
 
-    <h3>In Spanish</h3>
+    <h2>In Spanish</h2>
     <ul>
         <li <?php echo strtolower($model->id) == 'cercadeti' ? 'class=\'selected\'' : ''; ?>><a href='/music/CercaDeTi'>Cerca de ti</a></li>
         <li <?php echo strtolower($model->id) == 'atraccion' ? 'class=\'selected\'' : ''; ?>><a href='/music/Atraccion'>Atraccion</a></li>

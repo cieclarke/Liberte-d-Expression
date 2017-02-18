@@ -120,17 +120,17 @@
             </a>
         </li>
         <li>
-            <a class="fancybox" rel="group" href="/images/exhibitions-paintings/torbay/P2290702.jpg">
+            <a href="/images/exhibitions-paintings/torbay/P2290702.jpg">
                 <img src="/images/exhibitions-paintings/torbay/P2290702_thumb.jpg" alt="A Torbay exhibition scene" />
             </a>
         </li>
         <li>
-            <a class="fancybox" rel="group" href="/images/exhibitions-paintings/torbay/P2290706.jpg">
+            <a href="/images/exhibitions-paintings/torbay/P2290706.jpg">
                 <img src="/images/exhibitions-paintings/torbay/P2290706_thumb.jpg" alt="A Torbay exhibition scene" />
             </a>
         </li>
         <li>
-            <a class="fancybox" rel="group" href="/images/exhibitions-paintings/torbay/P2290707.jpg">
+            <a rel="group" href="/images/exhibitions-paintings/torbay/P2290707.jpg">
                 <img src="/images/exhibitions-paintings/torbay/P2290707_thumb.jpg" alt="A Torbay exhibition scene" />
             </a>
         </li>
@@ -196,11 +196,13 @@
                 <img src="/images/exhibitions-paintings/sharmina/7_thumb.jpg" alt="A Sharmina exhibit" />
             </a>
         </li>
+        <!--
         <li>
             <a href="/images/exhibitions-paintings/sharmina/1.jpg">
                 <img src="/images/exhibitions-paintings/sharmina/1_thumb.jpg" alt="A Sharmina exhibit" />
             </a>
         </li>
+        -->
         <li>
             <a href="/images/exhibitions-paintings/sharmina/8.jpg">
                 <img src="/images/exhibitions-paintings/sharmina/8_thumb.jpg" alt="A Sharmina exhibit" />

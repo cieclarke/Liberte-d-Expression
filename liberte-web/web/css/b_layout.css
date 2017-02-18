@@ -183,7 +183,7 @@ section {
 }
 .page-home .introduction {
     margin: 3.5rem auto;
-    padding: 7.5rem 10% 6.5rem;
+    padding: 5.0rem 10% 5.5rem;
     width: 90%
 }
 .page-home main {
@@ -192,9 +192,6 @@ section {
 }
 .page-music .container-lozenge * {
     position: relative
-}
-.page-music section {
-    margin: 0 5% 1.75rem 5%;
 }
 .page-music .music-play img {
     margin-bottom: 1.75rem;
@@ -260,21 +257,9 @@ section {
     .page-home .introduction {
         border-radius: 12em 0;
         margin: 5.25rem auto;
+        padding: 7.5rem 10% 6.5rem;
         width: 60%
-    }  
-    .page-music section {
-        float: left
-    }
-    .page-music .music-list {
-        margin-left: 0;
-        margin-right: 3%;
-        width: 55%
-    }
-    .page-music .music-play {
-        margin-left: 0;
-        margin-right: 0;
-        width: 42%
-    }
+    }    
 }
 
 /*   Media 1280 and above
@@ -299,8 +284,8 @@ section {
     
 	/* class elements: =. */
     .gallery li {
-        flex: 0 0 7.7em;
-        margin: 0.15em;
+        flex: 0 0 7.4em;
+        margin: 0.35em
     }
     .js .choice {
         float: left;
@@ -308,14 +293,25 @@ section {
     }
     .js .choice h2 {
         margin-bottom: 0;
+    }
+    .js .page-paintings .choice h2 {
         min-height: 5.1rem; /* two lines */
+    }
+    .js .page-internal-design .choice h2 {
+        min-height: 3.25rem; /* one line */
     }
     .js .container-lozenge.image {
         bottom: 0;
         height: 130px;
         margin-bottom: 0;
         position: absolute;
-        width: 160px;
+        width: 160px
+    }
+    .js .col-3 .container-lozenge.image {
+        width: 216px
+    }
+    .js .col-4 .container-lozenge.image {
+        width: 160px
     }
     .js .detail {
         float: right;
@@ -341,28 +337,25 @@ section {
         left: 0;
         position: absolute
     }
-    .js .page-paintings .header-sub {
-        -webkit-columns: 4 127px; -moz-columns: 4 127px; columns: 4 127px;
-        -webkit-column-gap: 0; -moz-column-gap: 0; column-gap: 0;
+    .js .header-sub {
         margin-top: 1.5rem;
         position: relative
     }
-    /*
-    .js .page-paintings .choice .heading-tall {
-        min-height: 6.75rem
-    }
-    */
+    .js .header-sub.col-3 {
+        -webkit-columns: 3 27px; -moz-columns: 3 27px; columns: 3 27px;
+        -webkit-column-gap: 0; -moz-column-gap: 0; column-gap: 0;
+    }       
+    .js .header-sub.col-4 {
+        -webkit-columns: 4 127px; -moz-columns: 4 127px; columns: 4 127px;
+        -webkit-column-gap: 0; -moz-column-gap: 0; column-gap: 0;
+    }    
     .js .page-paintings .selected h2 {
         min-height: 6.95rem
     }
-    /*
-    .js .header-sub h2:hover + .info-section, .js .header-sub h2:focus + .info-section,
-    .js .header-sub h2 + .info-section:hover {
-        height: auto;
-        left: 0
+    .js .page-interior-design .selected h2 {
+        min-height: 5.1rem
     }
-    */
-    .js .page-paintings .header-sub section {
+    .js .header-sub section {
         -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid;
         margin: 0 10px 0 0;
         min-height: 40rem;

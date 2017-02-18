@@ -24,19 +24,30 @@ $(function () {
 		}
 	}).register('screen and (min-width: 1280px)', {
 		match : function() {
-			if ($('.page-paintings .main').length) {
-		        exhibitionsRender.compress();
+			if ($('.page-paintings').length) {
+		        sectionsRender.compress($('.page-paintings'));
 
 				$('.page-paintings #barclays .gallery a').attr('rel', 'barclays');
 				$('.page-paintings #light .gallery a').attr('rel', 'light');
 				$('.page-paintings #torbay .gallery a').attr('rel', 'torbay');
 				$('.page-paintings #sharmina .gallery a').attr('rel', 'sharmina');
-	        } 
+	        }
+			if ($('.page-interior-design').length) {
+		        sectionsRender.compress($('.page-interior-design'));
+
+				//$('.page-paintings #barclays .gallery a').attr('rel', 'barclays');
+				//$('.page-paintings #light .gallery a').attr('rel', 'light');
+				//$('.page-paintings #torbay .gallery a').attr('rel', 'torbay');
+				//$('.page-paintings #sharmina .gallery a').attr('rel', 'sharmina');
+	        }
 		},
 		unmatch : function() {
-			if ($('.page-paintings .main').length) {
-		        exhibitionsRender.uncompress();
-	        } 
+			if ($('.page-paintings').length) {
+		        sectionsRender.uncompress($('.page-paintings'));
+	        }
+			if ($('.page-interior-design').length) {
+		        sectionsRender.uncompress($('.page-interior-design'));
+	        }
 		}
 	}).listen(50); // milliseconds
 
@@ -110,13 +121,16 @@ $(function () {
 
 // METHODS
 
-var exhibitionsRender = {
-	compress : function() {
-		var $content = $('.page-paintings .main');
-		var $pageTitle = $('.page-paintings .main h1');
+var sectionsRender = {
+	compress : function($page) {
+		//alert($page.attr('class'));
+
+		var $content = $($page.find('main'));
+		var $sections = $content.find('section').length;
+		var $pageTitle = $content.find('h1');
 		var $preamble = $pageTitle.nextUntil('section');
 		var $choice = $('<div class="choice">');
-		var $choiceHead = $('<div class="header-sub">');
+		var $choiceHead = $('<div class="header-sub col-' + $sections + '">');
 		var $detail = $('<div class="detail container-lozenge">');
 		
 		if ($('.detail').length) {
@@ -132,7 +146,7 @@ var exhibitionsRender = {
 			var $sectionClass = $section.attr('class');
 			var $sectionHeading = $section.find('h2');
 			var $sectionFig = $section.find('figure');
-			var $imageAnchor = $('<a title="View exhibition..." />').attr('href', '#' + $sectionClass);
+			var $imageAnchor = $('<a title="View" />').attr('href', '#' + $sectionClass);
 			var $gallery = $section.find('.gallery');
 			var $information = $('<div class="info-section">').html($sectionFig.nextUntil($gallery));
 			var $infoContainer = $('<div>').attr('id', $sectionClass);
@@ -210,7 +224,8 @@ var exhibitionsRender = {
 		$choice.appendTo($content);
 		$detail.appendTo($content);
 	},
-	uncompress : function() {
+	uncompress : function($page) {
+		
 		var $content = $('.page-paintings .main');
 		var $choice = $('.choice');
 		var $choiceHead = $('.header-sub');
