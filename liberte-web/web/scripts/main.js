@@ -83,8 +83,18 @@ $(function () {
 			"../images/backgrounds-home/background_music_bw_01.jpg",
 			"../images/backgrounds-home/background_music_bw_02.jpg",
 			"../images/backgrounds-home/background_music_bw_03.jpg"
-		]
+		],
+		interval: 4000
 	});
+
+	var arrPalette = ['palette-01', 'palette-02', 'palette-03', 'palette-04', 'palette-05'];
+	var arrLength = arrPalette.length;
+	var i = 0; 
+
+	setInterval(function(){
+		$('.page-home .introduction').attr('data-palette', '').attr('data-palette', arrPalette[i]);
+		i = (i + 1) % arrLength;
+	}, 4000);
 });
 
 // fancybox transition
@@ -119,6 +129,12 @@ $(function () {
 
 
 // METHODS
+
+
+
+
+
+
 
 var sectionsRender = {
 	compress : function($page) {

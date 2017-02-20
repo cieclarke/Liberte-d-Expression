@@ -160,7 +160,22 @@ nav :link, nav :visited {
     background: rgba(255, 255, 255, 0.85);
     border-radius: 6em 0;
 	box-shadow: 30px 30px 30px 0 rgba(0, 0, 0, 0.35);
-	color: #333
+	color: #73c5e1
+}
+.page-home .introduction[data-palette='palette-01'] {
+	color: #bccf02
+}
+.page-home .introduction[data-palette='palette-02'] {
+	color: #5bb12f
+}
+.page-home .introduction[data-palette='palette-03'] {
+	color: #73c5e1
+}
+.page-home .introduction[data-palette='palette-04'] {
+	color: #eb65a0
+}
+.page-home .introduction[data-palette='palette-05'] {
+	color: #9b539c
 }
 .page-home .menu-site .home {
 	background: #bccf02;
