@@ -149,11 +149,12 @@ nav :link, nav :visited {
 	background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 57%,rgba(188,207,2,0.93) 88%) !important;
 	background: radial-gradient(ellipse at center, rgba(0,0,0,0) 57%,rgba(188,207,2,0.93) 88%) !important;
 	*/
+	/*
 	background: #bccf02;
 	background: -moz-linear-gradient(top, rgba(188,207,2,1) 0%, rgba(86,95,9,0.85) 0, rgba(255,255,255,0) 20%) !important;
 	background: -webkit-linear-gradient(top, rgba(188,207,2,1) 0%,rgba(86,95,9,0.85) 0,rgba(255,255,255,0) 20%) !important;
 	background: linear-gradient(to bottom, rgba(188,207,2,1) 0%,rgba(86,95,9,0.85) 0,rgba(255,255,255,0) 20%) !important;
-	
+	*/
 	box-shadow: none;
 }
 .page-home .introduction {
@@ -162,20 +163,23 @@ nav :link, nav :visited {
 	box-shadow: 30px 30px 30px 0 rgba(0, 0, 0, 0.35);
 	color: #73c5e1
 }
-.page-home .introduction[data-palette='palette-01'] {
-	color: #bccf02
-}
-.page-home .introduction[data-palette='palette-02'] {
-	color: #5bb12f
-}
-.page-home .introduction[data-palette='palette-03'] {
+.js .page-home .introduction[data-palette='palette-00'] {
 	color: #73c5e1
 }
-.page-home .introduction[data-palette='palette-04'] {
+.js .page-home .introduction[data-palette='palette-01'] {
+	color: #5bb12f
+}
+.js .page-home .introduction[data-palette='palette-02'] {
 	color: #eb65a0
 }
-.page-home .introduction[data-palette='palette-05'] {
+.js .page-home .introduction[data-palette='palette-03'] {
 	color: #9b539c
+}
+.js .page-home .introduction[data-palette='palette-04'] {
+	color: #73c5e1
+}
+.js .page-home .introduction[data-palette='palette-05'] {
+	color: #bccf02
 }
 .page-home .menu-site .home {
 	background: #bccf02;
