@@ -79,7 +79,7 @@ $(function () {
 		setInterval(function(){
 			$('.page-home .introduction').attr('data-palette', '').attr('data-palette', arrPalette[i + 1]);
 			i = (i + 1) % arrLength;
-		}, 4025);
+		}, 4055);
 
 		$(".page-home main").bgswitcher({
 			images: [
@@ -89,7 +89,7 @@ $(function () {
 				"../images/backgrounds-home/background_books_bw_10.jpg"
 			],
 			interval: 4000,
-			duration: 500
+			duration: 1200
 		});
 	}
 });
