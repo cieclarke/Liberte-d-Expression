@@ -72,7 +72,6 @@ $(function () {
 	if ($('.page-home').length) {
 		var arrPalette = ['palette-00', 'palette-01', 'palette-02', 'palette-03'];
 		var arrLength = arrPalette.length;
-		var delay = 4000;
 		var i = 0; 
 
 		$('.page-home .introduction').attr('data-palette', 'palette-00');
@@ -80,7 +79,7 @@ $(function () {
 		setInterval(function(){
 			$('.page-home .introduction').attr('data-palette', '').attr('data-palette', arrPalette[i + 1]);
 			i = (i + 1) % arrLength;
-		}, delay);
+		}, 4025);
 
 		$(".page-home main").bgswitcher({
 			images: [
@@ -89,8 +88,8 @@ $(function () {
 				"../images/backgrounds-home/background_music_bw_10.jpg",
 				"../images/backgrounds-home/background_books_bw_10.jpg"
 			],
-			interval: delay,
-			duration: 100
+			interval: 4000,
+			duration: 500
 		});
 	}
 });
