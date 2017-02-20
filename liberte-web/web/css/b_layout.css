@@ -307,6 +307,9 @@ section {
         position: absolute;
         width: 160px
     }
+    .js .col-2 .container-lozenge.image {
+        width: 116px
+    }
     .js .col-3 .container-lozenge.image {
         width: 216px
     }
@@ -341,6 +344,10 @@ section {
         margin-top: 1.5rem;
         position: relative
     }
+    .js .header-sub.col-2 {
+        -webkit-columns: 2 27px; -moz-columns: 2 27px; columns: 2 27px;
+        -webkit-column-gap: 0; -moz-column-gap: 0; column-gap: 0;
+    } 
     .js .header-sub.col-3 {
         -webkit-columns: 3 27px; -moz-columns: 3 27px; columns: 3 27px;
         -webkit-column-gap: 0; -moz-column-gap: 0; column-gap: 0;
