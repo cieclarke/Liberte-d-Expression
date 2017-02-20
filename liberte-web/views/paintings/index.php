@@ -3,7 +3,7 @@
 ?>
 
 <h1>Artwork Exhibitions</h1>
-<p>Liberte d'Expression has organised art exhibitions where the aim of these events is to give painters across the UK exposure for their art irrespective of their age, experience or artistic background whilst raising funding for really good causes.</p>
+<p>Liberte d'Expression has organised art exhibitions where the aim of these events was to give painters across the UK exposure for their art irrespective of their age, experience or artistic background whilst raising funding for really good causes.</p>
 
 <section class="barclays">
     <h2>Barclays Bank, Candid Art Trust and Light Gallery</h2>

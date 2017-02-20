@@ -28,8 +28,6 @@ $(function () {
 		        sectionsRender.compress($('.page-paintings'));
 
 				$('.page-paintings #barclays .gallery a').attr('rel', 'barclays');
-				$('.page-paintings #light .gallery a').attr('rel', 'light');
-				$('.page-paintings #torbay .gallery a').attr('rel', 'torbay');
 				$('.page-paintings #sharmina .gallery a').attr('rel', 'sharmina');
 	        }
 			if ($('.page-interior-design').length) {
@@ -65,8 +63,6 @@ $(function () {
 	$('.gallery a').addClass('fancybox');
 
 	$('.page-paintings .barclays .gallery a').attr('rel', 'barclays');
-	$('.page-paintings .light .gallery a').attr('rel', 'light');
-	$('.page-paintings .torbay .gallery a').attr('rel', 'torbay');
 	$('.page-paintings .sharmina .gallery a').attr('rel', 'sharmina');
 
 	if ($('.page-home').length) {
@@ -136,7 +132,6 @@ $(function () {
 var sectionsRender = {
 	compress : function($page) {
 		//alert($page.attr('class'));
-
 		var $content = $($page.find('main'));
 		var $sections = $content.find('section').length;
 		var $pageTitle = $content.find('h1');
@@ -237,8 +232,7 @@ var sectionsRender = {
 		$detail.appendTo($content);
 	},
 	uncompress : function($page) {
-		
-		var $content = $('.page-paintings .main');
+		var $content = $($page.find('main'));;
 		var $choice = $('.choice');
 		var $choiceHead = $('.header-sub');
 		var $detail = $('.detail');
