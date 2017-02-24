@@ -247,12 +247,18 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	/* class elements: =. */
 	.js .detail {
 		background-color: #fff;
-		background-image: url(../images/toplights_00.jpg), url(../images/logo_swirl_background_00.png);
-		background-repeat: no-repeat, no-repeat;
-		background-position: top center, 108% 116%;
-		/*background-size: auto, 25%;*/
 		border-radius: 65px 0;
 		color: #000;
+	}
+	.js .page-paintings .detail {
+		background-image: url(../images/exhibitions-paintings/default_exhibition.jpg), url(../images/toplights_00.jpg);
+		background-repeat: no-repeat, no-repeat;
+		background-position: center 10.5rem, center top;
+	}
+	.js .page-paintings .detail.active {
+		background-image: url(../images/toplights_00.jpg), url(../images/logo_swirl_background_00.png);
+		background-repeat: no-repeat, no-repeat;
+		background-position: top center, 108% 116%
 	}
 	.js .detail h2 {
 		background-color: transparent;

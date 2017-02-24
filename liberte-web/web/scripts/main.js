@@ -52,7 +52,7 @@ $('html').addClass('js');
 // main control block, on DOM-ready..
 $(function () {
 	// media query breakpoints should match those in the CSS
-	enquire.register('screen and (min-width: 480px)', {
+	enquire.register('screen and (max-width: 480px)', {
 		match : function() {
 			
 		}
@@ -82,6 +82,14 @@ $(function () {
 				var $page = $('.page-books');
 				var lozPaths = pageLozengesMeta.books;
 
+				pageMaxWidthRender.assemble($page, 'type-viewer', lozPaths);
+			}
+
+			if ($('.page-music').length) {
+				var $page = $('.page-music');
+				var lozPaths = pageLozengesMeta.music;
+
+				pageMaxWidthRender.assemble($page, 'type-viewer', lozPaths);
 			}
 		},
 		unmatch : function() {
@@ -96,12 +104,22 @@ $(function () {
 
 				pageMaxWidthRender.disassemble($page);
 			}
+
+			if ($('.page-books').length) {
+				var $page = $('.page-books');
+
+				pageMaxWidthRender.disassemble($page);
+			}
+
+			if ($('.page-music').length) {
+				var $page = $('.page-music');
+
+				pageMaxWidthRender.disassemble($page);
+			}
 		}
 	}).listen(50); // milliseconds
 
-
 	// non viewport size dependent function calls..
-	
 	// fancybox
 	$(".fancybox").fancybox({
         nextMethod : 'resizeIn',
@@ -193,7 +211,6 @@ $(function () {
     };
 }(jQuery, jQuery.fancybox));
 
-
 // METHODS
 var pageMaxWidthRender = {
 	assemble : function($page, pageType, lozPaths) {
@@ -238,7 +255,7 @@ var pageMaxWidthRender = {
 
 				$sectionAnchor.click(function() {
 					$('.detail.container-lozenge').addClass('blink'); // add once, never remove so single animation per page load
-					
+					$detail.addClass('active');
 					$('.detail > div').each(function() {
 						if ($(this).attr('id') == $sectionClass) {
 							$(this).removeClass('off-screen');
