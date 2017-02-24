@@ -3,41 +3,42 @@
 var pageLozengesMeta = {
 	'paintings': {
 		'artExhibitions': {
-			'lozFirst': '<img src="/images/exhibitions-paintings/exhibition_barclays_00.jpg" alt="Exhibition scene - Barclays" />',
-			'lozSecond': '<img src="/images/exhibitions-paintings/exhibition_light-gallery_00.jpg" alt="Exhibition scene - Light Gallery" />'
+			'lozFirst': '<img src="/images/exhibitions-paintings/lozenge_exhibition_barclays_00.jpg" alt="Exhibition scene - Barclays" />',
+			'lozSecond': '<img src="/images/exhibitions-paintings/lozenge_exhibition_light-gallery_00.jpg" alt="Exhibition scene - Light Gallery" />'
 		},
 		'sharminas': {
-			'lozFirst': '<img src="/images/exhibitions-paintings/exhibition_sharmina_00.jpg" alt="Exhibition scene - Sharmina" />',
-			'lozSecond': '<img src="/images/exhibitions-paintings/exhibition_torbay_00.jpg" alt="Exhibition scene - Torbay" />'
+			'lozFirst': '<img src="/images/exhibitions-paintings/lozenge_exhibition_sharmina_00.jpg" alt="Exhibition scene - Sharmina" />',
+			'lozSecond': '<img src="/images/exhibitions-paintings/lozenge_exhibition_torbay_00.jpg" alt="Exhibition scene - Torbay" />'
 		}
 	},
 	'design': {
 		'interior': {
-			'lozFirst': '<img src="/images/interior-design/commercial_00.jpg" alt="Interior design - example" />',
-			'lozSecond': '<img src="/images/interior-design/residential_00.jpg" alt="Interior design - example" />'
+			'lozFirst': '<img src="/images/interior-design/lozenge_design_interior_00.jpg" alt="Interior design - example" />',
+			'lozSecond': '<img src="/images/interior-design/lozenge_design_interior_01.jpg" alt="Interior design - example" />'
 		},
 		'product': {
-			'lozFirst': '<img src="/images/interior-design/product_00.jpg" alt="Product design - example" />'
+			'lozFirst': '<img src="/images/interior-design/lozenge_design_product_00.jpg" alt="Product design - example" />'
 		}
 	},
 	'music': {
 		'english': {
-			'lozFirst': ''
+			'lozFirst': '<img src="/images/music/lozenge_music_00.jpg" alt="Music - studio example" />'
 		},
 		'spanish': {
-			'lozFirst': ''
+			'lozFirst': '<img src="/images/music/lozenge_music_01.jpg" alt="Music - studio example" />'
 		}
 		,
 		'french': {
-			'lozFirst': ''
+			'lozFirst': '<img src="/images/music/lozenge_music_02.jpg" alt="Music - studio example" />'
 		}
 	},
 	'books': {
-		'categ01': {
-			'lozFirst': ''
+		'happyLaneSeries': {
+			'lozFirst': '<img src="/images/books/lozenge_books_00.jpg" alt="Books - Happy Lane series example" />',
+			'lozSecond': '<img src="/images/books/lozenge_books_01.jpg" alt="Books - Happy Lane series example" />'
 		},
-		'categ02': {
-			'lozFirst': ''
+		'otherBooks': {
+			'lozFirst': '<img src="/images/books/lozenge_books_02.jpg" alt="Books - other books example" />'
 		}
 	}
 };
@@ -62,7 +63,6 @@ $(function () {
 				var lozPaths = pageLozengesMeta.paintings;
 				
 				pageMaxWidthRender.assemble($page, 'type-gallery', lozPaths);
-				//sectionsRender.compress($page);
 
 				$($page.find('#barclays .gallery a').attr('rel', 'exhibitions'));
 				$($page.find('#sharmina .gallery a').attr('rel', 'sharmina'));
@@ -73,24 +73,27 @@ $(function () {
 				var lozPaths = pageLozengesMeta.design;
 				
 				pageMaxWidthRender.assemble($page, 'type-gallery', lozPaths);
-				//sectionsRender.compress($page);
-
+				
 				$('.page-interior-design #interior .gallery a').attr('rel', 'interior');
 				$('.page-interior-design #product .gallery a').attr('rel', 'product');
+			}
+
+			if ($('.page-books').length) {
+				var $page = $('.page-books');
+				var lozPaths = pageLozengesMeta.books;
+
 			}
 		},
 		unmatch : function() {
 			if ($('.page-paintings').length) {
 				var $page = $('.page-paintings');
 
-				$page.removeClass('type-gallery');	
 				pageMaxWidthRender.disassemble($page);
 			}
 
 			if ($('.page-interior-design').length) {
 				var $page = $('.page-interior-design');
 
-				$page.removeClass('type-gallery');
 				pageMaxWidthRender.disassemble($page);
 			}
 		}
