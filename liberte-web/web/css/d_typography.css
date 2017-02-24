@@ -127,6 +127,9 @@ textarea {
 
 
 	/* class elements: =. */
+    .js .choice h2 .info-section-drop {
+		text-decoration: none;
+    }
     .js .detail h2 {
         text-align: center
     }
