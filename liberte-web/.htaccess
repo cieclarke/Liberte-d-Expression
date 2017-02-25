@@ -8,3 +8,13 @@ RedirectMatch 403 /\..*$
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . index.php 
+<IfModule mod_expires.c>
+# Enable expirations
+ExpiresActive On
+ExpiresDefault "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/jpg "access plus 1 month"
+ExpiresByType text/css "access 1 month"
+ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
