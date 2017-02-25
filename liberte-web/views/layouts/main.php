@@ -29,21 +29,21 @@ AppAsset::register($this);
     <link rel="stylesheet" href="/css/e_vendor.css">
     <link rel="stylesheet" href="/scripts/fancybox/source/jquery.fancybox.css?v=2.1.6" type="text/css" media="screen" />
 
-    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script defer="defer" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
 
 	<!-- required by IE9 and some other user agents in order to process javascript-based media queries..
 		 applies patch if window.matchMedia() is unsupported -->
-	<script src="/scripts/matchMedia.js"></script>
+	<script defer="defer" src="/scripts/matchMedia.js"></script>
 
 	<!-- library required to process javascript-based media queries.. requires window.matchMedia() support -->
-	<script src="/scripts/enquire.min.js"></script>
+	<script defer="defer" src="/scripts/enquire.min.js"></script>
 	
-    <script src="/scripts/fancybox/source/jquery.fancybox.pack.js?v=2.1.6"></script>
+    <script defer="defer" src="/scripts/fancybox/source/jquery.fancybox.pack.js?v=2.1.6"></script>
 
 	<!-- main script -->
-	<script src="/scripts/main.js"></script>
+	<script defer="defer" src="/scripts/main.js"></script>
 
-    <script src="/scripts/jquery.bgswitcher.js"></script>
+    <script defer="defer" src="/scripts/jquery.bgswitcher.js"></script>
 
     <!-- older IE support - remove this and associated files when IE8 support is dropped -->
     <!--[if lt IE 9]>
