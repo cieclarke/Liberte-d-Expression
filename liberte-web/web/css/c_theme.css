@@ -13,21 +13,21 @@ footer {
 }
 header {
     background-image:  url(../images/tranquility.jpg); 
-	background-size: cover;
+	background-size: cover
 }
 html {
-	background-color: #333;
+	background-color: #333
 }
 h1, h2 {
 	text-shadow: 1px 1px 10px #333
 }
 main {
 	box-shadow: 0 0 10px 15px #fff inset;
-	color: #fff;
+	color: #fff
 }
 
 section li a {
-	color: #fff;
+	color: #fff
 }
 
 /* animation */
@@ -35,7 +35,7 @@ section li a {
 	5% {border-color: rgba(128, 128, 128, 0.5);}
 }
 .blink { 
-	animation: border-blink 1.0s ease-in-out; 
+	animation: border-blink 1.0s ease-in-out
 }
 
 /* primary anchor pseudo-classes */
@@ -45,25 +45,25 @@ footer[role='contentinfo'] :link:hover, footer[role='contentinfo'] :visited:hove
 }
 nav[role='navigation'] :link, nav[role='navigation'] :visited, 
 nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
-	color: #fff;
+	color: #fff
 }
 
 /* class elements: =. */
 .container-lozenge {
     border-color: #fafafa;
     border-radius: 50px 0; 
-    box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.85);
+    box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.85)
 }
 .container-lozenge::before {
-    box-shadow: 0 0 4px #999 inset;
+    box-shadow: 0 0 4px #999 inset
 }
 .gallery {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3)
 }
 .gallery a img {
 	border: 4px solid;
 	border-color: transparent;
-	border-radius: 30px 0;
+	border-radius: 30px 0
 }
 .light h1, .light h2, .light h2 a, .light p, .light li {
 	color: #666
@@ -77,10 +77,10 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 .list-standard li {
 	/*background: url(../images/liberte_list_20x20_01.png) no-repeat left top;*/
 	list-style-position: inside;
-    list-style-type: disc;
+    list-style-type: disc
 }
 .menu-site a {
-	text-shadow: 1px 1px 10px #000;
+	text-shadow: 1px 1px 10px #000
 }
 .menu-site .home {
 	background: #bccf02;
@@ -120,7 +120,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	color: #fff
 }
 .page-books h2, .page-books .detail h3, .page-books nav {
-    border-bottom-color: #9b539c;
+    border-bottom-color: #9b539c
 }
 .page-books main {
 	background: url(../images/background_books_bw_01.jpg) no-repeat fixed left top / cover;
@@ -137,10 +137,10 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	text-shadow: none
 }
 .page-home h2, .page-home .detail h3, .page-home nav {
-    border-bottom-color: #bccf02;
+    border-bottom-color: #bccf02
 } 
 .page-home main {
-	box-shadow: none;
+	box-shadow: none
 }
 .page-home .introduction {
     background: rgba(255, 255, 255, 0.85);
@@ -171,7 +171,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	background: -webkit-linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 75%);
 	background: -o-linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 75%);
 	background: linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 75%);
-	border-radius: 0 25px 0 0;
+	border-radius: 0 25px 0 0
 }
 
 .page-interior-design :link, .page-interior-design :visited, .page-interior-design :link:hover, .page-interior-design :visited:hover {
@@ -211,19 +211,19 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	color: #5bb12f
 }
 .page-paintings h2, .page-paintings .detail h3, .page-paintings nav {
-    border-bottom-color: #5bb12f;
+    border-bottom-color: #5bb12f
 }
 .page-paintings main {
-	background: url(../images/background_paintings_bw_01.jpg) no-repeat fixed left top / cover; 
+	background: url(../images/background_paintings_bw_01.jpg) no-repeat fixed left top / cover 
 }
 .page-paintings .gallery a:hover img, .page-paintings .gallery a:focus img {
 	border-color: #5bb12f;
-	transition : border 175ms linear;
+	transition : border 175ms linear
 }
 .page-paintings .list-standard :link, .page-paintings .list-standard :visited, 
 .page-paintings .list-standard :link:hover, .page-paintings .list-standard :visited:hover {
 	color: #5bb12f;
-	text-shadow: 1px 1px 0 #000;
+	text-shadow: 1px 1px 0 #000
 }
 .page-paintings .menu-site .paintings {
 	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%,  rgba(91,177,47,1) 75%);
@@ -248,12 +248,12 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	.js .detail {
 		background-color: #fff;
 		border-radius: 65px 0;
-		color: #000;
+		color: #000
 	}
 	.js .page-paintings .detail {
 		background-image: url(../images/exhibitions-paintings/default_exhibition.jpg), url(../images/toplights_00.jpg);
 		background-repeat: no-repeat, no-repeat;
-		background-position: center 10.5rem, center top;
+		background-position: center 10.5rem, center top
 	}
 	.js .page-paintings .detail.active {
 		background-image: url(../images/toplights_00.jpg), url(../images/logo_swirl_background_00.png);
@@ -290,11 +290,11 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	.page-paintings main, .page-interior-design main, .page-music main, .page-books main {
 		background-attachment: scroll;
 		background-position: left top;
-		background-size: contain;
+		background-size: contain
 	}
 
 	.page-paintings main {
-		background-color: #7e7e7e;
+		background-color: #7e7e7e
 	}
 	.page-paintings .container-lozenge.focus-lozenge {
 		border-color: #5bb12f;
@@ -304,30 +304,30 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 		background: url(../images/page-paintings-arra-down.png) no-repeat center bottom;
     }
 	.js .page-paintings .choice h2 a {
-        border-bottom-color: #5bb12f;
+        border-bottom-color: #5bb12f
     }
 	.js .page-paintings .header-sub h2 :link, .js .page-paintings .header-sub h2 :visited,
 	.js .page-music .header-sub h2 :link, .js .page-music .header-sub h2 :visited {
-		color: #fff;
+		color: #fff
 	}
 
 	.page-books main {
-		background-color: #e8e8e8;
+		background-color: #e8e8e8
 	}
 	
 	.page-music main {
-		background-color: #8c8c8c;
+		background-color: #8c8c8c
 	}
 
 	.page-interior-design main {
-		background-color: #e8e8e8;
+		background-color: #e8e8e8
 	}
 	.page-interior-design .container-lozenge.focus-lozenge {
 		border-color: #73c5e1;
 		transition : border 175ms linear
 	}
 	.js .page-interior-design .info-section-drop {
-		background: url(../images/page-interior-design-arra-down.png) no-repeat center bottom;
+		background: url(../images/page-interior-design-arra-down.png) no-repeat center bottom
     }
 	.js .page-interior-design .choice h2 a {
         border-bottom-color: #73c5e1;

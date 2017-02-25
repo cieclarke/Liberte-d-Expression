@@ -73,7 +73,8 @@ h2:first-child, h3:first-child {
 }
 header {
     height: 9.5em;
-    position: relative;
+    position: sticky;
+    top: 0
 }
 main {
     overflow: hidden;
@@ -260,7 +261,8 @@ section {
     header {
         border-radius: 40px 40px 0 0;
         height: 10em;
-        margin-top: 2.25em
+        margin-top: 2.25em;
+        position: relative
     }
     h2 {
         display: table
