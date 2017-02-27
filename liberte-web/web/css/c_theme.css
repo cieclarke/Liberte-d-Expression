@@ -113,9 +113,6 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(215,186,215,0) 40%,rgba(155,83,156,1) 100%);
 }
 
-.page-books h1, .page-books main p {
-	color: #000
-}
 .page-books .info-section p {
 	color: #fff
 }
