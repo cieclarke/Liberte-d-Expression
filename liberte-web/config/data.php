@@ -33,7 +33,7 @@ return
             ['id' => 'CloseToYou', 'title' => 'Close To You', 'description' => 'Close To You', 'urls' => ['mp3' => 'CloseToYou.mp3', 'ogg' => 'CloseToYou.ogg', 'png' => 'CloseToYou.png']],
             ['id' => 'Atraccion',  'title' => 'Atraccion', 'description' => 'Atraccion', 'urls' => ['mp3' => 'Atraccion.mp3', 'ogg' => 'Atraccion.ogg', 'png' => 'Atraccion.png']],
             ['id' => 'AboutAGirl',  'title' => 'About A Girl', 'description' => 'About A Girl', 'urls' => ['mp3' => 'AboutAGirl.mp3', 'ogg' => 'AboutAGirl.ogg', 'png' => 'AboutAGirl.png']],
-            ['id' => 'Caroline',  'title' => 'Caroline', 'description' => 'Caroline', 'urls' => ['mp3' => 'Caroline.mp3', 'ogg' => 'Caroline.ogg', 'png' => 'Caroline.png']],
+            ['id' => 'Caroline',  'title' => 'Caroline', 'description' => 'Caroline', 'urls' => ['mp4' => 'Caroline.mp4', 'mp3' => 'Caroline.mp3', 'ogg' => 'Caroline.ogg', 'png' => 'Caroline.png']],
             ['id' => 'CercaDeTi',  'title' => 'Cerca De Ti', 'description' => 'Cerca De Ti', 'urls' => ['mp3' => 'CercaDeTi.mp3', 'ogg' => 'CercaDeTi.ogg', 'png' => 'CercaDeTi.png']],
             ['id' => 'Friendship',  'title' => 'Friendship', 'description' => 'Friendship', 'urls' => ['mp3' => 'Friendship.mp3', 'ogg' => 'Friendship.ogg', 'png' => 'Friendship.png']],
             ['id' => 'HeAndShe',  'title' => 'He And She', 'description' => 'He And She', 'urls' => ['mp3' => 'HeAndShe.mp3', 'ogg' => 'HeAndShe.ogg', 'png' => 'HeAndShe.png']],
