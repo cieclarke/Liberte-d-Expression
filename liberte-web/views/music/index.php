@@ -33,14 +33,24 @@
 
 <section class="music-play container-lozenge">
     <h2><?php echo $model->title; ?></h2>
-    
-    <img alt="Music score for <?php echo $model->title; ?>" src="http://libertedexpression.co.uk/art/audio/<?php echo $model->types['png']; ?>" />
-    <!-- HTML5 default player -->
-    <audio title="<?php echo $model->title; ?>" controls="controls">
-        <source src="http://libertedexpression.co.uk/art/audio/<?php echo $model->types['mp3']; ?>" type='audio/mpeg; codecs="mp3"'>
-        <source src="http://libertedexpression.co.uk/art/audio/<?php echo $model->types['ogg']; ?>" type='audio/ogg; codecs="vorbis"'>
-        <p>Unsupported media</p>
-    </audio>
+
+    <?php if(array_key_exists('mp4', $model->types)) { ?>
+        <video controls="controls">
+            <source src="http://libertedexpression.co.uk/art/audio/<?php echo $model->types['mp4']; ?>" type="video/mp4">
+            <p>Unsupported media</p>
+        </video> 
+    <? 
+    } else {
+    ?>
+        <img alt="Music score for <?php echo $model->title; ?>" src="http://libertedexpression.co.uk/art/audio/<?php echo $model->types['png']; ?>" />
+        <audio title="<?php echo $model->title; ?>" controls="controls">
+            <source src="http://libertedexpression.co.uk/art/audio/<?php echo $model->types['mp3']; ?>" type='audio/mpeg; codecs="mp3"'>
+            <source src="http://libertedexpression.co.uk/art/audio/<?php echo $model->types['ogg']; ?>" type='audio/ogg; codecs="vorbis"'>
+            <p>Unsupported media</p>
+        </audio>
+    <? 
+    }
+    ?>
     <!-- / HTML5 default player -->
 
 
