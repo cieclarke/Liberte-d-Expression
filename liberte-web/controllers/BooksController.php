@@ -26,7 +26,7 @@ class BooksController extends Controller
 
     public function actionBook($id = '')
     {
-        $this->view->params['class'] = 'books';
+        $this->view->params['class'] = 'page-books light';
         $vm = new \app\models\BookViewModel();
         $bookForView = $vm['Books'][0];
 

@@ -8,13 +8,12 @@ class BookRepo
     {
         $params = \Yii::$app->params;
         $data = $params['data']['Books'];
-
         $books = [];
 
         foreach($data as $b)
         {
             
-           $book  = new \app\assets\models\Book($b['id'], $b['title'], $b['description'], $b['types']);
+           $book  = new \app\assets\models\Book($b['id'], $b['category'], $b['title'], $b['description'], $b['types']);
             
            
             array_push($books, $book);

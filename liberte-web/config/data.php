@@ -45,38 +45,14 @@ return
             ['id' => 'YouAre',  'title' => 'You Are', 'description' => 'You Are', 'urls' => ['mp3' => 'YouAre.mp3', 'ogg' => 'YouAre.ogg', 'png' => 'YouAre.png']]
         ],
     'Books' => [
-            ['id' => 'MrTandtheJMan', 'title' => 'Mr T and the J Man', 'description' => 'Mr T and the J Man', 'types' => [
-                'pdf' => 'MrTandtheJMan.pdf'
-                ] 
-            ],
-            ['id' => 'CheekyMonkey', 'title' => 'Cheeky Monkey', 'description' => 'Cheeky Monkey', 'types' => [
-                'pdf' => 'CheekyMonkey.pdf'
-                ] 
-            ],
-            ['id' => 'HappyLane1', 'title' => 'Happy Lane 1', 'description' => 'Happy Lane 1', 'types' => [
-                'pdf' => 'HappyLane1.pdf'
-                ] 
-            ],
-            ['id' => 'HappyLane2', 'title' => 'Happy Lane 2', 'description' => 'Happy Lane 2', 'types' => [
-                'pdf' => 'HappyLane2.pdf'
-                ] 
-            ],
-            ['id' => 'HappyLane3', 'title' => 'Happy Lane 3', 'description' => 'Happy Lane 3', 'types' => [
-                'pdf' => 'HappyLane3.pdf'
-                ] 
-            ],
-            ['id' => 'HappyLane4', 'title' => 'Happy Lane 4', 'description' => 'Happy Lane 4', 'types' => [
-                'pdf' => 'HappyLane4.pdf'
-                ] 
-            ],
-            ['id' => 'HappyLane5', 'title' => 'Happy Lane 5', 'description' => 'Happy Lane 5', 'types' => [
-                'pdf' => 'HappyLane5.pdf'
-                ] 
-            ],
-            ['id' => 'HappyLane6', 'title' => 'Happy Lane 6', 'description' => 'Happy Lane 6', 'types' => [
-                'pdf' => 'HappyLane6.pdf'
-                ] 
-            ]            
+            ['id' => 'MrTandtheJMan', 'category' => 'Other Books', 'title' => 'The Smarty Big Bang', 'description' => 'Mr T and the J Man', 'types' => ['pdf' => 'MrTandtheJMan.pdf']],
+            ['id' => 'CheekyMonkey', 'category' => 'Other Books', 'title' => 'Cheeky Monkey', 'description' => 'Cheeky Monkey', 'types' => ['pdf' => 'CheekyMonkey.pdf']],
+            ['id' => 'HappyLane1', 'category' => 'Happy Lane Series', 'title' => 'Home, Sweet Home', 'description' => 'No. 1 Happy Lane', 'types' => ['pdf' => 'HappyLane1.pdf'] ],
+            ['id' => 'HappyLane2', 'category' => 'Happy Lane Series', 'title' => 'Reduce, Reuse, Recycle all', 'description' => 'No. 2 Happy Lane', 'types' => ['pdf' => 'HappyLane2.pdf']],
+            ['id' => 'HappyLane3', 'category' => 'Happy Lane Series', 'title' => 'Take the Alien Oath', 'description' => 'No. 3 Happy Lane', 'types' => ['pdf' => 'HappyLane3.pdf']],
+            ['id' => 'HappyLane4', 'category' => 'Happy Lane Series', 'title' => 'Scouts to the Rescue', 'description' => 'No. 4 Happy Lane', 'types' => ['pdf' => 'HappyLane4.pdf']],
+            ['id' => 'HappyLane5', 'category' => 'Happy Lane Series', 'title' => 'Don\'t be Mean, Keep it Green', 'description' => 'No. 5 Happy Lane', 'types' => ['pdf' => 'HappyLane5.pdf']],
+            ['id' => 'HappyLane6', 'category' => 'Happy Lane Series', 'title' => 'The Hidden Clues!', 'description' => 'No. 6 Happy Lane', 'types' => ['pdf' => 'HappyLane6.pdf']]            
         ]
 
     ];

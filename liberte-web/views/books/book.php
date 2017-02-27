@@ -4,6 +4,8 @@
 
 <h1><?php echo $model->title; ?></h1>
 
+<p><a href="/books/">Return to the books</a></p>
+
 <embed
     style="width:100%"
     src="http://libertedexpression.co.uk/art/literature/<?php echo $model->types['pdf']; ?>"
