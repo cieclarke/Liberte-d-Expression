@@ -7,27 +7,6 @@
 <p>
     Over the past 10 years, Liberte d'Expression's focus has been towards illustrated childrens' books, of which "Mr. T &amp; the J Man", "Cheeky Monkey" and a series of six books under the title of "Happy Lane".
 </p>
-<!--
-<section class="happy-lane-series">
-    <h2>Happy Lane Series</h2>
-    <ul class="list-standard">
-        <li>No. 1 Happy Lane "Home, Sweet Home"</li>
-        <li>No. 2 Happy Lane "Reduce, Reuse, Recycle all"</li>
-        <li>No. 3 Happy Lane "Take the Alien Oath"</li>
-        <li>No. 4 Happy Lane "Scouts to the Rescue"</li>
-        <li>No. 5 Happy Lane "Don't be Mean, Keep it Green"</li>
-        <li>No. 6 Happy Lane "The Hidden Clues!"</li>
-    </ul>
-</section>
-
-<section class="other-books">
-    <h2>Other Books</h2>
-    <ul class="list-standard">
-        <li>Mr. T and the J Man "The Smarty Big Bang"</li>
-        <li>Cheeky Monkey</li>
-    </ul>
-</section>
--->
 
 <?php 
 $happyLane = [];
