@@ -5,7 +5,7 @@
 <h1>Artwork Exhibitions</h1>
 <p>Liberte d'Expression has organised art exhibitions where the aim of these events was to give painters across the UK exposure for their art irrespective of their age, experience or artistic background whilst raising funding for really good causes.</p>
 
-<section class="barclays">
+<section class="exhibition-art">
     <h2>Art exhibitions</h2>
     <p>
         With the support of Barclays Bank, Communisis and Candid Arts Trust, Liberté d'Expression launched in 2006 a contemporary art competition. 
@@ -78,7 +78,7 @@
     </ul>
 </section>
 
-<section class="sharmina">
+<section class="exhibition-sharmina">
     <h2>Sharmina's paintings</h2>
     <p>
         Texture is a guiding principle of Sharmina's work. Allowing the images to evolve instinctively, she balances both textured and smooth surfaces alongside matt and high gloss finishes. In doing so Sharmina hopes to achieve a sense of flow, movement and transformation which parallels her own experiences and ethos of life. "In most of my work, I mix flowing and shifting shapes complemented by a geometrical precision, which probably reflect my desire to attain perfection and control" she says.

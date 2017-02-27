@@ -64,8 +64,8 @@ $(function () {
 				
 				pageMaxWidthRender.assemble($page, 'type-gallery', lozPaths);
 
-				$($page.find('#barclays .gallery a').attr('rel', 'exhibitions'));
-				$($page.find('#sharmina .gallery a').attr('rel', 'sharmina'));
+				$($page.find('#exhibition-art .gallery a').attr('rel', 'exhibitions'));
+				$($page.find('#exhibition-sharmina .gallery a').attr('rel', 'sharmina'));
 			}
 
 			if ($('.page-interior-design').length) {
@@ -138,8 +138,8 @@ $(function () {
 		var $page = $('.page-paintings');
 
 		// fancybox gallery groupings
-		$($page.find('.barclays .gallery a').attr('rel', 'exhibitions'));
-		$($page.find('.sharmina .gallery a').attr('rel', 'sharmina'));
+		$($page.find('.exhibition-barclays .gallery a').attr('rel', 'exhibitions'));
+		$($page.find('.exhibition-sharmina .gallery a').attr('rel', 'sharmina'));
 	}
 	
 	// set home page background and text colour transitions
