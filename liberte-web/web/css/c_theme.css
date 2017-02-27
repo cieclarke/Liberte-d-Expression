@@ -6,30 +6,28 @@
 
 /*  Default 320px media width
 /*******************************************************************/
-
 /* Generic DOM elements */
 footer {
 	background-color: #333;
-	color: #fff;
+	color: #fff
 }
 header {
     background-image:  url(../images/tranquility.jpg); 
-	background-size: cover;
-	/*transition: background 1s linear;*/
+	background-size: cover
 }
 html {
-	background-color: #333;
+	background-color: #333
 }
-h2 {
-    background-color: rgba(0, 0, 0, 0.25);
+h1, h2 {
+	text-shadow: 1px 1px 10px #333
 }
 main {
-	background: url(../images/background_paintings_00.jpg) no-repeat fixed left bottom / cover; 
 	box-shadow: 0 0 10px 15px #fff inset;
-	color: #fff;
+	color: #fff
 }
+
 section li a {
-	color: #fff;
+	color: #fff
 }
 
 /* animation */
@@ -37,51 +35,52 @@ section li a {
 	5% {border-color: rgba(128, 128, 128, 0.5);}
 }
 .blink { 
-	animation: border-blink 1.0s ease-in-out; 
+	animation: border-blink 1.0s ease-in-out
 }
 
-/* pseudo-classes */
-footer :link, footer :visited, footer :link:hover, footer :visited:hover {
+/* primary anchor pseudo-classes */
+footer[role='contentinfo'] :link, footer[role='contentinfo'] :visited, 
+footer[role='contentinfo'] :link:hover, footer[role='contentinfo'] :visited:hover {
 	color: #73c5e1
 }
-nav :link, nav :visited {
-	color: #fff;
+nav[role='navigation'] :link, nav[role='navigation'] :visited, 
+nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
+	color: #fff
 }
 
 /* class elements: =. */
 .container-lozenge {
     border-color: #fafafa;
     border-radius: 50px 0; 
-    box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.85);
+    box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.85)
 }
 .container-lozenge::before {
-    box-shadow: 0 0 4px #999 inset;
-}
-.detail {
-	/*background: #fff url(../images/toplights_00.jpg) repeat-x 0 0;*/
-	background-color: #fff;
-	background-image: url(../images/toplights_00.jpg), url(../images/logo_swirl_background_00.png);
-	background-repeat: no-repeat, no-repeat;
-	background-position: top center, right bottom;
-	color: #000;
+    box-shadow: 0 0 4px #999 inset
 }
 .gallery {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3)
 }
 .gallery a img {
 	border: 4px solid;
 	border-color: transparent;
 	border-radius: 30px 0
 }
-.page-paintings .gallery a:hover img, .page-paintings .gallery a:focus img {
-	border-color: #5bb12f;
-	transition : border 175ms linear;
+.light h1, .light h2, .light h2 a, .light p, .light li {
+	color: #666
+}
+.light h1, .light h2 {
+	text-shadow: 1px 1px 10px #fff
+}
+.light footer p {
+	color: #fff
 }
 .list-standard li {
-	background: url(../images/liberte_list_20x20_01.png) no-repeat left top;
+	/*background: url(../images/liberte_list_20x20_01.png) no-repeat left top;*/
+	list-style-position: inside;
+    list-style-type: disc
 }
 .menu-site a {
-	text-shadow: 1px 1px 10px #000;
+	text-shadow: 1px 1px 10px #000
 }
 .menu-site .home {
 	background: #bccf02;
@@ -112,12 +111,19 @@ nav :link, nav :visited {
 	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(215,186,215,0) 40%, rgba(155,83,156,1) 100%);
 	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(215,186,215,0) 40%,rgba(155,83,156,1) 100%);
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(215,186,215,0) 40%,rgba(155,83,156,1) 100%);
-} 
+}
+
+.page-books h1, .page-books main p {
+	color: #000
+}
+.page-books .info-section p {
+	color: #fff
+}
+.page-books h2, .page-books .detail h3, .page-books nav {
+    border-bottom-color: #9b539c
+}
 .page-books main {
-	background: #9b539c;
-	background: -moz-linear-gradient(top, rgba(155,83,156,1) 0%, rgba(84,44,80,0.85) 5.75em, rgba(255,255,255,0) 100%);
-	background: -webkit-linear-gradient(top, rgba(155,83,156,1) 0%,rgba(84,44,80,0.85) 5.75em,rgba(255,255,255,0) 100%);
-	background: linear-gradient(to bottom, rgba(155,83,156,1) 0%,rgba(84,44,80,0.85) 5.75em,rgba(255,255,255,0) 100%);
+	background: url(../images/background_books_bw_01.jpg) no-repeat fixed left top / cover;
 }
 .page-books .menu-site .books {
 	background: #9b539c;
@@ -125,79 +131,99 @@ nav :link, nav :visited {
 	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(155,83,156,1) 75%);
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(155,83,156,1) 75%);
 	border-radius: 25px 0 0 0;
+}
+
+.page-home h1 {
+	text-shadow: none
+}
+.page-home h2, .page-home .detail h3, .page-home nav {
+    border-bottom-color: #bccf02
 } 
 .page-home main {
-	background: #bccf02;
-	background: -moz-linear-gradient(top, rgba(188,207,2,1) 1%, rgba(86,95,9,0.85) 0, rgba(255,255,255,0) 20%) !important;
-	background: -webkit-linear-gradient(top, rgba(188,207,2,1) 1%,rgba(86,95,9,0.85) 0,rgba(255,255,255,0) 20%) !important;
-	background: linear-gradient(to bottom, rgba(188,207,2,1) 1%,rgba(86,95,9,0.85) 0,rgba(255,255,255,0) 20%) !important;
+	box-shadow: none
 }
 .page-home .introduction {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.85);
     border-radius: 6em 0;
-	box-shadow: 30px 30px 30px 0 rgba(0, 0, 0, 0.25);
+	box-shadow: 30px 30px 30px 0 rgba(0, 0, 0, 0.35);
+	color: #73c5e1
+}
+.js .page-home .introduction[data-palette='palette-00'] {
+	color: #73c5e1
+}
+.js .page-home .introduction[data-palette='palette-01'] {
+	color: #5bb12f
+}
+.js .page-home .introduction[data-palette='palette-02'] {
+	color: #eb65a0
+}
+.js .page-home .introduction[data-palette='palette-03'] {
+	color: #9b539c
+}
+.js .page-home .introduction[data-palette='palette-04'] {
+	color: #73c5e1
+}
+.js .page-home .introduction[data-palette='palette-05'] {
+	color: #bccf02
 }
 .page-home .menu-site .home {
 	background: #bccf02;
 	background: -webkit-linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 75%);
 	background: -o-linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 75%);
 	background: linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 75%);
-	border-radius: 0 25px 0 0;
+	border-radius: 0 25px 0 0
+}
+
+.page-interior-design :link, .page-interior-design :visited, .page-interior-design :link:hover, .page-interior-design :visited:hover {
+	color: #73c5e1
+}
+.page-interior-design h2, .page-interior-design .detail h3, .page-interior-design nav {
+    border-bottom-color: #73c5e1
 }
 .page-interior-design main {
-	background: #73c5e1;
-	background: -moz-linear-gradient(top, rgba(115,197,225,1) 0%, rgba(60,92,108,0.85) 5.75em, rgba(255,255,255,0) 100%);
-	background: -webkit-linear-gradient(top, rgba(115,197,225,1) 0%,rgba(60,92,108,0.85) 5.75em,rgba(255,255,255,0) 100%);
-	background: linear-gradient(to bottom, rgba(115,197,225,1) 0%,rgba(60,92,108,0.85) 5.75em,rgba(255,255,255,0) 100%);
+	background: url(../images/background_interior-design_bw_01.jpg) no-repeat fixed left top / cover
+}
+.page-interior-design .gallery a:hover img, .page-interior-design .gallery a:focus img {
+	border-color: #73c5e1;
+	transition : border 175ms linear
 }
 .page-interior-design .menu-site .interior-design {
 	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(115,197,225,1) 75%);
 	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(115,197,225,1) 75%);
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(115,197,225,1) 75%);
-	border-radius: 25px 25px 0 0;
+	border-radius: 25px 25px 0 0
 }
-.page-music h2 {
-	color: #9b539c;
-}
-.page-music h3 {
-	color: #999;
+
+.page-music h2, .page-music .detail h3, .page-music nav {
+    border-bottom-color: #eb65a0
 }
 .page-music main {
-	background: #eb65a0;
-	background: -moz-linear-gradient(top, rgba(235,101,160,1) 0%, rgba(107,56,73,0.85) 5.75em, rgba(255,255,255,0) 100%);
-	background: -webkit-linear-gradient(top, rgba(235,101,160,1) 0%,rgba(107,56,73,0.85) 5.75em,rgba(255,255,255,0) 100%);
-	background: linear-gradient(to bottom, rgba(235,101,160,1) 0%,rgba(107,56,73,0.85) 5.75em,rgba(255,255,255,0) 100%);
-}
-.page-music .container-lozenge {
-	border-radius: 6em 0;
+	background: url(../images/background_music_bw_01.jpg) no-repeat fixed left top / cover
 }
 .page-music .menu-site .music {
 	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(235,101,160,1) 75%);
 	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(235,101,160,1) 75%);
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(235,101,160,1) 75%);
-	border-radius: 25px 25px 0 0;
+	border-radius: 25px 25px 0 0
 }
-.page-paintings h2 {
-    border-bottom-color: #5bb12f;
+
+.page-paintings :link, .page-paintings :visited, .page-paintings :link:hover, .page-paintings :visited:hover {
+	color: #5bb12f
 }
-.page-paintings .detail h3 {
-    border-bottom-color: #5bb12f;
+.page-paintings h2, .page-paintings .detail h3, .page-paintings nav {
+    border-bottom-color: #5bb12f
 }
-.page-paintings main {	
-	/*
-	background: #5bb12f;
-	background: -moz-linear-gradient(top, rgba(91,177,47,1) 0%, rgba(47,89,24,0.85) 5.75em, rgba(51,51,51,0) 100%);
-	background: -webkit-linear-gradient(top, rgba(91,177,47,1) 0%,rgba(47,89,24,0.85) 5.75em,rgba(51,51,51,0) 100%);
-	background: linear-gradient(to bottom, rgba(91,177,47,1) 0%,rgba(47,89,24,0.85) 5.75em,rgba(51,51,51,0) 100%);
-	*/	
+.page-paintings main {
+	background: url(../images/background_paintings_bw_01.jpg) no-repeat fixed left top / cover 
 }
-.page-paintings nav {
-	border-bottom-color:#5bb12f;
+.page-paintings .gallery a:hover img, .page-paintings .gallery a:focus img {
+	border-color: #5bb12f;
+	transition : border 175ms linear
 }
 .page-paintings .list-standard :link, .page-paintings .list-standard :visited, 
 .page-paintings .list-standard :link:hover, .page-paintings .list-standard :visited:hover {
 	color: #5bb12f;
-	text-shadow: 1px 1px 0 #000;
+	text-shadow: 1px 1px 0 #000
 }
 .page-paintings .menu-site .paintings {
 	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%,  rgba(91,177,47,1) 75%);
@@ -205,11 +231,6 @@ nav :link, nav :visited {
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(91,177,47,1) 75%);
 	border-radius: 25px 25px 0 0
 }
-/*
-.site-home {
-    background: url(../images/LiberteLogo_white_280x90.png) no-repeat center center
-}
-*/
 
 /*   Media between 480 and 767
 /*******************************************************************/
@@ -217,50 +238,103 @@ nav :link, nav :visited {
 	footer li a {
         border-right-color: #fff
     }
-
-	/* class elements: =. */
-	/*
-	.site-home {
-		background: url(../images/LiberteLogo_White_450x144.png) no-repeat center center;
-	}
-	*/
-
 }
 
 /*   Media 1280 and above
 /*******************************************************************/
 @media only screen and (min-width: 1280px) {
-	main {
-		background-attachment: scroll 
-	}
-
+	
 	/* class elements: =. */
-	.detail {
-		border-radius: 65px 0
+	.js .detail {
+		background-color: #fff;
+		border-radius: 65px 0;
+		color: #000
 	}
-	.detail.container-lozenge::before {
-		border-radius: 56px 0
+	.js .page-paintings .detail {
+		background-image: url(../images/exhibitions-paintings/default_exhibition.jpg), url(../images/toplights_00.jpg);
+		background-repeat: no-repeat, no-repeat;
+		background-position: center 10.5rem, center top
 	}
-	.gallery {
-		background-color: transparent
+	.js .page-paintings .detail.active {
+		background-image: url(../images/toplights_00.jpg), url(../images/logo_swirl_background_00.png);
+		background-repeat: no-repeat, no-repeat;
+		background-position: top center, 108% 116%
 	}
 	.js .detail h2 {
-        background-color: transparent
-    }
+		background-color: transparent;
+		text-shadow: none
+	}
+	.js .detail.container-lozenge::before {
+		border-radius: 56px 0
+	}
+	.js .detail .gallery {
+		background-color: transparent
+	}
+	/*
+	.js .header-sub .selected {
+		background: rgba(0, 0, 0, 0.15);
+		border-radius: 50px 0;
+		box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.85)
+	}
+	.js .header-sub .selected .container-lozenge {
+		box-shadow: none
+	}
+	*/
+	/*
 	.js .info-section {
         background: rgba(0, 0, 0, 0.5);
 		box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.5);
     }
-	.page-paintings .container-lozenge.image:hover, .page-paintings .container-lozenge.focus-lozenge {
+	*/
+
+	.page-paintings main, .page-interior-design main, .page-music main, .page-books main {
+		background-attachment: scroll;
+		background-position: left top;
+		background-size: contain
+	}
+
+	.page-paintings main {
+		background-color: #7e7e7e
+	}
+	.page-paintings .container-lozenge.focus-lozenge {
 		border-color: #5bb12f;
 		transition : border 175ms linear
 	}
-	.header-sub .selected {
-		background: rgba(0, 0, 0, 0.25);
-		border-radius: 0 0 50px;
-		box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.85)
+	.js .page-paintings .info-section-drop {
+		background: url(../images/page-paintings-arra-down.png) no-repeat center bottom;
+    }
+	.js .page-paintings .choice h2 a {
+        border-bottom-color: #5bb12f
+    }
+	.js .page-paintings .header-sub h2 :link, .js .page-paintings .header-sub h2 :visited,
+	.js .page-music .header-sub h2 :link, .js .page-music .header-sub h2 :visited {
+		color: #fff
 	}
-	.header-sub .selected .container-lozenge {
-		box-shadow: none
+
+	.page-books main {
+		background-color: #e8e8e8
+	}
+	
+	.page-music main {
+		background-color: #8c8c8c
+	}
+
+	.page-interior-design main {
+		background-color: #e8e8e8
+	}
+	.page-interior-design .container-lozenge.focus-lozenge {
+		border-color: #73c5e1;
+		transition : border 175ms linear
+	}
+	.js .page-interior-design .info-section-drop {
+		background: url(../images/page-interior-design-arra-down.png) no-repeat center bottom
+    }
+	.js .page-interior-design .choice h2 a {
+        border-bottom-color: #73c5e1;
+		color: #666
+    }
+	.js .page-interior-design .detail {
+		background-image: url(../images/background_interior-design_02.jpg);
+		background-repeat: no-repeat
 	}
 }

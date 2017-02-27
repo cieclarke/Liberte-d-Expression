@@ -73,11 +73,12 @@ h2:first-child, h3:first-child {
 }
 header {
     height: 9.5em;
-    position: relative;
+    position: sticky;
+    top: 0
 }
 main {
     overflow: hidden;
-    padding: 2.25rem 5% 2.75rem; /* 30px either side at full width: 60/1200 x 100 = 5 */
+    padding: 2.25rem 5% 2.0rem; /* 30px either side at full width: 60/1200 x 100 = 5 */
 }
 p, li, article, figcaption {
 	margin-bottom: 0.75rem; /* 1.5 x 0.5 = 0.75, where 1.5 = def. body line-height & 0.5 = proportion allocated for bottom margins */
@@ -162,7 +163,7 @@ section {
     visibility: hidden
 }
 .list-standard li {
-    padding-left: 25px;
+    padding-left: 28px;
 }
 .menu-general a {
     display: block;
@@ -183,18 +184,15 @@ section {
 }
 .page-home .introduction {
     margin: 3.5rem auto;
-    padding: 7.5rem 10% 6.5rem;
+    padding: 5.0rem 10% 5.5rem;
     width: 90%
 }
 .page-home main {
     border-top: 0;
-    min-height: 600px;
+    min-height: 56rem;
 }
 .page-music .container-lozenge * {
     position: relative
-}
-.page-music section {
-    margin: 0 5% 1.75rem 5%;
 }
 .page-music .music-play img {
     margin-bottom: 1.75rem;
@@ -227,12 +225,6 @@ section {
     }
 
 	/* class elements: =. */
-    .container-lozenge.image.image-embed {
-        float: left;
-        height: 10rem;
-        margin: 0 2.5rem 0.5rem 0;
-        width: 25%;
-    }
     .gallery {
         width: auto
     }
@@ -254,27 +246,12 @@ section {
     }
 
 	/* class elements: =. */
-    .container-lozenge.image.image-embed {
-        height: 18rem;
-    }
     .page-home .introduction {
         border-radius: 12em 0;
         margin: 5.25rem auto;
+        padding: 7.5rem 10% 6.5rem;
         width: 60%
-    }  
-    .page-music section {
-        float: left
-    }
-    .page-music .music-list {
-        margin-left: 0;
-        margin-right: 3%;
-        width: 55%
-    }
-    .page-music .music-play {
-        margin-left: 0;
-        margin-right: 0;
-        width: 42%
-    }
+    }    
 }
 
 /*   Media 1280 and above
@@ -284,7 +261,11 @@ section {
     header {
         border-radius: 40px 40px 0 0;
         height: 10em;
-        margin-top: 2.5em
+        margin-top: 2.25em;
+        position: relative
+    }
+    h2 {
+        display: table
     }
     body {
         margin-left: auto;
@@ -299,73 +280,89 @@ section {
     
 	/* class elements: =. */
     .gallery li {
-        flex: 0 0 7.7em;
-        margin: 0.15em;
+        flex: 0 0 7.4em;
+        margin: 0.35em
     }
     .js .choice {
         float: left;
         width: 680px
     }
     .js .choice h2 {
-        margin-bottom: 0;
-        min-height: 5.1rem; /* two lines */
+        border-bottom: 0;
+        margin: 0 0 0.75rem
+    }
+    .js .choice h2 a {
+        border-bottom: 3px solid;
+    }
+    .js .choice h2 .info-section-drop {
+        border-bottom: none;
+		padding-bottom: 1.5rem;
     }
     .js .container-lozenge.image {
         bottom: 0;
-        height: 130px;
+        height: 13rem;
         margin-bottom: 0;
         position: absolute;
-        width: 160px;
+        width: 160px
+    }
+    .js .col-2 .container-lozenge.image {
+        height: 16rem;
+        width: 49%
+    }
+    .js .col-3 .container-lozenge.image {
+        width: 32%
+    }
+    .js .col-4 .container-lozenge.image {
+        width: 24%
     }
     .js .detail {
         float: right;
-        height: 51rem;
-        margin-left: 15px;
+        height: 52rem;
         overflow: hidden;
         padding: 5.25rem 12px 0;
         width: 415px
+    }
+    .js .detail h2 {
+        display: block;
     }
     .js .detail > div {
         overflow-y: auto;
         position: relative
     }
     .js .detail > div:not(.off-screen) {
-        height: 92%;
+        height: 92%
     }
     .js .info-section {
-        padding: 0.5rem 1rem 0.75rem;
-        width: 670px;
+        padding: 1.25rem 10px;
+        width: 100%
     }
     .js .info-section.visible {
         height: auto;
         left: 0;
         position: absolute
     }
-    .js .page-paintings .header-sub {
-        -webkit-columns: 4 127px; -moz-columns: 4 127px; columns: 4 127px;
-        -webkit-column-gap: 0; -moz-column-gap: 0; column-gap: 0;
-        margin-top: 1.5rem;
+    .js .header-sub {
         position: relative
     }
-    /*
-    .js .page-paintings .choice .heading-tall {
-        min-height: 6.75rem
+    .js .header-sub.col-2 {
+        -webkit-columns: 2 27px; -moz-columns: 2 27px; columns: 2 27px;
+        -webkit-column-gap: 15px; -moz-column-gap: 15px; column-gap: 15px;
+    } 
+    .js .header-sub.col-3 {
+        -webkit-columns: 3 27px; -moz-columns: 3 27px; columns: 3 27px;
+        -webkit-column-gap: 15px; -moz-column-gap: 15px; column-gap: 15px;
+    }       
+    .js .header-sub.col-4 {
+        -webkit-columns: 4 127px; -moz-columns: 4 127px; columns: 4 127px;
+        -webkit-column-gap: 15px; -moz-column-gap: 15px; column-gap: 15px;
     }
-    */
-    .js .page-paintings .selected h2 {
-        min-height: 6.95rem
+    .js .page-interior-design .selected h2 {
+        min-height: 5.1rem
     }
-    /*
-    .js .header-sub h2:hover + .info-section, .js .header-sub h2:focus + .info-section,
-    .js .header-sub h2 + .info-section:hover {
-        height: auto;
-        left: 0
-    }
-    */
-    .js .page-paintings .header-sub section {
+    .js .header-sub section {
         -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid;
-        margin: 0 10px 0 0;
-        min-height: 40rem;
+        margin: 0;
+        min-height: 41.5rem;
     }
     .site-home {
         left: -30px;
@@ -377,5 +374,4 @@ section {
     a:hover .site-home {
         transform: scale(1.03);
     }
-
 }
