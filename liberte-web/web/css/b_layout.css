@@ -78,7 +78,7 @@ header {
 }
 main {
     overflow: hidden;
-    padding: 2.25rem 5% 2.75rem; /* 30px either side at full width: 60/1200 x 100 = 5 */
+    padding: 2.25rem 5% 2.0rem; /* 30px either side at full width: 60/1200 x 100 = 5 */
 }
 p, li, article, figcaption {
 	margin-bottom: 0.75rem; /* 1.5 x 0.5 = 0.75, where 1.5 = def. body line-height & 0.5 = proportion allocated for bottom margins */
@@ -289,7 +289,7 @@ section {
     }
     .js .choice h2 {
         border-bottom: 0;
-        margin: 0 auto 0.75rem
+        margin: 0 0 0.75rem
     }
     .js .choice h2 a {
         border-bottom: 3px solid;
