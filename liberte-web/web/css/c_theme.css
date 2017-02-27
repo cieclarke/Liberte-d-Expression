@@ -176,8 +176,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 }
 
 .page-interior-design main :link, .page-interior-design main :visited, .page-interior-design main :link:hover, .page-interior-design main :visited:hover {
-	color: #267dbd;
-	text-shadow: 1px 1px 0 #555;
+	color: #267dbd
 }
 .page-interior-design h2, .page-interior-design .detail h3, .page-interior-design nav {
     border-bottom-color: #73c5e1
@@ -211,7 +210,6 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 
 .page-paintings main :link, .page-paintings main :visited, .page-paintings main :link:hover, .page-paintings main :visited:hover {
 	color: #5bb12f;
-	text-shadow: 1px 1px 0 #fff;
 }
 .page-paintings h2, .page-paintings .detail h3, .page-paintings nav {
     border-bottom-color: #5bb12f
