@@ -35,7 +35,7 @@
 
     <?php if(array_key_exists('mp4', $model->types)) { ?>
         <video controls="controls">
-            <source src="http://libertedexpression.co.uk/art/audio/<?php echo $model->types['mp4']; ?>" type="video/mp4">
+            <source src="http://libertedexpression.co.uk/art/video/<?php echo $model->types['mp4']; ?>" type="video/mp4">
             <p>Unsupported media</p>
         </video> 
     <?php
