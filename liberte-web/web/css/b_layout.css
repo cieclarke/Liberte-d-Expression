@@ -16,7 +16,7 @@ html {
 	-webkit-box-sizing: inherit; -moz-box-sizing: inherit; box-sizing: inherit /* apply desired box model to all but allowing local change */
 }
 audio {
-    width: 100%;
+    width: 75px
 }
 body {
     min-width: 320px; /* fix the minimum width */
@@ -194,9 +194,9 @@ section {
 .page-music .container-lozenge * {
     position: relative
 }
-.page-music .music-play img {
+.page-music .music-play img, .page-music .music-play video {
     margin-bottom: 1.75rem;
-    width: 100%;
+    width: 400px;
 }
 .site-home {
     height: 90px;

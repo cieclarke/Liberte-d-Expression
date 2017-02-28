@@ -30,7 +30,7 @@
     </ul>
 </section>
 
-<section class="music-play container-lozenge">
+<section class="music-play">
     <h2><?php echo $model->title; ?></h2>
 
     <?php if(array_key_exists('mp4', $model->types)) { ?>
