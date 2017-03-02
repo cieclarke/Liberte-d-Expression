@@ -21,9 +21,9 @@ class BookViewModel extends Model
         {
             foreach($repo->Books as $book)
             {
-                if($id == $book->id)
+                if(strtolower($id) == strtolower($book->id))
                 {
-                    $SelectedBook = $book;
+                    $this->SelectedBook = $book;
                 }
             }
         }
