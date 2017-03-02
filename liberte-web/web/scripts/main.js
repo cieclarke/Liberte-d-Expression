@@ -122,24 +122,35 @@ $(function () {
 	// non viewport size dependent function calls..
 	// fancybox
 	$(".fancybox").fancybox({
-        nextMethod : 'resizeIn',
+		nextMethod : 'resizeIn',
         nextSpeed  : 15,
-        prevMethod : false,
-        helpers : {
-            title : {
-                type : 'outside'
-            }
-        }
+        prevMethod : false
     });
 
+	if ($('.music-play').length) {
+		$.fancybox({
+			nextMethod : 'resizeIn',
+			nextSpeed  : 15,
+			prevMethod : false,
+			afterClose: function(){
+				location.href = "/music/";
+			},
+			content: $('.music-play')
+		});
+	}
+
 	$('.gallery a').addClass('fancybox');
-	
+
 	if ($('.page-paintings').length) {
 		var $page = $('.page-paintings');
 
 		// fancybox gallery groupings
-		$($page.find('.exhibition-barclays .gallery a').attr('rel', 'exhibitions'));
+		$($page.find('.exhibition-art .gallery a').attr('rel', 'exhibitions'));
 		$($page.find('.exhibition-sharmina .gallery a').attr('rel', 'sharmina'));
+	}
+
+	if ($('.page-music').length) {
+		$('.page-music section li a').addClass('fancybox-music');
 	}
 	
 	// set home page background and text colour transitions

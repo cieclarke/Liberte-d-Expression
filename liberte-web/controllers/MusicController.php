@@ -17,20 +17,10 @@ class MusicController extends Controller
     public function actionIndex($songId = '')
     {
         $this->view->params['class'] = 'page-music';
-        $vm = new \app\models\AudioViewModel();
-        $songForView = $vm['Songs'][0];
-
-        foreach($vm['Songs'] as $song)
-        {
-            if(strtolower($songId) == strtolower($song->id))
-            {
-                $songForView = $song;
-            }
-        }
-
+        $vm = new \app\models\AudioViewModel($songId);
+        
         return $this->render('index', [
-            'model' => $songForView,
+            'model' => $vm,
         ]);
     }
-
 }

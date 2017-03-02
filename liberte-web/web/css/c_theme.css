@@ -118,7 +118,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 }
 .page-books main :link, .page-books main :visited, .page-books main :link:hover, .page-books main :visited:hover {
 	color: #9b539c;
-	text-shadow: 1px 1px 0 #fff;
+	text-shadow: 1px 1px 0 #999;
 }
 .page-books h2, .page-books .detail h3, .page-books nav {
     border-bottom-color: #9b539c
@@ -195,6 +195,10 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	border-radius: 25px 25px 0 0
 }
 
+.page-music main :link, .page-music main :visited, .page-music main :link:hover, .page-music main :visited:hover {
+	color: #eb65a0;
+	text-shadow: 1px 1px 0 #666;
+}
 .page-music h2, .page-music .detail h3, .page-music nav {
     border-bottom-color: #eb65a0
 }

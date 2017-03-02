@@ -191,12 +191,15 @@ section {
     border-top: 0;
     min-height: 56rem;
 }
+.page-music section li {
+    margin-bottom: 1.2rem
+}
 .page-music .container-lozenge * {
     position: relative
 }
-.page-music .music-play img, .page-music .music-play video {
+.page-music .music-play img, .page-music video {
     margin-bottom: 1.75rem;
-    width: 400px;
+    width: 100%
 }
 .site-home {
     height: 90px;

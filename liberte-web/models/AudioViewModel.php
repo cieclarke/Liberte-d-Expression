@@ -10,11 +10,19 @@ class AudioViewModel extends Model
 {
     
     public $Songs;
-    
-    function __construct()
+    public $SelectedSong;
+
+    function __construct($songid = null)
     {
         $repo = new \app\assets\repositories\AudioRepo();
         $this->Songs = $repo->Songs;
+       
+        foreach($repo->Songs as $a)
+        {
+           if(strtolower($a->id) == strtolower($songid))
+           {
+                $this->SelectedSong = $a;
+           }
+        }
     }
-
 }
