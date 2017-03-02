@@ -10,11 +10,23 @@ class BookViewModel extends Model
 {
     
     public $Books;
+    public $SelectedBook;
     
-    function __construct()
+    function __construct($id)
     {
         $repo = new \app\assets\repositories\BookRepo();
         $this->Books = $repo->Books;
+
+        if($id != null)
+        {
+            foreach($repo->Books as $book)
+            {
+                if($id == $book->id)
+                {
+                    $SelectedBook = $book;
+                }
+            }
+        }
     }
 
 }

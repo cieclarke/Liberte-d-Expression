@@ -14,9 +14,9 @@ $otherBooks = [];
 
 foreach($model->Books as $key=>$value):
     if($model->Books[$key]->category == 'Happy Lane Series') {
-        $happyLane[] = $value;
+        array_push($happyLane, $value);
     } elseif($model->Books[$key]->category == 'Other Books') {
-        $otherBooks[] = $value;
+        array_push($otherBooks, $value);
     } 
 endforeach;
 ?>
@@ -26,7 +26,7 @@ endforeach;
     <ul>
         <?php foreach($happyLane as $book): ?>
         <li>
-            <?php echo $book->description; ?> <a href="/books/book/<?php echo $book->id; ?>" title="View book">"<?php echo $book->title; ?>"</a>
+            <?php echo $book->description; ?> <a href="/books/<?php echo $book->id; ?>" title="View book">"<?php echo $book->title; ?>"</a>
             <a href="http://libertedexpression.co.uk/art/literature/<?php echo $book->types['pdf']; ?>" title="Download PDF">PDF</a>
         </li>
         <?php endforeach; ?>
@@ -38,9 +38,18 @@ endforeach;
     <ul>
         <?php foreach($otherBooks as $book): ?>
         <li>
-            <?php echo $book->description; ?> <a href="/books/book/<?php echo $book->id; ?>" title="View book">"<?php echo $book->title; ?>"</a>
+            <?php echo $book->description; ?> <a href="/books/<?php echo $book->id; ?>" title="View book">"<?php echo $book->title; ?>"</a>
             <a href="http://libertedexpression.co.uk/art/literature/<?php echo $book->types['pdf']; ?>" title="Download PDF">PDF</a>
         </li>
         <?php endforeach; ?>
     </ul>
 </section>
+<?php if($model->SelectedBook != null) { ?>
+<embed
+    style="width:100%"
+    src="http://libertedexpression.co.uk/art/literature/<?php echo $model->SelectedBook->types['pdf']; ?>"
+    width="400"
+    height="400"
+    alt="pdf"
+    pluginspage="http://www.adobe.com/products/acrobt/readstep2.html">
+<?php } ?>

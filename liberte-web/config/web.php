@@ -46,7 +46,7 @@ $config = [
             'rules' => [
                 '' => '/home/index',
                 'music/<songId>' => 'music',
-                'books/book/<id>' => 'books/book'
+                'books/<id>' => 'books'
             ],
         ],    
     ],

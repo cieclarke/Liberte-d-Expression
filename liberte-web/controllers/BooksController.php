@@ -14,33 +14,13 @@ class BooksController extends Controller
 
     public $defaultAction = 'index';
 
-    public function actionIndex()
+    public function actionIndex($id = '')
     {
         $this->view->params['class'] = 'page-books light';
-        $vm = new \app\models\BookViewModel();
+        $vm = new \app\models\BookViewModel($id);
 
         return $this->render('index', [
             'model' => $vm,
         ]);
-    }
-
-    public function actionBook($id = '')
-    {
-        $this->view->params['class'] = 'page-books light';
-        $vm = new \app\models\BookViewModel();
-        $bookForView = $vm['Books'][0];
-
-        foreach($vm['Books'] as $book)
-        {
-            if(strtolower($id) == strtolower($book->id))
-            {
-                $bookForView = $book;
-            }
-        }
-
-        return $this->render('book', [
-            'model' => $bookForView,
-        ]);
-
     }
 }
