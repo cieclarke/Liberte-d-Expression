@@ -15,9 +15,6 @@ html {
 *, *:before, *:after {
 	-webkit-box-sizing: inherit; -moz-box-sizing: inherit; box-sizing: inherit /* apply desired box model to all but allowing local change */
 }
-audio {
-    width: 75px
-}
 body {
     min-width: 320px; /* fix the minimum width */
 }
@@ -61,7 +58,7 @@ h1 {
 h2 {
     border-bottom: 3px solid;
     clear: left;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
     padding: 0.5rem 1rem 0.75rem;
 }
 h3 {
@@ -79,6 +76,12 @@ header {
 main {
     overflow: hidden;
     padding: 2.25rem 5% 2.0rem; /* 30px either side at full width: 60/1200 x 100 = 5 */
+}
+main :link {
+    padding: 0 5px;
+}
+main .gallery a {
+    padding: 0
 }
 p, li, article, figcaption {
 	margin-bottom: 0.75rem; /* 1.5 x 0.5 = 0.75, where 1.5 = def. body line-height & 0.5 = proportion allocated for bottom margins */
@@ -189,10 +192,20 @@ section {
 }
 .page-home main {
     border-top: 0;
-    min-height: 56rem;
+    min-height: 56rem
+}
+.page-music audio {
+    float: right;
+    margin: 0.5em 0;
+    width: 150px;
 }
 .page-music section li {
-    margin-bottom: 1.2rem
+    margin-bottom: 1.2rem;
+    overflow: hidden
+}
+.page-music section li a {
+    float: left;
+    margin: 0.75em 0;
 }
 .page-music .container-lozenge * {
     position: relative
@@ -205,7 +218,7 @@ section {
     height: 90px;
     margin-bottom: 0;
     position: absolute;
-    width: 280px;
+    width: 280px
 }
 .skip:active, .skip:focus {
 	position: static
