@@ -278,29 +278,12 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	.js .detail .gallery {
 		background-color: transparent
 	}
-	/*
-	.js .header-sub .selected {
-		background: rgba(0, 0, 0, 0.15);
-		border-radius: 50px 0;
-		box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.85)
-	}
-	.js .header-sub .selected .container-lozenge {
-		box-shadow: none
-	}
-	*/
-	/*
-	.js .info-section {
-        background: rgba(0, 0, 0, 0.5);
-		box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.5);
-    }
-	*/
 
 	.page-paintings main, .page-interior-design main, .page-music main, .page-books main {
 		background-attachment: scroll;
 		background-position: left top;
 		background-size: contain
 	}
-
 	.page-paintings main {
 		background-color: #7e7e7e
 	}
@@ -340,7 +323,9 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 		background: url(../images/page-interior-design-arra-down.png) no-repeat center bottom
     }
 	.js .page-interior-design .choice h2 a {
-        border-bottom-color: #73c5e1;
+        background-color: transparent;
+		border-bottom-color: #73c5e1;
+		border-radius: 0;
 		color: #666
     }
 	.js .page-interior-design .detail {
