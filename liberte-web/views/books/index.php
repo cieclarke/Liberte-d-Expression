@@ -44,12 +44,15 @@ endforeach;
         <?php endforeach; ?>
     </ul>
 </section>
+
 <?php if($model->SelectedBook != null) { ?>
-<embed
-    style="width:100%"
-    src="http://libertedexpression.co.uk/art/literature/<?php echo $model->SelectedBook->types['pdf']; ?>"
-    width="400"
-    height="400"
-    alt="pdf"
-    pluginspage="http://www.adobe.com/products/acrobt/readstep2.html">
+    <div class="media-play">
+        <embed
+            style="width:100%"
+            src="http://libertedexpression.co.uk/art/literature/<?php echo $model->SelectedBook->types['pdf']; ?>"
+            width="400"
+            height="400"
+            alt="pdf"
+            pluginspage="http://www.adobe.com/products/acrobat/readstep2.html" />
+    </div>
 <?php } ?>

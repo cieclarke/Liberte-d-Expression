@@ -7,7 +7,7 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis vitae nisi eget eleifend. Phasellus <a href="#">tristique ut augue</a> a consequat. Sed at dignissim augue, et tempor enim.</p>
 
 <section class="music-english">
-    <h2>In English</h2>
+    <h2>English songs</h2>
     <ul>
         <li>
             <a href='/music/CloseToYou'>Close to You</a>
@@ -61,7 +61,7 @@
 </section>
 
 <section class="music-french">
-    <h2>In French</h2>
+    <h2>French songs</h2>
     <ul>
         <li>
             <a href='/music/JaiVouluFuir'>Jai voulu fuir</a>
@@ -83,7 +83,7 @@
 </section>
 
 <section class="music-spanish">
-    <h2>In Spanish</h2>
+    <h2>Spanish songs</h2>
     <ul>
         <li>
             <a href='/music/CercaDeTi'>Cerca de ti</a>
@@ -115,18 +115,16 @@
 
 
 <?php if($model->SelectedSong != null) { ?>
-    <h2><?php echo $model->SelectedSong->title; ?></h2>
-    
-    <div class="music-play">
+    <div class="media-play">
         <?php if(array_key_exists('mp4', $model->SelectedSong->types)) { ?>
-        <h2>Play the video</h2>
+        <h2><?php echo $model->SelectedSong->title; ?></h2>
             <video controls="controls" preload="metadata">
                 <source src="http://libertedexpression.co.uk/art/video/<?php echo $model->SelectedSong->types['mp4']; ?>" type="video/mp4">
                 <p>Unsupported media</p>
             </video>
         <?php } else { ?>
-            <h2>Play the song</h2>
-            <img alt="Music score for <?php echo $model->SelectedSong->title; ?>" src="http://libertedexpression.co.uk/art/audio/<?php echo $model->SelectedSong->types['png']; ?>" />
+            <h2>Play <?php echo $model->SelectedSong->title; ?></h2>
+            
             <audio title="<?php echo $model->SelectedSong->title; ?>" controls="controls">
                 <source src="http://libertedexpression.co.uk/art/audio/<?php echo $model->SelectedSong->types['mp3']; ?>" type='audio/mpeg; codecs="mp3"'>
                 <source src="http://libertedexpression.co.uk/art/audio/<?php echo $model->SelectedSong->types['ogg']; ?>" type='audio/ogg; codecs="vorbis"'>

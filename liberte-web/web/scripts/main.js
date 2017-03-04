@@ -51,10 +51,38 @@ $('html').addClass('js');
 
 // main control block, on DOM-ready..
 $(function () {
+	
+	// <<<< Viewport size dependent function calls >>>>
+
 	// media query breakpoints should match those in the CSS
-	enquire.register('screen and (max-width: 480px)', {
+	enquire.register('screen and (max-width: 1279px)', {
 		match : function() {
-			
+			if ($('.media-play').length) {
+				var mediaPage;
+				
+				if ($('.page-music .media-play').length) {
+					mediaPage = '/music/';
+				} else if ($('.page-books .media-play').length){
+					mediaPage = '/books/';
+				}
+
+				$.fancybox({
+					helpers : {
+						overlay : {
+							locked : false
+						}
+					},
+					afterClose: function() {
+						location.href = mediaPage;
+					},
+					content: $('.media-play')
+				});
+			}
+		},
+		unmatch : function() {
+			if ($('.media-play').length) {
+				$.fancybox.close();
+			}
 		}
 	}).register('screen and (min-width: 1280px)', {
 		match : function() {
@@ -96,63 +124,61 @@ $(function () {
 			if ($('.page-paintings').length) {
 				var $page = $('.page-paintings');
 
-				pageMaxWidthRender.disassemble($page);
+				pageMaxWidthRender.disassemble($page, 'type-gallery');
 			}
 
 			if ($('.page-interior-design').length) {
 				var $page = $('.page-interior-design');
 
-				pageMaxWidthRender.disassemble($page);
+				pageMaxWidthRender.disassemble($page, 'type-gallery');
 			}
 
 			if ($('.page-books').length) {
 				var $page = $('.page-books');
 
-				pageMaxWidthRender.disassemble($page);
+				pageMaxWidthRender.disassemble($page, 'type-viewer');
 			}
 
 			if ($('.page-music').length) {
 				var $page = $('.page-music');
 
-				pageMaxWidthRender.disassemble($page);
+				pageMaxWidthRender.disassemble($page, 'type-viewer');
 			}
 		}
 	}).listen(50); // milliseconds
 
-	// non viewport size dependent function calls..
-	// fancybox
+
+	// <<<< Non viewport size dependent function calls >>>>
+
+	// general fancybox config.
 	$(".fancybox").fancybox({
 		nextMethod : 'resizeIn',
         nextSpeed  : 15,
-        prevMethod : false
+        prevMethod : false,
+		helpers : {
+			overlay : {
+				locked : false
+			}
+		}
     });
-
-	if ($('.music-play').length) {
-		$.fancybox({
-			nextMethod : 'resizeIn',
-			nextSpeed  : 15,
-			prevMethod : false,
-			afterClose: function(){
-				location.href = "/music/";
-			},
-			content: $('.music-play')
-		});
-	}
 
 	$('.gallery a').addClass('fancybox');
 
+	// add fancybox gallery groupings
 	if ($('.page-paintings').length) {
 		var $page = $('.page-paintings');
 
-		// fancybox gallery groupings
 		$($page.find('.exhibition-art .gallery a').attr('rel', 'exhibitions'));
 		$($page.find('.exhibition-sharmina .gallery a').attr('rel', 'sharmina'));
 	}
 
-	if ($('.page-music').length) {
-		$('.page-music section li a').addClass('fancybox-music');
+	if ($('.page-interior-design').length) {
+		var $page = $('.page-interior-design');
+
+		$($page.find('.interior .gallery a').attr('rel', 'interior'));
+		$($page.find('.product .gallery a').attr('rel', 'product'));
 	}
-	
+
 	// set home page background and text colour transitions
 	if ($('.page-home').length) {
 		var arrPalette = [
@@ -170,7 +196,7 @@ $(function () {
 
 		$('.page-home .introduction').attr('data-palette', 'palette-00');
 
-		setInterval(function(){
+		setInterval(function() {
 			$('.page-home .introduction').attr('data-palette', '').attr('data-palette', arrPalette[i + 1]);
 			i = (i + 1) % arrLength;
 		}, 4060);
@@ -222,6 +248,7 @@ $(function () {
     };
 }(jQuery, jQuery.fancybox));
 
+
 // METHODS
 var pageMaxWidthRender = {
 	assemble : function($page, pageType, lozPaths) {
@@ -244,16 +271,17 @@ var pageMaxWidthRender = {
 			var $sectionClass = $section.attr('class');
 			var $sectionHeading = $section.find('h2');
 			var $sectionLoz = $('<figure class="container-lozenge image">');
+			var lozSection = Object.keys(lozPaths)[i];
+			var $loz = $(lozPaths[lozSection].lozFirst);
+
+			$sectionLoz.html($loz);
 			
 			if (pageType == 'type-gallery') {
 				var $sectionAnchor = $('<a />').attr('href', '#' + $sectionClass).addClass('info-section-show');
 				var $gallery = $section.find('.gallery');
 				var $information = $('<div class="info-section off-screen">').html($sectionHeading.nextUntil($gallery));
 				var $galleryContainer = $('<div class="off-screen">').attr('id', $sectionClass);
-				var lozSection = Object.keys(lozPaths)[i];
-				var $loz = $(lozPaths[lozSection].lozFirst);
-
-				$sectionLoz.html($loz);
+				
 				$information.find('a').attr('tabindex', -1);
 				$gallery.find('a').attr('tabindex', -1);
 				$information.appendTo($section);
@@ -331,33 +359,42 @@ var pageMaxWidthRender = {
 				});
 
 				$gallery.appendTo($galleryContainer);
+				$galleryContainer.appendTo($detail);
 			}
 
 			if (pageType == 'type-viewer') {
-				
+				var $songList = $section.find('ul');
 
+				$sectionLoz.insertAfter($songList);
+				$songList.find('audio').addClass('off-screen');
+
+				if ($('.media-play').length) {
+					$('.media-play').appendTo($detail);
+				}
 			}
 
 			$section.appendTo($choiceHead);
-			$galleryContainer.appendTo($detail);
 		});
 
 		$choice.appendTo($content);
 		$detail.appendTo($content);
 	},
-	disassemble : function($page) {
+	disassemble : function($page, pageType) {
 		var $content = $($page.find('main'));;
 		var $choice = $('.choice');
 		var $choiceHead = $('.header-sub');
 		var $detail = $('.detail');
-		var arrSectionContent = [];
+		
+		if (pageType == 'type-gallery') {
+			var arrSectionContent = [];
 
-		$content.find('.detail > div').each(function() {
-			var $div = $(this).attr('id');
-			var $divContent = $(this).find('h2').nextAll();
+			$content.find('.detail > div').each(function() {
+				var $div = $(this).attr('id');
+				var $divContent = $(this).find('h2').nextAll();
 
-			arrSectionContent.push({'id': $div, 'content': $divContent});
-		});
+				arrSectionContent.push({'id': $div, 'content': $divContent});
+			});
+		}
 
 		$content.find('.header-sub > section').each(function() {
 			var $section = $(this).removeClass('selected').attr('class');
@@ -369,16 +406,23 @@ var pageMaxWidthRender = {
 			$sectionHeading.empty().text($sectionHeadingText);
 			$sectionFig.remove();
 
-			for (var i = 0; i < arrSectionContent.length; i++) {
-				var obj = arrSectionContent[i];
-				
-				if ($section == obj.id) {
-					$(obj.content).insertAfter($sectionHeading);
+			if (pageType == 'type-gallery') {
+				for (var i = 0; i < arrSectionContent.length; i++) {
+					var obj = arrSectionContent[i];
+					
+					if ($section == obj.id) {
+						$(obj.content).insertAfter($sectionHeading);
+					}
 				}
+			}
+
+			if (pageType == 'type-viewer') {
+				$(this).find('audio').removeClass('off-screen');
 			}
 
 			$sectionInfo.unwrap().insertAfter($sectionHeading);
 		});
+
 
 		$choiceHead.unwrap();
 

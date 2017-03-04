@@ -44,13 +44,14 @@ footer {
 }
 footer ul {
     display: table;
+    margin-bottom: 0.75rem;
     table-layout: fixed;
     text-align: center;
     width: 100%;
 }
 footer li a {
     display: block;
-    padding: 12px;
+    padding: 0.2rem 12px;
 }
 h1 {
     margin-bottom: 0.25rem;
@@ -210,9 +211,9 @@ section {
 .page-music .container-lozenge * {
     position: relative
 }
-.page-music .music-play img, .page-music video {
+.media-play video, .media-play embed {
     margin-bottom: 1.75rem;
-    width: 100%
+    width: 240px
 }
 .site-home {
     height: 90px;
@@ -244,6 +245,9 @@ section {
     .gallery {
         width: auto
     }
+    .media-play video, .media-play embed {
+        width: 420px
+    }
     .site-home {
         height: 144px;
         width: 450px;
@@ -262,6 +266,9 @@ section {
     }
 
 	/* class elements: =. */
+    .media-play video, .media-play embed {
+        width: 720px
+    }
     .page-home .introduction {
         border-radius: 12em 0;
         margin: 5.25rem auto;
@@ -279,9 +286,6 @@ section {
         height: 10em;
         margin-top: 2.25em;
         position: relative
-    }
-    h2 {
-        display: table
     }
     body {
         margin-left: auto;
@@ -303,8 +307,9 @@ section {
         float: left;
         width: 680px
     }
-    .js .choice h2 {
+    .js .page-paintings .choice h2, .js .page-interior-design .choice h2 {
         border-bottom: 0;
+        display: table;
         margin: 0 0 0.75rem
     }
     .js .choice h2 a {
@@ -322,7 +327,7 @@ section {
         width: 160px
     }
     .js .col-2 .container-lozenge.image {
-        height: 16rem;
+        height: 18rem;
         width: 49%
     }
     .js .col-3 .container-lozenge.image {
@@ -331,9 +336,21 @@ section {
     .js .col-4 .container-lozenge.image {
         width: 24%
     }
+    .js .page-books .container-lozenge.image {
+        height: 22rem;
+    }
+    .js .page-music .container-lozenge.image {
+        height: 21rem;
+    }
+    .js .page-music audio {
+        width: 100%
+    }
+    .js .page-books section li a + a {
+        float: right
+    }
     .js .detail {
         float: right;
-        height: 52rem;
+        height: 56rem;
         overflow: hidden;
         padding: 5.25rem 12px 0;
         width: 415px
@@ -358,6 +375,7 @@ section {
         position: absolute
     }
     .js .header-sub {
+        margin-top: 1.5rem;
         position: relative
     }
     .js .header-sub.col-2 {
@@ -378,7 +396,16 @@ section {
     .js .header-sub section {
         -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid;
         margin: 0;
-        min-height: 41.5rem;
+        min-height: 45rem
+    }
+    .js .page-books .header-sub section, .js .page-music .header-sub section {
+        min-height: 47.2rem
+    }
+    .js .media-play video {
+        width: 100%
+    }
+    .js .page-music section li a {
+        margin: 0
     }
     .site-home {
         left: -30px;

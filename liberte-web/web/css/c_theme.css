@@ -73,7 +73,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 .light h1, .light h2, .light h2 a, .light p, .light li {
 	color: #666
 }
-.light h1, .light h2 {
+.light h1, .light h2, .light h2 a, .light h2 a:hover, .light h2 a:focus {
 	text-shadow: 1px 1px 10px #fff
 }
 .light footer p {
@@ -122,7 +122,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	color: #fff
 }
 .page-books main :link, .page-books main :visited, .page-books main :link:hover, .page-books main :visited:hover {
-	background-color: rgba(155, 83, 156, 0.3);
+	background-color: rgba(155, 83, 156, 0.45);
 }
 .page-books h2, .page-books .detail h3, .page-books nav {
     border-bottom-color: #9b539c
@@ -180,7 +180,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 }
 
 .page-interior-design main :link, .page-interior-design main :visited, .page-interior-design main :link:hover, .page-interior-design main :visited:hover {
-	background-color: rgba(115, 197, 225, 0.4)
+	background-color: rgba(115, 197, 225, 0.5)
 }
 .page-interior-design h2, .page-interior-design .detail h3, .page-interior-design nav {
     border-bottom-color: #73c5e1
@@ -200,7 +200,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 }
 
 .page-music main :link, .page-music main :visited, .page-music main :link:hover, .page-music main :visited:hover {
-	background-color: rgba(235, 101, 160, 0.2);
+	background-color: rgba(235, 101, 160, 0.25);
 }
 .page-music h2, .page-music .detail h3, .page-music nav {
     border-bottom-color: #eb65a0
@@ -309,7 +309,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	}
 	
 	.page-music main {
-		background-color: #8c8c8c
+		background-color: #5d5d5d
 	}
 
 	.page-interior-design main {
