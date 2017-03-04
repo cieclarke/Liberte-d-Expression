@@ -47,12 +47,12 @@ return
     'Books' => [
             ['id' => 'MrTandtheJMan', 'category' => 'Other Books', 'title' => 'The Smarty Big Bang', 'description' => 'Mr T and the J Man', 'types' => ['pdf' => 'MrTandtheJMan.pdf']],
             ['id' => 'CheekyMonkey', 'category' => 'Other Books', 'title' => 'Cheeky Monkey', 'description' => 'Cheeky Monkey', 'types' => ['pdf' => 'CheekyMonkey.pdf']],
-            ['id' => 'HappyLane1', 'category' => 'Happy Lane Series', 'title' => 'Home, Sweet Home', 'description' => 'No. 1 Happy Lane', 'types' => ['pdf' => 'HappyLane1.pdf'] ],
-            ['id' => 'HappyLane2', 'category' => 'Happy Lane Series', 'title' => 'Reduce, Reuse, Recycle all', 'description' => 'No. 2 Happy Lane', 'types' => ['pdf' => 'HappyLane2.pdf']],
-            ['id' => 'HappyLane3', 'category' => 'Happy Lane Series', 'title' => 'Take the Alien Oath', 'description' => 'No. 3 Happy Lane', 'types' => ['pdf' => 'HappyLane3.pdf']],
-            ['id' => 'HappyLane4', 'category' => 'Happy Lane Series', 'title' => 'Scouts to the Rescue', 'description' => 'No. 4 Happy Lane', 'types' => ['pdf' => 'HappyLane4.pdf']],
-            ['id' => 'HappyLane5', 'category' => 'Happy Lane Series', 'title' => 'Don\'t be Mean, Keep it Green', 'description' => 'No. 5 Happy Lane', 'types' => ['pdf' => 'HappyLane5.pdf']],
-            ['id' => 'HappyLane6', 'category' => 'Happy Lane Series', 'title' => 'The Hidden Clues!', 'description' => 'No. 6 Happy Lane', 'types' => ['pdf' => 'HappyLane6.pdf']]            
+            ['id' => 'HappyLane1', 'category' => 'Happy Lane Series', 'title' => 'Home, Sweet Home', 'description' => 'No. 1', 'types' => ['pdf' => 'HappyLane1.pdf'] ],
+            ['id' => 'HappyLane2', 'category' => 'Happy Lane Series', 'title' => 'Reduce, Reuse, Recycle all', 'description' => 'No. 2', 'types' => ['pdf' => 'HappyLane2.pdf']],
+            ['id' => 'HappyLane3', 'category' => 'Happy Lane Series', 'title' => 'Take the Alien Oath', 'description' => 'No. 3', 'types' => ['pdf' => 'HappyLane3.pdf']],
+            ['id' => 'HappyLane4', 'category' => 'Happy Lane Series', 'title' => 'Scouts to the Rescue', 'description' => 'No. 4', 'types' => ['pdf' => 'HappyLane4.pdf']],
+            ['id' => 'HappyLane5', 'category' => 'Happy Lane Series', 'title' => 'Don\'t be Mean, Keep it Green', 'description' => 'No. 5', 'types' => ['pdf' => 'HappyLane5.pdf']],
+            ['id' => 'HappyLane6', 'category' => 'Happy Lane Series', 'title' => 'The Hidden Clues!', 'description' => 'No. 6', 'types' => ['pdf' => 'HappyLane6.pdf']]            
         ]
 
     ];
