@@ -71,8 +71,13 @@ h2:first-child, h3:first-child {
 }
 header {
     height: 9.5em;
-    position: -webkit-sticky; position: sticky;
+    position: relative;
     top: 0
+}
+@media screen and (orientation: portrait) {
+    header {
+        position: -webkit-sticky; position: sticky
+    }
 }
 main {
     overflow: hidden;
