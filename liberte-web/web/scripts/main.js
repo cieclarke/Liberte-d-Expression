@@ -57,31 +57,26 @@ $(function () {
 	// media query breakpoints should match those in the CSS
 	enquire.register('screen and (max-width: 1279px)', {
 		match : function() {
-			if ($('.media-play').length) {
-				var mediaPage;
-				
-				if ($('.page-music .media-play').length) {
-					mediaPage = '/music/';
-				} else if ($('.page-books .media-play').length){
-					mediaPage = '/books/';
-				}
-
-				$.fancybox({
-					helpers : {
-						overlay : {
-							locked : false
-						}
-					},
-					afterClose: function() {
-						location.href = mediaPage;
-					},
-					content: $('.media-play')
+			// remove section links
+			if ($('.page-music').length || $('.page-books').length) {
+				$('main section li a:first-child').each(function() {
+					$(this).parent().attr('data-path', $(this).attr('href'));
+					$(this).contents().unwrap();
 				});
 			}
 		},
 		unmatch : function() {
-			if ($('.media-play').length) {
-				$.fancybox.close();
+			// reinstate section anchors
+			if ($('.page-music').length || $('.page-books').length) {
+				$('main section li').each(function() {
+					var anchorPath = $(this).attr('data-path');
+					var anchorText = $(this).clone().children().remove().end().text();
+					var $anchor = $('<a />').attr('href', anchorPath).text(anchorText);
+
+					$(this).removeAttr('data-path');
+					$(this).prepend($anchor);
+					$(this).html($(this).children());
+				});
 			}
 		}
 	}).register('screen and (min-width: 1280px)', {
