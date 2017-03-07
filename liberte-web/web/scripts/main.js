@@ -51,7 +51,6 @@ $('html').addClass('js');
 
 // main control block, on DOM-ready..
 $(function () {
-	
 	// <<<< Viewport size dependent function calls >>>>
 
 	// media query breakpoints should match those in the CSS
@@ -87,6 +86,7 @@ $(function () {
 				
 				pageMaxWidthRender.assemble($page, 'type-gallery', lozPaths);
 
+				// add fancybox gallery groupings at full desktop viewport
 				$($page.find('#exhibition-art .gallery a').attr('rel', 'exhibitions'));
 				$($page.find('#exhibition-sharmina .gallery a').attr('rel', 'sharmina'));
 			}
@@ -97,6 +97,7 @@ $(function () {
 				
 				pageMaxWidthRender.assemble($page, 'type-gallery', lozPaths);
 				
+				// add fancybox gallery groupings at full desktop viewport
 				$('.page-interior-design #interior .gallery a').attr('rel', 'interior');
 				$('.page-interior-design #product .gallery a').attr('rel', 'product');
 			}
@@ -361,7 +362,7 @@ var pageMaxWidthRender = {
 				var $songList = $section.find('ul');
 
 				$sectionLoz.insertAfter($songList);
-				$songList.find('audio').addClass('off-screen');
+				$songList.find('.deliverable').addClass('off-screen').attr('tabindex', -1);
 
 				if ($('.media-play').length) {
 					$('.media-play').appendTo($detail);
@@ -380,6 +381,19 @@ var pageMaxWidthRender = {
 		var $choiceHead = $('.header-sub');
 		var $detail = $('.detail');
 		
+		// need to return to the parent page if in a music/book specific view. Otherwise if the viewport width is
+		// reduced the URL is a view path that is not available at lesser viewport widths when scripting is 
+		// available and the play/view control will also still be in the DOM. Established behaviour is use of 
+		// alternative player/anchor at lesser viewport widths
+		if (pageType == 'type-viewer') {
+			var pathName = window.location.pathname;
+			var pathView = pathName.substring(pathName.lastIndexOf('/') + 1);
+
+			if (pathView.length > 0) {
+				window.location.href = './';
+			}
+		}
+
 		if (pageType == 'type-gallery') {
 			var arrSectionContent = [];
 
@@ -412,7 +426,7 @@ var pageMaxWidthRender = {
 			}
 
 			if (pageType == 'type-viewer') {
-				$(this).find('audio').removeClass('off-screen');
+				$(this).find('.deliverable').removeClass('off-screen').attr('tabindex', 0);
 			}
 
 			$sectionInfo.unwrap().insertAfter($sectionHeading);
