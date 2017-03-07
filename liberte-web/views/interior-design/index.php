@@ -8,14 +8,16 @@
 
 <section class="interior">
     <h2>Interior design</h2>
-    <ul class="list-standard">
-        <li>Residential</li>
-        <li>Commercial</li>
-        <li>Space Planning</li>
-        <li>Lighting Plan</li>
-        <li>Project Management</li>
-        <li>Furnishing and Accessorising</li>
-    </ul>
+    <div class="description">
+        <ul class="list-standard">
+            <li>Residential</li>
+            <li>Commercial</li>
+            <li>Space Planning</li>
+            <li>Lighting Plan</li>
+            <li>Project Management</li>
+            <li>Furnishing and Accessorising</li>
+        </ul>
+    </div>
     <ul class="gallery">
         <li>
             <a href="/images/interior-design/interior/concept_1.jpg">
@@ -112,12 +114,14 @@
 
 <section class="product">
     <h2>Product design</h2>
-    <p>
-        Design #2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis vitae nisi eget eleifend. Phasellus tristique ut augue a consequat. Sed at dignissim augue, et tempor enim. Nunc viverra magna ut ex pretium, ac tincidunt ante tempus.
-    </p> 
-    <p>
-        Vestibulum non purus id augue fringilla varius vitae eu dolor. Nunc viverra magna ut ex pretium, ac tincidunt ante tempus.
-    </p>
+    <div class="description">
+        <p>
+            Design #2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis vitae nisi eget eleifend. Phasellus tristique ut augue a consequat. Sed at dignissim augue, et tempor enim. Nunc viverra magna ut ex pretium, ac tincidunt ante tempus.
+        </p> 
+        <p>
+            Vestibulum non purus id augue fringilla varius vitae eu dolor. Nunc viverra magna ut ex pretium, ac tincidunt ante tempus.
+        </p>
+    </div>
     <ul class="gallery">
         <li>
             <a href="/images/interior-design/product/presentation_board_1.jpg">

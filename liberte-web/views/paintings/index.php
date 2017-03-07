@@ -7,18 +7,20 @@
 
 <section class="exhibition-art">
     <h2>Art exhibitions</h2>
-    <p>
-        With the support of <a href="http://www.barclays.co.uk/">Barclays Bank</a>, <a href="https://www.communisis.com/">Communisis</a> and <a href="http://www.candidarts.com/">Candid Arts Trust</a>, Liberté d'Expression launched in 2006 a contemporary art competition. 
-    </p>
-    <p>
-        More than 500 artworks were submitted for consideration of which 70 paintings were selected for an eight days exhibition. The exhibitions received over 500 visitors (including staff and clients) and sold nearly 1/3 of all paintings on offer within a few days. All paintings sold (£20,943) through the competition saw 50% of the sale price go to the artist and 50% went to the NSPCC. In total £10,471.50 was raised for the NSPCC.
-    </p>
-    <p>
-        As part of the exhibition, the general public was asked to vote for their favourite paintings.
-    </p>
-    <p>
-        Twenty-five artists were also showcased in the Light Gallery in Marble Arch in June 2008 to raise money for Cancer Research UK. Abstract, still life, figurative or landscape subjects, there was something for all tastes. 
-    </p>
+    <div class="description">
+        <p>
+            With the support of <a href="http://www.barclays.co.uk/">Barclays Bank</a>, <a href="https://www.communisis.com/">Communisis</a> and <a href="http://www.candidarts.com/">Candid Arts Trust</a>, Liberté d'Expression launched in 2006 a contemporary art competition. 
+        </p>
+        <p>
+            More than 500 artworks were submitted for consideration of which 70 paintings were selected for an eight days exhibition. The exhibitions received over 500 visitors (including staff and clients) and sold nearly 1/3 of all paintings on offer within a few days. All paintings sold (£20,943) through the competition saw 50% of the sale price go to the artist and 50% went to the NSPCC. In total £10,471.50 was raised for the NSPCC.
+        </p>
+        <p>
+            As part of the exhibition, the general public was asked to vote for their favourite paintings.
+        </p>
+        <p>
+            Twenty-five artists were also showcased in the Light Gallery in Marble Arch in June 2008 to raise money for Cancer Research UK. Abstract, still life, figurative or landscape subjects, there was something for all tastes. 
+        </p>
+    </div>
     <ul class="gallery">
         <li>
             <a href="/images/exhibitions-paintings/art-exhibitions/01PB020137.jpg">
@@ -80,12 +82,14 @@
 
 <section class="exhibition-sharmina">
     <h2>Sharmina's paintings</h2>
-    <p>
-        Texture is a guiding principle of Sharmina's work. Allowing the images to evolve instinctively, she balances both textured and smooth surfaces alongside matt and high gloss finishes. In doing so Sharmina hopes to achieve a sense of flow, movement and transformation which parallels her own experiences and ethos of life. "In most of my work, I mix flowing and shifting shapes complemented by a geometrical precision, which probably reflect my desire to attain perfection and control" she says.
-    </p>
-    <p>
-        The Torbay Hospital Gallery is funded through a charitable trust – South Devon Healthcare Arts which promotes Arts in Hospitals. 
-    </p>
+    <div class="description">
+        <p>
+            Texture is a guiding principle of Sharmina's work. Allowing the images to evolve instinctively, she balances both textured and smooth surfaces alongside matt and high gloss finishes. In doing so Sharmina hopes to achieve a sense of flow, movement and transformation which parallels her own experiences and ethos of life. "In most of my work, I mix flowing and shifting shapes complemented by a geometrical precision, which probably reflect my desire to attain perfection and control" she says.
+        </p>
+        <p>
+            The Torbay Hospital Gallery is funded through a charitable trust – South Devon Healthcare Arts which promotes Arts in Hospitals. 
+        </p>
+    </div>
     <ul class="gallery">
         <li>
             <a href="/images/exhibitions-paintings/sharmina/2776449.jpg">

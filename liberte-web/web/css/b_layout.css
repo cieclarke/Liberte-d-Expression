@@ -153,6 +153,11 @@ section {
     top: 0;
     width: 100%;
 }
+.deliverable {
+    position: absolute;
+    right: 0;
+    top: 0
+}
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -192,6 +197,15 @@ section {
     position: absolute;
     width: 1px
 }
+.media-play video, .media-play embed {
+    margin-bottom: 1.75rem;
+    width: 240px
+}
+.page-books section li {
+    margin-bottom: 1.5rem;
+    padding-right: 50px;
+    position: relative
+}
 .page-home .introduction {
     margin: 3.5rem auto;
     padding: 5.0rem 10% 5.5rem;
@@ -201,30 +215,16 @@ section {
     border-top: 0;
     min-height: 56rem
 }
-
-
-.deliverable {
-    position: absolute;
-    right: 0;
-    top: 0
-}
-.page-books .deliverable {
-    
-}
 .page-music .deliverable {
     margin: 0.5em 0;
     width: 150px;
 }
-
-.page-books section li {
-    padding-right: 50px;
-    position: relative
-}
-
 .page-music section li {
-    line-height: 3;
+    margin-bottom: 1.5rem;
+    min-height: 5rem;
     overflow: hidden;
-    padding-right: 160px;
+    padding-right: 160px; /* contains audio control */
+    padding-top: 1rem;
     position: relative;
 }
 .page-music section li a {
@@ -233,10 +233,6 @@ section {
 }
 .page-music .container-lozenge * {
     position: relative
-}
-.media-play video, .media-play embed {
-    margin-bottom: 1.75rem;
-    width: 240px
 }
 .site-home {
     height: 90px;
@@ -271,6 +267,24 @@ section {
     .media-play video, .media-play embed {
         width: 420px
     }
+    .page-paintings .description, .page-interior-design .description {
+        float: left;
+        margin-right: 4%;
+        width: 48%
+    }
+    .page-paintings .gallery, .page-interior-design .gallery {
+        float: left;
+        margin-top: 0;
+        width: 48%
+    }
+    .page-books main section {
+        float: left;
+        margin-right: 4%;
+        width: 48%
+    }
+    .page-books main section:last-child {
+        margin-right: 0
+    }
     .site-home {
         height: 144px;
         width: 450px;
@@ -297,7 +311,22 @@ section {
         margin: 5.25rem auto;
         padding: 7.5rem 10% 6.5rem;
         width: 60%
-    }    
+    }
+    .page-paintings .description, .page-interior-design .description {
+        margin-right: 2%;
+        width: 40%
+    }
+    .page-paintings .gallery, .page-interior-design .gallery {
+        width: 58%
+    }
+    .page-music main section {
+        float: left;
+        margin-right: 4%;
+        width: 30%
+    }
+    .page-music main section:last-child {
+        margin-right: 0
+    }
 }
 
 /*   Media 1280 and above
@@ -362,19 +391,16 @@ section {
     .js .page-books .container-lozenge.image {
         height: 20rem;
     }
-    .js .page-books section li {
-        margin-bottom: 1.2rem;
-    }
     .js .page-music .container-lozenge.image {
         height: 21rem;
     }
-    .js .page-music section li {
-        line-height: inherit;
-        margin-bottom: 1.2rem;
-        padding-right: 0;
-    }
-    .js .page-music audio {
+    .js .page-music .deliverable {
         width: 100%
+    }
+    .js .page-paintings .description, .page-interior-design .description {
+        float: none;
+        margin-right: 0;
+        width: auto
     }
     .js .detail {
         float: right;
@@ -393,14 +419,29 @@ section {
     .js .detail > div:not(.off-screen) {
         height: 92%
     }
-    .js .info-section {
-        padding: 1.25rem 10px;
-        width: 100%
+    .js .page-paintings .gallery, .page-interior-design .gallery {
+        float: none;
+        width: auto
     }
-    .js .info-section.visible {
-        height: auto;
-        left: 0;
-        position: absolute
+    .js .page-books main section {
+        float: none;
+        margin-right: 0;
+        width: auto
+    }
+    .js .page-books main section li {
+        margin-bottom: 1.2rem;
+        padding-right: 0
+    }
+    .page-music main section {
+        float: none;
+        margin-right: 0;
+        width: auto
+    }
+    .js .page-music main section li {
+        margin-bottom: 1.2rem;
+        min-height: auto;
+        padding-right: 0;
+        padding-top: 0
     }
     .js .header-sub {
         margin-top: 1.5rem;
@@ -418,9 +459,6 @@ section {
         -webkit-columns: 4 127px; -moz-columns: 4 127px; columns: 4 127px;
         -webkit-column-gap: 15px; -moz-column-gap: 15px; column-gap: 15px;
     }
-    .js .page-interior-design .selected h2 {
-        min-height: 5.1rem
-    }
     .js .header-sub section {
         -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid;
         margin: 0;
@@ -429,6 +467,20 @@ section {
     .js .page-books .header-sub section, .js .page-music .header-sub section {
         min-height: 47.2rem
     }
+    .js .info-section {
+        padding: 1.25rem 10px;
+        width: 100%
+    }
+    .js .info-section.visible {
+        height: auto;
+        left: 0;
+        position: absolute
+    }
+    .js .page-interior-design .selected h2 {
+        min-height: 5.1rem
+    }
+    
+    
     .js .media-play video {
         width: 100%
     }

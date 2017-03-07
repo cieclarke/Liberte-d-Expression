@@ -128,7 +128,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
     border-bottom-color: #9b539c
 }
 .page-books main {
-	background: url(../images/background_books_bw_01.jpg) no-repeat fixed left top / cover;
+	background: url(../images/background_books_bw_01.jpg) no-repeat fixed center top / cover;
 }
 .page-books .menu-site .books {
 	background: #9b539c;
@@ -186,7 +186,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
     border-bottom-color: #73c5e1
 }
 .page-interior-design main {
-	background: url(../images/background_interior-design_bw_01.jpg) no-repeat fixed left top / cover
+	background: url(../images/background_interior-design_bw_01.jpg) no-repeat fixed center top / cover
 }
 .page-interior-design .gallery a:hover img, .page-interior-design .gallery a:focus img {
 	border-color: #73c5e1;
@@ -206,7 +206,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
     border-bottom-color: #eb65a0
 }
 .page-music main {
-	background: url(../images/background_music_bw_01.jpg) no-repeat fixed left top / cover
+	background: url(../images/background_music_bw_01.jpg) no-repeat fixed center top / cover
 }
 .page-music .menu-site .music {
 	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(235,101,160,1) 75%);
@@ -222,7 +222,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
     border-bottom-color: #5bb12f
 }
 .page-paintings main {
-	background: url(../images/background_paintings_bw_01.jpg) no-repeat fixed left top / cover 
+	background: url(../images/background_paintings_bw_01.jpg) no-repeat fixed center top / cover 
 }
 .page-paintings .gallery a:hover img, .page-paintings .gallery a:focus img {
 	border-color: #5bb12f;

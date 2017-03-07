@@ -125,7 +125,7 @@
         <?php } else { ?>
             <h2>Play <?php echo $model->SelectedSong->title; ?></h2>
             
-            <audio title="<?php echo $model->SelectedSong->title; ?>" controls="controls">
+            <audio class="deliverable" title="<?php echo $model->SelectedSong->title; ?>" controls="controls">
                 <source src="http://libertedexpression.co.uk/art/audio/<?php echo $model->SelectedSong->types['mp3']; ?>" type='audio/mpeg; codecs="mp3"'>
                 <source src="http://libertedexpression.co.uk/art/audio/<?php echo $model->SelectedSong->types['ogg']; ?>" type='audio/ogg; codecs="vorbis"'>
                 <p>Unsupported media</p>
