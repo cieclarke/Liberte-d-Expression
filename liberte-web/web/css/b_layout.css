@@ -201,14 +201,31 @@ section {
     border-top: 0;
     min-height: 56rem
 }
-.page-music audio {
-    float: right;
+
+
+.deliverable {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+.page-books .deliverable {
+    
+}
+.page-music .deliverable {
     margin: 0.5em 0;
     width: 150px;
 }
+
+.page-books section li {
+    padding-right: 50px;
+    position: relative
+}
+
 .page-music section li {
-    margin-bottom: 1.2rem;
-    overflow: hidden
+    line-height: 3;
+    overflow: hidden;
+    padding-right: 160px;
+    position: relative;
 }
 .page-music section li a {
     float: left;
@@ -334,32 +351,37 @@ section {
     }
     .js .col-2 .container-lozenge.image {
         height: 18rem;
-        width: 49%
+        width: 48%
     }
     .js .col-3 .container-lozenge.image {
-        width: 32%
+        width: 31%
     }
     .js .col-4 .container-lozenge.image {
         width: 24%
     }
     .js .page-books .container-lozenge.image {
-        height: 22rem;
+        height: 20rem;
+    }
+    .js .page-books section li {
+        margin-bottom: 1.2rem;
     }
     .js .page-music .container-lozenge.image {
         height: 21rem;
     }
+    .js .page-music section li {
+        line-height: inherit;
+        margin-bottom: 1.2rem;
+        padding-right: 0;
+    }
     .js .page-music audio {
         width: 100%
-    }
-    .js .page-books section li a + a {
-        float: right
     }
     .js .detail {
         float: right;
         height: 56rem;
         overflow: hidden;
         padding: 5.25rem 12px 0;
-        width: 415px
+        width: 409px
     }
     .js .detail h2 {
         display: block;
@@ -386,11 +408,11 @@ section {
     }
     .js .header-sub.col-2 {
         -webkit-columns: 2 27px; -moz-columns: 2 27px; columns: 2 27px;
-        -webkit-column-gap: 15px; -moz-column-gap: 15px; column-gap: 15px;
+        -webkit-column-gap: 22px; -moz-column-gap: 22px; column-gap: 22px;
     } 
     .js .header-sub.col-3 {
         -webkit-columns: 3 27px; -moz-columns: 3 27px; columns: 3 27px;
-        -webkit-column-gap: 15px; -moz-column-gap: 15px; column-gap: 15px;
+        -webkit-column-gap: 22px; -moz-column-gap: 22px; column-gap: 22px;
     }       
     .js .header-sub.col-4 {
         -webkit-columns: 4 127px; -moz-columns: 4 127px; columns: 4 127px;

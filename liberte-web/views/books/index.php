@@ -27,7 +27,7 @@ endforeach;
         <?php foreach($happyLane as $book): ?>
         <li>
             <a href="/books/<?php echo $book->id; ?>" title="View book"><?php echo $book->description; ?> "<?php echo $book->title; ?>"</a>
-            <a href="http://libertedexpression.co.uk/art/literature/<?php echo $book->types['pdf']; ?>" title="Download PDF">PDF</a>
+            <a href="http://libertedexpression.co.uk/art/literature/<?php echo $book->types['pdf']; ?>" title="Download PDF" class="deliverable">PDF</a>
         </li>
         <?php endforeach; ?>
     </ul>
@@ -39,7 +39,7 @@ endforeach;
         <?php foreach($otherBooks as $book): ?>
         <li>
             <a href="/books/<?php echo $book->id; ?>" title="View book"><?php echo $book->description; ?> "<?php echo $book->title; ?>"</a>
-            <a href="http://libertedexpression.co.uk/art/literature/<?php echo $book->types['pdf']; ?>" title="Download PDF">PDF</a>
+            <a href="http://libertedexpression.co.uk/art/literature/<?php echo $book->types['pdf']; ?>" title="Download PDF" class="deliverable">PDF</a>
         </li>
         <?php endforeach; ?>
     </ul>

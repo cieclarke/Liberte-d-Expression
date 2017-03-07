@@ -11,7 +11,7 @@
     <ul>
         <li>
             <a href='/music/CloseToYou'>Close to You</a>
-            <audio title="Close to You" controls="controls">
+            <audio title="Close to You" controls="controls" class="deliverable">
                 <source src="http://libertedexpression.co.uk/art/audio/CloseToYou.mp3" type='audio/mpeg; codecs="mp3"'>
                 <source src="http://libertedexpression.co.uk/art/audio//CloseToYou.ogg" type='audio/ogg; codecs="vorbis"'>
                 <p>Unsupported media</p>
@@ -19,7 +19,7 @@
         </li>
         <li>
             <a href='/music/AboutAGirl'>About a Girl</a>
-            <audio title="About a Girl" controls="controls">
+            <audio title="About a Girl" controls="controls" class="deliverable">
                 <source src="http://libertedexpression.co.uk/art/audio/AboutAGirl.mp3" type='audio/mpeg; codecs="mp3"'>
                 <source src="http://libertedexpression.co.uk/art/audio//AboutAGirl.ogg" type='audio/ogg; codecs="vorbis"'>
                 <p>Unsupported media</p>
@@ -27,7 +27,7 @@
         </li>
         <li>
             <a href='/music/Friendship'>Friendship</a>
-            <audio title="Friendship" controls="controls">
+            <audio title="Friendship" controls="controls" class="deliverable">
                 <source src="http://libertedexpression.co.uk/art/audio/Friendship.mp3" type='audio/mpeg; codecs="mp3"'>
                 <source src="http://libertedexpression.co.uk/art/audio/Friendship.ogg" type='audio/ogg; codecs="vorbis"'>
                 <p>Unsupported media</p>
@@ -35,7 +35,7 @@
         </li>
         <li>
             <a href='/music/HeAndShe'>He and She</a>
-            <audio title="He and She" controls="controls">
+            <audio title="He and She" controls="controls" class="deliverable">
                 <source src="http://libertedexpression.co.uk/art/audio/HeAndShe.mp3" type='audio/mpeg; codecs="mp3"'>
                 <source src="http://libertedexpression.co.uk/art/audio/HeAndShe.ogg" type='audio/ogg; codecs="vorbis"'>
                 <p>Unsupported media</p>
@@ -43,7 +43,7 @@
         </li>
         <li>
             <a href='/music/OurWorldToday'>Our World Today</a>
-            <audio title="Our World Today" controls="controls">
+            <audio title="Our World Today" controls="controls" class="deliverable">
                 <source src="http://libertedexpression.co.uk/art/audio/OurWorldToday.mp3" type='audio/mpeg; codecs="mp3"'>
                 <source src="http://libertedexpression.co.uk/art/audio/OurWorldToday.ogg" type='audio/ogg; codecs="vorbis"'>
                 <p>Unsupported media</p>
@@ -51,7 +51,7 @@
         </li>
         <li>
             <a href='/music/YouAre'>You Are</a>
-            <audio title="You Are" controls="controls">
+            <audio title="You Are" controls="controls" class="deliverable">
                 <source src="http://libertedexpression.co.uk/art/audio/YouAre.mp3" type='audio/mpeg; codecs="mp3"'>
                 <source src="http://libertedexpression.co.uk/art/audio/YouAre.ogg" type='audio/ogg; codecs="vorbis"'>
                 <p>Unsupported media</p>
@@ -65,7 +65,7 @@
     <ul>
         <li>
             <a href='/music/JaiVouluFuir'>Jai voulu fuir</a>
-            <audio title="Jai voulu fuir" controls="controls">
+            <audio title="Jai voulu fuir" controls="controls" class="deliverable">
                 <source src="http://libertedexpression.co.uk/art/audio/JaiVouluFuir.mp3" type='audio/mpeg; codecs="mp3"'>
                 <source src="http://libertedexpression.co.uk/art/audio/JaiVouluFuir.ogg" type='audio/ogg; codecs="vorbis"'>
                 <p>Unsupported media</p>
@@ -73,7 +73,7 @@
         </li>
         <li>
             <a href='/music/Caroline'>Caroline</a>
-            <audio title="Caroline" controls="controls">
+            <audio title="Caroline" controls="controls" class="deliverable">
                 <source src="http://libertedexpression.co.uk/art/audio/Caroline.mp3" type='audio/mpeg; codecs="mp3"'>
                 <source src="http://libertedexpression.co.uk/art/audio/Caroline.ogg" type='audio/ogg; codecs="vorbis"'>
                 <p>Unsupported media</p>
@@ -87,7 +87,7 @@
     <ul>
         <li>
             <a href='/music/CercaDeTi'>Cerca de ti</a>
-            <audio title="Cerca de ti" controls="controls">
+            <audio title="Cerca de ti" controls="controls" class="deliverable">
                 <source src="http://libertedexpression.co.uk/art/audio/CercaDeTi.mp3" type='audio/mpeg; codecs="mp3"'>
                 <source src="http://libertedexpression.co.uk/art/audio/CercaDeTi.ogg" type='audio/ogg; codecs="vorbis"'>
                 <p>Unsupported media</p>
@@ -95,7 +95,7 @@
         </li>
         <li>
             <a href='/music/Atraccion'>Atraccion</a>
-            <audio title="Atraccion" controls="controls">
+            <audio title="Atraccion" controls="controls" class="deliverable">
                 <source src="http://libertedexpression.co.uk/art/audio/Atraccion.mp3" type='audio/mpeg; codecs="mp3"'>
                 <source src="http://libertedexpression.co.uk/art/audio/Atraccion.ogg" type='audio/ogg; codecs="vorbis"'>
                 <p>Unsupported media</p>
@@ -103,7 +103,7 @@
         </li>
         <li>
             <a href='/music/MiBilateral'>Mi Bilateral</a>
-            <audio title="Mi Bilateral" controls="controls">
+            <audio title="Mi Bilateral" controls="controls" class="deliverable">
                 <source src="http://libertedexpression.co.uk/art/audio/Atraccion.mp3" type='audio/mpeg; codecs="mp3"'>
                 <source src="http://libertedexpression.co.uk/art/audio/Atraccion.ogg" type='audio/ogg; codecs="vorbis"'>
                 <p>Unsupported media</p>
