@@ -13,7 +13,8 @@ footer {
 }
 header {
     background-image:  url(../images/tranquility.jpg); 
-	background-size: cover
+	background-size: cover;
+	box-shadow: 0 1px 3px #333
 }
 html {
 	background-color: #333
@@ -257,6 +258,9 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 		background-color: #fff;
 		border-radius: 65px 0;
 		color: #000
+	}
+	.js .page-books .detail {
+		background: url(../images/background_books_bw_02.jpg) no-repeat center center
 	}
 	.js .page-paintings .detail {
 		background-image: url(../images/exhibitions-paintings/default_exhibition.jpg), url(../images/toplights_00.jpg);
