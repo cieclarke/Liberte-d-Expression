@@ -16,7 +16,7 @@ class ContactController extends Controller
 
     public function actionIndex()
     {
-        $this->view->params['class'] = 'page-contact';
+        $this->view->params['class'] = 'page-home-sub';
         $vm = new \app\models\GalleryViewModel();
 
         return $this->render('index', [

@@ -26,12 +26,10 @@ main {
 	box-shadow: 0 0 10px 15px #fff inset;
 	color: #fff
 }
-
 section li a {
 	color: #fff
 }
 
-/* animation */
 @keyframes border-blink { 
 	5% {border-color: rgba(128, 128, 128, 0.5);}
 }
@@ -179,6 +177,12 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	background: linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 75%);
 	border-radius: 0 25px 0 0
 }
+.page-home-sub h2, .page-home-sub .detail h3, .page-home-sub nav {
+    border-bottom-color: #bccf02
+}
+.page-home-sub main {
+	background: url(../images/background_home_sub_bw_01.jpg) no-repeat fixed center top / cover
+}
 
 .page-interior-design main :link, .page-interior-design main :visited, .page-interior-design main :link:hover, .page-interior-design main :visited:hover {
 	background-color: rgba(115, 197, 225, 0.5)
@@ -286,10 +290,13 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 		background-color: transparent
 	}
 
-	.page-paintings main, .page-interior-design main, .page-music main, .page-books main {
+	.page-paintings main, .page-interior-design main, .page-music main, .page-books main, .page-home-sub main {
 		background-attachment: scroll;
 		background-position: left top;
 		background-size: contain
+	}
+	.page-home-sub main {
+		background-size: auto
 	}
 	.page-paintings main {
 		background-color: #7e7e7e

@@ -8,6 +8,4 @@
 
 <p>Following its first exhibition in 2007, we have also worked with clients to provide artwork (painting, sculpture, photography, installation) for their commercial and residential projects.</p>
 
-<h2>Test h2</h2>
-
 <p>Since, we have been involved in a number of exiting projects including product and interior design, song writing, children books and recently animation.</p>
