@@ -4,7 +4,7 @@
 
 
     <h1>Music</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis vitae nisi eget eleifend. Phasellus <a href="#">tristique ut augue</a> a consequat. Sed at dignissim augue, et tempor enim.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis vitae nisi eget eleifend. Phasellus tristique ut augue a consequat. Sed at dignissim augue, et tempor enim.</p>
 
 <section class="music-english">
     <h2>English songs</h2>
