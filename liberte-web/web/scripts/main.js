@@ -6,6 +6,9 @@ var pageLozengesMeta = {
 			'lozFirst': '<img src="/images/exhibitions-paintings/lozenge_exhibition_barclays_00.jpg" alt="Exhibition scene - Barclays" />',
 			'lozSecond': '<img src="/images/exhibitions-paintings/lozenge_exhibition_light-gallery_00.jpg" alt="Exhibition scene - Light Gallery" />'
 		},
+		'samples': {
+			'lozFirst': '<img src="/images/exhibitions-paintings/lozenge_artist_gallery_sample_00.jpg" alt="Exhibits - artist sample gallery" />'
+		},
 		'sharminas': {
 			'lozFirst': '<img src="/images/exhibitions-paintings/lozenge_exhibition_sharmina_00.jpg" alt="Exhibition scene - Sharmina" />',
 			'lozSecond': '<img src="/images/exhibitions-paintings/lozenge_exhibition_torbay_00.jpg" alt="Exhibition scene - Torbay" />'
@@ -88,6 +91,7 @@ $(function () {
 
 				// add fancybox gallery groupings at full desktop viewport
 				$($page.find('#exhibition-art .gallery a').attr('rel', 'exhibitions'));
+				$($page.find('#exhibition-gallery-sample .gallery a').attr('rel', 'samples'));
 				$($page.find('#exhibition-sharmina .gallery a').attr('rel', 'sharmina'));
 			}
 
@@ -165,6 +169,7 @@ $(function () {
 		var $page = $('.page-paintings');
 
 		$($page.find('.exhibition-art .gallery a').attr('rel', 'exhibitions'));
+		$($page.find('.exhibition-gallery-sample .gallery a').attr('rel', 'samples'));
 		$($page.find('.exhibition-sharmina .gallery a').attr('rel', 'sharmina'));
 	}
 
