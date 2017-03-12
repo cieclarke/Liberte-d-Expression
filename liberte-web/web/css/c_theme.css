@@ -149,7 +149,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 .page-home .introduction {
     background: rgba(255, 255, 255, 0.85);
     border-radius: 6em 0;
-	box-shadow: 30px 30px 30px 0 rgba(0, 0, 0, 0.35);
+	box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.35);
 	color: #73c5e1
 }
 .js .page-home .introduction[data-palette='palette-00'] {
@@ -266,6 +266,16 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	.js .page-books .detail {
 		background: url(../images/background_books_bw_02.jpg) no-repeat center center
 	}
+	.js .page-interior-design .detail {
+		background-image: url(../images/interior-design/default_interior.jpg), url(../images/toplights_00.jpg);
+		background-repeat: no-repeat, no-repeat;
+		background-position: center 10.5rem, center top
+	}
+	.js .page-interior-design .detail.active {
+		background-image: url(../images/toplights_00.jpg), url(../images/logo_swirl_background_00.png);
+		background-repeat: no-repeat, no-repeat;
+		background-position: top center, 108% 116%
+	}
 	.js .page-music .detail {
 		background: url(../images/background_music_bw_02.jpg) no-repeat center center
 	}
@@ -289,24 +299,30 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	.js .detail .gallery {
 		background-color: transparent
 	}
+	.page-books main {
+		background-color: #e8e8e8
+	}
+	.page-home-sub main {
+		background-size: auto
+	}
+	.page-music main {
+		background-color: #5d5d5d
+	}
 
 	.page-paintings main, .page-interior-design main, .page-music main, .page-books main, .page-home-sub main {
 		background-attachment: scroll;
 		background-position: left top;
 		background-size: contain
 	}
-	.page-home-sub main {
-		background-size: auto
-	}
 	.page-paintings main {
-		background-color: #7e7e7e
+		background-color: #666
 	}
 	.page-paintings .container-lozenge.focus-lozenge {
 		border-color: #5bb12f;
 		transition : border 175ms linear
 	}
 	.js .page-paintings .info-section-drop {
-		background: url(../images/page-paintings-arra-down.png) no-repeat center bottom;
+		background: url(../images/page-paintings-arra-down.png) no-repeat 20% bottom;
     }
 	.js .page-paintings .choice h2 a {
         background-color: transparent;
@@ -317,14 +333,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	.js .page-music .header-sub h2 :link, .js .page-music .header-sub h2 :visited {
 		color: #fff
 	}
-
-	.page-books main {
-		background-color: #e8e8e8
-	}
 	
-	.page-music main {
-		background-color: #5d5d5d
-	}
 
 	.page-interior-design main {
 		background-color: #e8e8e8
@@ -342,8 +351,4 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 		border-radius: 0;
 		color: #666
     }
-	.js .page-interior-design .detail {
-		background-image: url(../images/background_interior-design_02.jpg);
-		background-repeat: no-repeat
-	}
 }
