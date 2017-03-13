@@ -40,6 +40,11 @@
             </a>
         </li>
         <li>
+            <a href="/images/interior-design/interior/social_club_elevation.jpg">
+                <img src="/images/interior-design/interior/social_club_elevation_thumb.jpg" alt="An interior-design commercial feature" />
+            </a>
+        </li>
+        <li>
             <a href="/images/interior-design/interior/social_club_plan.jpg">
                 <img src="/images/interior-design/interior/social_club_plan_thumb.jpg" alt="An interior-design commercial feature" />
             </a>
@@ -65,13 +70,13 @@
             </a>
         </li> 
         <li>
-            <a href="/images/interior-design/interior/???.jpg">
-                <img src="/images/interior-design/interior/???_thumb.jpg" alt="Missing image - please supply" />
+            <a href="/images/interior-design/interior/fireplace_concept.jpg">
+                <img src="/images/interior-design/interior/fireplace_concept_thumb.jpg" alt="An interior-design residential feature" />
             </a>
         </li> 
         <li>
-            <a href="/images/interior-design/interior/fireplace_in_situ_???.jpg">
-                <img src="/images/interior-design/interior/???_thumb.jpg" alt="Missing image - please supply" />
+            <a href="/images/interior-design/interior/fireplace_in_situ.jpg">
+                <img src="/images/interior-design/interior/fireplace_in_situ_thumb.jpg" alt="An interior-design residential feature" />
             </a>
         </li>      
         <li>
@@ -149,11 +154,6 @@
                 <img src="/images/interior-design/interior/artwork_concept_2_thumb.jpg" alt="An interior-design residential feature" />
             </a>
         </li>
-        <li>
-            <a href="/images/interior-design/interior/social_club_elevation.jpg">
-                <img src="/images/interior-design/interior/social_club_elevation_thumb.jpg" alt="An interior-design commercial feature" />
-            </a>
-        </li>
     </ul>
 </section>
 
@@ -169,6 +169,31 @@
     </div>
     <ul class="gallery">
         <li>
+            <a href="/images/interior-design/product/diagonal_shelving_unit_measurements0001.jpg">
+                <img src="/images/interior-design/product/diagonal_shelving_unit_measurements0001_thumb.jpg" alt="An interior-design product feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/product/image1.jpg">
+                <img src="/images/interior-design/product/image1_thumb.jpg" alt="An interior-design product feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/product/ringtabledesign.jpg">
+                <img src="/images/interior-design/product/ringtabledesign_thumb.jpg" alt="An interior-design product feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/product/coffee_table_prototype.jpg">
+                <img src="/images/interior-design/product/coffee_table_prototype_thumb.jpg" alt="An interior-design product feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/product/product_design1.jpg">
+                <img src="/images/interior-design/product/product_design1_thumb.jpg" alt="An interior-design product feature" />
+            </a>
+        </li>
+        <li>
             <a href="/images/interior-design/product/product_design_basket.jpg">
                 <img src="/images/interior-design/product/product_design_basket_thumb.jpg" alt="An interior-design product feature" />
             </a>
@@ -181,6 +206,36 @@
         <li>
             <a href="/images/interior-design/product/product_design_fireplace_2.jpg">
                 <img src="/images/interior-design/product/product_design_fireplace_2_thumb.jpg" alt="An interior-design product feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/product/product_design_tools.jpg">
+                <img src="/images/interior-design/product/product_design_tools_thumb.jpg" alt="An interior-design product feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/product/fireplace_fire_screen.jpg">
+                <img src="/images/interior-design/product/fireplace_fire_screen_thumb.jpg" alt="An interior-design product feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/product/wallpaper_design.jpg">
+                <img src="/images/interior-design/product/wallpaper_design_thumb.jpg" alt="An interior-design product feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/product/wallpaper_1.jpg">
+                <img src="/images/interior-design/product/wallpaper_1_thumb.jpg" alt="An interior-design product feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/product/belttabledesign.jpg">
+                <img src="/images/interior-design/product/belttabledesign_thumb.jpg" alt="An interior-design product feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/product/lamp_design.jpg">
+                <img src="/images/interior-design/product/lamp_design_thumb.jpg" alt="An interior-design product feature" />
             </a>
         </li>
         <li>
@@ -201,21 +256,6 @@
         <li>
             <a href="/images/interior-design/product/product_design_lighting_4.jpg">
                 <img src="/images/interior-design/product/product_design_lighting_4_thumb.jpg" alt="An interior-design product feature" />
-            </a>
-        </li>
-        <li>
-            <a href="/images/interior-design/product/product_design_tools.jpg">
-                <img src="/images/interior-design/product/product_design_tools_thumb.jpg" alt="An interior-design product feature" />
-            </a>
-        </li>
-        <li>
-            <a href="/images/interior-design/product/wallpaper_1.jpg">
-                <img src="/images/interior-design/product/wallpaper_1_thumb.jpg" alt="An interior-design product feature" />
-            </a>
-        </li>
-        <li>
-            <a href="/images/interior-design/product/wallpaper_design.jpg">
-                <img src="/images/interior-design/product/wallpaper_design_thumb.jpg" alt="An interior-design product feature" />
             </a>
         </li>
     </ul>
