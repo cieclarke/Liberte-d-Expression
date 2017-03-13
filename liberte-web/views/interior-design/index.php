@@ -20,28 +20,13 @@
     </div>
     <ul class="gallery">
         <li>
-            <a href="/images/interior-design/interior/concept_1.jpg">
-                <img src="/images/interior-design/interior/concept_1_thumb.jpg" alt="An interior-design residential feature" />
-            </a>
-        </li>
-        <li>
             <a href="/images/interior-design/interior/concept_2.jpg">
                 <img src="/images/interior-design/interior/concept_2_thumb.jpg" alt="An interior-design residential feature" />
             </a>
         </li>
         <li>
-            <a href="/images/interior-design/interior/concept_3.jpg">
-                <img src="/images/interior-design/interior/concept_3_thumb.jpg" alt="An interior-design residential feature" />
-            </a>
-        </li>
-        <li>
-            <a href="/images/interior-design/interior/flat_lighting_plan.jpg">
-                <img src="/images/interior-design/interior/flat_lighting_plan_thumb.jpg" alt="An interior-design residential feature" />
-            </a>
-        </li>
-        <li>
-            <a href="/images/interior-design/interior/flat_plan.jpg">
-                <img src="/images/interior-design/interior/flat_plan_thumb.jpg" alt="An interior-design residential feature" />
+            <a href="/images/interior-design/interior/social_club_2.jpg">
+                <img src="/images/interior-design/interior/social_club_2_thumb.jpg" alt="An interior-design commercial feature" />
             </a>
         </li>
         <li>
@@ -50,13 +35,13 @@
             </a>
         </li>
         <li>
-            <a href="/images/interior-design/interior/residential_elevation.jpg">
-                <img src="/images/interior-design/interior/residential_elevation_thumb.jpg" alt="An interior-design residential feature" />
+            <a href="/images/interior-design/interior/social_club_1.jpg">
+                <img src="/images/interior-design/interior/social_club_1_thumb.jpg" alt="An interior-design commercial feature" />
             </a>
         </li>
         <li>
-            <a href="/images/interior-design/interior/residential_Iso.jpg">
-                <img src="/images/interior-design/interior/residential_Iso_thumb.jpg" alt="An interior-design residential feature" />
+            <a href="/images/interior-design/interior/social_club_plan.jpg">
+                <img src="/images/interior-design/interior/social_club_plan_thumb.jpg" alt="An interior-design commercial feature" />
             </a>
         </li>
         <li>
@@ -65,13 +50,33 @@
             </a>
         </li>
         <li>
+            <a href="/images/interior-design/interior/artwork_concept.jpg">
+                <img src="/images/interior-design/interior/artwork_concept_thumb.jpg" alt="An interior-design commercial feature" />
+            </a>
+        </li>
+        <li>
             <a href="/images/interior-design/interior/dsc02233.jpg">
                 <img src="/images/interior-design/interior/dsc02233_thumb.jpg" alt="An interior-design commercial feature" />
             </a>
         </li>
         <li>
-            <a href="/images/interior-design/interior/restaurant_elevation.jpg">
-                <img src="/images/interior-design/interior/restaurant_elevation_thumb.jpg" alt="An interior-design commercial feature" />
+            <a href="/images/interior-design/interior/image2.jpg">
+                <img src="/images/interior-design/interior/image2_thumb.jpg" alt="An interior-design residential feature" />
+            </a>
+        </li> 
+        <li>
+            <a href="/images/interior-design/interior/???.jpg">
+                <img src="/images/interior-design/interior/???_thumb.jpg" alt="Missing image - please supply" />
+            </a>
+        </li> 
+        <li>
+            <a href="/images/interior-design/interior/fireplace_in_situ_???.jpg">
+                <img src="/images/interior-design/interior/???_thumb.jpg" alt="Missing image - please supply" />
+            </a>
+        </li>      
+        <li>
+            <a href="/images/interior-design/interior/concept_3.jpg">
+                <img src="/images/interior-design/interior/concept_3_thumb.jpg" alt="An interior-design residential feature" />
             </a>
         </li>
         <li>
@@ -85,28 +90,68 @@
             </a>
         </li>
         <li>
-            <a href="/images/interior-design/interior/social_club_1.jpg">
-                <img src="/images/interior-design/interior/social_club_1_thumb.jpg" alt="An interior-design commercial feature" />
+            <a href="/images/interior-design/interior/presentation_board_1.jpg">
+                <img src="/images/interior-design/interior/presentation_board_1_thumb.jpg" alt="An interior-design product feature" />
             </a>
         </li>
         <li>
-            <a href="/images/interior-design/interior/social_club_2.jpg">
-                <img src="/images/interior-design/interior/social_club_2_thumb.jpg" alt="An interior-design commercial feature" />
-            </a>
-        </li>
-        <li>
-            <a href="/images/interior-design/interior/social_club_elevation.jpg">
-                <img src="/images/interior-design/interior/social_club_elevation_thumb.jpg" alt="An interior-design commercial feature" />
-            </a>
-        </li>
-        <li>
-            <a href="/images/interior-design/interior/social_club_plan.jpg">
-                <img src="/images/interior-design/interior/social_club_plan_thumb.jpg" alt="An interior-design commercial feature" />
+            <a href="/images/interior-design/interior/restaurant_elevation.jpg">
+                <img src="/images/interior-design/interior/restaurant_elevation_thumb.jpg" alt="An interior-design commercial feature" />
             </a>
         </li>
         <li>
             <a href="/images/interior-design/interior/st_brides7.jpg">
                 <img src="/images/interior-design/interior/st_brides7_thumb.jpg" alt="An interior-design commercial feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/interior/artwork_concept_4.jpg">
+                <img src="/images/interior-design/interior/artwork_concept_4_thumb.jpg" alt="An interior-design commercial feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/interior/concept_1.jpg">
+                <img src="/images/interior-design/interior/concept_1_thumb.jpg" alt="An interior-design residential feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/interior/residential_elevation.jpg">
+                <img src="/images/interior-design/interior/residential_elevation_thumb.jpg" alt="An interior-design residential feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/interior/residential_Iso.jpg">
+                <img src="/images/interior-design/interior/residential_Iso_thumb.jpg" alt="An interior-design residential feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/interior/artwork_concept_5.jpg">
+                <img src="/images/interior-design/interior/artwork_concept_5_thumb.jpg" alt="An interior-design residential feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/interior/flat_lighting_plan.jpg">
+                <img src="/images/interior-design/interior/flat_lighting_plan_thumb.jpg" alt="An interior-design residential feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/interior/artwork_concept_6.jpg">
+                <img src="/images/interior-design/interior/artwork_concept_6_thumb.jpg" alt="An interior-design residential feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/interior/flat_plan.jpg">
+                <img src="/images/interior-design/interior/flat_plan_thumb.jpg" alt="An interior-design residential feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/interior/artwork_concept_2.jpg">
+                <img src="/images/interior-design/interior/artwork_concept_2_thumb.jpg" alt="An interior-design residential feature" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/interior-design/interior/social_club_elevation.jpg">
+                <img src="/images/interior-design/interior/social_club_elevation_thumb.jpg" alt="An interior-design commercial feature" />
             </a>
         </li>
     </ul>
@@ -123,16 +168,6 @@
         </p>
     </div>
     <ul class="gallery">
-        <li>
-            <a href="/images/interior-design/product/presentation_board_1.jpg">
-                <img src="/images/interior-design/product/presentation_board_1_thumb.jpg" alt="An interior-design product feature" />
-            </a>
-        </li>
-        <li>
-            <a href="/images/interior-design/product/presentation_board 2.jpg">
-                <img src="/images/interior-design/product/presentation_board 2_thumb.jpg" alt="An interior-design product feature" />
-            </a>
-        </li>
         <li>
             <a href="/images/interior-design/product/product_design_basket.jpg">
                 <img src="/images/interior-design/product/product_design_basket_thumb.jpg" alt="An interior-design product feature" />
