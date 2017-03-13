@@ -393,7 +393,10 @@ section {
         height: 21rem;
     }
     .js .page-music .deliverable {
-        width: 100%
+        box-shadow: 0 0 10px #fafafa;
+        display: table;
+        margin: 0.5em auto;
+        width: 90%;
     }
     .js .page-paintings .description, .page-interior-design .description {
         float: none;
@@ -440,6 +443,17 @@ section {
         min-height: auto;
         padding-right: 0;
         padding-top: 0
+    }
+    .js .page-music .detail {
+        padding-top: 3.25rem
+    }
+    .js .page-music .detail h2 {
+        background-color: rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+        box-shadow: 0 1px 1px #666;
+        color: #fff;
+        margin-bottom: 3.5rem;
+        padding: 1.25rem 1rem 1.5rem;
     }
     .js .header-sub {
         margin-top: 1.5rem;

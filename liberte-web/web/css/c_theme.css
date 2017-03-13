@@ -256,13 +256,29 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 /*   Media 1280 and above
 /*******************************************************************/
 @media only screen and (min-width: 1280px) {
-	
+	.js main {
+		background-attachment: scroll;
+		background-position: left top;
+		background-size: contain
+	}
+
 	/* class elements: =. */
 	.js .detail {
 		background-color: #fff;
 		border-radius: 65px 0;
 		color: #000
 	}
+	.js .detail h2 {
+		background-color: transparent;
+		text-shadow: none
+	}
+	.js .detail.container-lozenge::before {
+		border-radius: 56px 0
+	}
+	.js .detail .gallery {
+		background-color: transparent
+	}
+	
 	.js .page-books .detail {
 		background: url(../images/background_books_bw_02.jpg) no-repeat center center
 	}
@@ -277,7 +293,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 		background-position: top center, 108% 116%
 	}
 	.js .page-music .detail {
-		background: url(../images/background_music_bw_02.jpg) no-repeat center center
+		background: url(../images/background_music_bw_03.jpg) no-repeat center center
 	}
 	.js .page-paintings .detail {
 		background-image: url(../images/exhibitions-paintings/default_exhibition.jpg), url(../images/toplights_00.jpg);
@@ -289,31 +305,17 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 		background-repeat: no-repeat, no-repeat;
 		background-position: top center, 108% 116%
 	}
-	.js .detail h2 {
-		background-color: transparent;
-		text-shadow: none
-	}
-	.js .detail.container-lozenge::before {
-		border-radius: 56px 0
-	}
-	.js .detail .gallery {
-		background-color: transparent
+	
+	.page-home-sub main {
+		background-size: auto
 	}
 	.page-books main {
 		background-color: #e8e8e8
-	}
-	.page-home-sub main {
-		background-size: auto
 	}
 	.page-music main {
 		background-color: #5d5d5d
 	}
 
-	.page-paintings main, .page-interior-design main, .page-music main, .page-books main, .page-home-sub main {
-		background-attachment: scroll;
-		background-position: left top;
-		background-size: contain
-	}
 	.page-paintings main {
 		background-color: #666
 	}
@@ -333,7 +335,6 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	.js .page-music .header-sub h2 :link, .js .page-music .header-sub h2 :visited {
 		color: #fff
 	}
-	
 
 	.page-interior-design main {
 		background-color: #e8e8e8
