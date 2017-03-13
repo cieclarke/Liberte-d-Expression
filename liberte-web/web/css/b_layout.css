@@ -178,7 +178,8 @@ section {
     visibility: hidden
 }
 .list-standard li {
-    padding-left: 28px;
+    padding-left: 1em;
+    text-indent: -1em;
 }
 .menu-general a {
     display: block;
@@ -269,12 +270,12 @@ section {
     .page-paintings .description, .page-interior-design .description {
         float: left;
         margin-right: 4%;
-        width: 48%
+        width: 21%
     }
     .page-paintings .gallery, .page-interior-design .gallery {
         float: left;
         margin-top: 0;
-        width: 48%
+        width: 75%
     }
     .page-books main section {
         float: left;
