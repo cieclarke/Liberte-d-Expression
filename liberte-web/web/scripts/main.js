@@ -57,7 +57,7 @@ $(function () {
 	// <<<< Viewport size dependent function calls >>>>
 
 	// media query breakpoints should match those in the CSS
-	enquire.register('screen and (max-width: 1279px)', {
+	enquire.register('screen and (max-width: 1023px)', {
 		match : function() {
 			// remove section links
 			if ($('.page-music').length || $('.page-books').length) {
@@ -81,7 +81,7 @@ $(function () {
 				});
 			}
 		}
-	}).register('screen and (min-width: 1280px)', {
+	}).register('screen and (min-width: 1024px)', {
 		match : function() {
 			if ($('.page-paintings').length) {
 				var $page = $('.page-paintings');

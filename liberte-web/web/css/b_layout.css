@@ -82,7 +82,7 @@ header {
 }
 main {
     overflow: hidden;
-    padding: 2.25rem 5% 2.0rem; /* 30px either side at full width: 60/1200 x 100 = 5 */
+    padding: 1.5rem 5% 2.0rem; /* 30px either side at full width: 60/1200 x 100 = 5 */
 }
 main :link {
     padding: 0 5px;
@@ -291,7 +291,7 @@ section {
     }
 }
 
-/*   Media between 900 and 1280
+/*   Media between 900 and 1023
 /*******************************************************************/
 @media only screen and (min-width: 900px) {
     footer {
@@ -329,10 +329,9 @@ section {
     }
 }
 
-/*   Media 1280 and above
+/*   Media between 1024 and 1279
 /*******************************************************************/
-@media only screen and (min-width: 1280px) {
-    /* no need to specify % widths in this range as it's fixed-width desktop size viewport */
+@media only screen and (min-width: 1024px) {
     header {
         border-radius: 40px 40px 0 0;
         height: 9.75em;
@@ -342,8 +341,8 @@ section {
     body {
         margin-left: auto;
         margin-right: auto;
-        padding-left: 30px;
-        width: 1200px
+        padding-left: 3%;
+        padding-right: 3%;
     }
     footer > * {
 		padding-left: 20px;
@@ -353,11 +352,13 @@ section {
 	/* class elements: =. */
     .gallery li {
         flex: 0 0 7.4em;
-        margin: 0.35em
+        margin: 0.15em;
     }
     .js .choice {
         float: left;
-        width: 680px
+        height: 62rem;
+        position: relative;
+        width: 60%;
     }
     .js .page-paintings .choice h2, .js .page-interior-design .choice h2 {
         margin: 0 0 0.75rem
@@ -367,7 +368,7 @@ section {
     }
     .js .choice h2 .info-section-drop {
         border-bottom: none;
-		padding-bottom: 2rem;
+		padding-bottom: 2.25rem
     }
     .js .container-lozenge.image {
         bottom: 0;
@@ -405,10 +406,10 @@ section {
     }
     .js .detail {
         float: right;
-        height: 60rem;
+        height: 62rem;
         overflow: hidden;
         padding: 5.25rem 12px 0;
-        width: 409px
+        width: 38%
     }
     .js .detail h2 {
         display: block;
@@ -453,11 +454,13 @@ section {
         box-shadow: 0 1px 1px #666;
         color: #fff;
         margin-bottom: 3.5rem;
-        padding: 1.25rem 1rem 1.5rem;
+        padding: 1.25rem 1rem 1.5rem
     }
     .js .header-sub {
+        bottom: 0;
         margin-top: 1.5rem;
-        position: relative
+        position: absolute;
+        width: 100%
     }
     .js .header-sub.col-2 {
         -webkit-columns: 2 27px; -moz-columns: 2 27px; columns: 2 27px;
@@ -475,14 +478,17 @@ section {
         -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid;
         margin: 0
     }
+    .js .page-books .header-sub section {
+        min-height: 52rem
+    }
     .js .page-interior-design .header-sub section {
-        min-height: 48.75rem
+        min-height: 52rem;
     }
     .js .page-paintings .header-sub section {
-        min-height: 39rem
+        min-height: 40rem
     }
-    .js .page-books .header-sub section, .js .page-music .header-sub section {
-        min-height: 51rem
+    .js .page-music .header-sub section {
+        min-height: 54rem
     }
     .js .info-section {
         padding: 1.25rem 10px;
@@ -509,4 +515,43 @@ section {
     a:hover .site-home {
         transform: scale(1.03);
     }
+}
+
+/*   Media 1280 and above
+/*******************************************************************/
+@media only screen and (min-width: 1280px) {
+    body {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 1280px;
+    }
+    .gallery li {
+        margin: 0.35em
+    }
+
+    .js .choice {
+        height: 60rem
+    }
+    .js .choice h2 .info-section-drop {
+		padding-bottom: 2rem
+    }
+    .js .detail {
+        height: 60rem
+    }
+    .js .page-music .container-lozenge.image {
+        height: 25rem;
+    }
+    .js .page-books .header-sub section {
+        min-height: 51rem
+    }
+    .js .page-interior-design .header-sub section {
+        min-height: 48.75rem
+    }
+    .js .page-music .header-sub section {
+        min-height: 51rem
+    }
+    .js .page-paintings .header-sub section {
+        min-height: 39rem
+    }
+
 }

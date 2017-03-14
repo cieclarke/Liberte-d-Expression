@@ -245,7 +245,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	border-radius: 25px 25px 0 0
 }
 
-/*   Media between 480 and 767
+/*   Media below 480
 /*******************************************************************/
 @media only screen and (min-width: 480px) {
 	footer li a {
@@ -253,9 +253,9 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
     }
 }
 
-/*   Media 1280 and above
+/*   Media between 1024 and 1279
 /*******************************************************************/
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
 	.js main {
 		background-attachment: scroll;
 		background-position: left top;
@@ -285,7 +285,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	.js .page-interior-design .detail {
 		background-image: url(../images/interior-design/default_interior.jpg), url(../images/toplights_00.jpg);
 		background-repeat: no-repeat, no-repeat;
-		background-position: center 10.5rem, center top
+		background-position: center 12.5rem, center top
 	}
 	.js .page-interior-design .detail.active {
 		background-image: url(../images/toplights_00.jpg), url(../images/logo_swirl_background_00.png);
@@ -298,7 +298,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	.js .page-paintings .detail {
 		background-image: url(../images/exhibitions-paintings/default_exhibition.jpg), url(../images/toplights_00.jpg);
 		background-repeat: no-repeat, no-repeat;
-		background-position: center 10.5rem, center top
+		background-position: center 12.5rem, center top
 	}
 	.js .page-paintings .detail.active {
 		background-image: url(../images/toplights_00.jpg), url(../images/logo_swirl_background_00.png);
@@ -352,4 +352,17 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 		border-radius: 0;
 		color: #666
     }
+}
+
+/*   Media 1280 and above
+/*******************************************************************/
+@media only screen and (min-width: 1280px) {
+    
+	.js .page-interior-design .detail {
+		background-position: center 10.5rem, center top
+	}
+	.js .page-paintings .detail {
+		background-position: center 10.5rem, center top
+	}
+
 }

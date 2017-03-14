@@ -121,19 +121,36 @@ textarea {
 	}
 }
 
-/*   Media between 1280 and above
+/*   Media between 1024 and 1279
 /*******************************************************************/
-@media only screen and (min-width: 1280px) {
-
+@media only screen and (min-width: 1024px) {
+    main {
+        font-size: 1.2rem
+    }
 
 	/* class elements: =. */
     .js .choice h2 .info-section-drop {
 		text-decoration: none;
+    }
+    .js .choice h2 a {
+        font-size: 1.4rem
     }
     .js .detail h2 {
         text-align: center
     }
     .js .info-section {
         font-size: 1.2rem
+    }
+}
+
+/*   Media 1280 and above
+/*******************************************************************/
+@media only screen and (min-width: 1280px) {
+    main {
+        font-size: inherit
+    }
+    
+    .js .choice h2 a {
+        font-size: 1.6rem
     }
 }
