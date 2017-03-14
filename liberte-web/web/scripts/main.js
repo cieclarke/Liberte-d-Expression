@@ -371,6 +371,7 @@ var pageMaxWidthRender = {
 
 				if ($('.media-play').length) {
 					$('.media-play').appendTo($detail);
+					$detail.addClass('active');
 				}
 			}
 
