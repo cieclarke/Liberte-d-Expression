@@ -11,7 +11,7 @@
     <h2>Art exhibitions</h2>
     <div class="description">
         <p>
-            With the support of Barclays Bank, Communisis and Candid Arts Trust, Liberté d'Expression launched in 2006 a contemporary art competition. 
+            With the support of <a href="http://www.barclays.co.uk/">Barclays Bank</a>, <a href="https://www.communisis.com/">Communisis</a> and <a href="http://www.candidarts.com/">Candid Arts Trust</a>, Liberté d'Expression launched in 2006 a contemporary art competition. 
         </p>
         <p>
             Of more than 500 artworks submitted, 70 paintings were selected for an 8 days exhibition. The exhibitions received over 500 visitors (both staff and clients) and sold nearly 1/3 of all paintings within days. All paintings sold (£20,943) saw 50% of the sale price go to the artist and 50% to the NSPCC. In total £10,471.50 was raised for the NSPCC. As part of the exhibition, the general public was asked to vote for their favourite paintings.
