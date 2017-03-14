@@ -265,7 +265,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	/* class elements: =. */
 	.js .detail {
 		background-color: #fff;
-		border-radius: 65px 0;
+		border-radius: 75px 0;
 		color: #000
 	}
 	.js .detail h2 {
@@ -273,7 +273,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 		text-shadow: none
 	}
 	.js .detail.container-lozenge::before {
-		border-radius: 56px 0
+		border-radius: 64px 0
 	}
 	.js .detail .gallery {
 		background-color: transparent
@@ -298,7 +298,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	.js .page-paintings .detail {
 		background-image: url(../images/exhibitions-paintings/default_exhibition.jpg), url(../images/toplights_00.jpg);
 		background-repeat: no-repeat, no-repeat;
-		background-position: center 12.5rem, center top
+		background-position: center 10.5rem, center top
 	}
 	.js .page-paintings .detail.active {
 		background-image: url(../images/toplights_00.jpg), url(../images/logo_swirl_background_00.png);
