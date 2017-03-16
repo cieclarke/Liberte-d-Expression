@@ -50,9 +50,14 @@ var pageLozengesMeta = {
 //console.log(Object.keys(pageLozengesMeta.paintings).length);
 //console.log(Object.keys(pageLozengesMeta.paintings)[0]);
 
-$('html').addClass('js');
+document.documentElement.className += " js";
 
-// main control block, on DOM-ready..
+// touch events support
+if (!("ontouchstart" in document.documentElement)) {
+	document.documentElement.className += " no-touch";
+}
+
+// main control block, on DOM-ready
 $(function () {
 	// <<<< Viewport size dependent function calls >>>>
 
