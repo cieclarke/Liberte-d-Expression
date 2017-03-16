@@ -91,7 +91,7 @@ AppAsset::register($this);
     <footer role="contentinfo">
         <ul>
             <li>
-                <a href="/about/">About Liberté d'Expression</a>
+                <a href="/about/">About the team</a>
             </li>
             <li>
                 <a href="/contact/">Get in touch</a>
