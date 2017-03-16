@@ -17,10 +17,14 @@ class ContactController extends Controller
     public function actionIndex()
     {
         $this->view->params['class'] = 'page-home-sub';
-        $vm = new \app\models\GalleryViewModel();
+        $model = new \app\models\ContactForm();
+        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
+            Yii::$app->session->setFlash('contactFormSubmitted');
 
+            return $this->refresh();
+        }
         return $this->render('index', [
-            'model' => $vm,
+            'model' => $model,
         ]);
     }
 
