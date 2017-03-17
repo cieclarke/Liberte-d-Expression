@@ -82,7 +82,7 @@ header {
 }
 main {
     overflow: hidden;
-    padding: 1.5rem 5% 2.0rem; /* 30px either side at full width: 60/1200 x 100 = 5 */
+    padding: 1.5rem 5% 1.2rem; /* 30px either side at full width: 60/1200 x 100 = 5 */
 }
 main :link {
     padding: 0 5px;
@@ -370,22 +370,30 @@ section {
         border-bottom: none;
 		padding-bottom: 2.25rem
     }
-    .js .container-lozenge.image {
-        bottom: 0;
-        height: 13rem;
-        margin-bottom: 0;
-        position: absolute;
-        width: 160px
-    }
     .js .col-2 .container-lozenge.image {
         height: 18rem;
-        width: 48%
     }
-    .js .col-3 .container-lozenge.image {
-        width: 31%
+    .js .container-lozenge.image {
+        height: 13rem;
+        margin-bottom: 0;
+        width: 100%
     }
-    .js .col-4 .container-lozenge.image {
-        width: 24%
+    .js .detail {
+        float: right;
+        height: 61.25rem;
+        overflow: hidden;
+        padding: 5.25rem 12px 0;
+        width: 38%
+    }
+    .js .detail h2 {
+        display: block;
+    }
+    .js .detail > div {
+        overflow-y: auto;
+        position: relative
+    }
+    .js .detail > div:not(.off-screen) {
+        height: 92%
     }
     .js .page-books .container-lozenge.image {
         height: 20rem;
@@ -404,23 +412,6 @@ section {
         margin-right: 0;
         width: auto
     }
-    .js .detail {
-        float: right;
-        height: 62rem;
-        overflow: hidden;
-        padding: 5.25rem 12px 0;
-        width: 38%
-    }
-    .js .detail h2 {
-        display: block;
-    }
-    .js .detail > div {
-        overflow-y: auto;
-        position: relative
-    }
-    .js .detail > div:not(.off-screen) {
-        height: 92%
-    }
     .js .page-paintings .gallery, .page-interior-design .gallery {
         float: none;
         width: auto
@@ -433,11 +424,6 @@ section {
     .js .page-books main section li {
         margin-bottom: 1.2rem;
         padding-right: 0
-    }
-    .page-music main section {
-        float: none;
-        margin-right: 0;
-        width: auto
     }
     .js .page-music main section li {
         margin-bottom: 1.2rem;
@@ -456,40 +442,6 @@ section {
         margin-bottom: 3.5rem;
         padding: 1.25rem 1rem 1.5rem
     }
-    .js .header-sub {
-        bottom: 0;
-        margin-top: 1.5rem;
-        position: absolute;
-        width: 100%
-    }
-    .js .header-sub.col-2 {
-        -webkit-columns: 2 27px; -moz-columns: 2 27px; columns: 2 27px;
-        -webkit-column-gap: 22px; -moz-column-gap: 22px; column-gap: 22px;
-    } 
-    .js .header-sub.col-3 {
-        -webkit-columns: 3 27px; -moz-columns: 3 27px; columns: 3 27px;
-        -webkit-column-gap: 22px; -moz-column-gap: 22px; column-gap: 22px;
-    }       
-    .js .header-sub.col-4 {
-        -webkit-columns: 4 127px; -moz-columns: 4 127px; columns: 4 127px;
-        -webkit-column-gap: 15px; -moz-column-gap: 15px; column-gap: 15px;
-    }
-    .js .header-sub section {
-        -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid;
-        margin: 0
-    }
-    .js .page-books .header-sub section {
-        min-height: 52rem
-    }
-    .js .page-interior-design .header-sub section {
-        min-height: 52rem;
-    }
-    .js .page-paintings .header-sub section {
-        min-height: 40rem
-    }
-    .js .page-music .header-sub section {
-        min-height: 54rem
-    }
     .js .info-section {
         padding: 1.25rem 10px;
         width: 100%
@@ -505,15 +457,51 @@ section {
     .js .page-music section li a {
         margin: 0
     }
+    .js .section-data {
+        display: flex;
+        justify-content: space-between;
+        width: 100%
+    }
+    .js .section-data.col-2 li {
+        width: 48%
+    }
+    .js .section-data.col-3 li {
+        width: 31.1%
+    }
+    .js .section-data.col-2 li li, .js .section-data.col-3 li li {
+        width: auto
+    }
+    .js .section-data li > section {
+        margin-top: 1rem
+    }
+    
+    .js .section-lozenges {
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%
+    }
+    .js .section-lozenges.col-2 li {
+        width: 48%
+    }
+    .js .section-lozenges.col-3 li {
+        width: 31.1%
+    }
+    .page-music main section {
+        float: none;
+        margin-right: 0;
+        width: auto
+    }
     .site-home {
         left: -30px;
-        top: -2.0em;
+        top: -2.0em
     }
     a .site-home {
-        transition: all 0.2s ease 0s;
+        transition: all 0.2s ease 0s
     }
     a:hover .site-home {
-        transform: scale(1.03);
+        transform: scale(1.03)
     }
 }
 
@@ -523,12 +511,11 @@ section {
     body {
         padding-left: 30px;
         padding-right: 30px;
-        width: 1280px;
+        width: 1280px
     }
     .gallery li {
         margin: 0.35em
     }
-
     .js .choice {
         height: 60rem
     }
@@ -536,10 +523,10 @@ section {
 		padding-bottom: 2rem
     }
     .js .detail {
-        height: 60rem
+        height: 59.25rem
     }
     .js .page-music .container-lozenge.image {
-        height: 25rem;
+        height: 25rem
     }
     .js .page-books .header-sub section {
         min-height: 51rem

@@ -130,10 +130,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	background: url(../images/background_books_bw_01.jpg) no-repeat fixed center top / cover;
 }
 .page-books .menu-site .books {
-	background: #9b539c;
-	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(155,83,156,1) 75%);
-	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(155,83,156,1) 75%);
-	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(155,83,156,1) 75%);
+	background: #9b539c; background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(155,83,156,1) 75%); background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(155,83,156,1) 75%); background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(155,83,156,1) 75%);
 	border-radius: 25px 0 0 0;
 }
 
@@ -172,9 +169,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 }
 .page-home .menu-site .home {
 	background: #bccf02;
-	background: -webkit-linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 75%);
-	background: -o-linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 75%);
-	background: linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 75%);
+	background: -webkit-linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 75%); background: -o-linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 75%); background: linear-gradient(rgba(255,255,255,0) 0%, rgba(188,207,2,1) 75%);
 	border-radius: 0 25px 0 0
 }
 .page-home-sub h2, .page-home-sub .detail h3, .page-home-sub nav {
@@ -198,9 +193,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	transition : border 175ms linear
 }
 .page-interior-design .menu-site .interior-design {
-	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(115,197,225,1) 75%);
-	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(115,197,225,1) 75%);
-	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(115,197,225,1) 75%);
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(115,197,225,1) 75%); background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(115,197,225,1) 75%); background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(115,197,225,1) 75%);
 	border-radius: 25px 25px 0 0
 }
 
@@ -214,9 +207,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	background: url(../images/background_music_bw_01.jpg) no-repeat fixed center top / cover
 }
 .page-music .menu-site .music {
-	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(235,101,160,1) 75%);
-	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(235,101,160,1) 75%);
-	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(235,101,160,1) 75%);
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(235,101,160,1) 75%); background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(235,101,160,1) 75%); background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(235,101,160,1) 75%);
 	border-radius: 25px 25px 0 0
 }
 
@@ -239,10 +230,11 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	text-shadow: 1px 1px 0 #000
 }
 .page-paintings .menu-site .paintings {
-	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%,  rgba(91,177,47,1) 75%);
-	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(91,177,47,1) 75%);
-	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(91,177,47,1) 75%);
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%,  rgba(91,177,47,1) 75%); background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(91,177,47,1) 75%); background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(91,177,47,1) 75%); 
 	border-radius: 25px 25px 0 0
+}
+.skip:link, .skip:visited, .skip:link:hover, .skip:visited:hover {
+	color: #fff;
 }
 
 /*   Media below 480
@@ -305,24 +297,6 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 		background-repeat: no-repeat, no-repeat;
 		background-position: top center, -9% 120%
 	}
-	
-	.page-home-sub main {
-		background-size: auto
-	}
-	.page-books main {
-		background-color: #e8e8e8
-	}
-	.page-music main {
-		background-color: #5d5d5d
-	}
-
-	.page-paintings main {
-		background-color: #666
-	}
-	.page-paintings .container-lozenge.focus-lozenge {
-		border-color: #5bb12f;
-		transition : border 175ms linear
-	}
 	.js .page-paintings .info-section-drop {
 		background: url(../images/page-paintings-arra-down.png) no-repeat 20% bottom;
     }
@@ -335,7 +309,13 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	.js .page-music .header-sub h2 :link, .js .page-music .header-sub h2 :visited {
 		color: #fff
 	}
-
+	
+	.page-books main {
+		background-color: #e8e8e8
+	}
+	.page-home-sub main {
+		background-size: auto
+	}
 	.page-interior-design main {
 		background-color: #e8e8e8
 	}
@@ -352,6 +332,16 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 		border-radius: 0;
 		color: #666
     }
+	.page-music main {
+		background-color: #5d5d5d
+	}
+	.page-paintings main {
+		background-color: #666
+	}
+	.page-paintings .container-lozenge.focus-lozenge {
+		border-color: #5bb12f;
+		transition : border 175ms linear
+	}
 }
 
 /*   Media 1280 and above
@@ -364,5 +354,4 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	.js .page-paintings .detail {
 		background-position: center 10.5rem, center top
 	}
-
 }

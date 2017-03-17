@@ -263,12 +263,14 @@ var pageMaxWidthRender = {
 		var $pageTitle = $content.find('h1');
 		var $preamble = $pageTitle.nextUntil('section');
 		var $choice = $('<div class="choice">');
-		var $choiceHead = $('<div class="header-sub col-' + $sections + '">');
+		var $sectionData = $('<ul class="section-data col-' + $sections + '">');
+		var $sectionLozenges = $('<ul class="section-lozenges col-' + $sections + '">');
 		var $detail = $('<div class="detail container-lozenge">');
 		
 		$pageTitle.appendTo($choice);
 		$preamble.appendTo($choice);
-		$choiceHead.appendTo($choice);
+		$sectionData.appendTo($choice);
+		$sectionLozenges.appendTo($choice);
 
 		// gallery: heading link / section text / 1 lozenge
 		// player: plain heading / section list of links / 1 lozenge
@@ -276,11 +278,15 @@ var pageMaxWidthRender = {
 			var $section = $(this);
 			var $sectionClass = $section.attr('class');
 			var $sectionHeading = $section.find('h2');
-			var $sectionLoz = $('<figure class="container-lozenge image">');
+			var $sectionMenuListItem = $('<li>');
+			var $sectionLoz = $('<figure class="container-lozenge image"/>');
 			var lozSection = Object.keys(lozPaths)[i];
 			var $loz = $(lozPaths[lozSection].lozFirst);
+			var $lozLi = $('<li>');
 
 			$sectionLoz.html($loz);
+			$sectionLoz.appendTo($lozLi);
+			$lozLi.appendTo($sectionLozenges);
 			
 			if (pageType == 'type-gallery') {
 				var $sectionAnchor = $('<a />').attr('href', '#' + $sectionClass).addClass('info-section-show');
@@ -291,7 +297,7 @@ var pageMaxWidthRender = {
 				$information.find('a').attr('tabindex', -1);
 				$gallery.find('a').attr('tabindex', -1);
 				$information.appendTo($section);
-				$sectionLoz.insertAfter($information);
+				
 				$sectionHeading.clone().appendTo($galleryContainer);
 
 				$sectionHeading.replaceWith(function() {
@@ -311,12 +317,11 @@ var pageMaxWidthRender = {
 						}
 					});
 
-					$choiceHead.find('section').each(function() {
+					$sectionData.find('section').each(function() {
 						$(this).removeClass('selected');
 					});
 
-					$section.addClass('selected');
-					$choiceHead.find('figure').removeClass('focus-lozenge');
+					$sectionLozenges.find('figure').removeClass('focus-lozenge');
 					$sectionLoz.addClass('focus-lozenge');
 
 					return false;
@@ -334,7 +339,7 @@ var pageMaxWidthRender = {
 					$information.addClass('visible');
 					$(this).addClass('info-section-drop');
 
-					$choiceHead.find('.info-section').each(function() {
+					$sectionData.find('.info-section').each(function() {
 						$(this).find('a').attr('tabindex', -1);
 					});
 
@@ -369,10 +374,9 @@ var pageMaxWidthRender = {
 			}
 
 			if (pageType == 'type-viewer') {
-				var $songList = $section.find('ul');
-
-				$sectionLoz.insertAfter($songList);
-				$songList.find('.deliverable').addClass('off-screen').attr('tabindex', -1);
+				var $mediaList = $section.find('ul');
+				
+				$mediaList.find('.deliverable').addClass('off-screen').attr('tabindex', -1);
 
 				if ($('.media-play').length) {
 					$('.media-play').appendTo($detail);
@@ -380,16 +384,18 @@ var pageMaxWidthRender = {
 				}
 			}
 
-			$section.appendTo($choiceHead);
+			$section.appendTo($sectionMenuListItem);
+			$sectionMenuListItem.appendTo($sectionData);
 		});
 
 		$choice.appendTo($content);
 		$detail.appendTo($content);
 	},
 	disassemble : function($page, pageType) {
-		var $content = $($page.find('main'));;
+		var $content = $($page.find('main'));
 		var $choice = $('.choice');
-		var $choiceHead = $('.header-sub');
+		var $sectionData = $('.section-data');
+		var $sectionLozenges = $('.section-lozenges');
 		var $detail = $('.detail');
 		
 		// need to return to the parent page if in a music/book specific view. Otherwise if the viewport width is
@@ -416,20 +422,18 @@ var pageMaxWidthRender = {
 			});
 		}
 
-		$content.find('.header-sub > section').each(function() {
-			var $section = $(this).removeClass('selected').attr('class');
+		$content.find('.section-data section').each(function() {
+			var $section = $(this).attr('class');
 			var $sectionHeading = $(this).find('h2');
 			var $sectionHeadingText = $sectionHeading.text();
-			var $sectionFig = $(this).find('figure');
 			var $sectionInfo = $(this).find('.info-section > *');
 
 			$sectionHeading.empty().text($sectionHeadingText);
-			$sectionFig.remove();
 
 			if (pageType == 'type-gallery') {
 				for (var i = 0; i < arrSectionContent.length; i++) {
 					var obj = arrSectionContent[i];
-					
+			
 					if ($section == obj.id) {
 						$(obj.content).insertAfter($sectionHeading);
 					}
@@ -441,15 +445,18 @@ var pageMaxWidthRender = {
 			}
 
 			$sectionInfo.unwrap().insertAfter($sectionHeading);
+			$(this).unwrap();
 		});
 
+		$sectionLozenges.remove();
+		$detail.remove();
 
-		$choiceHead.unwrap();
-
-		$choiceHead.replaceWith(function() {
+		$sectionData.replaceWith(function() {
 			return $('section', this);
 		});
 		
-		$detail.remove();
+		$choice.replaceWith(function() {
+			return $($(this).find('> *'), this);
+		});
 	}
 };
