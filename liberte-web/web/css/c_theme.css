@@ -287,6 +287,12 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	.js .page-music .detail {
 		background: url(../images/background_music_bw_03.jpg) no-repeat center center
 	}
+	.js .page-music .detail.active {
+		background: #fff
+	}
+	.js .page-music .detail h2 {
+        
+    }
 	.js .page-paintings .detail {
 		background-image: url(../images/exhibitions-paintings/default_exhibition.jpg), url(../images/toplights_00.jpg);
 		background-repeat: no-repeat, no-repeat;

@@ -123,8 +123,8 @@
                 <p>Unsupported media</p>
             </video>
         <?php } else { ?>
-            <h2>Play <?php echo $model->SelectedSong->title; ?></h2>
-            
+            <h2><?php echo $model->SelectedSong->title; ?></h2>
+            <img alt="Music score for <?php echo $model->SelectedSong->title; ?>" class="score" src="http://libertedexpression.co.uk/art/audio/<?php echo $model->SelectedSong->types['jpg']; ?>" />
             <audio class="deliverable" title="<?php echo $model->SelectedSong->title; ?>" controls="controls">
                 <source src="http://libertedexpression.co.uk/art/audio/<?php echo $model->SelectedSong->types['mp3']; ?>" type='audio/mpeg; codecs="mp3"'>
                 <source src="http://libertedexpression.co.uk/art/audio/<?php echo $model->SelectedSong->types['ogg']; ?>" type='audio/ogg; codecs="vorbis"'>
