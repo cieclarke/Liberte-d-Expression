@@ -290,9 +290,6 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	.js .page-music .detail.active {
 		background: #fff
 	}
-	.js .page-music .detail h2 {
-        
-    }
 	.js .page-paintings .detail {
 		background-image: url(../images/exhibitions-paintings/default_exhibition.jpg), url(../images/toplights_00.jpg);
 		background-repeat: no-repeat, no-repeat;
@@ -316,19 +313,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 		color: #fff
 	}
 	
-	.page-books main {
-		background-color: #e8e8e8
-	}
-	.page-home-sub main {
-		background-size: auto
-	}
-	.page-interior-design main {
-		background-color: #e8e8e8
-	}
-	.page-interior-design .container-lozenge.focus-lozenge {
-		border-color: #73c5e1;
-		transition : border 175ms linear
-	}
+	
 	.js .page-interior-design .info-section-drop {
 		background: url(../images/page-interior-design-arra-down.png) no-repeat center bottom
     }
@@ -338,6 +323,19 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 		border-radius: 0;
 		color: #666
     }
+	.page-books main {
+		background-color: #e8e8e8
+	}
+	.page-home main, .page-home-sub main {
+		background-size: cover
+	}
+	.page-interior-design main {
+		background-color: #e8e8e8
+	}
+	.page-interior-design .container-lozenge.focus-lozenge {
+		border-color: #73c5e1;
+		transition : border 175ms linear
+	}
 	.page-music main {
 		background-color: #5d5d5d
 	}
