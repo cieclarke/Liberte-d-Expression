@@ -167,6 +167,12 @@ $(function () {
 		}
     });
 
+	$(".fancybox-pdf").fancybox({
+		width  : 640,
+		height : 480,
+		type   :'iframe'
+	});
+
 	$('.gallery a').addClass('fancybox');
 
 	// add fancybox gallery groupings

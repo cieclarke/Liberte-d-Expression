@@ -208,12 +208,12 @@ section {
     position: relative
 }
 .page-home .introduction {
-    margin: 3.5rem auto;
+    margin: 1.5rem auto;
     padding: 5.0rem 10% 5.5rem;
     width: 90%
 }
 .page-home main, .page-home-sub main {
-    min-height: 62.75rem
+    min-height: 48.25rem
 }
 .page-music .deliverable {
     margin: 0.5em 0;
@@ -308,7 +308,7 @@ section {
     }
     .page-home .introduction {
         border-radius: 12em 0;
-        margin: 8rem auto;
+        margin: 4rem auto;
         padding: 7.5rem 10% 6.5rem;
         width: 60%
     }
@@ -386,14 +386,14 @@ section {
         width: 38%
     }
     .js .detail h2 {
-        display: block;
+        /*display: block;*/
     }
     .js .detail > div {
-        overflow-y: auto;
         position: relative
     }
     .js .page-paintings .detail > div:not(.off-screen), .js .page-interior-design .detail > div:not(.off-screen) {
-        height: 92%
+        height: 92%;
+        overflow-y: auto;
     }
     .js .media-play .score {
         display: block;
@@ -402,6 +402,9 @@ section {
     }
     .js .page-books .container-lozenge.image {
         height: 20rem;
+    }
+    .js .page-books .detail {
+        padding-top: 3.25rem
     }
     .js .page-music .container-lozenge.image {
         height: 21rem;
@@ -473,7 +476,7 @@ section {
         width: auto
     }
     .js .section-data li > section {
-        margin-top: 1rem
+        margin-top: 0
     }
     
     .js .section-lozenges {

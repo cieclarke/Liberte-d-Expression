@@ -45,14 +45,14 @@ return
             ['id' => 'YouAre',  'title' => 'You Are', 'description' => 'You Are', 'urls' => ['mp3' => 'YouAre.mp3', 'ogg' => 'YouAre.ogg', 'jpg' => 'youare.jpg']]
         ],
     'Books' => [
-            ['id' => 'MrTandtheJMan', 'category' => 'Other Books', 'title' => 'The Smarty Big Bang', 'description' => 'Mr T &amp; the J Man', 'types' => ['pdf' => 'MrTandtheJMan.pdf']],
-            ['id' => 'CheekyMonkey', 'category' => 'Other Books', 'title' => 'Cheeky Monkey', 'description' => 'Cheeky Monkey', 'types' => ['pdf' => 'CheekyMonkey.pdf']],
-            ['id' => 'HappyLane1', 'category' => 'Happy Lane Series', 'title' => 'Home, Sweet Home', 'description' => 'No. 1', 'types' => ['pdf' => 'HappyLane1.pdf'] ],
-            ['id' => 'HappyLane2', 'category' => 'Happy Lane Series', 'title' => 'Reduce, Reuse, Recycle all', 'description' => 'No. 2', 'types' => ['pdf' => 'HappyLane2.pdf']],
-            ['id' => 'HappyLane3', 'category' => 'Happy Lane Series', 'title' => 'Take the Alien Oath', 'description' => 'No. 3', 'types' => ['pdf' => 'HappyLane3.pdf']],
-            ['id' => 'HappyLane4', 'category' => 'Happy Lane Series', 'title' => 'Scouts to the Rescue', 'description' => 'No. 4', 'types' => ['pdf' => 'HappyLane4.pdf']],
-            ['id' => 'HappyLane5', 'category' => 'Happy Lane Series', 'title' => 'Don\'t be Mean, Keep it Green', 'description' => 'No. 5', 'types' => ['pdf' => 'HappyLane5.pdf']],
-            ['id' => 'HappyLane6', 'category' => 'Happy Lane Series', 'title' => 'The Hidden Clues!', 'description' => 'No. 6', 'types' => ['pdf' => 'HappyLane6.pdf']]            
+            ['id' => 'MrTandtheJMan', 'category' => 'Other Books', 'title' => 'The Smarty Big Bang', 'description' => 'Mr T &amp; the J Man', 'types' => ['pdf' => 'MrTandtheJMan.pdf', 'img' => 'mrtandthejman_cover_sml.jpg']],
+            ['id' => 'CheekyMonkey', 'category' => 'Other Books', 'title' => 'Cheeky Monkey', 'description' => 'Cheeky Monkey', 'types' => ['pdf' => 'CheekyMonkey.pdf', 'img' => 'cheekymonkey_cover_sml.jpg']],
+            ['id' => 'HappyLane1', 'category' => 'Happy Lane Series', 'title' => 'Home, Sweet Home', 'description' => 'No. 1', 'types' => ['pdf' => 'HappyLane1.pdf', 'img' => 'happylane1_cover_sml.jpg']],
+            ['id' => 'HappyLane2', 'category' => 'Happy Lane Series', 'title' => 'Reduce, Reuse, Recycle all', 'description' => 'No. 2', 'types' => ['pdf' => 'HappyLane2.pdf', 'img' => 'happylane2_cover_sml.jpg']],
+            ['id' => 'HappyLane3', 'category' => 'Happy Lane Series', 'title' => 'Take the Alien Oath', 'description' => 'No. 3', 'types' => ['pdf' => 'HappyLane3.pdf', 'img' => 'happylane3_cover_sml.jpg']],
+            ['id' => 'HappyLane4', 'category' => 'Happy Lane Series', 'title' => 'Scouts to the Rescue', 'description' => 'No. 4', 'types' => ['pdf' => 'HappyLane4.pdf', 'img' => 'happylane4_cover_sml.jpg']],
+            ['id' => 'HappyLane5', 'category' => 'Happy Lane Series', 'title' => 'Don\'t be Mean, Keep it Green', 'description' => 'No. 5', 'types' => ['pdf' => 'HappyLane5.pdf', 'img' => 'happylane5_cover_sml.jpg']],
+            ['id' => 'HappyLane6', 'category' => 'Happy Lane Series', 'title' => 'The Hidden Clues!', 'description' => 'No. 6', 'types' => ['pdf' => 'HappyLane6.pdf', 'img' => 'happylane6_cover_sml.jpg']]
         ]
 
     ];
