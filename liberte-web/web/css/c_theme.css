@@ -270,12 +270,23 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	.js .detail .gallery {
 		background-color: transparent
 	}
-	
+	.js .media-play .fancybox-pdf {
+        border-radius: 0;
+		box-shadow: 0 7px 10px #333
+    }
+	.js .page-books .media-play .fancybox-pdf {
+        border-color: #d2b1d2;
+    }
+	.js .page-books .media-play .fancybox-pdf:hover, .js .page-books .media-play .fancybox-pdf:focus {
+        border-color: #9b539c;
+        transition : border 175ms linear
+    }
+
 	.js .page-books .detail {
 		background: url(../images/books/happylane1_cover.jpg) no-repeat left center / cover
 	}
 	.js .page-books .detail.active {
-		background: #fff
+		background: #fff url(../images/books/collage.png) no-repeat center bottom
 	}
 	.js .page-interior-design .detail {
 		background-image: url(../images/interior-design/default_interior.jpg), url(../images/toplights_00.jpg);

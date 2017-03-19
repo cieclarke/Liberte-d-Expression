@@ -198,10 +198,6 @@ section {
     position: absolute;
     width: 1px
 }
-.media-play video, .media-play embed {
-    margin-bottom: 1.75rem;
-    width: 240px
-}
 .page-books section li {
     margin-bottom: 1.5rem;
     padding-right: 50px;
@@ -214,6 +210,12 @@ section {
 }
 .page-home main, .page-home-sub main {
     min-height: 48.25rem
+}
+.page-interior-design .list-standard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%
 }
 .page-music .deliverable {
     margin: 0.5em 0;
@@ -264,9 +266,6 @@ section {
     .gallery {
         width: auto
     }
-    .media-play video, .media-play embed {
-        width: 420px
-    }
     .page-paintings .description, .page-interior-design .description {
         float: left;
         margin-right: 4%;
@@ -304,7 +303,7 @@ section {
 
 	/* class elements: =. */
     .media-play video, .media-play embed {
-        width: 720px
+        /*width: 720px*/
     }
     .page-home .introduction {
         border-radius: 12em 0;
@@ -385,9 +384,6 @@ section {
         padding: 5.25rem 12px 0;
         width: 38%
     }
-    .js .detail h2 {
-        /*display: block;*/
-    }
     .js .detail > div {
         position: relative
     }
@@ -399,6 +395,17 @@ section {
         display: block;
         margin: 0 auto 2.25rem;
         width: 100%;
+    }
+    .js .media-play .fancybox-pdf {
+        border: 4px solid;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        width: 74.5%;
+    }
+    .js .media-play .fancybox-pdf img {
+        display: block;
+        width: 100%
     }
     .js .page-books .container-lozenge.image {
         height: 20rem;
@@ -466,13 +473,19 @@ section {
         justify-content: space-between;
         width: 100%
     }
+    .js .section-data .info-section .list-standard li {
+        width: 48%
+    }
     .js .section-data.col-2 li {
         width: 48%
+    }
+    .js .section-data.col-2 li li {
+        width: auto
     }
     .js .section-data.col-3 li {
         width: 31.1%
     }
-    .js .section-data.col-2 li li, .js .section-data.col-3 li li {
+    .js .section-data.col-3 li li {
         width: auto
     }
     .js .section-data li > section {

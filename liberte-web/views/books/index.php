@@ -48,7 +48,7 @@ endforeach;
 <?php if($model->SelectedBook != null) { ?>
     <div class="media-play">
         <h2><?php echo $model->SelectedBook->title; ?></h2>
-        
+        <p>Please download or view the book...</p>
         <a href="http://libertedexpression.co.uk/art/literature/<?php echo $model->SelectedBook->types['pdf']; ?>" class="fancybox-pdf">
             <img src="/images/books/<?php echo $model->SelectedBook->types['img']; ?>"/>
         </a>
