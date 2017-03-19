@@ -168,9 +168,14 @@ $(function () {
     });
 
 	$(".fancybox-pdf").fancybox({
-		width  : 640,
+		width  : 900,
 		height : 480,
-		type   :'iframe'
+		type   :'iframe',
+		helpers : {
+			overlay : {
+				locked : false
+			}
+		}
 	});
 
 	$('.gallery a').addClass('fancybox');
