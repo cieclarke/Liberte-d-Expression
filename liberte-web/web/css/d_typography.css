@@ -56,9 +56,11 @@ footer[role='contentinfo'] p {
 	font-size: 1.2rem; /* 12px */
     text-align: center
 }
-h1, h2, h3, h4, h5, h6, caption, legend {
+h1, h2, h3, h4, h5, h6, caption, legend, input[type='submit'] {
 	font-family: ParisJeTAime;
     letter-spacing: 0.02em;
+}
+h1, h2, h3, h4, h5, h6, caption, legend {
     line-height: 1.1
 }
 h1 {
@@ -79,9 +81,12 @@ h5 {
 h6 {
 	font-size: 1.2rem;
 }
+legend {
+    font-size: 1.9rem
+}
 textarea {
     font-family: arial;
-    font-size: 1.0rem;
+    font-size: 1.3rem;
 }
 
 /* pseudo-classes */
@@ -93,22 +98,17 @@ textarea {
 }
 
 /* class elements: =. */
-.menu-horiz li {
-    white-space: nowrap
+.advice-form-fields:before {
+    font-size: 2rem; 
 }
 .menu-site a {
 	font-family: ParisJeTAime;
 	font-size: 1.1rem;
     letter-spacing: 0.02em;
 }
-
-/*   Media between 480 and 767
-/*******************************************************************/
-@media only screen and (min-width: 480px) {
-
-
-	/* class elements: =. */
-
+.required:after {
+    font-size: 2rem; 
+    line-height: 0;
 }
 
 /*   Media between 768 and 899

@@ -7,9 +7,24 @@
 /*  Default 320px media width
 /*******************************************************************/
 /* Generic DOM elements */
+button, input[type=submit] { 
+    background: #5bb12f;
+    border-color: transparent;
+	border-radius: 5px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+button:hover, input[type=submit]:hover { 
+    border-color: #bccf02;
+	cursor: pointer;
+    transition: border-color 0.5s ease 0s;
+}
 footer {
 	background-color: #333;
 	color: #fff
+}
+form dd span { 
+    color: #bccf02
 }
 header {
     background-image:  url(../images/tranquility.jpg); 
@@ -19,12 +34,36 @@ header {
 html {
 	background-color: #333
 }
-h1, h2 {
+h1, h2, legend {
 	text-shadow: 1px 1px 10px #333
+}
+input[type="text"], input[type="password"], input[type="email"], select, textarea {
+    background-color: rgba(188, 207, 2, 0.1);
+	border-color: #333;
+    border-radius: 5px;
+	color: #fff
+}
+input[type='text']:focus, input[type='password']:focus, input[type="email"]:focus, textarea:focus, select:focus {
+	border-color: #bccf02;
+	transition: border-color 0.5s ease 0s;
+}
+input:required:invalid, input:focus:invalid, select:required:invalid, select:focus:invalid,
+textarea:required:invalid, textarea:focus:invalid {
+  border-color: #fff;
+  box-shadow: none
+}
+label {
+    color: #fff
+}
+legend {
+    color: #bccf02
 }
 main {
 	box-shadow: 0 0 10px 15px #fff inset;
 	color: #fff
+}
+main form {
+    background: rgba(0, 0, 0, 0.15);
 }
 section li a {
 	color: #fff
@@ -53,6 +92,9 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 }
 
 /* class elements: =. */
+.advice-form-fields:before, .required:after {
+    color: #fff;
+}
 .container-lozenge {
     border-color: #fafafa;
     border-radius: 50px 0; 
@@ -242,6 +284,9 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 @media only screen and (min-width: 480px) {
 	footer li a {
         border-right-color: #fff
+    }
+	main form {
+        border-radius: 10px
     }
 }
 

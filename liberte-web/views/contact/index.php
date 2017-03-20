@@ -26,27 +26,42 @@ $this->params['breadcrumbs'][] = $this->title;
             If you have business inquiries or other questions, please fill out the following form to contact us.
             Thank you.
         </p>
-
+        <p class="advice-form-fields">Required fields</p>
         <form id="contact-form" action="/contact/" method="post" role="form">
-
-            <label class="control-label" for="contactform-name">Name</label>
-            <input id="contactform-name"  name="ContactForm[name]" autofocus="" type="text">
-            <?php echo array_key_exists('name', $model->errors) ? '<span>' . $model->errors['name'][0] . '</span>' : ''; ?>
-            
-            <label class="control-label" for="contactform-email">Email</label>
-            <input id="contactform-email"  name="ContactForm[email]" type="text">  
-            <?php echo array_key_exists('email', $model->errors) ? '<span>' . $model->errors['email'][0] . '</span>' : ''; ?>
-
-            <label class="control-label" for="contactform-subject">Subject</label>
-            <input id="contactform-subject"  name="ContactForm[subject]" type="text">
-            <?php echo array_key_exists('subject', $model->errors) ? '<span>' . $model->errors['subject'][0] . '</span>' : ''; ?>
-
-            <label class="control-label" for="contactform-body">Body</label>
-            <textarea id="contactform-body"  name="ContactForm[body]" rows="6"></textarea>
-            <?php echo array_key_exists('body', $model->errors) ? '<span>' . $model->errors['body'][0] . '</span>' : ''; ?>
-            
-            <button type="submit"  name="contact-button">Submit</button> 
-
+            <fieldset>
+                <legend>Drop us a line</legend>
+                <dl>
+                    <dt>
+                        <label class="required" for="contactform-name">Your name</label>
+                    </dt>
+                    <dd>
+                        <input id="contactform-name" name="ContactForm[name]" autofocus="" type="text" required="required" />
+                        <?php echo array_key_exists('name', $model->errors) ? '<span>' . $model->errors['name'][0] . '</span>' : ''; ?>
+                    </dd>
+                    <dt>
+                        <label class="required" for="contactform-email">Your e-mail</label>
+                    </dt>
+                    <dd>
+                        <input id="contactform-email" name="ContactForm[email]" type="email" required="required" />  
+                        <?php echo array_key_exists('email', $model->errors) ? '<span>' . $model->errors['email'][0] . '</span>' : ''; ?>
+                    </dd>
+                    <dt>
+                        <label class="required" for="contactform-subject">Subject</label>
+                    </dt>
+                    <dd>
+                        <input id="contactform-subject" name="ContactForm[subject]" type="text" required="required" />
+                        <?php echo array_key_exists('subject', $model->errors) ? '<span>' . $model->errors['subject'][0] . '</span>' : ''; ?>
+                    </dd>
+                    <dt>
+                        <label class="required" for="contactform-body">Message</label>
+                    </dt>
+                    <dd>
+                        <textarea id="contactform-body" name="ContactForm[body]" rows="6" required="required"></textarea>
+                        <?php echo array_key_exists('body', $model->errors) ? '<span>' . $model->errors['body'][0] . '</span>' : ''; ?>
+                    </dd>
+                </dl>
+            </fieldset>
+            <input type="submit" value="Submit" name="contact-button" />
         </form>
 
     <?php endif; ?>

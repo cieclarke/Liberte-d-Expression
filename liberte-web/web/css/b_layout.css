@@ -53,6 +53,19 @@ footer li a {
     display: block;
     padding: 0.2rem 12px;
 }
+form dt, form dd {
+	float: none
+}
+form dd { 
+    margin-bottom: 1em
+}
+form dd span { 
+    display: block;
+    padding-top: 0.5rem
+}
+form dt:after {
+	content: ""
+}
 h1 {
     margin-bottom: 0.25rem;
 }
@@ -80,12 +93,29 @@ header {
         position: -webkit-sticky; position: sticky
     }
 }
+input[type='text'], input[type='password'], input[type="email"], select, textarea {
+    border: 4px solid;
+    padding: 8px;
+    width: 100%
+}
 main {
     overflow: hidden;
     padding: 1.5rem 5% 1.2rem; /* 30px either side at full width: 60/1200 x 100 = 5 */
 }
 main :link {
     padding: 0 5px;
+}
+main fieldset legend {
+    padding-bottom: 1rem
+}
+main form {
+    clear: both;
+    margin-bottom: 2em;
+    overflow: hidden;
+    padding: 1em 2.5% 1.5em
+}
+main input[type=submit] { 
+    float: right
 }
 main .gallery a {
     padding: 0
@@ -118,8 +148,22 @@ section {
     overflow: hidden;
     padding-bottom: 1.75rem;
 }
+textarea { 
+    height: 12rem
+}
 
 /* class elements: =. */
+.advice-form-fields {
+    float: right;
+    margin-bottom: 0;
+    padding-right: 1.67%;
+    width: auto;
+}
+.advice-form-fields:before {
+    content: "*";
+    left: -5px;
+    position: relative
+}
 .anchor-image {
     display: block;
     height: 100%;
@@ -188,9 +232,6 @@ section {
 .menu-general li {
     width: auto
 }
-.menu-horiz li {
-	float: left
-}
 .off-screen {  /* invisible only */
     height: 1px;
     left: -999em;
@@ -236,6 +277,11 @@ section {
 .page-music .container-lozenge * {
     position: relative
 }
+.required:after {
+    content: "*";
+    left: 2px;
+    position: relative
+}
 .site-home {
     height: 90px;
     margin-bottom: 0;
@@ -258,6 +304,21 @@ section {
     footer li:last-child a {
         border-right: 0
     }
+    form dd {
+		float: left;
+		width: 70%;
+	}
+    form dl { 
+        margin: 1rem auto 1.75rem;
+        width: 85%
+    }
+    form dt {
+		clear: left;
+		float: left;
+		margin-top: 10px;
+		padding-right: 1.56%; /* (20 / 1280) * 100 */ 
+		width: 26%
+	}
     header {
         height: 12.75em
     }
@@ -302,9 +363,6 @@ section {
     }
 
 	/* class elements: =. */
-    .media-play video, .media-play embed {
-        /*width: 720px*/
-    }
     .page-home .introduction {
         border-radius: 12em 0;
         margin: 4rem auto;
@@ -347,6 +405,17 @@ section {
 		padding-left: 20px;
         padding-right: 20px
 	}
+    main form { 
+        float: none;
+        margin: 0 auto 3rem;
+        width: 55%
+    }
+    main form dl {
+        width: 90%
+    }
+    main form dt {
+        width: 30%
+    }
     
 	/* class elements: =. */
     .gallery li {
