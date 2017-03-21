@@ -334,9 +334,9 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 		background: #fff url(../images/books/collage.png) no-repeat center bottom
 	}
 	.js .page-interior-design .detail {
-		background-image: url(../images/interior-design/default_interior.jpg), url(../images/toplights_00.jpg);
+		background-image: url(../images/interior-design/default_interior.png), url(../images/toplights_00.jpg);
 		background-repeat: no-repeat, no-repeat;
-		background-position: center 12.5rem, center top
+		background-position: center 10.5rem, center top
 	}
 	.js .page-interior-design .detail.active {
 		background-image: url(../images/toplights_00.jpg), url(../images/logo_swirl_background_00.png);
@@ -350,7 +350,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 		background: #fff
 	}
 	.js .page-paintings .detail {
-		background-image: url(../images/exhibitions-paintings/default_exhibition.jpg), url(../images/toplights_00.jpg);
+		background-image: url(../images/exhibitions-paintings/default_exhibition.png), url(../images/toplights_00.jpg);
 		background-repeat: no-repeat, no-repeat;
 		background-position: center 10.5rem, center top
 	}
