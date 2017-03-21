@@ -42,7 +42,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <label class="required" for="contactform-email">Your e-mail</label>
                     </dt>
                     <dd>
-                        <input id="contactform-email" name="ContactForm[email]" type="email" required="required" />  
+                        <input id="contactform-email" name="ContactForm[email]" type="text" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required="required" />  
                         <?php echo array_key_exists('email', $model->errors) ? '<span>' . $model->errors['email'][0] . '</span>' : ''; ?>
                     </dd>
                     <dt>
