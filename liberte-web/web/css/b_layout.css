@@ -460,6 +460,11 @@ textarea {
         height: 92%;
         overflow-y: auto;
     }
+    .js .gallery-image-def {
+        display: block;
+        margin: 5rem auto 0 auto;
+        width: 90%
+    }
     .js .media-play .score {
         display: block;
         margin: 0 auto 2.25rem;
@@ -610,6 +615,9 @@ textarea {
     }
     .js .detail {
         height: 59.25rem
+    }
+    .js .gallery-image-def {
+        width: 80%
     }
     .js .page-music .container-lozenge.image {
         height: 25rem

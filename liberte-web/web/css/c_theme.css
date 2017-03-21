@@ -315,6 +315,9 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 	.js .detail .gallery {
 		background-color: transparent
 	}
+	.js .gallery-image-def {
+        box-shadow: 0 12px 12px -10px #000;
+    }
 	.js .media-play .fancybox-pdf {
         border-radius: 0;
 		box-shadow: 0 7px 10px #333
@@ -334,9 +337,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 		background: #fff url(../images/books/collage.png) no-repeat center bottom
 	}
 	.js .page-interior-design .detail {
-		background-image: url(../images/interior-design/default_interior.png), url(../images/toplights_00.jpg);
-		background-repeat: no-repeat, no-repeat;
-		background-position: center 10.5rem, center top
+		background: #fff url(../images/toplights_00.jpg) no-repeat center top;
 	}
 	.js .page-interior-design .detail.active {
 		background-image: url(../images/toplights_00.jpg), url(../images/logo_swirl_background_00.png);
@@ -350,9 +351,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 		background: #fff
 	}
 	.js .page-paintings .detail {
-		background-image: url(../images/exhibitions-paintings/default_exhibition.png), url(../images/toplights_00.jpg);
-		background-repeat: no-repeat, no-repeat;
-		background-position: center 10.5rem, center top
+		background: #fff url(../images/toplights_00.jpg) no-repeat center top;
 	}
 	.js .page-paintings .detail.active {
 		background-image: url(../images/toplights_00.jpg), url(../images/logo_swirl_background_00.png);
@@ -412,9 +411,9 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
 @media only screen and (min-width: 1280px) {
     
 	.js .page-interior-design .detail {
-		background-position: center 10.5rem, center top
+		background-position: center top
 	}
 	.js .page-paintings .detail {
-		background-position: center 10.5rem, center top
+		background-position: center top
 	}
 }

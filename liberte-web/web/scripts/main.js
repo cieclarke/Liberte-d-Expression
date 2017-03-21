@@ -168,8 +168,8 @@ $(function () {
     });
 
 	$(".fancybox-pdf").fancybox({
-		width  : 900,
-		height : 480,
+		width  : 1000,
+		height : 600,
 		type   :'iframe',
 		helpers : {
 			overlay : {
@@ -318,6 +318,8 @@ var pageMaxWidthRender = {
 				$sectionAnchor.click(function() {
 					$('.detail.container-lozenge').addClass('blink'); // add once, never remove so single animation per page load
 					$detail.addClass('active');
+					$detail.find('.gallery-image-def').remove();
+					
 					$('.detail > div').each(function() {
 						if ($(this).attr('id') == $sectionClass) {
 							$(this).removeClass('off-screen');
@@ -398,6 +400,16 @@ var pageMaxWidthRender = {
 			$section.appendTo($sectionMenuListItem);
 			$sectionMenuListItem.appendTo($sectionData);
 		});
+
+		if ($page.hasClass('page-paintings')) {
+			var $outputImageDef = $('<img alt="Painting exhibitions" class="gallery-image-def" src="/images/exhibitions-paintings/default_exhibition.jpg" />');
+			$outputImageDef.prependTo($detail);
+		}
+
+		if ($page.hasClass('page-interior-design')) {
+			var $outputImageDef = $('<img alt="Interior design" class="gallery-image-def" src="/images/interior-design/default_interior.jpg" />');
+			$outputImageDef.prependTo($detail);
+		}
 
 		$choice.appendTo($content);
 		$detail.appendTo($content);
