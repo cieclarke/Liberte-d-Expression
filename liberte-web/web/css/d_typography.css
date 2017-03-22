@@ -109,6 +109,11 @@ textarea {
 	font-size: 1.1rem;
     letter-spacing: 0.02em
 }
+.page-home-sub .fwibble {
+    font-family: ParisJeTAime;
+    font-size: 3rem;
+    text-align: center;
+}
 .required:after {
     font-size: 2rem; 
     line-height: 0

@@ -42,7 +42,8 @@ input[type="text"], input[type="password"], input[type="email"], select, textare
     background-color: rgba(188, 207, 2, 0.1);
 	border-color: #999;
     border-radius: 5px;
-	color: #fff
+	color: #fff;
+	outline: none;
 }
 input[type='text']:focus, input[type='password']:focus, input[type="email"]:focus, textarea:focus, select:focus {
 	border-color: #bccf02;
@@ -51,7 +52,8 @@ input[type='text']:focus, input[type='password']:focus, input[type="email"]:focu
 input:required:invalid, input:focus:invalid, select:required:invalid, select:focus:invalid,
 textarea:required:invalid, textarea:focus:invalid {
   border-color: #fff;
-  box-shadow: none
+  box-shadow: none;
+  outline: none;
 }
 label {
     color: #fff

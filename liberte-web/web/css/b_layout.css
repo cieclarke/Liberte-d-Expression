@@ -253,7 +253,14 @@ textarea {
     width: 90%
 }
 .page-home main, .page-home-sub main {
-    min-height: 48.25rem
+    min-height: 48rem;
+}
+.page-home-sub .fwibble {
+    height: 50%;
+    left: 50%;
+    position: absolute;
+    top: 66%;
+    transform: translate(-50%, -50%);
 }
 .page-music .deliverable {
     margin: 0.5em 0;
