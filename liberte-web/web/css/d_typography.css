@@ -59,6 +59,7 @@ footer[role='contentinfo'] p {
 h1, h2, h3, h4, h5, h6, caption, legend, input[type='submit'] {
 	font-family: ParisJeTAime;
     letter-spacing: 0.02em;
+    word-spacing: -3px
 }
 h1, h2, h3, h4, h5, h6, caption, legend {
     line-height: 1.1
@@ -139,9 +140,6 @@ textarea {
 	/* class elements: =. */
     .js .choice h2 .info-section-drop {
 		text-decoration: none;
-    }
-    .js .choice h2 a {
-        font-size: 1.4rem
     }
     .js .detail h2 {
         text-align: center
