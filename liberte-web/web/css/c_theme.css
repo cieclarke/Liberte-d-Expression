@@ -13,6 +13,7 @@ button, input[type=submit] {
 	border-radius: 5px;
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
     color: #fff;
+	text-shadow: 1px 1px 10px #000
 }
 button:hover, input[type=submit]:hover { 
     border-color: #bccf02;
@@ -64,6 +65,7 @@ main {
 }
 main form {
     background: rgba(0, 0, 0, 0.15);
+	box-shadow: 10px 10px 10px -10px #000;
 }
 section li a {
 	color: #fff
@@ -286,7 +288,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
         border-right-color: #fff
     }
 	main form {
-        border-radius: 10px
+        border-radius: 60px 0
     }
 }
 
