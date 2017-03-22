@@ -255,12 +255,6 @@ textarea {
 .page-home main, .page-home-sub main {
     min-height: 48.25rem
 }
-.page-interior-design .list-standard {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 60%
-}
 .page-music .deliverable {
     margin: 0.5em 0;
     width: 150px;
@@ -499,6 +493,12 @@ textarea {
     .js .page-books .detail {
         padding-top: 3.25rem
     }
+    .js .page-interior-design .list-standard {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 70%
+    }
     .js .page-music .container-lozenge.image {
         height: 21rem;
     }
@@ -639,6 +639,9 @@ textarea {
     }
     .js .page-interior-design .header-sub section {
         min-height: 48.75rem
+    }
+    .js .page-interior-design .list-standard {
+        width: 60%
     }
     .js .page-music .header-sub section {
         min-height: 51rem
