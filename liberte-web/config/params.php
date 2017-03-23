@@ -3,6 +3,6 @@
 $data = require(__DIR__ . '/data.php');
 
 return [
-    'adminEmail' => 'admin@example.com',
+    'adminEmail' => 'nick_bergquist@yahoo.co.uk',
     'data' => $data,
 ];
