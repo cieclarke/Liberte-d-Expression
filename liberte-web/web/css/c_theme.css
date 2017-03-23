@@ -335,7 +335,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
     }
 
 	.js .page-books .detail {
-		background: url(../images/books/happylane1_cover.jpg) no-repeat left center / cover
+		background: url(../images/books/happylane1_cover.jpg) no-repeat left top / cover
 	}
 	.js .page-books .detail.active {
 		background: #fff url(../images/books/collage.png) no-repeat center bottom

@@ -72,7 +72,7 @@ h1 {
 h2 {
     border-bottom: 3px solid;
     clear: left;
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.5rem;
     padding: 0.5rem 1rem 0.9rem;
 }
 h3 {
@@ -253,7 +253,7 @@ textarea {
     width: 90%
 }
 .page-home main, .page-home-sub main {
-    min-height: 48rem;
+    min-height: 55rem;
 }
 .page-home-sub main {
     position: relative;
@@ -383,7 +383,7 @@ textarea {
 	/* class elements: =. */
     .page-home .introduction {
         border-radius: 12em 0;
-        margin: 4rem auto;
+        margin: 7rem auto;
         padding: 7.5rem 10% 6.5rem;
         width: 60%
     }
@@ -425,7 +425,7 @@ textarea {
 	}
     main form { 
         float: none;
-        margin: 0 auto 2rem;
+        margin: 2rem auto 2rem;
         width: 70%
     }
     main form dt {
@@ -439,9 +439,20 @@ textarea {
     }
     .js .choice {
         float: left;
-        height: 62rem;
         position: relative;
         width: 60%;
+    }
+    .js .page-books .choice {
+        height: 53rem;
+    }
+    .js .page-interior-design .choice {
+        height: 62rem;
+    }
+    .js .page-music .choice {
+        height: 53rem;
+    }
+    .js .page-paintings .choice {
+        height: 62rem;
     }
     .js .page-paintings .choice h2, .js .page-interior-design .choice h2 {
         margin: 0 0 0.75rem
@@ -463,7 +474,6 @@ textarea {
     }
     .js .detail {
         float: right;
-        height: 61.25rem;
         overflow: hidden;
         padding: 5.25rem 12px 0;
         width: 38%
@@ -471,26 +481,38 @@ textarea {
     .js .detail > div {
         position: relative
     }
+    .js .page-books .detail {
+        height: 52.25rem;
+    }
+    .js .page-interior-design .detail {
+        height: 61.25rem;
+    }
+    .js .page-music .detail {
+        height: 52.25rem;
+    }
+    .js .page-paintings .detail {
+        height: 61.25rem;
+    }
     .js .page-paintings .detail > div:not(.off-screen), .js .page-interior-design .detail > div:not(.off-screen) {
         height: 92%;
         overflow-y: auto;
     }
     .js .gallery-image-def {
         display: block;
-        margin: 5rem auto 0 auto;
-        width: 90%
+        margin: 4rem auto 0 auto;
+        width: 85%
     }
     .js .media-play .score {
         display: block;
         margin: 0 auto 2.25rem;
-        width: 100%;
+        width: 90%;
     }
     .js .media-play .fancybox-pdf {
         border: 4px solid;
         display: block;
         margin: 0 auto;
         padding: 0;
-        width: 74.5%;
+        width: 70%;
     }
     .js .media-play .fancybox-pdf img {
         display: block;
@@ -586,7 +608,6 @@ textarea {
     .js .section-data li > section {
         margin-top: 0
     }
-    
     .js .section-lozenges {
         bottom: 0;
         display: flex;
@@ -626,10 +647,23 @@ textarea {
         width: 1250px
     }
     .gallery li {
+        flex: 0 0 8.4em;
         margin: 0.35em
     }
     .js .choice {
         height: 60rem
+    }
+    .js .page-books .choice {
+        height: 57rem;
+    }
+    .js .page-interior-design .choice {
+        height: 56rem;
+    }
+    .js .page-music .choice {
+        height: 57rem;
+    }
+    .js .page-paintings .choice {
+        height: 56rem;
     }
     .js .choice h2 .info-section-drop {
 		padding-bottom: 2rem
@@ -637,8 +671,20 @@ textarea {
     .js .detail {
         height: 59.25rem
     }
+    .js .page-books .detail {
+        height: 56.25rem;
+    }
+    .js .page-interior-design .detail {
+        height: 55.25rem;
+    }
+    .js .page-music .detail {
+        height: 56.25rem;
+    }
+    .js .page-paintings .detail {
+        height: 55.25rem;
+    }
     .js .gallery-image-def {
-        width: 80%
+        width: 74%;
     }
     .js .page-music .container-lozenge.image {
         height: 25rem

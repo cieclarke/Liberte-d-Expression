@@ -141,6 +141,9 @@ textarea {
     .js .choice h2 .info-section-drop {
 		text-decoration: none;
     }
+    .js .choice h2 a {
+        font-size: 1.4rem
+    }
     .js .detail h2 {
         text-align: center
     }
@@ -152,9 +155,6 @@ textarea {
 /*   Media 1280 and above
 /*******************************************************************/
 @media only screen and (min-width: 1280px) {
-    main {
-        font-size: inherit
-    }
     
     .js .choice h2 a {
         font-size: 1.6rem
