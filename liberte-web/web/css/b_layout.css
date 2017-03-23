@@ -333,12 +333,12 @@ textarea {
     .page-paintings .description, .page-interior-design .description {
         float: left;
         margin-right: 4%;
-        width: 21%
+        width: 36%
     }
     .page-paintings .gallery, .page-interior-design .gallery {
         float: left;
         margin-top: 0;
-        width: 75%
+        width: 60%
     }
     .page-books main section {
         float: left;
