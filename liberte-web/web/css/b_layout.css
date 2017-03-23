@@ -255,11 +255,13 @@ textarea {
 .page-home main, .page-home-sub main {
     min-height: 48rem;
 }
+.page-home-sub main {
+    position: relative;
+}
 .page-home-sub .fwibble {
-    height: 50%;
     left: 50%;
     position: absolute;
-    top: 66%;
+    top: 45%;
     transform: translate(-50%, -50%);
 }
 .page-music .deliverable {
