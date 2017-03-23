@@ -3,45 +3,131 @@
 var pageLozengesMeta = {
 	'paintings': {
 		'artExhibitions': {
-			'lozFirst': '<img src="/images/exhibitions-paintings/lozenge_exhibition_barclays_00.jpg" alt="Exhibition scene - Barclays" />',
-			'lozSecond': '<img src="/images/exhibitions-paintings/lozenge_exhibition_light-gallery_00.jpg" alt="Exhibition scene - Light Gallery" />'
+			'lozFirst': {
+				path: '/images/exhibitions-paintings/lozenge_exhibition_gallery_00.jpg',
+				alt: 'Exhibition scene - Barclays'
+			},
+			'lozSecond': {
+				path: '/images/exhibitions-paintings/lozenge_exhibition_gallery_01.jpg',
+				alt: 'Exhibition scene - Light Gallery'
+			},
+			'lozThird': {
+				path: '/images/exhibitions-paintings/lozenge_exhibition_gallery_02.jpg',
+				alt: 'Exhibition scene - '
+			}
 		},
 		'samples': {
-			'lozFirst': '<img src="/images/exhibitions-paintings/lozenge_artist_gallery_sample_00.jpg" alt="Exhibits - artist sample gallery" />'
+			'lozFirst': {
+				path: '/images/exhibitions-paintings/lozenge_artist_gallery_sample_00.jpg',
+				alt: 'Exhibits - artist sample gallery'
+			},
+			'lozSecond': {
+				path: '/images/exhibitions-paintings/lozenge_artist_gallery_sample_01.jpg',
+				alt: 'Exhibits - artist sample gallery'
+			},
+			'lozThird': {
+				path: '/images/exhibitions-paintings/lozenge_artist_gallery_sample_02.jpg',
+				alt: 'Exhibits - artist sample gallery'
+			}
 		},
 		'sharminas': {
-			'lozFirst': '<img src="/images/exhibitions-paintings/lozenge_exhibition_sharmina_00.jpg" alt="Exhibition scene - Sharmina" />',
-			'lozSecond': '<img src="/images/exhibitions-paintings/lozenge_exhibition_torbay_00.jpg" alt="Exhibition scene - Torbay" />'
+			'lozFirst': {
+				path: '/images/exhibitions-paintings/lozenge_exhibition_sharmina_00.jpg',
+				alt: 'Exhibition scene - Sharmina'
+			},
+			'lozSecond': {
+				path: '/images/exhibitions-paintings/lozenge_exhibition_sharmina_01.jpg',
+				alt: 'Exhibition scene - Torbay'
+			},
+			'lozThird': {
+				path: '/images/exhibitions-paintings/lozenge_exhibition_sharmina_02.jpg',
+				alt: 'Exhibition scene - Torbay'
+			}
 		}
 	},
 	'design': {
 		'interior': {
-			'lozFirst': '<img src="/images/interior-design/lozenge_design_interior_00.jpg" alt="Interior design - example" />',
-			'lozSecond': '<img src="/images/interior-design/lozenge_design_interior_01.jpg" alt="Interior design - example" />'
+			'lozFirst': {
+				path: '/images/interior-design/lozenge_design_interior_00.jpg',
+				alt: 'Interior design - example'
+			},
+			'lozSecond': {
+				path: '/images/interior-design/lozenge_design_interior_01.jpg',
+				alt: 'Interior design - example'
+			}
+			,
+			'lozThird': {
+				path: '/images/interior-design/lozenge_design_interior_02.jpg',
+				alt: 'Interior design - example'
+			}
 		},
 		'product': {
-			'lozFirst': '<img src="/images/interior-design/lozenge_design_product_00.jpg" alt="Product design - example" />'
+			'lozFirst': {
+				path: '/images/interior-design/lozenge_design_product_00.jpg',
+				alt: 'Product design - example'
+			},
+			'lozSecond': {
+				path: '/images/interior-design/lozenge_design_product_01.jpg',
+				alt: 'Product design - example'
+			},
+			'lozThird': {
+				path: '/images/interior-design/lozenge_design_product_02.jpg',
+				alt: 'Product design - example'
+			}
 		}
 	},
 	'music': {
 		'english': {
-			'lozFirst': '<img src="/images/music/lozenge_music_00.jpg" alt="Music - studio example" />'
+			'lozFirst': {
+				path: '/images/music/lozenge_music_00.jpg',
+				alt: 'Music - English studio example'
+			},
+			'lozSecond': {
+				path: '/images/music/lozenge_music_01.jpg',
+				alt: 'Music - English studio example'
+			}
 		},
 		'spanish': {
-			'lozFirst': '<img src="/images/music/lozenge_music_01.jpg" alt="Music - studio example" />'
-		}
-		,
+			'lozFirst': {
+				path: '/images/music/lozenge_music_01.jpg',
+				alt: 'Music - Spanish studio example'
+			},
+			'lozSecond': {
+				path: '/images/music/lozenge_music_00.jpg',
+				alt: 'Music - Spanish studio example'
+			}
+		},
 		'french': {
-			'lozFirst': '<img src="/images/music/lozenge_music_02.jpg" alt="Music - studio example" />'
+			'lozFirst': {
+				path: '/images/music/lozenge_music_02.jpg',
+				alt: 'Music - French studio example'
+			},
+			'lozSecond': {
+				path: '/images/music/lozenge_music_00.jpg',
+				alt: 'Music - French studio example'
+			}
 		}
 	},
 	'books': {
 		'happyLaneSeries': {
-			'lozFirst': '<img src="/images/books/lozenge_books_00.jpg" alt="Books - Happy Lane series example" />',
-			'lozSecond': '<img src="/images/books/lozenge_books_01.jpg" alt="Books - Happy Lane series example" />'
+			'lozFirst': {
+				path: '/images/books/lozenge_books_00.jpg',
+				alt: 'Books - Happy Lane series example'
+			},
+			'lozSecond': {
+				path: '/images/books/lozenge_books_01.jpg',
+				alt: 'Books - Happy Lane series example'
+			}
 		},
 		'otherBooks': {
-			'lozFirst': '<img src="/images/books/lozenge_books_02.jpg" alt="Books - other books example" />'
+			'lozFirst': {
+				path: '/images/books/lozenge_books_02.jpg',
+				alt: 'Books - other books example'
+			},
+			'lozSecond': {
+				path: '/images/books/lozenge_books_01.jpg',
+				alt: 'Books - other books example'
+			}
 		}
 	}
 };
@@ -283,8 +369,8 @@ var pageMaxWidthRender = {
 		$sectionData.appendTo($choice);
 		$sectionLozenges.appendTo($choice);
 
-		// gallery: heading link / section text / 1 lozenge
-		// player: plain heading / section list of links / 1 lozenge
+		// type-gallery: heading link / section text / 1 lozenge
+		// type-viewer: plain heading / section list of links / 1 lozenge
 		$content.find('section').each(function(i) {
 			var $section = $(this);
 			var $sectionClass = $section.attr('class');
@@ -292,11 +378,13 @@ var pageMaxWidthRender = {
 			var $sectionMenuListItem = $('<li>');
 			var $sectionLoz = $('<figure class="container-lozenge image"/>');
 			var lozSection = Object.keys(lozPaths)[i];
-			var $loz = $(lozPaths[lozSection].lozFirst);
+			var lozPath = lozPaths[lozSection].lozFirst.path;
+			var lozAlt = lozPaths[lozSection].lozFirst.alt;
+			var $lozImg = $('<img>').attr('src', lozPath).attr('alt', lozAlt);
 			var $lozLi = $('<li>');
 
-			$sectionLoz.html($loz);
-			$sectionLoz.appendTo($lozLi);
+			$sectionLoz.html($lozImg);
+			$lozLi.html($sectionLoz);
 			$lozLi.appendTo($sectionLozenges);
 			
 			if (pageType == 'type-gallery') {
