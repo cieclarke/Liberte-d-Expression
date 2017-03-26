@@ -235,35 +235,29 @@ $(function() {
 				var $page = $('.page-paintings');
 				
 				pageMaxWidthRender.assemble($page, 'type-gallery', lozPaintings);
+				lozengeRotate($page, lozPaintings);
 
 				// add fancybox gallery groupings at full desktop viewport
 				$page.find('#exhibition-art .gallery a').attr('rel', 'exhibitions');
 				$page.find('#exhibition-gallery-sample .gallery a').attr('rel', 'samples');
 				$page.find('#exhibition-sharmina .gallery a').attr('rel', 'sharmina');
-
-				// add lozenge rotation
-				lozengeRotate($page, lozPaintings);
 			}
 
 			if ($('.page-interior-design').length) {
 				var $page = $('.page-interior-design');
 				
 				pageMaxWidthRender.assemble($page, 'type-gallery', lozDesign);
-				
+				lozengeRotate($page, lozDesign);
+
 				// add fancybox gallery groupings at full desktop viewport
 				$('.page-interior-design #interior .gallery a').attr('rel', 'interior');
 				$('.page-interior-design #product .gallery a').attr('rel', 'product');
-
-				// add lozenge rotation
-				lozengeRotate($page, lozDesign);
 			}
 
 			if ($('.page-books').length) {
 				var $page = $('.page-books');
 
 				pageMaxWidthRender.assemble($page, 'type-viewer', lozBooks);
-
-				// add lozenge rotation
 				lozengeRotate($page, lozBooks);
 			}
 
@@ -271,8 +265,6 @@ $(function() {
 				var $page = $('.page-music');
 
 				pageMaxWidthRender.assemble($page, 'type-viewer', lozMusic);
-
-				// add lozenge rotation
 				lozengeRotate($page, lozMusic);
 			}
 		},
@@ -652,10 +644,10 @@ var lozengeRotate = function($pageCurr, configLoz) {
 		setInterval(function() {
 			var arrImgsLength = arrImgs.length;
 
-			$this.fadeOut(0, function() {
+			$this.fadeOut(1200, function() {
 				$(this).attr('src', arrImgs[j]);
 				j = (j + 1) % arrImgsLength;
-			}).fadeIn(1200);
+			}).fadeIn(1500);
 		}, 4500);					
 	});
 };
