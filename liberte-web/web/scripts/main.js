@@ -1,140 +1,197 @@
 // script loaded in all pages
 
-var pageLozengesMeta = {
-	'paintings': {
-		'artExhibitions': {
-			'lozFirst': {
-				path: '/images/exhibitions-paintings/lozenge_exhibition_gallery_00.jpg',
-				alt: 'Exhibition scene - Barclays'
-			},
-			'lozSecond': {
-				path: '/images/exhibitions-paintings/lozenge_exhibition_gallery_01.jpg',
-				alt: 'Exhibition scene - Light Gallery'
-			},
-			'lozThird': {
-				path: '/images/exhibitions-paintings/lozenge_exhibition_gallery_02.jpg',
-				alt: 'Exhibition scene - '
-			}
+var lozPaintings = {
+	'artExhibitions': [
+		{
+			'path': '/images/exhibitions-paintings/lozenge_exhibition_gallery_01.jpg'
 		},
-		'samples': {
-			'lozFirst': {
-				path: '/images/exhibitions-paintings/lozenge_artist_gallery_sample_00.jpg',
-				alt: 'Exhibits - artist sample gallery'
-			},
-			'lozSecond': {
-				path: '/images/exhibitions-paintings/lozenge_artist_gallery_sample_01.jpg',
-				alt: 'Exhibits - artist sample gallery'
-			},
-			'lozThird': {
-				path: '/images/exhibitions-paintings/lozenge_artist_gallery_sample_02.jpg',
-				alt: 'Exhibits - artist sample gallery'
-			}
+		{
+			'path': '/images/exhibitions-paintings/lozenge_exhibition_gallery_02.jpg'
 		},
-		'sharminas': {
-			'lozFirst': {
-				path: '/images/exhibitions-paintings/lozenge_exhibition_sharmina_00.jpg',
-				alt: 'Exhibition scene - Sharmina'
-			},
-			'lozSecond': {
-				path: '/images/exhibitions-paintings/lozenge_exhibition_sharmina_01.jpg',
-				alt: 'Exhibition scene - Torbay'
-			},
-			'lozThird': {
-				path: '/images/exhibitions-paintings/lozenge_exhibition_sharmina_02.jpg',
-				alt: 'Exhibition scene - Torbay'
-			}
+		{
+			'path': '/images/exhibitions-paintings/lozenge_exhibition_gallery_03.jpg'
+		},
+		{
+			'path': '/images/exhibitions-paintings/lozenge_exhibition_gallery_04.jpg'
+		},
+		{
+			'path': '/images/exhibitions-paintings/lozenge_exhibition_gallery_05.jpg'
+		},
+		{
+			'path': '/images/exhibitions-paintings/lozenge_exhibition_gallery_06.jpg'
+		},
+		{
+			'path': '/images/exhibitions-paintings/lozenge_exhibition_gallery_00.jpg'
 		}
-	},
-	'design': {
-		'interior': {
-			'lozFirst': {
-				path: '/images/interior-design/lozenge_design_interior_00.jpg',
-				alt: 'Interior design - example'
-			},
-			'lozSecond': {
-				path: '/images/interior-design/lozenge_design_interior_01.jpg',
-				alt: 'Interior design - example'
-			}
-			,
-			'lozThird': {
-				path: '/images/interior-design/lozenge_design_interior_02.jpg',
-				alt: 'Interior design - example'
-			}
+	],
+	'samples': [
+		{
+			'path': '/images/exhibitions-paintings/lozenge_artist_gallery_sample_01.jpg'
 		},
-		'product': {
-			'lozFirst': {
-				path: '/images/interior-design/lozenge_design_product_00.jpg',
-				alt: 'Product design - example'
-			},
-			'lozSecond': {
-				path: '/images/interior-design/lozenge_design_product_01.jpg',
-				alt: 'Product design - example'
-			},
-			'lozThird': {
-				path: '/images/interior-design/lozenge_design_product_02.jpg',
-				alt: 'Product design - example'
-			}
+		{
+			'path': '/images/exhibitions-paintings/lozenge_artist_gallery_sample_02.jpg'
+		},
+		{
+			'path': '/images/exhibitions-paintings/lozenge_artist_gallery_sample_03.jpg'
+		},
+		{
+			'path': '/images/exhibitions-paintings/lozenge_artist_gallery_sample_04.jpg'
+		},
+		{
+			'path': '/images/exhibitions-paintings/lozenge_artist_gallery_sample_05.jpg'
+		},
+		{
+			'path': '/images/exhibitions-paintings/lozenge_artist_gallery_sample_06.jpg'
+		},
+		{
+			'path': '/images/exhibitions-paintings/lozenge_artist_gallery_sample_00.jpg'
 		}
-	},
-	'music': {
-		'english': {
-			'lozFirst': {
-				path: '/images/music/lozenge_music_00.jpg',
-				alt: 'Music - English studio example'
-			},
-			'lozSecond': {
-				path: '/images/music/lozenge_music_01.jpg',
-				alt: 'Music - English studio example'
-			}
+	],
+	'sharminas': [
+		{
+			'path': '/images/exhibitions-paintings/lozenge_exhibition_sharmina_01.jpg'
 		},
-		'spanish': {
-			'lozFirst': {
-				path: '/images/music/lozenge_music_01.jpg',
-				alt: 'Music - Spanish studio example'
-			},
-			'lozSecond': {
-				path: '/images/music/lozenge_music_00.jpg',
-				alt: 'Music - Spanish studio example'
-			}
+		{
+			'path': '/images/exhibitions-paintings/lozenge_exhibition_sharmina_02.jpg'
 		},
-		'french': {
-			'lozFirst': {
-				path: '/images/music/lozenge_music_02.jpg',
-				alt: 'Music - French studio example'
-			},
-			'lozSecond': {
-				path: '/images/music/lozenge_music_00.jpg',
-				alt: 'Music - French studio example'
-			}
+		{
+			'path': '/images/exhibitions-paintings/lozenge_exhibition_sharmina_03.jpg'
+		},
+		{
+			'path': '/images/exhibitions-paintings/lozenge_exhibition_sharmina_04.jpg'
+		},
+		{
+			'path': '/images/exhibitions-paintings/lozenge_exhibition_sharmina_05.jpg'
+		},
+		{
+			'path': '/images/exhibitions-paintings/lozenge_exhibition_sharmina_06.jpg'
+		},
+		{
+			'path': '/images/exhibitions-paintings/lozenge_exhibition_sharmina_00.jpg'
 		}
-	},
-	'books': {
-		'happyLaneSeries': {
-			'lozFirst': {
-				path: '/images/books/lozenge_books_00.jpg',
-				alt: 'Books - Happy Lane series example'
-			},
-			'lozSecond': {
-				path: '/images/books/lozenge_books_01.jpg',
-				alt: 'Books - Happy Lane series example'
-			}
-		},
-		'otherBooks': {
-			'lozFirst': {
-				path: '/images/books/lozenge_books_02.jpg',
-				alt: 'Books - other books example'
-			},
-			'lozSecond': {
-				path: '/images/books/lozenge_books_01.jpg',
-				alt: 'Books - other books example'
-			}
-		}
-	}
+	]
 };
 
-//console.log(pageLozengesMeta.design.interior.lozFirst);
-//console.log(Object.keys(pageLozengesMeta.paintings).length);
-//console.log(Object.keys(pageLozengesMeta.paintings)[0]);
+var lozDesign = {
+	'interior': [
+		{
+			'path': '/images/interior-design/lozenge_design_interior_01.jpg'
+		},
+		{
+			'path': '/images/interior-design/lozenge_design_interior_02.jpg'
+		},
+		{
+			'path': '/images/interior-design/lozenge_design_interior_03.jpg'
+		},
+		{
+			'path': '/images/interior-design/lozenge_design_interior_04.jpg'
+		},
+		{
+			'path': '/images/interior-design/lozenge_design_interior_05.jpg'
+		},
+		{
+			'path': '/images/interior-design/lozenge_design_interior_00.jpg'
+		}
+	],
+	'product': [
+		{
+			'path': '/images/interior-design/lozenge_design_product_01.jpg'
+		},
+		{
+			'path': '/images/interior-design/lozenge_design_product_02.jpg'
+		},
+		{
+			'path': '/images/interior-design/lozenge_design_product_03.jpg'
+		},
+		{
+			'path': '/images/interior-design/lozenge_design_product_04.jpg'
+		},
+		{
+			'path': '/images/interior-design/lozenge_design_product_05.jpg'
+		},
+		{
+			'path': '/images/interior-design/lozenge_design_product_00.jpg'
+		}
+	]
+};
+	
+var lozMusic = {
+	'english': [
+		{
+			'path': '/images/music/lozenge_music_01.jpg'
+		},
+		{
+			'path': '/images/music/lozenge_music_02.jpg'
+		},
+		{
+			'path': '/images/music/lozenge_music_03.jpg'
+		},
+		{
+			'path': '/images/music/lozenge_music_00.jpg'
+		}
+	],
+	'spanish': [
+		{
+			'path': '/images/music/lozenge_music_04.jpg'
+		},
+		{
+			'path': '/images/music/lozenge_music_05.jpg'
+		},
+		{
+			'path': '/images/music/lozenge_music_06.jpg'
+		},
+		{
+			'path': '/images/music/lozenge_music_07.jpg'
+		}
+	],
+	'french': [
+		{
+			'path': '/images/music/lozenge_music_08.jpg'
+		},
+		{
+			'path': '/images/music/lozenge_music_09.jpg'
+		},
+		{
+			'path': '/images/music/lozenge_music_10.jpg'
+		},
+		{
+			'path': '/images/music/lozenge_music_11.jpg'
+		}
+	]
+};
+
+var lozBooks = {
+	'happyLaneSeries': [
+		{
+			'path': '/images/books/lozenge_books_hls_02.jpg'
+		},
+		{
+			'path': '/images/books/lozenge_books_hls_03.jpg'
+		},
+		{
+			'path': '/images/books/lozenge_books_hls_04.jpg'
+		},
+		{
+			'path': '/images/books/lozenge_books_hls_00.jpg'
+		}
+	],
+	'otherBooks': [
+		{
+			'path': '/images/books/lozenge_books_other_02.jpg'
+		},
+		{
+			'path': '/images/books/lozenge_books_other_03.jpg'
+		},
+		{
+			'path': '/images/books/lozenge_books_other_04.jpg'
+		},
+		{
+			'path': '/images/books/lozenge_books_other_00.jpg'
+		}
+	]
+}
+
+
 
 document.documentElement.className += " js";
 
@@ -144,7 +201,7 @@ if (!("ontouchstart" in document.documentElement)) {
 }
 
 // main control block, on DOM-ready
-$(function () {
+$(function() {
 	// <<<< Viewport size dependent function calls >>>>
 
 	// media query breakpoints should match those in the CSS
@@ -176,39 +233,47 @@ $(function () {
 		match : function() {
 			if ($('.page-paintings').length) {
 				var $page = $('.page-paintings');
-				var lozPaths = pageLozengesMeta.paintings;
 				
-				pageMaxWidthRender.assemble($page, 'type-gallery', lozPaths);
+				pageMaxWidthRender.assemble($page, 'type-gallery', lozPaintings);
 
 				// add fancybox gallery groupings at full desktop viewport
-				$($page.find('#exhibition-art .gallery a').attr('rel', 'exhibitions'));
-				$($page.find('#exhibition-gallery-sample .gallery a').attr('rel', 'samples'));
-				$($page.find('#exhibition-sharmina .gallery a').attr('rel', 'sharmina'));
+				$page.find('#exhibition-art .gallery a').attr('rel', 'exhibitions');
+				$page.find('#exhibition-gallery-sample .gallery a').attr('rel', 'samples');
+				$page.find('#exhibition-sharmina .gallery a').attr('rel', 'sharmina');
+
+				// add lozenge rotation
+				lozengeRotate($page, lozPaintings);
 			}
 
 			if ($('.page-interior-design').length) {
 				var $page = $('.page-interior-design');
-				var lozPaths = pageLozengesMeta.design;
 				
-				pageMaxWidthRender.assemble($page, 'type-gallery', lozPaths);
+				pageMaxWidthRender.assemble($page, 'type-gallery', lozDesign);
 				
 				// add fancybox gallery groupings at full desktop viewport
 				$('.page-interior-design #interior .gallery a').attr('rel', 'interior');
 				$('.page-interior-design #product .gallery a').attr('rel', 'product');
+
+				// add lozenge rotation
+				lozengeRotate($page, lozDesign);
 			}
 
 			if ($('.page-books').length) {
 				var $page = $('.page-books');
-				var lozPaths = pageLozengesMeta.books;
 
-				pageMaxWidthRender.assemble($page, 'type-viewer', lozPaths);
+				pageMaxWidthRender.assemble($page, 'type-viewer', lozBooks);
+
+				// add lozenge rotation
+				lozengeRotate($page, lozBooks);
 			}
 
 			if ($('.page-music').length) {
 				var $page = $('.page-music');
-				var lozPaths = pageLozengesMeta.music;
 
-				pageMaxWidthRender.assemble($page, 'type-viewer', lozPaths);
+				pageMaxWidthRender.assemble($page, 'type-viewer', lozMusic);
+
+				// add lozenge rotation
+				lozengeRotate($page, lozMusic);
 			}
 		},
 		unmatch : function() {
@@ -369,8 +434,8 @@ var pageMaxWidthRender = {
 		$sectionData.appendTo($choice);
 		$sectionLozenges.appendTo($choice);
 
-		// type-gallery: heading link / section text / 1 lozenge
-		// type-viewer: plain heading / section list of links / 1 lozenge
+		// type-gallery: link heading / section text
+		// type-viewer: plain heading / section list of links 
 		$content.find('section').each(function(i) {
 			var $section = $(this);
 			var $sectionClass = $section.attr('class');
@@ -378,9 +443,8 @@ var pageMaxWidthRender = {
 			var $sectionMenuListItem = $('<li>');
 			var $sectionLoz = $('<figure class="container-lozenge image"/>');
 			var lozSection = Object.keys(lozPaths)[i];
-			var lozPath = lozPaths[lozSection].lozFirst.path;
-			var lozAlt = lozPaths[lozSection].lozFirst.alt;
-			var $lozImg = $('<img>').attr('src', lozPath).attr('alt', lozAlt);
+			var lozPath = lozPaths[lozSection][lozPaths[lozSection].length - 1].path;
+			var $lozImg = $('<img alt="Section preview image">').attr('src', lozPath);
 			var $lozLi = $('<li>');
 
 			$sectionLoz.html($lozImg);
@@ -570,4 +634,28 @@ var pageMaxWidthRender = {
 			return $($(this).find('> *'), this);
 		});
 	}
+};
+
+var lozengeRotate = function($pageCurr, configLoz) {
+	$pageCurr.find('.section-lozenges img').each(function(i) {
+		var $this = $(this);
+		var lozSection = Object.keys(configLoz)[i];
+		var arrImgs = [];
+		var j = 0;
+		
+		$.each(configLoz[lozSection], function(i) {
+			$.each(configLoz[lozSection][i], function(key, val){
+				arrImgs.push(val);
+			});
+		});
+
+		setInterval(function() {
+			var arrImgsLength = arrImgs.length;
+
+			$this.fadeOut(0, function() {
+				$(this).attr('src', arrImgs[j]);
+				j = (j + 1) % arrImgsLength;
+			}).fadeIn(1200);
+		}, 4500);					
+	});
 };

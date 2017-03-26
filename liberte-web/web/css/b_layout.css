@@ -484,6 +484,9 @@ textarea {
     .js .page-books .detail {
         height: 52.25rem;
     }
+    .js .page-interior-design .container-lozenge.image {
+        height: 22rem;
+    }
     .js .page-interior-design .detail {
         height: 61.25rem;
     }
