@@ -112,24 +112,14 @@
     </ul>
 </section>
 
-
-
 <?php if($model->SelectedSong != null) { ?>
     <div class="media-play">
-        <?php if(array_key_exists('mp4', $model->SelectedSong->types)) { ?>
         <h2><?php echo $model->SelectedSong->title; ?></h2>
-            <video controls="controls" preload="metadata">
-                <source src="http://libertedexpression.co.uk/art/video/<?php echo $model->SelectedSong->types['mp4']; ?>" type="video/mp4">
-                <p>Unsupported media</p>
-            </video>
-        <?php } else { ?>
-            <h2><?php echo $model->SelectedSong->title; ?></h2>
-            <img alt="Music score for <?php echo $model->SelectedSong->title; ?>" class="score" src="http://libertedexpression.co.uk/art/audio/<?php echo $model->SelectedSong->types['jpg']; ?>" />
-            <audio class="deliverable" title="<?php echo $model->SelectedSong->title; ?>" controls="controls" preload="metadata">
-                <source src="http://libertedexpression.co.uk/art/audio/<?php echo $model->SelectedSong->types['mp3']; ?>" type='audio/mpeg; codecs="mp3"'>
-                <source src="http://libertedexpression.co.uk/art/audio/<?php echo $model->SelectedSong->types['ogg']; ?>" type='audio/ogg; codecs="vorbis"'>
-                <p>Unsupported media</p>
-            </audio>
-        <?php } ?>
+        <img alt="Music score for <?php echo $model->SelectedSong->title; ?>" class="score" src="http://libertedexpression.co.uk/art/audio/<?php echo $model->SelectedSong->types['jpg']; ?>" />
+        <audio class="deliverable" title="<?php echo $model->SelectedSong->title; ?>" controls="controls" preload="metadata">
+            <source src="http://libertedexpression.co.uk/art/audio/<?php echo $model->SelectedSong->types['mp3']; ?>" type='audio/mpeg; codecs="mp3"'>
+            <source src="http://libertedexpression.co.uk/art/audio/<?php echo $model->SelectedSong->types['ogg']; ?>" type='audio/ogg; codecs="vorbis"'>
+            <p>Unsupported media</p>
+        </audio>
     </div>
 <?php } ?>
