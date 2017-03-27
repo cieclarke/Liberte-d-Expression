@@ -17,6 +17,7 @@ class MusicController extends Controller
     public function actionIndex($songId = '')
     {
         $this->view->params['class'] = 'page-music';
+        $this->view->params['script-bgswitcher'] = '';
         $vm = new \app\models\AudioViewModel($songId);
         
         return $this->render('index', [

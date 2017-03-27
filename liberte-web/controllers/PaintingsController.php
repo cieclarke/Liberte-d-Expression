@@ -17,6 +17,7 @@ class PaintingsController extends Controller
     public function actionIndex()
     {
         $this->view->params['class'] = 'page-paintings';
+        $this->view->params['script-bgswitcher'] = '';
         $vm = new \app\models\GalleryViewModel();
 
         return $this->render('index', [

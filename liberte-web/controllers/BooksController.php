@@ -17,6 +17,7 @@ class BooksController extends Controller
     public function actionIndex($id = '')
     {
         $this->view->params['class'] = 'page-books light';
+        $this->view->params['script-bgswitcher'] = '';
         $vm = new \app\models\BookViewModel($id);
 
         return $this->render('index', [

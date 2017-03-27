@@ -17,6 +17,7 @@ class HomeController extends Controller
     public function actionIndex()
     {
         $this->view->params['class'] = 'page-home';
+        $this->view->params['script-bgswitcher'] = '/scripts/jquery.bgswitcher.js';
         $vm = new \app\models\GalleryViewModel();
         
         return $this->render('index', [

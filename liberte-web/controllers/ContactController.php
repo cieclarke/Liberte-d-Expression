@@ -17,6 +17,7 @@ class ContactController extends Controller
     public function actionIndex()
     {
         $this->view->params['class'] = 'page-home-sub';
+        $this->view->params['script-bgswitcher'] = '';
         $model = new \app\models\ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
             Yii::$app->session->setFlash('contactFormSubmitted');

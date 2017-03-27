@@ -43,7 +43,13 @@ AppAsset::register($this);
 	<!-- main script -->
 	<script src="/scripts/main.js"></script>
 
-    <script src="/scripts/jquery.bgswitcher.js"></script>
+    <?php
+        if (strlen($this->params['script-bgswitcher']) > 0) {
+        ?>
+            <script src="/scripts/jquery.bgswitcher.js"></script>
+        <?php
+        }
+    ?>
 
     <!-- older IE support - remove this and associated files when IE8 support is dropped -->
     <!--[if lt IE 9]>

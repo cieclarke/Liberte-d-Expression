@@ -17,6 +17,7 @@ class AboutController extends Controller
     public function actionIndex()
     {
         $this->view->params['class'] = 'page-home-sub';
+        $this->view->params['script-bgswitcher'] = '';
         $vm = new \app\models\GalleryViewModel();
 
         return $this->render('index', [
