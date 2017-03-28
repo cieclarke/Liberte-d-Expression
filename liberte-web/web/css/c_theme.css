@@ -104,7 +104,7 @@ nav[role='navigation'] :link:hover, nav[role='navigation'] :visited:hover {
     border-radius: 50px 0; 
     box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.85)
 }
-.container-lozenge::before {
+.detail.container-lozenge::before {
     box-shadow: 0 0 4px #999 inset
 }
 .gallery {

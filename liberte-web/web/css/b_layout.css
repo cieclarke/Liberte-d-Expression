@@ -192,7 +192,7 @@ textarea {
     top: -50%;
     width: 100%;
 }
-.container-lozenge::before {
+.detail.container-lozenge::before {
     content: '';
     height: 100%;
     left: 0;
@@ -204,6 +204,12 @@ textarea {
     position: absolute;
     right: 0;
     top: 0
+}
+.flex-block {
+    display: flex
+}
+.flex-inline {
+    display: inline-flex
 }
 .gallery {
     display: flex;
@@ -254,6 +260,26 @@ textarea {
 }
 .page-home main, .page-home-sub main {
     min-height: 55rem;
+}
+.page-home-sub main .flex-block {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 1.5rem
+}
+.page-home-sub main .flex-block > article {
+    align-content: stretch;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 50px 0;
+    box-shadow: 10px 10px 10px -10px #000;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+.page-home-sub main .flex-block > article h2 {
+    padding-top: 2.25rem;
+    text-align: right;
+}
+.page-home-sub main .flex-block > article p {
+    padding: 0 1rem
 }
 .page-home-sub main {
     position: relative;
@@ -360,12 +386,18 @@ textarea {
 /*******************************************************************/
 @media only screen and (min-width: 768px) {
 
-	/* class elements: =. */
+	
     main form {
         padding: 1em 4.5% 1.5em
     }
     form dl { 
         width: 85%
+    }
+
+    /* class elements: =. */
+    .page-home-sub main .flex-block > article {
+        min-height: 32rem;
+        width: 47.5%;
     }
 }
 
@@ -562,7 +594,7 @@ textarea {
     }
     .js .page-music main section li {
         margin-bottom: 1.2rem;
-        min-height: auto;
+        min-height: 1.2rem;
         padding-right: 0;
         padding-top: 0
     }
@@ -623,6 +655,9 @@ textarea {
     }
     .js .section-lozenges.col-3 li {
         width: 31.1%
+    }
+    .page-home-sub main .flex-block > article {
+        width: 31.5%;
     }
     .page-music main section {
         float: none;
