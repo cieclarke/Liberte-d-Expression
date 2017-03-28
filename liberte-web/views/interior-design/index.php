@@ -224,6 +224,11 @@
             </a>
         </li>
         <li>
+            <a href="/images/interior-design/product/scan0012.jpg">
+                <img src="/images/interior-design/product/scan0012_thumb.jpg" alt="An interior-design product feature" />
+            </a>
+        </li>
+        <li>
             <a href="/images/interior-design/product/wallpaper_1.jpg">
                 <img src="/images/interior-design/product/wallpaper_1_thumb.jpg" alt="An interior-design product feature" />
             </a>
