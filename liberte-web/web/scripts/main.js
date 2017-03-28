@@ -75,42 +75,30 @@ var lozPaintings = {
 var lozDesign = {
 	'interior': [
 		{
-			'path': '/images/interior-design/lozenge_design_interior_01.jpg'
-		},
-		{
-			'path': '/images/interior-design/lozenge_design_interior_02.jpg'
-		},
-		{
-			'path': '/images/interior-design/lozenge_design_interior_03.jpg'
-		},
-		{
 			'path': '/images/interior-design/lozenge_design_interior_04.jpg'
 		},
 		{
-			'path': '/images/interior-design/lozenge_design_interior_05.jpg'
+			'path': '/images/interior-design/lozenge_design_interior_01.jpg'
 		},
 		{
-			'path': '/images/interior-design/lozenge_design_interior_00.jpg'
+			'path': '/images/interior-design/lozenge_design_interior_06.jpg'
+		},
+		{
+			'path': '/images/interior-design/lozenge_design_interior_08.jpg'
 		}
 	],
 	'product': [
 		{
-			'path': '/images/interior-design/lozenge_design_product_01.jpg'
+			'path': '/images/interior-design/lozenge_design_product_07.jpg'
 		},
 		{
-			'path': '/images/interior-design/lozenge_design_product_02.jpg'
-		},
-		{
-			'path': '/images/interior-design/lozenge_design_product_03.jpg'
+			'path': '/images/interior-design/lozenge_design_product_09.jpg'
 		},
 		{
 			'path': '/images/interior-design/lozenge_design_product_04.jpg'
 		},
 		{
-			'path': '/images/interior-design/lozenge_design_product_05.jpg'
-		},
-		{
-			'path': '/images/interior-design/lozenge_design_product_00.jpg'
+			'path': '/images/interior-design/lozenge_design_product_08.jpg'
 		}
 	]
 };
