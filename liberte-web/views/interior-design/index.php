@@ -9,14 +9,9 @@
 <section class="interior">
     <h2>Interior design</h2>
     <div class="description">
-        <ul class="list-standard">
-            <li>Residential</li>
-            <li>Commercial</li>
-            <li>Space Planning</li>
-            <li>Lighting Plan</li>
-            <li>Project Management</li>
-            <li>Furnishing and Accessorising</li>
-        </ul>
+        <p>Concept rational 1:</p>
+        <p>For this project, I was inspired by one of Heston Blumentha's main interests – rediscovering historical British gastronomy from Victorian, Tudor England to medieval times and ancient Rome. The idea came up whilst reading a number of articles and interviews about Heston Blumenthal. A particular sentence caught my attention <i>"... research into historic British gastronomy in a bid to recreate dishes inspired by the past."</i> I immediately thought this could be applied for the interior of the restaurant <i>"... research into historic British <b>styles</b> in a bid to recreate <b>interiors</b> inspired by the past."</i></p>
+        <p>As the premises were a former pub circa 1550, it made sense to me to focus on the Tudor era and reinvent the interior style seen during this ear. The concept would look to take very traditional British design ideas and produce contemporary versions of them.</p>
     </div>
     <ul class="gallery">
         <li>
@@ -160,12 +155,10 @@
 <section class="product">
     <h2>Product design</h2>
     <div class="description">
-        <p>
-            Design #2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis vitae nisi eget eleifend. Phasellus tristique ut augue a consequat. Sed at dignissim augue, et tempor enim. Nunc viverra magna ut ex pretium, ac tincidunt ante tempus.
-        </p> 
-        <p>
-            Vestibulum non purus id augue fringilla varius vitae eu dolor. Nunc viverra magna ut ex pretium, ac tincidunt ante tempus.
-        </p>
+        <p>Concept rational 2:</p>
+        <p>Whilst reflecting the Goring Hotel's history and classical style, Tim Gosling's approach to the interior design of the lounge room draws some of its inspiration from the art deco references visible throughout the space. Using the Art Deco elements as the starting point of the design, the research undertaken indicated that the main characteristics of the style are clean lines and sharp edges, stylishness and symmetry. It's sleek, streamlined forms conveys elegance and sophistication, which is very much in line with the qualities of the Cheney’s best sellers today. However, the use of Art Deco features will not be immediately obvious or overwhelming in order to appeal to a wide audience and ensure its commercial viability.</p>
+        <p>There is a second commonality between the hotel and the Art Deco style in that the Goring Hotel was involved in both World Wars and Art Deco was born from the World War I and ended with World War II.</p>
+        <p>With this in mind, the design of the new chimney piece will draw inspiration from the identity, history and look of the hotel, in this instance the classical and art deco influence of the interior. For the design to be successful, great care will be taken to ensure that the new fireplace works together with all the other surrounding elements of the room such as the windows, curtains and panelling.</p>
     </div>
     <ul class="gallery">
         <li>
