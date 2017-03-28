@@ -157,7 +157,7 @@ var lozBooks = {
 			'path': '/images/books/lozenge_books_hls_09.jpg'
 		},
 		{
-			'path': '/images/books/lozenge_books_hls_??.jpg'
+			'path': '/images/books/lozenge_books_hls_11.jpg'
 		},
 		{
 			'path': '/images/books/lozenge_books_hls_07.jpg'
@@ -169,7 +169,7 @@ var lozBooks = {
 			'path': '/images/books/lozenge_books_hls_10.jpg'
 		},
 		{
-			'path': '/images/books/lozenge_books_hls_??.jpg'
+			'path': '/images/books/lozenge_books_hls_12.jpg'
 		},
 		{
 			'path': '/images/books/lozenge_books_hls_05.jpg'
