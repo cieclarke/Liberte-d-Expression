@@ -163,30 +163,54 @@ var lozMusic = {
 var lozBooks = {
 	'happyLaneSeries': [
 		{
-			'path': '/images/books/lozenge_books_hls_02.jpg'
+			'path': '/images/books/lozenge_books_hls_06.jpg'
 		},
 		{
-			'path': '/images/books/lozenge_books_hls_03.jpg'
+			'path': '/images/books/lozenge_books_hls_09.jpg'
 		},
 		{
-			'path': '/images/books/lozenge_books_hls_04.jpg'
+			'path': '/images/books/lozenge_books_hls_??.jpg'
 		},
 		{
-			'path': '/images/books/lozenge_books_hls_00.jpg'
+			'path': '/images/books/lozenge_books_hls_07.jpg'
+		},
+		{
+			'path': '/images/books/lozenge_books_hls_08.jpg'
+		},
+		{
+			'path': '/images/books/lozenge_books_hls_10.jpg'
+		},
+		{
+			'path': '/images/books/lozenge_books_hls_??.jpg'
+		},
+		{
+			'path': '/images/books/lozenge_books_hls_05.jpg'
 		}
 	],
 	'otherBooks': [
 		{
-			'path': '/images/books/lozenge_books_other_02.jpg'
+			'path': '/images/books/lozenge_books_other_09.jpg'
 		},
 		{
-			'path': '/images/books/lozenge_books_other_03.jpg'
+			'path': '/images/books/lozenge_books_other_05.jpg'
 		},
 		{
-			'path': '/images/books/lozenge_books_other_04.jpg'
+			'path': '/images/books/lozenge_books_other_08.jpg'
+		},
+		{
+			'path': '/images/books/lozenge_books_other_06.jpg'
 		},
 		{
 			'path': '/images/books/lozenge_books_other_00.jpg'
+		},
+		{
+			'path': '/images/books/lozenge_books_other_07.jpg'
+		},
+		{
+			'path': '/images/books/lozenge_books_other_??.jpg'
+		},
+		{
+			'path': '/images/books/lozenge_books_other_01.jpg'
 		}
 	]
 }
