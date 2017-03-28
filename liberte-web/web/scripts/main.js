@@ -648,6 +648,6 @@ var lozengeRotate = function($pageCurr, configLoz) {
 				$(this).attr('src', arrImgs[j]);
 				j = (j + 1) % arrImgsLength;
 			}).fadeIn(1500);
-		}, 4500);					
+		}, 5500);					
 	});
 };
