@@ -195,7 +195,7 @@ var lozBooks = {
 			'path': '/images/books/lozenge_books_other_07.jpg'
 		},
 		{
-			'path': '/images/books/lozenge_books_other_??.jpg'
+			'path': '/images/books/lozenge_books_other_10.jpg'
 		},
 		{
 			'path': '/images/books/lozenge_books_other_01.jpg'
