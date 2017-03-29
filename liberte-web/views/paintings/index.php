@@ -14,10 +14,10 @@
             With the support of <a href="http://www.barclays.co.uk/">Barclays Bank</a>, <a href="https://www.communisis.com/">Communisis</a> and <a href="http://www.candidarts.com/">Candid Arts Trust</a>, Liberté d'Expression launched in 2006 a contemporary art competition. 
         </p>
         <p>
-            Of more than 500 artworks submitted, 70 paintings were selected for an 8 days exhibition. The exhibitions received over 500 visitors (both staff and clients) and sold nearly 1/3 of all paintings within days. All paintings sold (£20,943) saw 50% of the sale price go to the artist and 50% to the NSPCC. In total £10,471.50 was raised for the NSPCC. As part of the exhibition, the general public was asked to vote for their favourite paintings.
+            Of more than 500 artworks submitted, 70 paintings were selected for an 8 days exhibition. The exhibitions received over 500 visitors (both staff and clients) and sold nearly 1/3 of all paintings within days. All paintings sold (£20,943) saw 50% of the sale price go to the artist and 50% to the <a href="https://www.nspcc.org.uk/">NSPCC</a>. In total £10,471.50 was raised for the NSPCC. As part of the exhibition, the general public was asked to vote for their favourite paintings.
         </p>
         <p>
-            Twenty-five artists were also showcased in the Light Gallery in Marble Arch in June 2008 to raise money for Cancer Research UK. Abstract, still life, figurative or landscape subjects, there was something for all tastes. 
+            Twenty-five artists were also showcased in the Light Gallery in Marble Arch in June 2008 to raise money for <a href="https://www.cancerresearchuk.org/">Cancer Research UK</a>. Abstract, still life, figurative or landscape subjects, there was something for all tastes. 
         </p>
     </div>
     <ul class="gallery">
