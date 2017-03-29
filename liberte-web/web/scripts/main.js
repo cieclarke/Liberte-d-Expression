@@ -3,6 +3,9 @@
 var lozPaintings = {
 	'artExhibitions': [
 		{
+			'path': '/images/exhibitions-paintings/lozenge_exhibition_gallery_00.jpg'
+		},
+		{
 			'path': '/images/exhibitions-paintings/lozenge_exhibition_gallery_01.jpg'
 		},
 		{
@@ -19,12 +22,12 @@ var lozPaintings = {
 		},
 		{
 			'path': '/images/exhibitions-paintings/lozenge_exhibition_gallery_06.jpg'
-		},
-		{
-			'path': '/images/exhibitions-paintings/lozenge_exhibition_gallery_00.jpg'
 		}
 	],
 	'samples': [
+		{
+			'path': '/images/exhibitions-paintings/lozenge_artist_gallery_sample_00.jpg'
+		},
 		{
 			'path': '/images/exhibitions-paintings/lozenge_artist_gallery_sample_01.jpg'
 		},
@@ -42,12 +45,12 @@ var lozPaintings = {
 		},
 		{
 			'path': '/images/exhibitions-paintings/lozenge_artist_gallery_sample_06.jpg'
-		},
-		{
-			'path': '/images/exhibitions-paintings/lozenge_artist_gallery_sample_00.jpg'
 		}
 	],
 	'sharminas': [
+		{
+			'path': '/images/exhibitions-paintings/lozenge_exhibition_sharmina_00.jpg'
+		},
 		{
 			'path': '/images/exhibitions-paintings/lozenge_exhibition_sharmina_01.jpg'
 		},
@@ -65,15 +68,15 @@ var lozPaintings = {
 		},
 		{
 			'path': '/images/exhibitions-paintings/lozenge_exhibition_sharmina_06.jpg'
-		},
-		{
-			'path': '/images/exhibitions-paintings/lozenge_exhibition_sharmina_00.jpg'
 		}
 	]
 };
 
 var lozDesign = {
 	'interior': [
+		{
+			'path': '/images/interior-design/lozenge_design_interior_08.jpg'
+		},
 		{
 			'path': '/images/interior-design/lozenge_design_interior_04.jpg'
 		},
@@ -82,12 +85,12 @@ var lozDesign = {
 		},
 		{
 			'path': '/images/interior-design/lozenge_design_interior_06.jpg'
-		},
-		{
-			'path': '/images/interior-design/lozenge_design_interior_08.jpg'
 		}
 	],
 	'product': [
+		{
+			'path': '/images/interior-design/lozenge_design_product_08.jpg'
+		},
 		{
 			'path': '/images/interior-design/lozenge_design_product_07.jpg'
 		},
@@ -96,15 +99,15 @@ var lozDesign = {
 		},
 		{
 			'path': '/images/interior-design/lozenge_design_product_04.jpg'
-		},
-		{
-			'path': '/images/interior-design/lozenge_design_product_08.jpg'
 		}
 	]
 };
 	
 var lozMusic = {
 	'english': [
+		{
+			'path': '/images/music/lozenge_music_00.jpg'
+		},
 		{
 			'path': '/images/music/lozenge_music_01.jpg'
 		},
@@ -113,12 +116,12 @@ var lozMusic = {
 		},
 		{
 			'path': '/images/music/lozenge_music_03.jpg'
-		},
-		{
-			'path': '/images/music/lozenge_music_00.jpg'
 		}
 	],
 	'spanish': [
+		{
+			'path': '/images/music/lozenge_music_07.jpg'
+		},
 		{
 			'path': '/images/music/lozenge_music_04.jpg'
 		},
@@ -127,12 +130,12 @@ var lozMusic = {
 		},
 		{
 			'path': '/images/music/lozenge_music_06.jpg'
-		},
-		{
-			'path': '/images/music/lozenge_music_07.jpg'
 		}
 	],
 	'french': [
+		{
+			'path': '/images/music/lozenge_music_11.jpg'
+		},
 		{
 			'path': '/images/music/lozenge_music_08.jpg'
 		},
@@ -141,15 +144,15 @@ var lozMusic = {
 		},
 		{
 			'path': '/images/music/lozenge_music_10.jpg'
-		},
-		{
-			'path': '/images/music/lozenge_music_11.jpg'
 		}
 	]
 };
 
 var lozBooks = {
 	'happyLaneSeries': [
+		{
+			'path': '/images/books/lozenge_books_hls_05.jpg'
+		},
 		{
 			'path': '/images/books/lozenge_books_hls_06.jpg'
 		},
@@ -170,12 +173,12 @@ var lozBooks = {
 		},
 		{
 			'path': '/images/books/lozenge_books_hls_12.jpg'
-		},
-		{
-			'path': '/images/books/lozenge_books_hls_05.jpg'
 		}
 	],
 	'otherBooks': [
+		{
+			'path': '/images/books/lozenge_books_other_01.jpg'
+		},
 		{
 			'path': '/images/books/lozenge_books_other_09.jpg'
 		},
@@ -196,9 +199,6 @@ var lozBooks = {
 		},
 		{
 			'path': '/images/books/lozenge_books_other_10.jpg'
-		},
-		{
-			'path': '/images/books/lozenge_books_other_01.jpg'
 		}
 	]
 }
@@ -447,7 +447,7 @@ var pageMaxWidthRender = {
 			var $sectionMenuListItem = $('<li>');
 			var $sectionLoz = $('<figure class="container-lozenge image"/>');
 			var lozSection = Object.keys(lozPaths)[i];
-			var lozPath = lozPaths[lozSection][lozPaths[lozSection].length - 1].path;
+			var lozPath = lozPaths[lozSection].path;
 			var $lozImg = $('<img alt="Section preview image">').attr('src', lozPath);
 			var $lozLi = $('<li>');
 
@@ -653,13 +653,16 @@ var lozengeRotate = function($pageCurr, configLoz) {
 			});
 		});
 
-		setInterval(function() {
+		// execute function immediately and also return itself - so that we have no delay for the first array of lozenges
+		setInterval(function rotate() {
 			var arrImgsLength = arrImgs.length;
 
 			$this.fadeOut(1200, function() {
 				$(this).attr('src', arrImgs[j]);
 				j = (j + 1) % arrImgsLength;
-			}).fadeIn(1500);
-		}, 5500);					
+			}).fadeIn(1000);
+
+			return rotate;
+		}(), 5750);					
 	});
 };
