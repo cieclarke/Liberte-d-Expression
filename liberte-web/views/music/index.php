@@ -64,8 +64,8 @@
     <h2>French songs</h2>
     <ul>
         <li>
-            <a href='/music/JaiVouluFuir'>Jai voulu fuir</a>
-            <audio title="Jai voulu fuir" controls="controls" preload="metadata" class="deliverable">
+            <a href='/music/JaiVouluFuir'>J'ai voulu fuir</a>
+            <audio title="J'ai voulu fuir" controls="controls" preload="metadata" class="deliverable">
                 <source src="http://libertedexpression.co.uk/art/audio/JaiVouluFuir.mp3" type='audio/mpeg; codecs="mp3"'>
                 <source src="http://libertedexpression.co.uk/art/audio/JaiVouluFuir.ogg" type='audio/ogg; codecs="vorbis"'>
                 <p>Unsupported media</p>

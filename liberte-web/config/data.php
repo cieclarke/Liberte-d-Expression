@@ -37,7 +37,7 @@ return
             ['id' => 'CercaDeTi',  'title' => 'Cerca De Ti', 'description' => 'Cerca De Ti', 'urls' => ['mp3' => 'CercaDeTi.mp3', 'ogg' => 'CercaDeTi.ogg', 'jpg' => 'cercadeti.jpg']],
             ['id' => 'Friendship',  'title' => 'Friendship', 'description' => 'Friendship', 'urls' => ['mp3' => 'Friendship.mp3', 'ogg' => 'Friendship.ogg', 'jpg' => 'friendship.jpg']],
             ['id' => 'HeAndShe',  'title' => 'He And She', 'description' => 'He And She', 'urls' => ['mp3' => 'HeAndShe.mp3', 'ogg' => 'HeAndShe.ogg', 'jpg' => 'heandshe.jpg']],
-            ['id' => 'JaiVouluFuir',  'title' => 'Jai Voulu Fuir', 'description' => 'Jai Voulu Fuir', 'urls' => ['mp3' => 'JaiVouluFuir.mp3', 'ogg' => 'JaiVouluFuir.ogg', 'jpg' => 'jaivoulufuir.jpg']],
+            ['id' => 'JaiVouluFuir',  'title' => 'J\'ai Voulu Fuir', 'description' => 'J\'ai Voulu Fuir', 'urls' => ['mp3' => 'JaiVouluFuir.mp3', 'ogg' => 'JaiVouluFuir.ogg', 'jpg' => 'jaivoulufuir.jpg']],
             ['id' => 'MiBilateral',  'title' => 'Mi Bilateral', 'description' => 'Mi Bilateral', 'urls' => ['mp3' => 'MiBilateral.mp3', 'ogg' => 'MiBilateral.ogg', 'jpg' => 'mibilateral.jpg']],
             ['id' => 'OurWorldToday',  'title' => 'Our  World Today', 'description' => 'Our World Today', 'urls' => ['mp3' => 'OurWorldToday.mp3', 'ogg' => 'OurWorldToday.ogg', 'jpg' => 'ourworldtoday.jpg']],
             ['id' => 'Pista',  'title' => 'Pista', 'description' => 'Pista', 'urls' => ['mp3' => 'Pista.mp3', 'ogg' => 'Pista.ogg', 'jpg' => 'pista.jpg']],
