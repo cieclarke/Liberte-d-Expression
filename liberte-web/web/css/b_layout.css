@@ -478,7 +478,7 @@ textarea {
         height: 53rem;
     }
     .js .page-interior-design .choice {
-        height: 72rem;
+        height: 55rem;
     }
     .js .page-music .choice {
         height: 53rem;
@@ -516,11 +516,8 @@ textarea {
     .js .page-books .detail {
         height: 52.25rem;
     }
-    .js .page-interior-design .container-lozenge.image {
-        height: 22rem;
-    }
     .js .page-interior-design .detail {
-        height: 71.25rem;
+        height: 54.25rem;
     }
     .js .page-music .detail {
         height: 52.25rem;
@@ -695,13 +692,13 @@ textarea {
         height: 57rem;
     }
     .js .page-interior-design .choice {
-        height: 65rem;
+        height: 57rem;
     }
     .js .page-music .choice {
         height: 57rem;
     }
     .js .page-paintings .choice {
-        height: 56rem;
+        height: 57rem;
     }
     .js .choice h2 .info-section-drop {
 		padding-bottom: 2rem
@@ -713,13 +710,16 @@ textarea {
         height: 56.25rem;
     }
     .js .page-interior-design .detail {
-        height: 64.25rem;
+        height: 56.25rem;
+    }
+    .js .page-interior-design .container-lozenge.image {
+        height: 22rem;
     }
     .js .page-music .detail {
         height: 56.25rem;
     }
     .js .page-paintings .detail {
-        height: 55.25rem;
+        height: 56.25rem;
     }
     .js .gallery-image-def {
         width: 74%;
