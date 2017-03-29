@@ -116,6 +116,15 @@ var lozMusic = {
 		},
 		{
 			'path': '/images/music/lozenge_music_03.jpg'
+		},
+		{
+			'path': '/images/music/lozenge_music_12.jpg'
+		},
+		{
+			'path': '/images/music/lozenge_music_13.jpg'
+		},
+		{
+			'path': '/images/music/lozenge_music_14.jpg'
 		}
 	],
 	'spanish': [
@@ -130,6 +139,15 @@ var lozMusic = {
 		},
 		{
 			'path': '/images/music/lozenge_music_06.jpg'
+		},
+		{
+			'path': '/images/music/lozenge_music_18.jpg'
+		},
+		{
+			'path': '/images/music/lozenge_music_16.jpg'
+		},
+		{
+			'path': '/images/music/lozenge_music_19.jpg'
 		}
 	],
 	'french': [
@@ -144,6 +162,15 @@ var lozMusic = {
 		},
 		{
 			'path': '/images/music/lozenge_music_10.jpg'
+		},
+		{
+			'path': '/images/music/lozenge_music_15.jpg'
+		},
+		{
+			'path': '/images/music/lozenge_music_17.jpg'
+		},
+		{
+			'path': '/images/music/lozenge_music_20.jpg'
 		}
 	]
 };
@@ -657,12 +684,12 @@ var lozengeRotate = function($pageCurr, configLoz) {
 		setInterval(function rotate() {
 			var arrImgsLength = arrImgs.length;
 
-			$this.fadeOut(1200, function() {
+			$this.fadeOut(2100, function() {
 				$(this).attr('src', arrImgs[j]);
 				j = (j + 1) % arrImgsLength;
-			}).fadeIn(1000);
+			}).fadeIn(1200);
 
 			return rotate;
-		}(), 5750);					
+		}(), 5750);
 	});
 };
