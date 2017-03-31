@@ -259,7 +259,7 @@ textarea {
     width: 90%
 }
 .page-home main, .page-home-sub main {
-    min-height: 55rem;
+    min-height: 55.75rem;
 }
 .page-home-sub main .flex-block {
     flex-wrap: wrap;
@@ -478,7 +478,7 @@ textarea {
         height: 53rem;
     }
     .js .page-interior-design .choice {
-        height: 55rem;
+        height: 53rem;
     }
     .js .page-music .choice {
         height: 53rem;
@@ -517,7 +517,7 @@ textarea {
         height: 52.25rem;
     }
     .js .page-interior-design .detail {
-        height: 54.25rem;
+        height: 52.25rem;
     }
     .js .page-music .detail {
         height: 52.25rem;
