@@ -4,7 +4,7 @@
 
 
     <h1>Music</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis vitae nisi eget eleifend. Phasellus tristique ut augue a consequat. Sed at dignissim augue, et tempor enim.</p>
+    <p>Tim could compose a tune but he didn't have a way with words. Sharmina could write rhymes but was not exactly musical. Then one day over a Madrileno lunch they say an opportunities to converge their creativity and then, as they say, the rest was history. Twelve weeks later and twelve wonderful songs.</p>
 
 <section class="music-english">
     <h2>English songs</h2>
