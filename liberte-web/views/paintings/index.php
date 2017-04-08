@@ -369,7 +369,7 @@
     <h2>Sharmina's paintings</h2>
     <div class="description">
         <p>
-            Texture is a guiding principle of Sharmina's work. Allowing the images to evolve instinctively, she balances both textured and smooth surfaces alongside matt and high gloss finishes. In doing so Sharmina hopes to achieve a sense of flow, movement and transformation which parallels her own experiences and ethos of life. "In most of my work, I mix flowing and shifting shapes complemented by a geometrical precision, which probably reflect my desire to attain perfection and control" she says.
+            Beyond some emotional teenage poetry and abstract doodles during her years in high school. Sharmina never considered herself the artistic type, After moving to England in her early twenties, she put her doodling on canvas for the first time and produce her first "suprematism" artwork. That first step opened the door to a new world of artistic expression, which would also lead her to interior design, music and children's picture books.
         </p>
         <p>
             The Torbay Hospital Gallery is funded through a charitable trust – South Devon Healthcare Arts which promotes Arts in Hospitals. 
