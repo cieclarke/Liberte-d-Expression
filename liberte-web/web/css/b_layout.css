@@ -206,14 +206,23 @@ textarea {
     top: 0
 }
 .flex-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex
 }
 .flex-inline {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex
 }
 .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: 1em auto;
     width: 90%;
@@ -223,6 +232,8 @@ textarea {
     width: 100%
 }
 .gallery li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 7.2em;
     flex: 0 0 7.2em;
     margin: 1em
 }
@@ -262,7 +273,10 @@ textarea {
     min-height: 55.75rem;
 }
 .page-home-sub main .flex-block {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-top: 1.5rem
 }
@@ -466,6 +480,8 @@ textarea {
     
 	/* class elements: =. */
     .gallery li {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 7.4em;
         flex: 0 0 7.4em;
         margin: 0.15em;
     }
@@ -557,8 +573,13 @@ textarea {
         padding-top: 3.25rem
     }
     .js .page-interior-design .list-standard {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         width: 70%
     }
@@ -618,7 +639,11 @@ textarea {
         margin: 0
     }
     .js .section-data {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         width: 100%
     }
@@ -642,7 +667,11 @@ textarea {
     }
     .js .section-lozenges {
         bottom: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         position: absolute;
         width: 100%
@@ -682,6 +711,8 @@ textarea {
         width: 1250px
     }
     .gallery li {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.4em;
         flex: 0 0 8.4em;
         margin: 0.35em
     }
