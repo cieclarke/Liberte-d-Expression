@@ -96,9 +96,11 @@ AppAsset::register($this);
     </main>
     <footer role="contentinfo">
         <ul>
+            <!-- view temporarily disabled by request, 8/4/2017
             <li>
                 <a href="/about/">About the team</a>
             </li>
+            -->
             <li>
                 <a href="/contact/">Get in touch</a>
             </li>

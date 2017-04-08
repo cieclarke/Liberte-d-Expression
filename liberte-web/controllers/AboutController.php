@@ -16,6 +16,9 @@ class AboutController extends Controller
 
     public function actionIndex()
     {
+        // view temporarily disabled by request, 8/4/2017
+        $this->redirect(array('/'));
+
         $this->view->params['class'] = 'page-home-sub';
         $this->view->params['script-bgswitcher'] = '';
         $vm = new \app\models\GalleryViewModel();
