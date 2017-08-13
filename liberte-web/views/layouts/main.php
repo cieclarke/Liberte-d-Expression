@@ -22,31 +22,16 @@ AppAsset::register($this);
     <!--<?= Html::csrfMetaTags() ?>
     <?php $this->head() ?>-->
 
-    <link rel="stylesheet" href="/css/a_normalise.css">
-    <link rel="stylesheet" href="/css/b_layout.css">
-    <link rel="stylesheet" href="/css/c_theme.css">
-    <link rel="stylesheet" href="/css/d_typography.css">
-    <link rel="stylesheet" href="/css/e_vendor.css">
-    <link rel="stylesheet" href="/scripts/fancybox/source/jquery.fancybox.css?v=2.1.6" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/css/main.min.css">
+    <link rel="stylesheet" href="/scripts/fancybox/source/jquery.fancybox.min.css?v=2.1.6" type="text/css" media="screen" />
 
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-
-	<!-- required by IE9 and some other user agents in order to process javascript-based media queries..
-		 applies patch if window.matchMedia() is unsupported -->
-	<script src="/scripts/matchMedia.js"></script>
-
-	<!-- library required to process javascript-based media queries.. requires window.matchMedia() support -->
-	<script src="/scripts/enquire.min.js"></script>
-	
-    <script src="/scripts/fancybox/source/jquery.fancybox.pack.js?v=2.1.6"></script>
-
-	<!-- main script -->
-	<script src="/scripts/main.js"></script>
+    <script src="/scripts/static.min.js"></script>
 
     <?php
         if (strlen($this->params['script-bgswitcher']) > 0) {
         ?>
-            <script src="/scripts/jquery.bgswitcher.js"></script>
+            <script src="/scripts/jquery.bgswitcher.min.js"></script>
         <?php
         }
     ?>
