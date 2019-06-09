@@ -377,6 +377,26 @@
     </div>
     <ul class="gallery">
         <li>
+            <a href="/images/exhibitions-paintings/sharmina/Picture1.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/Picture1_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/Picture2.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/Picture2_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/Picture3.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/Picture3_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
+            <a href="/images/exhibitions-paintings/sharmina/Picture4.jpg">
+                <img src="/images/exhibitions-paintings/sharmina/Picture4_thumb.jpg" alt="A Sharmina exhibit" />
+            </a>
+        </li>
+        <li>
             <a href="/images/exhibitions-paintings/sharmina/2776449.jpg">
                 <img src="/images/exhibitions-paintings/sharmina/2776449_thumb.jpg" alt="A Sharmina exhibit" />
             </a>
