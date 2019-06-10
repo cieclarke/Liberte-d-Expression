@@ -5,7 +5,7 @@
 <h1>Childrens' Books</h1>
 
 <p>
-    Over the past 10 years, Liberte d'Expression's focus has been towards illustrated childrens' books, of which "Mr. T &amp; the J Man", "Cheeky Monkey" and a series of six books under the title of "Happy Lane".
+    Over the past 10 years, Liberte d'Expression's focus has been towards illustrated childrens' books, of which "The Big Bang Boom", "Lazy Monkey" and a series of six books under the title of "Happy Lane".
 </p>
 
 <?php 
